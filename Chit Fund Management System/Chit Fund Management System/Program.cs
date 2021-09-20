@@ -16,7 +16,7 @@ namespace Chit_Fund_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_ligin());
+            Application.Run(new f_login());
         }
     }
 }
