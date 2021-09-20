@@ -1,0 +1,12 @@
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.exe.config
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.exe
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.pdb
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csprojAssemblyReference.cache
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.NewUserRegistration.resources
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Properties.Resources.resources
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.GenerateResource.cache
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.CoreCompileInputs.cache
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.exe
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.pdb
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.ChitFundDashBoard.resources
+F:\Chit Fund Management System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.F_ligin.resources

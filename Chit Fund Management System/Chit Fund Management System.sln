@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chit Fund Management System", "Chit Fund Management System\Chit Fund Management System.csproj", "{5BDFA4D7-8F7B-415B-B48C-9AB0DBA6BF55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BDFA4D7-8F7B-415B-B48C-9AB0DBA6BF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDFA4D7-8F7B-415B-B48C-9AB0DBA6BF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDFA4D7-8F7B-415B-B48C-9AB0DBA6BF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDFA4D7-8F7B-415B-B48C-9AB0DBA6BF55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58A4A450-D561-4752-9BE1-580D6E90BD75}
+	EndGlobalSection
+EndGlobal
