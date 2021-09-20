@@ -133,7 +133,7 @@ namespace Chit_Fund_Management_System
             this.bt_clear_new_user.TabIndex = 10;
             this.bt_clear_new_user.Text = "Clear";
             this.bt_clear_new_user.UseVisualStyleBackColor = false;
-            this.bt_clear_new_user.Click += new System.EventHandler(this.bt_clear_Click);
+            this.bt_clear_new_user.Click += new System.EventHandler(this.bt_clear_new_user_Click);
             // 
             // creatBT
             // 
