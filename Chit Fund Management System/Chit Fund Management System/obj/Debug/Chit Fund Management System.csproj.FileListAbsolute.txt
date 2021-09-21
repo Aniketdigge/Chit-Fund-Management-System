@@ -22,3 +22,15 @@ F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.CoreCompileInputs.cache
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.exe
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.pdb
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.exe.config
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.exe
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.pdb
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csprojAssemblyReference.cache
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.ChitFundDashBoard.resources
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.f_login.resources
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.f_newuser.resources
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Properties.Resources.resources
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.GenerateResource.cache
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.CoreCompileInputs.cache
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.exe
+D:\ChitProjectCollege\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.pdb
