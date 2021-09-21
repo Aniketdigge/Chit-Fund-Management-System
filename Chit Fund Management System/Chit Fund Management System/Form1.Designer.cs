@@ -55,7 +55,11 @@ namespace Chit_Fund_Management_System
             this.logingb.Controls.Add(this.label4);
             this.logingb.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logingb.ForeColor = System.Drawing.SystemColors.InfoText;
+<<<<<<< Updated upstream
             this.logingb.Location = new System.Drawing.Point(755, 130);
+=======
+            this.logingb.Location = new System.Drawing.Point(840, 100);
+>>>>>>> Stashed changes
             this.logingb.Name = "logingb";
             this.logingb.Size = new System.Drawing.Size(588, 430);
             this.logingb.TabIndex = 0;
@@ -68,7 +72,11 @@ namespace Chit_Fund_Management_System
             this.label4.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(45, 67);
             this.label4.Name = "label4";
+<<<<<<< Updated upstream
             this.label4.Size = new System.Drawing.Size(243, 46);
+=======
+            this.label4.Size = new System.Drawing.Size(93, 19);
+>>>>>>> Stashed changes
             this.label4.TabIndex = 0;
             this.label4.Text = "User Name:";
             // 
@@ -78,7 +86,11 @@ namespace Chit_Fund_Management_System
             this.label1.Font = new System.Drawing.Font("Arial", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(666, 42);
             this.label1.Name = "label1";
+<<<<<<< Updated upstream
             this.label1.Size = new System.Drawing.Size(677, 51);
+=======
+            this.label1.Size = new System.Drawing.Size(230, 53);
+>>>>>>> Stashed changes
             this.label1.TabIndex = 1;
             this.label1.Text = "Chit Fund Management System";
             // 
@@ -88,12 +100,19 @@ namespace Chit_Fund_Management_System
             this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(45, 183);
             this.label2.Name = "label2";
+<<<<<<< Updated upstream
             this.label2.Size = new System.Drawing.Size(222, 46);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
+=======
+            this.label2.Size = new System.Drawing.Size(296, 53);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Management";
+>>>>>>> Stashed changes
             // 
             // linklb_newuser
             // 
+<<<<<<< Updated upstream
             this.linklb_newuser.AutoSize = true;
             this.linklb_newuser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linklb_newuser.Location = new System.Drawing.Point(247, 368);
@@ -104,6 +123,15 @@ namespace Chit_Fund_Management_System
             this.linklb_newuser.Text = "New User";
             this.linklb_newuser.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linklb_newuser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_newuser_LinkClicked);
+=======
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(534, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(183, 53);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "System";
+>>>>>>> Stashed changes
             // 
             // bt_login
             // 
@@ -147,7 +175,7 @@ namespace Chit_Fund_Management_System
             // 
             // f_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));

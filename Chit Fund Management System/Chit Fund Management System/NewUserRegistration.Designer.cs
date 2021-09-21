@@ -214,7 +214,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1462, 674);
+            this.ClientSize = new System.Drawing.Size(1334, 699);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
