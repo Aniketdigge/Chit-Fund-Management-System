@@ -1,7 +1,7 @@
 ﻿
 namespace Chit_Fund_Management_System
 {
-    partial class ChitFundDashBoard
+    partial class f_chit_fund_dash_board
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChitFundDashBoard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_chit_fund_dash_board));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.companyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.companyRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,7 +59,6 @@ namespace Chit_Fund_Management_System
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.companyToolStripMenuItem,
@@ -70,7 +69,7 @@ namespace Chit_Fund_Management_System
             this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1459, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1459, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "DashBoard";
             // 
@@ -81,14 +80,14 @@ namespace Chit_Fund_Management_System
             this.companyRegistrationToolStripMenuItem});
             this.companyToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.companyToolStripMenuItem.Name = "companyToolStripMenuItem";
-            this.companyToolStripMenuItem.Size = new System.Drawing.Size(110, 29);
+            this.companyToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.companyToolStripMenuItem.Text = "Company";
             // 
             // companyRegistrationToolStripMenuItem
             // 
-            this.companyRegistrationToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.companyRegistrationToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.companyRegistrationToolStripMenuItem.Name = "companyRegistrationToolStripMenuItem";
-            this.companyRegistrationToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
+            this.companyRegistrationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.companyRegistrationToolStripMenuItem.Text = "Company Profile";
             // 
             // branchToolStripMenuItem
@@ -99,21 +98,21 @@ namespace Chit_Fund_Management_System
             this.branchReportToolStripMenuItem});
             this.branchToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.branchToolStripMenuItem.Name = "branchToolStripMenuItem";
-            this.branchToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
+            this.branchToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.branchToolStripMenuItem.Text = "Branch";
             // 
             // branchProfileToolStripMenuItem
             // 
-            this.branchProfileToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.branchProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
-            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
+            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
             // 
             // branchReportToolStripMenuItem
             // 
-            this.branchReportToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.branchReportToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchReportToolStripMenuItem.Name = "branchReportToolStripMenuItem";
-            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
+            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.branchReportToolStripMenuItem.Text = "Branch Report";
             // 
             // memebrToolStripMenuItem
@@ -126,35 +125,35 @@ namespace Chit_Fund_Management_System
             this.loanToolStripMenuItem});
             this.memebrToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memebrToolStripMenuItem.Name = "memebrToolStripMenuItem";
-            this.memebrToolStripMenuItem.Size = new System.Drawing.Size(98, 29);
+            this.memebrToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.memebrToolStripMenuItem.Text = "Member";
             // 
             // memberProfileToolStripMenuItem
             // 
-            this.memberProfileToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.memberProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.memberProfileToolStripMenuItem.Name = "memberProfileToolStripMenuItem";
-            this.memberProfileToolStripMenuItem.Size = new System.Drawing.Size(326, 34);
+            this.memberProfileToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.memberProfileToolStripMenuItem.Text = "Member Profile";
             // 
             // memberTransactionLogToolStripMenuItem
             // 
-            this.memberTransactionLogToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.memberTransactionLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.memberTransactionLogToolStripMenuItem.Name = "memberTransactionLogToolStripMenuItem";
-            this.memberTransactionLogToolStripMenuItem.Size = new System.Drawing.Size(326, 34);
+            this.memberTransactionLogToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.memberTransactionLogToolStripMenuItem.Text = "Member Transaction Log";
             // 
             // memberPaymentToolStripMenuItem
             // 
-            this.memberPaymentToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.memberPaymentToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.memberPaymentToolStripMenuItem.Name = "memberPaymentToolStripMenuItem";
-            this.memberPaymentToolStripMenuItem.Size = new System.Drawing.Size(326, 34);
+            this.memberPaymentToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.memberPaymentToolStripMenuItem.Text = "Member Payment";
             // 
             // loanToolStripMenuItem
             // 
-            this.loanToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.loanToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.loanToolStripMenuItem.Name = "loanToolStripMenuItem";
-            this.loanToolStripMenuItem.Size = new System.Drawing.Size(326, 34);
+            this.loanToolStripMenuItem.Size = new System.Drawing.Size(266, 26);
             this.loanToolStripMenuItem.Text = "Loan";
             // 
             // auctionRoomToolStripMenuItem
@@ -162,7 +161,7 @@ namespace Chit_Fund_Management_System
             this.auctionRoomToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.auctionRoomToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.auctionRoomToolStripMenuItem.Name = "auctionRoomToolStripMenuItem";
-            this.auctionRoomToolStripMenuItem.Size = new System.Drawing.Size(150, 29);
+            this.auctionRoomToolStripMenuItem.Size = new System.Drawing.Size(120, 24);
             this.auctionRoomToolStripMenuItem.Text = "Auction Room";
             // 
             // agentToolStripMenuItem
@@ -175,35 +174,35 @@ namespace Chit_Fund_Management_System
             this.agentPaymentLogToolStripMenuItem});
             this.agentToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agentToolStripMenuItem.Name = "agentToolStripMenuItem";
-            this.agentToolStripMenuItem.Size = new System.Drawing.Size(80, 29);
+            this.agentToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.agentToolStripMenuItem.Text = "Agent";
             // 
             // agentProfileToolStripMenuItem
             // 
-            this.agentProfileToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.agentProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.agentProfileToolStripMenuItem.Name = "agentProfileToolStripMenuItem";
-            this.agentProfileToolStripMenuItem.Size = new System.Drawing.Size(282, 34);
+            this.agentProfileToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.agentProfileToolStripMenuItem.Text = "Agent Profile";
             // 
             // agentCommissionToolStripMenuItem
             // 
-            this.agentCommissionToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.agentCommissionToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.agentCommissionToolStripMenuItem.Name = "agentCommissionToolStripMenuItem";
-            this.agentCommissionToolStripMenuItem.Size = new System.Drawing.Size(282, 34);
+            this.agentCommissionToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.agentCommissionToolStripMenuItem.Text = "Agent Commission";
             // 
             // agentPaymentToolStripMenuItem
             // 
-            this.agentPaymentToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.agentPaymentToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.agentPaymentToolStripMenuItem.Name = "agentPaymentToolStripMenuItem";
-            this.agentPaymentToolStripMenuItem.Size = new System.Drawing.Size(282, 34);
+            this.agentPaymentToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.agentPaymentToolStripMenuItem.Text = "Agent Payment";
             // 
             // agentPaymentLogToolStripMenuItem
             // 
-            this.agentPaymentLogToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.agentPaymentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.agentPaymentLogToolStripMenuItem.Name = "agentPaymentLogToolStripMenuItem";
-            this.agentPaymentLogToolStripMenuItem.Size = new System.Drawing.Size(282, 34);
+            this.agentPaymentLogToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.agentPaymentLogToolStripMenuItem.Text = "Agent Payment Log";
             // 
             // employeeToolStripMenuItem
@@ -217,56 +216,57 @@ namespace Chit_Fund_Management_System
             this.employeePaymentLogToolStripMenuItem});
             this.employeeToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(115, 29);
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.employeeToolStripMenuItem.Text = "Employee";
             // 
             // employeeProfileToolStripMenuItem
             // 
-            this.employeeProfileToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.employeeProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.employeeProfileToolStripMenuItem.Name = "employeeProfileToolStripMenuItem";
-            this.employeeProfileToolStripMenuItem.Size = new System.Drawing.Size(320, 34);
+            this.employeeProfileToolStripMenuItem.Size = new System.Drawing.Size(254, 26);
             this.employeeProfileToolStripMenuItem.Text = "Employee Profile";
             // 
             // employeeAttendanceToolStripMenuItem
             // 
-            this.employeeAttendanceToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.employeeAttendanceToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.employeeAttendanceToolStripMenuItem.Name = "employeeAttendanceToolStripMenuItem";
-            this.employeeAttendanceToolStripMenuItem.Size = new System.Drawing.Size(320, 34);
+            this.employeeAttendanceToolStripMenuItem.Size = new System.Drawing.Size(254, 26);
             this.employeeAttendanceToolStripMenuItem.Text = "Employee Attendance";
             // 
             // employeeSalarySlipToolStripMenuItem
             // 
-            this.employeeSalarySlipToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.employeeSalarySlipToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.employeeSalarySlipToolStripMenuItem.Name = "employeeSalarySlipToolStripMenuItem";
-            this.employeeSalarySlipToolStripMenuItem.Size = new System.Drawing.Size(320, 34);
+            this.employeeSalarySlipToolStripMenuItem.Size = new System.Drawing.Size(254, 26);
             this.employeeSalarySlipToolStripMenuItem.Text = "Employee Salary Slip";
             // 
             // employeePaymentToolStripMenuItem
             // 
-            this.employeePaymentToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.employeePaymentToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.employeePaymentToolStripMenuItem.Name = "employeePaymentToolStripMenuItem";
-            this.employeePaymentToolStripMenuItem.Size = new System.Drawing.Size(320, 34);
+            this.employeePaymentToolStripMenuItem.Size = new System.Drawing.Size(254, 26);
             this.employeePaymentToolStripMenuItem.Text = "Employee Payment";
             // 
             // employeePaymentLogToolStripMenuItem
             // 
-            this.employeePaymentLogToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.employeePaymentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.employeePaymentLogToolStripMenuItem.Name = "employeePaymentLogToolStripMenuItem";
-            this.employeePaymentLogToolStripMenuItem.Size = new System.Drawing.Size(320, 34);
+            this.employeePaymentLogToolStripMenuItem.Size = new System.Drawing.Size(254, 26);
             this.employeePaymentLogToolStripMenuItem.Text = "Employee Payment Log";
             // 
-            // ChitFundDashBoard
+            // f_chit_fund_dash_board
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1459, 647);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "ChitFundDashBoard";
+            this.Name = "f_chit_fund_dash_board";
             this.Text = "ChitFundDashBoard";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
