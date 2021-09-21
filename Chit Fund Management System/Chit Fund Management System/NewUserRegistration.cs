@@ -11,11 +11,11 @@ using System.Data.OleDb;
 
 namespace Chit_Fund_Management_System
 {
-    public partial class NewUserRegistration : Form
+    public partial class f_newuser : Form
     {
-        OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\ChitFundDB.accdb");
+        OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\Chit-Fund-Management-System\ChitFundDB.accdb");
         OleDbCommand cmd;
-        public NewUserRegistration()
+        public f_newuser()
         {
             InitializeComponent();
         }
@@ -26,8 +26,8 @@ namespace Chit_Fund_Management_System
             {
                 con.Open();
                 cmd = new OleDbCommand("insert into LoginTB(User_name, Password, User_type) values(@username, @password, @usertype)", con);
-                cmd.Parameters.AddWithValue("@username", tb_username.Text);
-                cmd.Parameters.AddWithValue("@password", tb_password.Text);
+                cmd.Parameters.AddWithValue("@username", tb_usernamenew.Text);
+                cmd.Parameters.AddWithValue("@password", tb_passwordnew.Text);
                 cmd.Parameters.AddWithValue("@usertype", tb_usertype.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -39,16 +39,16 @@ namespace Chit_Fund_Management_System
             }
         }
 
-        private void bt_clear_Click(object sender, EventArgs e)
+        private void bt_clear_new_user_Click(object sender, EventArgs e)
         {
-            tb_username.Clear();
-            tb_password.Clear();
+            tb_usernamenew.Clear();
+            tb_passwordnew.Clear();
             tb_usertype.Clear();
         }
 
         private void bt_close_Click(object sender, EventArgs e)
         {
-            F_ligin f_Ligin = new F_ligin();
+            f_login f_Ligin = new f_login();
             f_Ligin.Show();
             this.Hide();
         }
