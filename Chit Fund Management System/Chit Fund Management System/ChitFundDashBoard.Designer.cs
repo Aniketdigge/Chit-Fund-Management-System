@@ -58,7 +58,7 @@ namespace Chit_Fund_Management_System
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -88,7 +88,7 @@ namespace Chit_Fund_Management_System
             // 
             this.companyRegistrationToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.companyRegistrationToolStripMenuItem.Name = "companyRegistrationToolStripMenuItem";
-            this.companyRegistrationToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.companyRegistrationToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
             this.companyRegistrationToolStripMenuItem.Text = "Company Profile";
             // 
             // branchToolStripMenuItem
@@ -106,14 +106,14 @@ namespace Chit_Fund_Management_System
             // 
             this.branchProfileToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
-            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
             // 
             // branchReportToolStripMenuItem
             // 
             this.branchReportToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
             this.branchReportToolStripMenuItem.Name = "branchReportToolStripMenuItem";
-            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(236, 34);
             this.branchReportToolStripMenuItem.Text = "Branch Report";
             // 
             // memebrToolStripMenuItem
