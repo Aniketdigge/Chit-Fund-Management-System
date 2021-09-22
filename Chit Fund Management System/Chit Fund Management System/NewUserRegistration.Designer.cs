@@ -55,7 +55,7 @@ namespace Chit_Fund_Management_System
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(88, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 38);
+            this.label1.Size = new System.Drawing.Size(471, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Create New UserName :";
             // 
@@ -66,7 +66,7 @@ namespace Chit_Fund_Management_System
             this.label2.Font = new System.Drawing.Font("Arial", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(226, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(848, 70);
+            this.label2.Size = new System.Drawing.Size(1019, 84);
             this.label2.TabIndex = 1;
             this.label2.Text = "Create New User For System";
             // 
@@ -76,7 +76,7 @@ namespace Chit_Fund_Management_System
             this.label3.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(88, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(376, 38);
+            this.label3.Size = new System.Drawing.Size(461, 46);
             this.label3.TabIndex = 2;
             this.label3.Text = "Create New Password :";
             // 
@@ -86,7 +86,7 @@ namespace Chit_Fund_Management_System
             this.label4.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(88, 228);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(194, 38);
+            this.label4.Size = new System.Drawing.Size(234, 46);
             this.label4.TabIndex = 3;
             this.label4.Text = "User Type :";
             // 
@@ -115,7 +115,7 @@ namespace Chit_Fund_Management_System
             // 
             // bt_close
             // 
-            this.bt_close.BackColor = System.Drawing.Color.Gray;
+            this.bt_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_close.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_close.Location = new System.Drawing.Point(695, 343);
             this.bt_close.Name = "bt_close";
@@ -127,7 +127,7 @@ namespace Chit_Fund_Management_System
             // 
             // bt_clear_new_user
             // 
-            this.bt_clear_new_user.BackColor = System.Drawing.Color.Gray;
+            this.bt_clear_new_user.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_clear_new_user.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_new_user.Location = new System.Drawing.Point(400, 343);
             this.bt_clear_new_user.Name = "bt_clear_new_user";
@@ -139,7 +139,7 @@ namespace Chit_Fund_Management_System
             // 
             // creatBT
             // 
-            this.creatBT.BackColor = System.Drawing.Color.Gray;
+            this.creatBT.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.creatBT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatBT.Location = new System.Drawing.Point(95, 343);
             this.creatBT.Name = "creatBT";
@@ -152,30 +152,30 @@ namespace Chit_Fund_Management_System
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(596, 271);
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(605, 269);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 17);
+            this.label7.Size = new System.Drawing.Size(138, 22);
             this.label7.TabIndex = 8;
             this.label7.Text = "Admin or Employee";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(596, 187);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 17);
+            this.label6.Size = new System.Drawing.Size(147, 22);
             this.label6.TabIndex = 7;
             this.label6.Text = "should be 6 character";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(596, 93);
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(596, 91);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 17);
+            this.label5.Size = new System.Drawing.Size(203, 22);
             this.label5.TabIndex = 5;
             this.label5.Text = "should be unique from existing";
             // 
@@ -221,7 +221,7 @@ namespace Chit_Fund_Management_System
             // 
             // f_newuser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
