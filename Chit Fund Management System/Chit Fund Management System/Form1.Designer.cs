@@ -57,7 +57,7 @@ namespace Chit_Fund_Management_System
             this.logingb.Controls.Add(this.label4);
             this.logingb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logingb.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.logingb.Location = new System.Drawing.Point(349, 136);
+            this.logingb.Location = new System.Drawing.Point(254, 133);
             this.logingb.Name = "logingb";
             this.logingb.Size = new System.Drawing.Size(593, 425);
             this.logingb.TabIndex = 0;
@@ -144,7 +144,7 @@ namespace Chit_Fund_Management_System
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(282, 7);
+            this.label1.Location = new System.Drawing.Point(180, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(726, 55);
             this.label1.TabIndex = 1;
@@ -166,7 +166,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1353, 628);
+            this.ClientSize = new System.Drawing.Size(1124, 626);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logingb);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
