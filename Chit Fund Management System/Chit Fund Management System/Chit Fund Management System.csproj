@@ -52,11 +52,17 @@
     <Compile Include="ChitFundDashBoard.Designer.cs">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompanyProfile.Designer.cs">
+      <DependentUpon>CompanyProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="NewUserRegistration.cs">
       <SubType>Form</SubType>
@@ -69,8 +75,11 @@
     <EmbeddedResource Include="ChitFundDashBoard.resx">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompanyProfile.resx">
+      <DependentUpon>CompanyProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewUserRegistration.resx">
       <DependentUpon>NewUserRegistration.cs</DependentUpon>
