@@ -32,7 +32,7 @@ namespace Chit_Fund_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_chit_fund_dash_board));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.companyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.companyRegistrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ms_companyprofile = new System.Windows.Forms.ToolStripMenuItem();
             this.branchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,7 +69,7 @@ namespace Chit_Fund_Management_System
             this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1459, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1200, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "DashBoard";
             // 
@@ -77,18 +77,19 @@ namespace Chit_Fund_Management_System
             // 
             this.companyToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.companyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.companyRegistrationToolStripMenuItem});
+            this.ms_companyprofile});
             this.companyToolStripMenuItem.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.companyToolStripMenuItem.Name = "companyToolStripMenuItem";
             this.companyToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.companyToolStripMenuItem.Text = "Company";
             // 
-            // companyRegistrationToolStripMenuItem
+            // ms_companyprofile
             // 
-            this.companyRegistrationToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.companyRegistrationToolStripMenuItem.Name = "companyRegistrationToolStripMenuItem";
-            this.companyRegistrationToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.companyRegistrationToolStripMenuItem.Text = "Company Profile";
+            this.ms_companyprofile.BackColor = System.Drawing.Color.DarkGray;
+            this.ms_companyprofile.Name = "ms_companyprofile";
+            this.ms_companyprofile.Size = new System.Drawing.Size(224, 26);
+            this.ms_companyprofile.Text = "Company Profile";
+            this.ms_companyprofile.Click += new System.EventHandler(this.ms_companyprofile_Click);
             // 
             // branchToolStripMenuItem
             // 
@@ -105,14 +106,14 @@ namespace Chit_Fund_Management_System
             // 
             this.branchProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
-            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
             // 
             // branchReportToolStripMenuItem
             // 
             this.branchReportToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchReportToolStripMenuItem.Name = "branchReportToolStripMenuItem";
-            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
             this.branchReportToolStripMenuItem.Text = "Branch Report";
             // 
             // memebrToolStripMenuItem
@@ -261,7 +262,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1459, 647);
+            this.ClientSize = new System.Drawing.Size(1200, 546);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -278,7 +279,7 @@ namespace Chit_Fund_Management_System
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem companyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem companyRegistrationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ms_companyprofile;
         private System.Windows.Forms.ToolStripMenuItem branchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem branchProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem branchReportToolStripMenuItem;

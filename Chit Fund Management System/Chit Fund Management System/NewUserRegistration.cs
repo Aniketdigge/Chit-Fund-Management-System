@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace Chit_Fund_Management_System
 {
@@ -25,10 +18,11 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("insert into LoginTB(User_name, Password, User_type) values(@username, @password, @usertype)", con);
+                cmd = new OleDbCommand("insert into LoginTB(User_name, Password, User_type, User_id) values(@username, @password, @usertype, @userid)", con);
                 cmd.Parameters.AddWithValue("@username", tb_usernamenew.Text);
                 cmd.Parameters.AddWithValue("@password", tb_passwordnew.Text);
                 cmd.Parameters.AddWithValue("@usertype", tb_usertype.Text);
+                cmd.Parameters.AddWithValue("@userid", tb_userid.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("User Created....");

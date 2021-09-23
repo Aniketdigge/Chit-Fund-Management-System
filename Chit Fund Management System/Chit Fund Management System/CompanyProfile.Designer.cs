@@ -32,264 +32,297 @@ namespace Chit_Fund_Management_System
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CompanyProfile));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Company = new System.Windows.Forms.GroupBox();
+            this.tb_noofbranches = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.bt_clearcompany = new System.Windows.Forms.Button();
+            this.bt_searchcompany = new System.Windows.Forms.Button();
+            this.bt_deletecompany = new System.Windows.Forms.Button();
+            this.bt_updatecompany = new System.Windows.Forms.Button();
+            this.bt_addcompany = new System.Windows.Forms.Button();
+            this.tb_owner_company = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_city_company = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_address_company = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_companyname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_cinno_company = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.bt_close_company = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.Company.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(11, 12);
+            this.panel1.Location = new System.Drawing.Point(10, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1357, 78);
+            this.panel1.Size = new System.Drawing.Size(1206, 68);
             this.panel1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(493, 0);
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(402, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 64);
+            this.label1.Size = new System.Drawing.Size(405, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "Company Profile";
             // 
-            // groupBox1
+            // Company
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(105, 122);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1188, 551);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
+            this.Company.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Company.Controls.Add(this.bt_close_company);
+            this.Company.Controls.Add(this.tb_noofbranches);
+            this.Company.Controls.Add(this.label7);
+            this.Company.Controls.Add(this.bt_clearcompany);
+            this.Company.Controls.Add(this.bt_searchcompany);
+            this.Company.Controls.Add(this.bt_deletecompany);
+            this.Company.Controls.Add(this.bt_updatecompany);
+            this.Company.Controls.Add(this.bt_addcompany);
+            this.Company.Controls.Add(this.tb_owner_company);
+            this.Company.Controls.Add(this.label6);
+            this.Company.Controls.Add(this.tb_city_company);
+            this.Company.Controls.Add(this.label5);
+            this.Company.Controls.Add(this.tb_address_company);
+            this.Company.Controls.Add(this.label4);
+            this.Company.Controls.Add(this.tb_companyname);
+            this.Company.Controls.Add(this.label3);
+            this.Company.Controls.Add(this.tb_cinno_company);
+            this.Company.Controls.Add(this.label2);
+            this.Company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Company.Location = new System.Drawing.Point(90, 119);
+            this.Company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Company.Name = "Company";
+            this.Company.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Company.Size = new System.Drawing.Size(1056, 464);
+            this.Company.TabIndex = 2;
+            this.Company.TabStop = false;
+            this.Company.Text = "Company";
             // 
-            // textBox6
+            // tb_noofbranches
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox6.Location = new System.Drawing.Point(304, 362);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(758, 37);
-            this.textBox6.TabIndex = 17;
+            this.tb_noofbranches.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_noofbranches.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_noofbranches.Location = new System.Drawing.Point(504, 309);
+            this.tb_noofbranches.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_noofbranches.Multiline = true;
+            this.tb_noofbranches.Name = "tb_noofbranches";
+            this.tb_noofbranches.Size = new System.Drawing.Size(200, 40);
+            this.tb_noofbranches.TabIndex = 17;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 362);
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(133, 309);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(281, 37);
+            this.label7.Size = new System.Drawing.Size(247, 40);
             this.label7.TabIndex = 16;
-            this.label7.Text = "No Of Branches:-";
+            this.label7.Text = "No Of Branches :";
             // 
-            // button5
+            // bt_clearcompany
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(952, 449);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 56);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "CLEAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.bt_clearcompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_clearcompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_clearcompany.Location = new System.Drawing.Point(720, 392);
+            this.bt_clearcompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_clearcompany.Name = "bt_clearcompany";
+            this.bt_clearcompany.Size = new System.Drawing.Size(144, 45);
+            this.bt_clearcompany.TabIndex = 15;
+            this.bt_clearcompany.Text = "CLEAR";
+            this.bt_clearcompany.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // bt_searchcompany
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(733, 449);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 56);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "SEARCH";
-            this.button4.UseVisualStyleBackColor = false;
+            this.bt_searchcompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_searchcompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_searchcompany.Location = new System.Drawing.Point(536, 392);
+            this.bt_searchcompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_searchcompany.Name = "bt_searchcompany";
+            this.bt_searchcompany.Size = new System.Drawing.Size(144, 45);
+            this.bt_searchcompany.TabIndex = 14;
+            this.bt_searchcompany.Text = "SEARCH";
+            this.bt_searchcompany.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // bt_deletecompany
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(529, 449);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 56);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bt_deletecompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_deletecompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_deletecompany.Location = new System.Drawing.Point(361, 392);
+            this.bt_deletecompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_deletecompany.Name = "bt_deletecompany";
+            this.bt_deletecompany.Size = new System.Drawing.Size(144, 45);
+            this.bt_deletecompany.TabIndex = 13;
+            this.bt_deletecompany.Text = "DELETE";
+            this.bt_deletecompany.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // bt_updatecompany
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(315, 449);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 56);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bt_updatecompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_updatecompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_updatecompany.Location = new System.Drawing.Point(186, 392);
+            this.bt_updatecompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_updatecompany.Name = "bt_updatecompany";
+            this.bt_updatecompany.Size = new System.Drawing.Size(144, 45);
+            this.bt_updatecompany.TabIndex = 12;
+            this.bt_updatecompany.Text = "UPDATE";
+            this.bt_updatecompany.UseVisualStyleBackColor = false;
+            this.bt_updatecompany.Click += new System.EventHandler(this.bt_updatecompany_Click);
             // 
-            // button1
+            // bt_addcompany
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(113, 449);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 56);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_addcompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_addcompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_addcompany.Location = new System.Drawing.Point(15, 392);
+            this.bt_addcompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_addcompany.Name = "bt_addcompany";
+            this.bt_addcompany.Size = new System.Drawing.Size(144, 45);
+            this.bt_addcompany.TabIndex = 11;
+            this.bt_addcompany.Text = "ADD";
+            this.bt_addcompany.UseVisualStyleBackColor = false;
+            this.bt_addcompany.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox5
+            // tb_owner_company
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox5.Location = new System.Drawing.Point(304, 304);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(758, 37);
-            this.textBox5.TabIndex = 10;
+            this.tb_owner_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_owner_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_owner_company.Location = new System.Drawing.Point(504, 244);
+            this.tb_owner_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_owner_company.Multiline = true;
+            this.tb_owner_company.Name = "tb_owner_company";
+            this.tb_owner_company.Size = new System.Drawing.Size(440, 40);
+            this.tb_owner_company.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(161, 304);
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(133, 244);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 37);
+            this.label6.Size = new System.Drawing.Size(122, 40);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Owner:-";
+            this.label6.Text = "Owner :";
             // 
-            // textBox4
+            // tb_city_company
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox4.Location = new System.Drawing.Point(304, 237);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(758, 37);
-            this.textBox4.TabIndex = 8;
+            this.tb_city_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_city_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_city_company.Location = new System.Drawing.Point(504, 190);
+            this.tb_city_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_city_company.Multiline = true;
+            this.tb_city_company.Name = "tb_city_company";
+            this.tb_city_company.Size = new System.Drawing.Size(440, 40);
+            this.tb_city_company.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(202, 237);
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(133, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 37);
+            this.label5.Size = new System.Drawing.Size(87, 40);
             this.label5.TabIndex = 7;
-            this.label5.Text = "City:-";
+            this.label5.Text = "City :";
             // 
-            // textBox3
+            // tb_address_company
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox3.Location = new System.Drawing.Point(304, 171);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(758, 37);
-            this.textBox3.TabIndex = 6;
+            this.tb_address_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_address_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_address_company.Location = new System.Drawing.Point(504, 137);
+            this.tb_address_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_address_company.Multiline = true;
+            this.tb_address_company.Name = "tb_address_company";
+            this.tb_address_company.Size = new System.Drawing.Size(440, 40);
+            this.tb_address_company.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(135, 171);
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(133, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(163, 37);
+            this.label4.Size = new System.Drawing.Size(148, 40);
             this.label4.TabIndex = 5;
             this.label4.Text = "Address:-";
             // 
-            // textBox2
+            // tb_companyname
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox2.Location = new System.Drawing.Point(304, 101);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(758, 37);
-            this.textBox2.TabIndex = 4;
+            this.tb_companyname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_companyname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_companyname.Location = new System.Drawing.Point(504, 81);
+            this.tb_companyname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_companyname.Multiline = true;
+            this.tb_companyname.Name = "tb_companyname";
+            this.tb_companyname.Size = new System.Drawing.Size(440, 40);
+            this.tb_companyname.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(148, 101);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(133, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 37);
+            this.label3.Size = new System.Drawing.Size(127, 40);
             this.label3.TabIndex = 3;
-            this.label3.Text = "CIN No:-";
+            this.label3.Text = "CIN No :";
             // 
-            // textBox1
+            // tb_cinno_company
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1.Location = new System.Drawing.Point(304, 25);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(758, 37);
-            this.textBox1.TabIndex = 2;
+            this.tb_cinno_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_cinno_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_cinno_company.Location = new System.Drawing.Point(504, 25);
+            this.tb_cinno_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_cinno_company.Multiline = true;
+            this.tb_cinno_company.Name = "tb_cinno_company";
+            this.tb_cinno_company.Size = new System.Drawing.Size(440, 40);
+            this.tb_cinno_company.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 25);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(133, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 37);
+            this.label2.Size = new System.Drawing.Size(247, 40);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Company Name:-";
+            this.label2.Text = "Company Name :";
             // 
-            // Form2
+            // bt_close_company
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.bt_close_company.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_close_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close_company.Location = new System.Drawing.Point(895, 392);
+            this.bt_close_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_close_company.Name = "bt_close_company";
+            this.bt_close_company.Size = new System.Drawing.Size(144, 45);
+            this.bt_close_company.TabIndex = 18;
+            this.bt_close_company.Text = "CLOSE";
+            this.bt_close_company.UseVisualStyleBackColor = false;
+            // 
+            // CompanyProfile
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1375, 703);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1222, 658);
+            this.Controls.Add(this.Company);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Name = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "CompanyProfile";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Company.ResumeLayout(false);
+            this.Company.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -298,23 +331,24 @@ namespace Chit_Fund_Management_System
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.GroupBox Company;
+        private System.Windows.Forms.TextBox tb_noofbranches;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button bt_clearcompany;
+        private System.Windows.Forms.Button bt_searchcompany;
+        private System.Windows.Forms.Button bt_deletecompany;
+        private System.Windows.Forms.Button bt_updatecompany;
+        private System.Windows.Forms.Button bt_addcompany;
+        private System.Windows.Forms.TextBox tb_owner_company;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_city_company;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_address_company;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_companyname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_cinno_company;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button bt_close_company;
     }
 }

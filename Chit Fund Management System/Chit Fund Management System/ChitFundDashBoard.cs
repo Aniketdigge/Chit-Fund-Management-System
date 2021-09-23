@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Chit_Fund_Management_System
 {
@@ -15,6 +7,13 @@ namespace Chit_Fund_Management_System
         public f_chit_fund_dash_board()
         {
             InitializeComponent();
+        }
+
+        private void ms_companyprofile_Click(object sender, System.EventArgs e)
+        {
+            CompanyProfile companyProfile = new CompanyProfile();
+            companyProfile.Show();
+            this.Hide();
         }
     }
 }
