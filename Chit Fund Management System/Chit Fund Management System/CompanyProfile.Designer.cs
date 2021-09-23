@@ -33,6 +33,7 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Company = new System.Windows.Forms.GroupBox();
+            this.bt_close_company = new System.Windows.Forms.Button();
             this.tb_noofbranches = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.bt_clearcompany = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@ namespace Chit_Fund_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.tb_cinno_company = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bt_close_company = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.Company.SuspendLayout();
             this.SuspendLayout();
@@ -106,11 +106,24 @@ namespace Chit_Fund_Management_System
             this.Company.TabStop = false;
             this.Company.Text = "Company";
             // 
+            // bt_close_company
+            // 
+            this.bt_close_company.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_close_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close_company.Location = new System.Drawing.Point(895, 392);
+            this.bt_close_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_close_company.Name = "bt_close_company";
+            this.bt_close_company.Size = new System.Drawing.Size(144, 45);
+            this.bt_close_company.TabIndex = 18;
+            this.bt_close_company.Text = "CLOSE";
+            this.bt_close_company.UseVisualStyleBackColor = false;
+            this.bt_close_company.Click += new System.EventHandler(this.bt_close_company_Click);
+            // 
             // tb_noofbranches
             // 
             this.tb_noofbranches.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_noofbranches.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_noofbranches.Location = new System.Drawing.Point(504, 309);
+            this.tb_noofbranches.Location = new System.Drawing.Point(504, 298);
             this.tb_noofbranches.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_noofbranches.Multiline = true;
             this.tb_noofbranches.Name = "tb_noofbranches";
@@ -121,9 +134,9 @@ namespace Chit_Fund_Management_System
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(133, 309);
+            this.label7.Location = new System.Drawing.Point(132, 298);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(247, 40);
+            this.label7.Size = new System.Drawing.Size(242, 40);
             this.label7.TabIndex = 16;
             this.label7.Text = "No Of Branches :";
             // 
@@ -138,6 +151,7 @@ namespace Chit_Fund_Management_System
             this.bt_clearcompany.TabIndex = 15;
             this.bt_clearcompany.Text = "CLEAR";
             this.bt_clearcompany.UseVisualStyleBackColor = false;
+            this.bt_clearcompany.Click += new System.EventHandler(this.bt_clearcompany_Click);
             // 
             // bt_searchcompany
             // 
@@ -150,6 +164,7 @@ namespace Chit_Fund_Management_System
             this.bt_searchcompany.TabIndex = 14;
             this.bt_searchcompany.Text = "SEARCH";
             this.bt_searchcompany.UseVisualStyleBackColor = false;
+            this.bt_searchcompany.Click += new System.EventHandler(this.bt_searchcompany_Click);
             // 
             // bt_deletecompany
             // 
@@ -162,6 +177,7 @@ namespace Chit_Fund_Management_System
             this.bt_deletecompany.TabIndex = 13;
             this.bt_deletecompany.Text = "DELETE";
             this.bt_deletecompany.UseVisualStyleBackColor = false;
+            this.bt_deletecompany.Click += new System.EventHandler(this.bt_deletecompany_Click);
             // 
             // bt_updatecompany
             // 
@@ -206,7 +222,7 @@ namespace Chit_Fund_Management_System
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(133, 244);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 40);
+            this.label6.Size = new System.Drawing.Size(119, 40);
             this.label6.TabIndex = 9;
             this.label6.Text = "Owner :";
             // 
@@ -227,7 +243,7 @@ namespace Chit_Fund_Management_System
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(133, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 40);
+            this.label5.Size = new System.Drawing.Size(86, 40);
             this.label5.TabIndex = 7;
             this.label5.Text = "City :";
             // 
@@ -248,7 +264,7 @@ namespace Chit_Fund_Management_System
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(133, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 40);
+            this.label4.Size = new System.Drawing.Size(145, 40);
             this.label4.TabIndex = 5;
             this.label4.Text = "Address:-";
             // 
@@ -290,21 +306,9 @@ namespace Chit_Fund_Management_System
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(133, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 40);
+            this.label2.Size = new System.Drawing.Size(241, 40);
             this.label2.TabIndex = 0;
             this.label2.Text = "Company Name :";
-            // 
-            // bt_close_company
-            // 
-            this.bt_close_company.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_close_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_close_company.Location = new System.Drawing.Point(895, 392);
-            this.bt_close_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_close_company.Name = "bt_close_company";
-            this.bt_close_company.Size = new System.Drawing.Size(144, 45);
-            this.bt_close_company.TabIndex = 18;
-            this.bt_close_company.Text = "CLOSE";
-            this.bt_close_company.UseVisualStyleBackColor = false;
             // 
             // CompanyProfile
             // 
