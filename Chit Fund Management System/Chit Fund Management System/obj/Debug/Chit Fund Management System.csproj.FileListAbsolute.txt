@@ -34,3 +34,4 @@ F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.pdb
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\bin\Debug\Chit Fund Management System.pdb
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csprojAssemblyReference.cache
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.CompanyProfile.resources

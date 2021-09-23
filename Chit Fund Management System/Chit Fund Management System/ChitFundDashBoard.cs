@@ -8,5 +8,12 @@ namespace Chit_Fund_Management_System
         {
             InitializeComponent();
         }
+
+        private void ms_companyprofile_Click(object sender, System.EventArgs e)
+        {
+            CompanyProfile companyProfile = new CompanyProfile();
+            companyProfile.Show();
+            this.Hide();
+        }
     }
 }
