@@ -34,7 +34,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@noofbranches", tb_noofbranches.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Company Created Successfully....");
+                MessageBox.Show("Company Saved Successfully....");
             }
             catch (Exception ex)
             {
@@ -56,7 +56,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@noofbranches", tb_noofbranches.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Update Successfully....");
+                MessageBox.Show("Updated Successfully....");
             }
             catch (Exception ex)
             {

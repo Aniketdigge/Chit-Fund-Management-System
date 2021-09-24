@@ -1,7 +1,7 @@
 ﻿
 namespace Chit_Fund_Management_System
 {
-    partial class Form1
+    partial class f_branch_profile
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,23 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_branch_profile));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.bt_close_branch = new System.Windows.Forms.Button();
+            this.bt_clear_branch = new System.Windows.Forms.Button();
+            this.bt_search_branch = new System.Windows.Forms.Button();
+            this.bt_delete_branch = new System.Windows.Forms.Button();
+            this.bt_update_branch = new System.Windows.Forms.Button();
+            this.bt_add_branch = new System.Windows.Forms.Button();
+            this.tb_branch_manager = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_branch_city = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_branch_address = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_branch_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -55,202 +55,229 @@ namespace Chit_Fund_Management_System
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(11, 12);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1393, 87);
+            this.panel1.Size = new System.Drawing.Size(1197, 70);
             this.panel1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(537, 10);
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(394, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 64);
+            this.label1.Size = new System.Drawing.Size(352, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "Branch Profile";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.bt_close_branch);
+            this.groupBox1.Controls.Add(this.bt_clear_branch);
+            this.groupBox1.Controls.Add(this.bt_search_branch);
+            this.groupBox1.Controls.Add(this.bt_delete_branch);
+            this.groupBox1.Controls.Add(this.bt_update_branch);
+            this.groupBox1.Controls.Add(this.bt_add_branch);
+            this.groupBox1.Controls.Add(this.tb_branch_manager);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.tb_branch_city);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.tb_branch_address);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tb_branch_id);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(120, 132);
+            this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(131, 111);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1197, 552);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(968, 447);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Branch ";
             // 
-            // button6
+            // bt_close_branch
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(507, 472);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(162, 56);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "CLOSE";
-            this.button6.UseVisualStyleBackColor = false;
+            this.bt_close_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_close_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close_branch.Location = new System.Drawing.Point(413, 364);
+            this.bt_close_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_close_branch.Name = "bt_close_branch";
+            this.bt_close_branch.Size = new System.Drawing.Size(126, 45);
+            this.bt_close_branch.TabIndex = 16;
+            this.bt_close_branch.Text = "CLOSE";
+            this.bt_close_branch.UseVisualStyleBackColor = false;
+            this.bt_close_branch.Click += new System.EventHandler(this.bt_close_branch_Click);
             // 
-            // button5
+            // bt_clear_branch
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(930, 380);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 56);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "CLEAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.bt_clear_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_clear_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_clear_branch.Location = new System.Drawing.Point(743, 286);
+            this.bt_clear_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_clear_branch.Name = "bt_clear_branch";
+            this.bt_clear_branch.Size = new System.Drawing.Size(126, 45);
+            this.bt_clear_branch.TabIndex = 15;
+            this.bt_clear_branch.Text = "CLEAR";
+            this.bt_clear_branch.UseVisualStyleBackColor = false;
+            this.bt_clear_branch.Click += new System.EventHandler(this.bt_clear_branch_Click);
             // 
-            // button4
+            // bt_search_branch
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(711, 380);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 56);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "SEARCH";
-            this.button4.UseVisualStyleBackColor = false;
+            this.bt_search_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_search_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_search_branch.Location = new System.Drawing.Point(577, 286);
+            this.bt_search_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_search_branch.Name = "bt_search_branch";
+            this.bt_search_branch.Size = new System.Drawing.Size(126, 45);
+            this.bt_search_branch.TabIndex = 14;
+            this.bt_search_branch.Text = "SEARCH";
+            this.bt_search_branch.UseVisualStyleBackColor = false;
+            this.bt_search_branch.Click += new System.EventHandler(this.bt_search_branch_Click);
             // 
-            // button3
+            // bt_delete_branch
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(507, 380);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 56);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bt_delete_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_delete_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_delete_branch.Location = new System.Drawing.Point(413, 286);
+            this.bt_delete_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_delete_branch.Name = "bt_delete_branch";
+            this.bt_delete_branch.Size = new System.Drawing.Size(126, 45);
+            this.bt_delete_branch.TabIndex = 13;
+            this.bt_delete_branch.Text = "DELETE";
+            this.bt_delete_branch.UseVisualStyleBackColor = false;
+            this.bt_delete_branch.Click += new System.EventHandler(this.bt_delete_branch_Click);
             // 
-            // button2
+            // bt_update_branch
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(293, 380);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 56);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bt_update_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_update_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_update_branch.Location = new System.Drawing.Point(248, 286);
+            this.bt_update_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_update_branch.Name = "bt_update_branch";
+            this.bt_update_branch.Size = new System.Drawing.Size(126, 45);
+            this.bt_update_branch.TabIndex = 12;
+            this.bt_update_branch.Text = "UPDATE";
+            this.bt_update_branch.UseVisualStyleBackColor = false;
+            this.bt_update_branch.Click += new System.EventHandler(this.bt_update_branch_Click);
             // 
-            // button1
+            // bt_add_branch
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(91, 380);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 56);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bt_add_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_add_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_add_branch.Location = new System.Drawing.Point(84, 286);
+            this.bt_add_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_add_branch.Name = "bt_add_branch";
+            this.bt_add_branch.Size = new System.Drawing.Size(126, 45);
+            this.bt_add_branch.TabIndex = 11;
+            this.bt_add_branch.Text = "ADD";
+            this.bt_add_branch.UseVisualStyleBackColor = false;
+            this.bt_add_branch.Click += new System.EventHandler(this.bt_add_branch_Click);
             // 
-            // textBox5
+            // tb_branch_manager
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox5.Location = new System.Drawing.Point(342, 254);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(758, 37);
-            this.textBox5.TabIndex = 10;
+            this.tb_branch_manager.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_branch_manager.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_branch_manager.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_branch_manager.Location = new System.Drawing.Point(443, 203);
+            this.tb_branch_manager.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_branch_manager.Multiline = true;
+            this.tb_branch_manager.Name = "tb_branch_manager";
+            this.tb_branch_manager.Size = new System.Drawing.Size(375, 33);
+            this.tb_branch_manager.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(47, 254);
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(128, 203);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(289, 37);
+            this.label6.Size = new System.Drawing.Size(210, 33);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Branch Manager:-";
+            this.label6.Text = "Branch Manager :";
             // 
-            // textBox4
+            // tb_branch_city
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox4.Location = new System.Drawing.Point(342, 179);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(758, 37);
-            this.textBox4.TabIndex = 8;
+            this.tb_branch_city.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_branch_city.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_branch_city.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_branch_city.Location = new System.Drawing.Point(443, 143);
+            this.tb_branch_city.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_branch_city.Multiline = true;
+            this.tb_branch_city.Name = "tb_branch_city";
+            this.tb_branch_city.Size = new System.Drawing.Size(375, 33);
+            this.tb_branch_city.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(122, 179);
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(128, 143);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(214, 37);
+            this.label5.Size = new System.Drawing.Size(159, 33);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Branch City:-";
+            this.label5.Text = "Branch City :";
             // 
-            // textBox2
+            // tb_branch_address
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox2.Location = new System.Drawing.Point(342, 101);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(758, 37);
-            this.textBox2.TabIndex = 4;
+            this.tb_branch_address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_branch_address.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_branch_address.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_branch_address.Location = new System.Drawing.Point(443, 81);
+            this.tb_branch_address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_branch_address.Multiline = true;
+            this.tb_branch_address.Name = "tb_branch_address";
+            this.tb_branch_address.Size = new System.Drawing.Size(375, 33);
+            this.tb_branch_address.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(55, 101);
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(128, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(281, 37);
+            this.label3.Size = new System.Drawing.Size(208, 33);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Branch Address:-";
+            this.label3.Text = "Branch Address :";
             // 
-            // textBox1
+            // tb_branch_id
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1.Location = new System.Drawing.Point(342, 25);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(758, 37);
-            this.textBox1.TabIndex = 2;
+            this.tb_branch_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_branch_id.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_branch_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_branch_id.Location = new System.Drawing.Point(443, 20);
+            this.tb_branch_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_branch_id.Multiline = true;
+            this.tb_branch_id.Name = "tb_branch_id";
+            this.tb_branch_id.Size = new System.Drawing.Size(375, 33);
+            this.tb_branch_id.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 25);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(128, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 37);
+            this.label2.Size = new System.Drawing.Size(138, 33);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Branch ID:-";
+            this.label2.Text = "Branch ID :";
             // 
-            // Form1
+            // f_branch_profile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1416, 723);
+            this.ClientSize = new System.Drawing.Size(1218, 649);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "f_branch_profile";
+            this.Text = "Branch Profile";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -264,19 +291,19 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button bt_close_branch;
+        private System.Windows.Forms.Button bt_clear_branch;
+        private System.Windows.Forms.Button bt_search_branch;
+        private System.Windows.Forms.Button bt_delete_branch;
+        private System.Windows.Forms.Button bt_update_branch;
+        private System.Windows.Forms.Button bt_add_branch;
+        private System.Windows.Forms.TextBox tb_branch_manager;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_branch_city;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_branch_address;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_branch_id;
         private System.Windows.Forms.Label label2;
     }
 }
