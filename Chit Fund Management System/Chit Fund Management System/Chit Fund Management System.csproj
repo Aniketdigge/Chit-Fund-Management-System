@@ -52,6 +52,12 @@
     <Compile Include="ChitFundDashBoard.Designer.cs">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Branch Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Branch Profile.Designer.cs">
+      <DependentUpon>Branch Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ChitFundDashBoard.resx">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branch Profile.resx">
+      <DependentUpon>Branch Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
