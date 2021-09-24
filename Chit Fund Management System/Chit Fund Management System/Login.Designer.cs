@@ -55,11 +55,11 @@ namespace Chit_Fund_Management_System
             this.logingb.Controls.Add(this.linklb_newuser);
             this.logingb.Controls.Add(this.label2);
             this.logingb.Controls.Add(this.label4);
-            this.logingb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logingb.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logingb.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.logingb.Location = new System.Drawing.Point(254, 133);
+            this.logingb.Location = new System.Drawing.Point(208, 128);
             this.logingb.Name = "logingb";
-            this.logingb.Size = new System.Drawing.Size(593, 425);
+            this.logingb.Size = new System.Drawing.Size(517, 349);
             this.logingb.TabIndex = 0;
             this.logingb.TabStop = false;
             this.logingb.Text = "LOGIN";
@@ -67,7 +67,7 @@ namespace Chit_Fund_Management_System
             // tb_passwordlogin
             // 
             this.tb_passwordlogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_passwordlogin.Location = new System.Drawing.Point(333, 194);
+            this.tb_passwordlogin.Location = new System.Drawing.Point(268, 170);
             this.tb_passwordlogin.Multiline = true;
             this.tb_passwordlogin.Name = "tb_passwordlogin";
             this.tb_passwordlogin.PasswordChar = '*';
@@ -77,7 +77,7 @@ namespace Chit_Fund_Management_System
             // tb_usernamelogin
             // 
             this.tb_usernamelogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_usernamelogin.Location = new System.Drawing.Point(333, 79);
+            this.tb_usernamelogin.Location = new System.Drawing.Point(268, 76);
             this.tb_usernamelogin.Multiline = true;
             this.tb_usernamelogin.Name = "tb_usernamelogin";
             this.tb_usernamelogin.Size = new System.Drawing.Size(196, 31);
@@ -87,7 +87,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_clearlogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_clearlogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_clearlogin.Location = new System.Drawing.Point(390, 266);
+            this.bt_clearlogin.Location = new System.Drawing.Point(325, 246);
             this.bt_clearlogin.Name = "bt_clearlogin";
             this.bt_clearlogin.Size = new System.Drawing.Size(139, 49);
             this.bt_clearlogin.TabIndex = 14;
@@ -98,7 +98,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_login.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_login.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_login.Location = new System.Drawing.Point(53, 266);
+            this.bt_login.Location = new System.Drawing.Point(53, 246);
             this.bt_login.Name = "bt_login";
             this.bt_login.Size = new System.Drawing.Size(139, 49);
             this.bt_login.TabIndex = 13;
@@ -109,42 +109,42 @@ namespace Chit_Fund_Management_System
             // linklb_newuser
             // 
             this.linklb_newuser.AutoSize = true;
-            this.linklb_newuser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklb_newuser.Location = new System.Drawing.Point(246, 383);
+            this.linklb_newuser.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linklb_newuser.Location = new System.Drawing.Point(213, 276);
             this.linklb_newuser.Name = "linklb_newuser";
-            this.linklb_newuser.Size = new System.Drawing.Size(100, 24);
+            this.linklb_newuser.Size = new System.Drawing.Size(85, 19);
             this.linklb_newuser.TabIndex = 12;
             this.linklb_newuser.TabStop = true;
             this.linklb_newuser.Text = "New User";
-            this.linklb_newuser.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linklb_newuser.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             this.linklb_newuser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_newuser_LinkClicked);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(45, 183);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(45, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 46);
+            this.label2.Size = new System.Drawing.Size(195, 46);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Password :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(45, 67);
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(45, 64);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(243, 46);
+            this.label4.Size = new System.Drawing.Size(211, 46);
             this.label4.TabIndex = 0;
-            this.label4.Text = "User Name:";
+            this.label4.Text = "User Name :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(180, 7);
+            this.label1.Location = new System.Drawing.Point(104, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(726, 55);
             this.label1.TabIndex = 1;
@@ -166,7 +166,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1124, 626);
+            this.ClientSize = new System.Drawing.Size(944, 603);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logingb);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
