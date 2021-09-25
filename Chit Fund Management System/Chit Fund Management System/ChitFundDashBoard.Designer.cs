@@ -137,6 +137,7 @@ namespace Chit_Fund_Management_System
             this.memberProfileToolStripMenuItem.Name = "memberProfileToolStripMenuItem";
             this.memberProfileToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
             this.memberProfileToolStripMenuItem.Text = "Member Profile";
+            this.memberProfileToolStripMenuItem.Click += new System.EventHandler(this.memberProfileToolStripMenuItem_Click);
             // 
             // memberTransactionLogToolStripMenuItem
             // 
