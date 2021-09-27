@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agent Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent Profile.Designer.cs">
+      <DependentUpon>Agent Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChitFundDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Agent Profile.resx">
+      <DependentUpon>Agent Profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChitFundDashBoard.resx">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
     </EmbeddedResource>

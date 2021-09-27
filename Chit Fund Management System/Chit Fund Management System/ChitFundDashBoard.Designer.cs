@@ -187,6 +187,7 @@ namespace Chit_Fund_Management_System
             this.agentProfileToolStripMenuItem.Name = "agentProfileToolStripMenuItem";
             this.agentProfileToolStripMenuItem.Size = new System.Drawing.Size(246, 28);
             this.agentProfileToolStripMenuItem.Text = "Agent Profile";
+            this.agentProfileToolStripMenuItem.Click += new System.EventHandler(this.agentProfileToolStripMenuItem_Click);
             // 
             // agentCommissionToolStripMenuItem
             // 

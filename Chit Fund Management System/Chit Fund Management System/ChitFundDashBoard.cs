@@ -36,5 +36,12 @@ namespace Chit_Fund_Management_System
             f_Member_Profile.Show();
             this.Hide();
         }
+
+        private void agentProfileToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Agent_Profile agent_Profile = new Agent_Profile();
+            agent_Profile.Show();
+            this.Hide();
+        }
     }
 }
