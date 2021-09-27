@@ -29,5 +29,12 @@ namespace Chit_Fund_Management_System
             f_Login.Show();
             this.Hide();
         }
+
+        private void memberProfileToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            f_member_profile f_Member_Profile = new f_member_profile();
+            f_Member_Profile.Show();
+            this.Hide();
+        }
     }
 }

@@ -69,7 +69,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@branchid", tb_branch_id.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Delete Successfully....");
+                MessageBox.Show("Deleted Successfully....");
             }
             catch (Exception ex)
             {

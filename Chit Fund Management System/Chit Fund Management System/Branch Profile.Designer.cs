@@ -75,17 +75,17 @@ namespace Chit_Fund_Management_System
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.groupBox1.Controls.Add(this.bt_close_branch);
-            this.groupBox1.Controls.Add(this.bt_clear_branch);
-            this.groupBox1.Controls.Add(this.bt_search_branch);
-            this.groupBox1.Controls.Add(this.bt_delete_branch);
-            this.groupBox1.Controls.Add(this.bt_update_branch);
             this.groupBox1.Controls.Add(this.bt_add_branch);
             this.groupBox1.Controls.Add(this.tb_branch_manager);
+            this.groupBox1.Controls.Add(this.bt_update_branch);
             this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.bt_clear_branch);
             this.groupBox1.Controls.Add(this.tb_branch_city);
             this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.bt_search_branch);
             this.groupBox1.Controls.Add(this.tb_branch_address);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.bt_delete_branch);
             this.groupBox1.Controls.Add(this.tb_branch_id);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -93,7 +93,7 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(968, 447);
+            this.groupBox1.Size = new System.Drawing.Size(968, 457);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Branch ";
@@ -102,7 +102,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_close_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_close_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_close_branch.Location = new System.Drawing.Point(413, 364);
+            this.bt_close_branch.Location = new System.Drawing.Point(425, 363);
             this.bt_close_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_close_branch.Name = "bt_close_branch";
             this.bt_close_branch.Size = new System.Drawing.Size(126, 45);
@@ -115,7 +115,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_clear_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_clear_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_clear_branch.Location = new System.Drawing.Point(743, 286);
+            this.bt_clear_branch.Location = new System.Drawing.Point(752, 291);
             this.bt_clear_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_clear_branch.Name = "bt_clear_branch";
             this.bt_clear_branch.Size = new System.Drawing.Size(126, 45);
@@ -128,7 +128,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_search_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_search_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_search_branch.Location = new System.Drawing.Point(577, 286);
+            this.bt_search_branch.Location = new System.Drawing.Point(591, 291);
             this.bt_search_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_search_branch.Name = "bt_search_branch";
             this.bt_search_branch.Size = new System.Drawing.Size(126, 45);
@@ -141,7 +141,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_delete_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_delete_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_delete_branch.Location = new System.Drawing.Point(413, 286);
+            this.bt_delete_branch.Location = new System.Drawing.Point(425, 291);
             this.bt_delete_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_delete_branch.Name = "bt_delete_branch";
             this.bt_delete_branch.Size = new System.Drawing.Size(126, 45);
@@ -154,7 +154,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_update_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_update_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_update_branch.Location = new System.Drawing.Point(248, 286);
+            this.bt_update_branch.Location = new System.Drawing.Point(256, 291);
             this.bt_update_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_update_branch.Name = "bt_update_branch";
             this.bt_update_branch.Size = new System.Drawing.Size(126, 45);
@@ -167,7 +167,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_add_branch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_add_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_add_branch.Location = new System.Drawing.Point(84, 286);
+            this.bt_add_branch.Location = new System.Drawing.Point(80, 291);
             this.bt_add_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_add_branch.Name = "bt_add_branch";
             this.bt_add_branch.Size = new System.Drawing.Size(126, 45);
