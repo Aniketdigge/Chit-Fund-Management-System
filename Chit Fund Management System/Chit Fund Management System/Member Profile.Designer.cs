@@ -55,6 +55,10 @@ namespace Chit_Fund_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.tb_member_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_member_group_id = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtp_member_entry_date = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -63,10 +67,10 @@ namespace Chit_Fund_Management_System
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 10);
+            this.panel1.Location = new System.Drawing.Point(3, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1171, 70);
+            this.panel1.Size = new System.Drawing.Size(1177, 70);
             this.panel1.TabIndex = 3;
             // 
             // label1
@@ -82,6 +86,10 @@ namespace Chit_Fund_Management_System
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.dtp_member_entry_date);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.tb_member_group_id);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.bt_member_close);
             this.groupBox1.Controls.Add(this.tb_loan_amount);
             this.groupBox1.Controls.Add(this.bt_member_clear);
@@ -109,7 +117,7 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1115, 478);
+            this.groupBox1.Size = new System.Drawing.Size(1115, 531);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member";
@@ -118,7 +126,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_member_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_member_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_member_close.Location = new System.Drawing.Point(497, 382);
+            this.bt_member_close.Location = new System.Drawing.Point(496, 462);
             this.bt_member_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_member_close.Name = "bt_member_close";
             this.bt_member_close.Size = new System.Drawing.Size(126, 45);
@@ -142,7 +150,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_member_clear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_member_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_member_clear.Location = new System.Drawing.Point(853, 300);
+            this.bt_member_clear.Location = new System.Drawing.Point(831, 387);
             this.bt_member_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_member_clear.Name = "bt_member_clear";
             this.bt_member_clear.Size = new System.Drawing.Size(126, 45);
@@ -165,7 +173,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_member_update.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_member_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_member_update.Location = new System.Drawing.Point(322, 300);
+            this.bt_member_update.Location = new System.Drawing.Point(329, 387);
             this.bt_member_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_member_update.Name = "bt_member_update";
             this.bt_member_update.Size = new System.Drawing.Size(126, 45);
@@ -178,7 +186,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_member_add.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_member_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_member_add.Location = new System.Drawing.Point(148, 300);
+            this.bt_member_add.Location = new System.Drawing.Point(165, 387);
             this.bt_member_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_member_add.Name = "bt_member_add";
             this.bt_member_add.Size = new System.Drawing.Size(126, 45);
@@ -191,7 +199,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_member_search.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_member_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_member_search.Location = new System.Drawing.Point(682, 300);
+            this.bt_member_search.Location = new System.Drawing.Point(665, 387);
             this.bt_member_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_member_search.Name = "bt_member_search";
             this.bt_member_search.Size = new System.Drawing.Size(126, 45);
@@ -215,7 +223,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_member_delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_member_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_member_delete.Location = new System.Drawing.Point(497, 300);
+            this.bt_member_delete.Location = new System.Drawing.Point(496, 387);
             this.bt_member_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_member_delete.Name = "bt_member_delete";
             this.bt_member_delete.Size = new System.Drawing.Size(126, 45);
@@ -280,7 +288,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_member_mobile_no.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_member_mobile_no.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_member_mobile_no.Location = new System.Drawing.Point(231, 208);
+            this.tb_member_mobile_no.Location = new System.Drawing.Point(250, 144);
             this.tb_member_mobile_no.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_member_mobile_no.Multiline = true;
             this.tb_member_mobile_no.Name = "tb_member_mobile_no";
@@ -291,7 +299,7 @@ namespace Chit_Fund_Management_System
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 208);
+            this.label6.Location = new System.Drawing.Point(12, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(232, 33);
             this.label6.TabIndex = 9;
@@ -301,11 +309,11 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_member_address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_member_address.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_member_address.Location = new System.Drawing.Point(231, 152);
+            this.tb_member_address.Location = new System.Drawing.Point(250, 269);
             this.tb_member_address.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_member_address.Multiline = true;
             this.tb_member_address.Name = "tb_member_address";
-            this.tb_member_address.Size = new System.Drawing.Size(270, 33);
+            this.tb_member_address.Size = new System.Drawing.Size(270, 87);
             this.tb_member_address.TabIndex = 8;
             // 
             // label5
@@ -322,7 +330,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_member_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_member_name.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_member_name.Location = new System.Drawing.Point(231, 83);
+            this.tb_member_name.Location = new System.Drawing.Point(250, 83);
             this.tb_member_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_member_name.Multiline = true;
             this.tb_member_name.Name = "tb_member_name";
@@ -333,7 +341,7 @@ namespace Chit_Fund_Management_System
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 148);
+            this.label3.Location = new System.Drawing.Point(12, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(216, 33);
             this.label3.TabIndex = 3;
@@ -343,7 +351,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_member_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_member_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_member_id.Location = new System.Drawing.Point(231, 22);
+            this.tb_member_id.Location = new System.Drawing.Point(250, 22);
             this.tb_member_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_member_id.Multiline = true;
             this.tb_member_id.Name = "tb_member_id";
@@ -360,13 +368,51 @@ namespace Chit_Fund_Management_System
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 204);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(127, 33);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Group ID :";
+            // 
+            // tb_member_group_id
+            // 
+            this.tb_member_group_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_member_group_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_member_group_id.Location = new System.Drawing.Point(250, 204);
+            this.tb_member_group_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_member_group_id.Multiline = true;
+            this.tb_member_group_id.Name = "tb_member_group_id";
+            this.tb_member_group_id.Size = new System.Drawing.Size(270, 33);
+            this.tb_member_group_id.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(564, 269);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(239, 33);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Member Entry Date :";
+            // 
+            // dtp_member_entry_date
+            // 
+            this.dtp_member_entry_date.Location = new System.Drawing.Point(805, 269);
+            this.dtp_member_entry_date.Name = "dtp_member_entry_date";
+            this.dtp_member_entry_date.Size = new System.Drawing.Size(270, 30);
+            this.dtp_member_entry_date.TabIndex = 26;
+            // 
             // f_member_profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1183, 627);
+            this.ClientSize = new System.Drawing.Size(1184, 662);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -409,5 +455,9 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Button bt_member_delete;
         private System.Windows.Forms.Button bt_member_add;
         private System.Windows.Forms.Button bt_member_update;
+        private System.Windows.Forms.TextBox tb_member_group_id;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DateTimePicker dtp_member_entry_date;
     }
 }
