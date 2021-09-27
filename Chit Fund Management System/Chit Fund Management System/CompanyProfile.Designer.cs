@@ -101,7 +101,7 @@ namespace Chit_Fund_Management_System
             this.Company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Company.Name = "Company";
             this.Company.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Company.Size = new System.Drawing.Size(925, 527);
+            this.Company.Size = new System.Drawing.Size(925, 543);
             this.Company.TabIndex = 2;
             this.Company.TabStop = false;
             this.Company.Text = "Company";
@@ -110,7 +110,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_close_company.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_close_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_close_company.Location = new System.Drawing.Point(395, 460);
+            this.bt_close_company.Location = new System.Drawing.Point(395, 476);
             this.bt_close_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_close_company.Name = "bt_close_company";
             this.bt_close_company.Size = new System.Drawing.Size(126, 45);
@@ -123,7 +123,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_noofbranches.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_noofbranches.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_noofbranches.Location = new System.Drawing.Point(441, 298);
+            this.tb_noofbranches.Location = new System.Drawing.Point(441, 341);
             this.tb_noofbranches.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_noofbranches.Multiline = true;
             this.tb_noofbranches.Name = "tb_noofbranches";
@@ -134,7 +134,7 @@ namespace Chit_Fund_Management_System
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(115, 298);
+            this.label7.Location = new System.Drawing.Point(116, 341);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(204, 33);
             this.label7.TabIndex = 16;
@@ -144,7 +144,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_clearcompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_clearcompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_clearcompany.Location = new System.Drawing.Point(724, 392);
+            this.bt_clearcompany.Location = new System.Drawing.Point(731, 404);
             this.bt_clearcompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_clearcompany.Name = "bt_clearcompany";
             this.bt_clearcompany.Size = new System.Drawing.Size(126, 45);
@@ -157,7 +157,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_searchcompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_searchcompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_searchcompany.Location = new System.Drawing.Point(561, 392);
+            this.bt_searchcompany.Location = new System.Drawing.Point(562, 404);
             this.bt_searchcompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_searchcompany.Name = "bt_searchcompany";
             this.bt_searchcompany.Size = new System.Drawing.Size(126, 45);
@@ -170,7 +170,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_deletecompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_deletecompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_deletecompany.Location = new System.Drawing.Point(395, 392);
+            this.bt_deletecompany.Location = new System.Drawing.Point(395, 404);
             this.bt_deletecompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_deletecompany.Name = "bt_deletecompany";
             this.bt_deletecompany.Size = new System.Drawing.Size(126, 45);
@@ -183,7 +183,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_updatecompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_updatecompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_updatecompany.Location = new System.Drawing.Point(230, 392);
+            this.bt_updatecompany.Location = new System.Drawing.Point(229, 404);
             this.bt_updatecompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_updatecompany.Name = "bt_updatecompany";
             this.bt_updatecompany.Size = new System.Drawing.Size(126, 45);
@@ -196,7 +196,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_addcompany.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_addcompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_addcompany.Location = new System.Drawing.Point(66, 392);
+            this.bt_addcompany.Location = new System.Drawing.Point(63, 404);
             this.bt_addcompany.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_addcompany.Name = "bt_addcompany";
             this.bt_addcompany.Size = new System.Drawing.Size(126, 45);
@@ -209,7 +209,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_owner_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_owner_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_owner_company.Location = new System.Drawing.Point(441, 244);
+            this.tb_owner_company.Location = new System.Drawing.Point(441, 135);
             this.tb_owner_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_owner_company.Multiline = true;
             this.tb_owner_company.Name = "tb_owner_company";
@@ -220,7 +220,7 @@ namespace Chit_Fund_Management_System
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(116, 244);
+            this.label6.Location = new System.Drawing.Point(116, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 33);
             this.label6.TabIndex = 9;
@@ -230,7 +230,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_city_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_city_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_city_company.Location = new System.Drawing.Point(441, 190);
+            this.tb_city_company.Location = new System.Drawing.Point(441, 289);
             this.tb_city_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_city_company.Multiline = true;
             this.tb_city_company.Name = "tb_city_company";
@@ -241,7 +241,7 @@ namespace Chit_Fund_Management_System
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(116, 190);
+            this.label5.Location = new System.Drawing.Point(116, 285);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 33);
             this.label5.TabIndex = 7;
@@ -252,18 +252,18 @@ namespace Chit_Fund_Management_System
             this.tb_address_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_address_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_address_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_address_company.Location = new System.Drawing.Point(441, 137);
+            this.tb_address_company.Location = new System.Drawing.Point(441, 190);
             this.tb_address_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_address_company.Multiline = true;
             this.tb_address_company.Name = "tb_address_company";
-            this.tb_address_company.Size = new System.Drawing.Size(386, 33);
+            this.tb_address_company.Size = new System.Drawing.Size(386, 80);
             this.tb_address_company.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(116, 137);
+            this.label4.Location = new System.Drawing.Point(116, 190);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 33);
             this.label4.TabIndex = 5;
@@ -319,7 +319,7 @@ namespace Chit_Fund_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1070, 658);
+            this.ClientSize = new System.Drawing.Size(1070, 668);
             this.Controls.Add(this.Company);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
