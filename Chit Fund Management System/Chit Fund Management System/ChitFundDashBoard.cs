@@ -43,5 +43,12 @@ namespace Chit_Fund_Management_System
             agent_Profile.Show();
             this.Hide();
         }
+
+        private void branchReportToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Branch_Repo branch_Repo = new Branch_Repo();
+            branch_Repo.Show();
+            this.Hide();
+        }
     }
 }
