@@ -89,6 +89,12 @@
     <Compile Include="Branch Profile.Designer.cs">
       <DependentUpon>Branch Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Profile.Designer.cs">
+      <DependentUpon>Employee Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Member Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Branch Profile.resx">
       <DependentUpon>Branch Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Profile.resx">
+      <DependentUpon>Employee Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Member Profile.resx">
       <DependentUpon>Member Profile.cs</DependentUpon>
