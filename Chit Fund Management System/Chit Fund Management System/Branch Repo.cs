@@ -25,18 +25,8 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                con.Open();
-                cmd = new OleDbCommand("SELECT * from BranchTB where Branch_id = '" + tb_branch_report_branch_id.Text + "'", con);
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    Branch_Report_View branch_Report_View = new Branch_Report_View();
-                    branch_Report_View.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Branch is not exist...");
-                }
+                Branch_Report_View branch_Report_View = new Branch_Report_View();
+                branch_Report_View.Show();
             }
             catch (Exception ex)
             {

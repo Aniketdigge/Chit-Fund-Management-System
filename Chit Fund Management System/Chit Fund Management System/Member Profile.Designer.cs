@@ -33,6 +33,10 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtp_member_entry_date = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tb_member_group_id = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.bt_member_close = new System.Windows.Forms.Button();
             this.tb_loan_amount = new System.Windows.Forms.TextBox();
             this.bt_member_clear = new System.Windows.Forms.Button();
@@ -55,10 +59,6 @@ namespace Chit_Fund_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.tb_member_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tb_member_group_id = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dtp_member_entry_date = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -121,6 +121,44 @@ namespace Chit_Fund_Management_System
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member";
+            // 
+            // dtp_member_entry_date
+            // 
+            this.dtp_member_entry_date.Location = new System.Drawing.Point(805, 269);
+            this.dtp_member_entry_date.Name = "dtp_member_entry_date";
+            this.dtp_member_entry_date.Size = new System.Drawing.Size(270, 30);
+            this.dtp_member_entry_date.TabIndex = 26;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(564, 269);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(239, 33);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Member Entry Date :";
+            // 
+            // tb_member_group_id
+            // 
+            this.tb_member_group_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_member_group_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_member_group_id.Location = new System.Drawing.Point(250, 204);
+            this.tb_member_group_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_member_group_id.Multiline = true;
+            this.tb_member_group_id.Name = "tb_member_group_id";
+            this.tb_member_group_id.Size = new System.Drawing.Size(270, 33);
+            this.tb_member_group_id.TabIndex = 24;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(12, 204);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(127, 33);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Group ID :";
             // 
             // bt_member_close
             // 
@@ -367,44 +405,6 @@ namespace Chit_Fund_Management_System
             this.label2.Size = new System.Drawing.Size(146, 33);
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 204);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 33);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Group ID :";
-            // 
-            // tb_member_group_id
-            // 
-            this.tb_member_group_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_member_group_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_member_group_id.Location = new System.Drawing.Point(250, 204);
-            this.tb_member_group_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_member_group_id.Multiline = true;
-            this.tb_member_group_id.Name = "tb_member_group_id";
-            this.tb_member_group_id.Size = new System.Drawing.Size(270, 33);
-            this.tb_member_group_id.TabIndex = 24;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(564, 269);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(239, 33);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Member Entry Date :";
-            // 
-            // dtp_member_entry_date
-            // 
-            this.dtp_member_entry_date.Location = new System.Drawing.Point(805, 269);
-            this.dtp_member_entry_date.Name = "dtp_member_entry_date";
-            this.dtp_member_entry_date.Size = new System.Drawing.Size(270, 30);
-            this.dtp_member_entry_date.TabIndex = 26;
             // 
             // f_member_profile
             // 

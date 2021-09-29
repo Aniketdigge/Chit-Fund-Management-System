@@ -107,7 +107,7 @@ namespace Chit_Fund_Management_System
             // 
             this.branchProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
-            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
             this.branchProfileToolStripMenuItem.Click += new System.EventHandler(this.branchProfileToolStripMenuItem_Click);
             // 
@@ -115,7 +115,7 @@ namespace Chit_Fund_Management_System
             // 
             this.branchReportToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchReportToolStripMenuItem.Name = "branchReportToolStripMenuItem";
-            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
             this.branchReportToolStripMenuItem.Text = "Branch Report";
             this.branchReportToolStripMenuItem.Click += new System.EventHandler(this.branchReportToolStripMenuItem_Click);
             // 
@@ -146,6 +146,7 @@ namespace Chit_Fund_Management_System
             this.memberTransactionLogToolStripMenuItem.Name = "memberTransactionLogToolStripMenuItem";
             this.memberTransactionLogToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
             this.memberTransactionLogToolStripMenuItem.Text = "Member Transaction Log";
+            this.memberTransactionLogToolStripMenuItem.Click += new System.EventHandler(this.memberTransactionLogToolStripMenuItem_Click);
             // 
             // memberPaymentToolStripMenuItem
             // 
@@ -231,6 +232,7 @@ namespace Chit_Fund_Management_System
             this.employeeProfileToolStripMenuItem.Name = "employeeProfileToolStripMenuItem";
             this.employeeProfileToolStripMenuItem.Size = new System.Drawing.Size(277, 28);
             this.employeeProfileToolStripMenuItem.Text = "Employee Profile";
+            this.employeeProfileToolStripMenuItem.Click += new System.EventHandler(this.employeeProfileToolStripMenuItem_Click);
             // 
             // employeeAttendanceToolStripMenuItem
             // 
