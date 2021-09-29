@@ -11,11 +11,11 @@ using System.Data.OleDb;
 
 namespace Chit_Fund_Management_System
 {
-    public partial class Form1 : Form
+    public partial class f_employee_profile : Form
     {
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\Chit-Fund-Management-System\ChitFundDB.accdb");
         OleDbCommand cmd;
-        public Form1()
+        public f_employee_profile()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("insert into Employee_TB(Employee_ID, Employee_Name, Employee_Address, Employee_Mobile, Employee_Designation, Employee_Email, Branch_ID, Date_of_Joining) values" +
+                cmd = new OleDbCommand("insert into EmployeeTB(Employee_ID, Employee_Name, Employee_Address, Employee_Mobile, Employee_Designation, Employee_Email, Branch_ID, Date_of_Joining) values" +
                     "(@EMPid, @EMPname, @EMPaddress, @EMPmobileno, @EMPdesignation, @EMPemail, @EBranchid, @EMPDOJ)", con);
                 cmd.Parameters.AddWithValue("@EMPid", Emp_ID.Text);
                 cmd.Parameters.AddWithValue("@EMPname", EMP_Name.Text);
@@ -34,7 +34,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@EMPdesignation", Emp_Designation.Text);
                 cmd.Parameters.AddWithValue("@EMPemail", Emp_Email.Text);
                 cmd.Parameters.AddWithValue("@EBranchid", EMPBRANCH.Text);
-                cmd.Parameters.AddWithValue("@EMPDOJ", EmpDateofJoining.Text);
+                cmd.Parameters.AddWithValue("@EMPDOJ", dtp_employee_date_of_joining.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("EMP Information Saved Successfully....");
@@ -50,7 +50,7 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("update Employee_TB set Employee_Name=@EMPname, Employee_Address=@EMPaddress, Employee_Mobile=@EMPmobileno, Employee_Designation=@EMPdesignation, Employee_Email=@EMPemail," + "Branch_ID=EBranchid, Date_of_Joining=@EMPDOJ  where Employee_ID=@EMPid", con);
+                cmd = new OleDbCommand("update EmployeeTB set Employee_Name=@EMPname, Employee_Address=@EMPaddress, Employee_Mobile=@EMPmobileno, Employee_Designation=@EMPdesignation, Employee_Email=@EMPemail," + "Branch_ID=EBranchid, Date_of_Joining=@EMPDOJ  where Employee_ID=@EMPid", con);
                 cmd.Parameters.AddWithValue("@EMPid", Emp_ID.Text);
                 cmd.Parameters.AddWithValue("@EMPname", EMP_Name.Text);
                 cmd.Parameters.AddWithValue("@EMPaddress", Emp_Address.Text);
@@ -58,7 +58,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@EMPdesignation", Emp_Designation.Text);
                 cmd.Parameters.AddWithValue("@EMPemail", Emp_Email.Text);
                 cmd.Parameters.AddWithValue("@EBranchid", EMPBRANCH.Text);
-                cmd.Parameters.AddWithValue("@EMPDOJ", EmpDateofJoining.Text);
+                cmd.Parameters.AddWithValue("@EMPDOJ", dtp_employee_date_of_joining.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Updated Successfully....");
@@ -75,7 +75,7 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("delete from Employee_TB where Employee_id=@EMPid", con);
+                cmd = new OleDbCommand("delete from EmployeeTB where Employee_id=@EMPid", con);
                 cmd.Parameters.AddWithValue("@EMPid", Emp_ID.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -95,7 +95,7 @@ namespace Chit_Fund_Management_System
                 DataTable dt = new DataTable();
                 con.Open();
                 cmd = new OleDbCommand("select [Employee_Name], [Employee_Address], [Employee_Mobile], [Employee_Designation], [Employee_Email], [Branch_ID], [Date_of_Joining] " +
-                    "from Employee_TB where [Employee_id]=@EMPid", con);
+                    "from EmployeeTB where [Employee_id]=@EMPid", con);
                 cmd.Parameters.AddWithValue("@EMPid", Emp_ID.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
@@ -106,7 +106,7 @@ namespace Chit_Fund_Management_System
                     Emp_Designation.Text = (dr["Employee_Designation"].ToString());
                     Emp_Email.Text = (dr["Employee_Email"].ToString());
                     EMPBRANCH.Text = (dr["Branch_ID"].ToString());
-                    EmpDateofJoining.Text = (dr["Date_of_Joining"].ToString());
+                    dtp_employee_date_of_joining.Text = (dr["Date_of_Joining"].ToString());
                 }
                 con.Close();
 
@@ -115,6 +115,7 @@ namespace Chit_Fund_Management_System
             {
                 MessageBox.Show(ex.ToString());
             }
+                
         }
 
         private void EmpClear_Click(object sender, EventArgs e)
@@ -126,7 +127,6 @@ namespace Chit_Fund_Management_System
             Emp_Designation.Clear();
             Emp_Email.Clear();
             EMPBRANCH.Clear();
-            EmpDateofJoining.Clear();
         }
 
         private void Empclose_Click(object sender, EventArgs e)

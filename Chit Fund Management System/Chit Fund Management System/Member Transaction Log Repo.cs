@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Chit_Fund_Management_System
 {
-    public partial class Branch_Report_View : Form
+    public partial class Member_Transaction_Log_Repo : Form
     {
-        public Branch_Report_View()
+        public Member_Transaction_Log_Repo()
         {
             InitializeComponent();
-        }
-
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

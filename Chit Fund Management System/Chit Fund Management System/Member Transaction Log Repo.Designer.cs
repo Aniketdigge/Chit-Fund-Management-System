@@ -1,7 +1,7 @@
 ﻿
 namespace Chit_Fund_Management_System
 {
-    partial class Branch_Report_View
+    partial class Member_Transaction_Log_Repo
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace Chit_Fund_Management_System
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Branch_Report1 = new Chit_Fund_Management_System.Branch_Report();
+            this.Member_Transaction_Log_Report1 = new Chit_Fund_Management_System.Member_Transaction_Log_Report();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,19 +41,18 @@ namespace Chit_Fund_Management_System
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.Branch_Report1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1176, 624);
+            this.crystalReportViewer1.ReportSource = this.Member_Transaction_Log_Report1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1055, 629);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // Branch_Report_View
+            // Member_Transaction_Log_Repo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 624);
+            this.ClientSize = new System.Drawing.Size(1055, 629);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "Branch_Report_View";
-            this.Text = "Branch Report View";
+            this.Name = "Member_Transaction_Log_Repo";
+            this.Text = "Member Transaction Log Report";
             this.ResumeLayout(false);
 
         }
@@ -61,6 +60,6 @@ namespace Chit_Fund_Management_System
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Branch_Report Branch_Report1;
+        private Member_Transaction_Log_Report Member_Transaction_Log_Report1;
     }
 }

@@ -50,5 +50,19 @@ namespace Chit_Fund_Management_System
             branch_Repo.Show();
             this.Hide();
         }
+
+        private void employeeProfileToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            f_employee_profile f_Employee_Profile = new f_employee_profile();
+            f_Employee_Profile.Show();
+            this.Hide();
+        }
+
+        private void memberTransactionLogToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Member_Transaction_Log member_Transaction_Log = new Member_Transaction_Log();
+            member_Transaction_Log.Show();
+            this.Hide();
+        }
     }
 }
