@@ -29,37 +29,36 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Member_Transaction_Log_Report1 = new Chit_Fund_Management_System.Member_Transaction_Log_Report();
+            this.crv_member_transaction_log_report = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crystalReportViewer1
+            // crv_member_transaction_log_report
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.Member_Transaction_Log_Report1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1055, 629);
-            this.crystalReportViewer1.TabIndex = 0;
+            this.crv_member_transaction_log_report.ActiveViewIndex = -1;
+            this.crv_member_transaction_log_report.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crv_member_transaction_log_report.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crv_member_transaction_log_report.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crv_member_transaction_log_report.Location = new System.Drawing.Point(0, 0);
+            this.crv_member_transaction_log_report.Name = "crv_member_transaction_log_report";
+            this.crv_member_transaction_log_report.Size = new System.Drawing.Size(1055, 629);
+            this.crv_member_transaction_log_report.TabIndex = 0;
+            this.crv_member_transaction_log_report.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // Member_Transaction_Log_Repo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 629);
-            this.Controls.Add(this.crystalReportViewer1);
+            this.Controls.Add(this.crv_member_transaction_log_report);
             this.Name = "Member_Transaction_Log_Repo";
             this.Text = "Member Transaction Log Report";
+            this.Load += new System.EventHandler(this.Member_Transaction_Log_Repo_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Member_Transaction_Log_Report Member_Transaction_Log_Report1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv_member_transaction_log_report;
     }
 }

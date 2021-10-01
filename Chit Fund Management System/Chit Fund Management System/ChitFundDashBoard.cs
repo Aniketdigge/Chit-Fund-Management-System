@@ -64,5 +64,19 @@ namespace Chit_Fund_Management_System
             member_Transaction_Log.Show();
             this.Hide();
         }
+
+        private void biddingToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Bidding bidding = new Bidding();
+            bidding.Show();
+            this.Hide();
+        }
+
+        private void biddingLogToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Bidding_Log bidding_Log = new Bidding_Log();
+            bidding_Log.Show();
+            this.Hide();
+        }
     }
 }

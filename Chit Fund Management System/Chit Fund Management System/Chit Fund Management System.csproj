@@ -59,6 +59,30 @@
     <Compile Include="Agent Profile.Designer.cs">
       <DependentUpon>Agent Profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bidding Log Repo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bidding Log Repo.Designer.cs">
+      <DependentUpon>Bidding Log Repo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bidding Log Report1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bidding Log Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Bidding Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bidding Log.Designer.cs">
+      <DependentUpon>Bidding Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bidding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bidding.Designer.cs">
+      <DependentUpon>Bidding.cs</DependentUpon>
+    </Compile>
     <Compile Include="Branch Repo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +165,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Agent Profile.resx">
       <DependentUpon>Agent Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bidding Log Repo.resx">
+      <DependentUpon>Bidding Log Repo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bidding Log Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Bidding Log Report1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bidding Log.resx">
+      <DependentUpon>Bidding Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bidding.resx">
+      <DependentUpon>Bidding.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Branch Repo.resx">
       <DependentUpon>Branch Repo.cs</DependentUpon>

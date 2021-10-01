@@ -29,38 +29,36 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Branch_Report1 = new Chit_Fund_Management_System.Branch_Report();
+            this.crv_branch_report_view = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crystalReportViewer1
+            // crv_branch_report_view
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.Branch_Report1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1176, 624);
-            this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
+            this.crv_branch_report_view.ActiveViewIndex = -1;
+            this.crv_branch_report_view.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crv_branch_report_view.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crv_branch_report_view.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crv_branch_report_view.Location = new System.Drawing.Point(0, 0);
+            this.crv_branch_report_view.Name = "crv_branch_report_view";
+            this.crv_branch_report_view.Size = new System.Drawing.Size(1176, 624);
+            this.crv_branch_report_view.TabIndex = 0;
+            this.crv_branch_report_view.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // Branch_Report_View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1176, 624);
-            this.Controls.Add(this.crystalReportViewer1);
+            this.Controls.Add(this.crv_branch_report_view);
             this.Name = "Branch_Report_View";
             this.Text = "Branch Report View";
+            this.Load += new System.EventHandler(this.Branch_Report_View_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Branch_Report Branch_Report1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv_branch_report_view;
     }
 }
