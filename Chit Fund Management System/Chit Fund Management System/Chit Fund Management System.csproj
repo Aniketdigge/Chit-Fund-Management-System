@@ -89,6 +89,7 @@
     <Compile Include="Branch Profile.Designer.cs">
       <DependentUpon>Branch Profile.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="Employee Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Member Loan Log.Designer.cs">
       <DependentUpon>Member Loan Log.cs</DependentUpon>
+=======
+    <Compile Include="EmployeeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeProfile.Designer.cs">
+      <DependentUpon>EmployeeProfile.cs</DependentUpon>
+>>>>>>> Stashed changes
     </Compile>
     <Compile Include="Member Profile.cs">
       <SubType>Form</SubType>
@@ -164,11 +172,16 @@
     <EmbeddedResource Include="Branch Profile.resx">
       <DependentUpon>Branch Profile.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <EmbeddedResource Include="Employee Profile.resx">
       <DependentUpon>Employee Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Member Loan Log.resx">
       <DependentUpon>Member Loan Log.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="EmployeeProfile.resx">
+      <DependentUpon>EmployeeProfile.cs</DependentUpon>
+>>>>>>> Stashed changes
     </EmbeddedResource>
     <EmbeddedResource Include="Member Profile.resx">
       <DependentUpon>Member Profile.cs</DependentUpon>

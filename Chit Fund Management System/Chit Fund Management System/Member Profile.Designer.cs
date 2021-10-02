@@ -76,10 +76,10 @@ namespace Chit_Fund_Management_System
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(417, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 56);
+            this.label1.Size = new System.Drawing.Size(434, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "Member Profile";
             // 
@@ -113,14 +113,17 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.tb_member_id);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(33, 98);
+            this.groupBox1.Location = new System.Drawing.Point(12, 98);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+<<<<<<< Updated upstream
             this.groupBox1.Size = new System.Drawing.Size(1115, 531);
+=======
+            this.groupBox1.Size = new System.Drawing.Size(1161, 492);
+>>>>>>> Stashed changes
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Member";
             // 
             // dtp_member_entry_date
             // 
@@ -177,7 +180,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_loan_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_loan_amount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_loan_amount.Location = new System.Drawing.Point(805, 208);
+            this.tb_loan_amount.Location = new System.Drawing.Point(853, 208);
             this.tb_loan_amount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_loan_amount.Multiline = true;
             this.tb_loan_amount.Name = "tb_loan_amount";
@@ -203,7 +206,7 @@ namespace Chit_Fund_Management_System
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(564, 208);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(183, 33);
+            this.label7.Size = new System.Drawing.Size(220, 40);
             this.label7.TabIndex = 19;
             this.label7.Text = " Loan Amount :";
             // 
@@ -250,7 +253,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_chit_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_chit_amount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_chit_amount.Location = new System.Drawing.Point(805, 148);
+            this.tb_chit_amount.Location = new System.Drawing.Point(853, 148);
             this.tb_chit_amount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_chit_amount.Multiline = true;
             this.tb_chit_amount.Name = "tb_chit_amount";
@@ -276,7 +279,7 @@ namespace Chit_Fund_Management_System
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(564, 148);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(167, 33);
+            this.label9.Size = new System.Drawing.Size(200, 40);
             this.label9.TabIndex = 15;
             this.label9.Text = "Chit Amount :";
             // 
@@ -284,7 +287,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_agent_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_agent_id.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_agent_id.Location = new System.Drawing.Point(805, 83);
+            this.tb_agent_id.Location = new System.Drawing.Point(853, 83);
             this.tb_agent_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_agent_id.Multiline = true;
             this.tb_agent_id.Name = "tb_agent_id";
@@ -297,7 +300,7 @@ namespace Chit_Fund_Management_System
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(564, 83);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 33);
+            this.label10.Size = new System.Drawing.Size(156, 40);
             this.label10.TabIndex = 13;
             this.label10.Text = "Agent  ID :";
             // 
@@ -305,7 +308,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_member_addhar_no.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_member_addhar_no.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_member_addhar_no.Location = new System.Drawing.Point(805, 22);
+            this.tb_member_addhar_no.Location = new System.Drawing.Point(853, 22);
             this.tb_member_addhar_no.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_member_addhar_no.Multiline = true;
             this.tb_member_addhar_no.Name = "tb_member_addhar_no";
@@ -318,7 +321,7 @@ namespace Chit_Fund_Management_System
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(564, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 33);
+            this.label4.Size = new System.Drawing.Size(289, 40);
             this.label4.TabIndex = 11;
             this.label4.Text = "Member Addhar No :";
             // 
@@ -339,7 +342,7 @@ namespace Chit_Fund_Management_System
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(12, 144);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(232, 33);
+            this.label6.Size = new System.Drawing.Size(280, 40);
             this.label6.TabIndex = 9;
             this.label6.Text = "Member Mobile No :";
             // 
@@ -360,7 +363,7 @@ namespace Chit_Fund_Management_System
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 83);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(186, 33);
+            this.label5.Size = new System.Drawing.Size(221, 40);
             this.label5.TabIndex = 7;
             this.label5.Text = "Member Name :";
             // 
@@ -381,7 +384,7 @@ namespace Chit_Fund_Management_System
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 269);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 33);
+            this.label3.Size = new System.Drawing.Size(257, 40);
             this.label3.TabIndex = 3;
             this.label3.Text = "Member Address :";
             // 
@@ -402,17 +405,21 @@ namespace Chit_Fund_Management_System
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 33);
+            this.label2.Size = new System.Drawing.Size(175, 40);
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
             // 
             // f_member_profile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+<<<<<<< Updated upstream
             this.ClientSize = new System.Drawing.Size(1184, 662);
+=======
+            this.ClientSize = new System.Drawing.Size(1188, 647);
+>>>>>>> Stashed changes
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
