@@ -32,6 +32,9 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tb_mtl_amount_paid = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.dtp_mtl_transaction_date = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.tb_mtl_member_group_id = new System.Windows.Forms.TextBox();
@@ -50,9 +53,6 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_member_name = new System.Windows.Forms.TextBox();
             this.tb_mtl_member_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tb_mtl_amount_paid = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -71,11 +71,11 @@ namespace Chit_Fund_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(276, 0);
+            this.label1.Location = new System.Drawing.Point(264, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(593, 56);
+            this.label1.Size = new System.Drawing.Size(689, 66);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Member Transaction Log";
+            this.label1.Text = "Member Transaction log";
             // 
             // groupBox1
             // 
@@ -111,11 +111,45 @@ namespace Chit_Fund_Management_System
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Member";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(432, 423);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(299, 45);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "LOG REPORT";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tb_mtl_amount_paid
+            // 
+            this.tb_mtl_amount_paid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_mtl_amount_paid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_mtl_amount_paid.Location = new System.Drawing.Point(250, 211);
+            this.tb_mtl_amount_paid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_mtl_amount_paid.Multiline = true;
+            this.tb_mtl_amount_paid.Name = "tb_mtl_amount_paid";
+            this.tb_mtl_amount_paid.Size = new System.Drawing.Size(270, 33);
+            this.tb_mtl_amount_paid.TabIndex = 28;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 211);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(204, 40);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Amount Paid :";
+            // 
             // dtp_mtl_transaction_date
             // 
             this.dtp_mtl_transaction_date.Location = new System.Drawing.Point(805, 214);
             this.dtp_mtl_transaction_date.Name = "dtp_mtl_transaction_date";
-            this.dtp_mtl_transaction_date.Size = new System.Drawing.Size(270, 30);
+            this.dtp_mtl_transaction_date.Size = new System.Drawing.Size(270, 35);
             this.dtp_mtl_transaction_date.TabIndex = 26;
             // 
             // label11
@@ -124,7 +158,7 @@ namespace Chit_Fund_Management_System
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(564, 211);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(217, 33);
+            this.label11.Size = new System.Drawing.Size(257, 40);
             this.label11.TabIndex = 25;
             this.label11.Text = "Transaction Date :";
             // 
@@ -145,7 +179,7 @@ namespace Chit_Fund_Management_System
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(12, 154);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 33);
+            this.label8.Size = new System.Drawing.Size(153, 40);
             this.label8.TabIndex = 23;
             this.label8.Text = "Group ID :";
             // 
@@ -190,9 +224,9 @@ namespace Chit_Fund_Management_System
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(564, 158);
+            this.label7.Location = new System.Drawing.Point(564, 98);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(183, 33);
+            this.label7.Size = new System.Drawing.Size(220, 40);
             this.label7.TabIndex = 19;
             this.label7.Text = " Loan Amount :";
             // 
@@ -237,9 +271,9 @@ namespace Chit_Fund_Management_System
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(564, 98);
+            this.label9.Location = new System.Drawing.Point(584, 154);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(167, 33);
+            this.label9.Size = new System.Drawing.Size(200, 40);
             this.label9.TabIndex = 15;
             this.label9.Text = "Chit Amount :";
             // 
@@ -258,11 +292,11 @@ namespace Chit_Fund_Management_System
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(564, 38);
+            this.label10.Location = new System.Drawing.Point(647, 38);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 33);
+            this.label10.Size = new System.Drawing.Size(137, 40);
             this.label10.TabIndex = 13;
-            this.label10.Text = "Agent  ID :";
+            this.label10.Text = "Agent id:";
             // 
             // label5
             // 
@@ -270,7 +304,7 @@ namespace Chit_Fund_Management_System
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(186, 33);
+            this.label5.Size = new System.Drawing.Size(221, 40);
             this.label5.TabIndex = 7;
             this.label5.Text = "Member Name :";
             // 
@@ -303,47 +337,13 @@ namespace Chit_Fund_Management_System
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 33);
+            this.label2.Size = new System.Drawing.Size(175, 40);
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 211);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 33);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Amount Paid :";
-            // 
-            // tb_mtl_amount_paid
-            // 
-            this.tb_mtl_amount_paid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_mtl_amount_paid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_mtl_amount_paid.Location = new System.Drawing.Point(250, 211);
-            this.tb_mtl_amount_paid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_mtl_amount_paid.Multiline = true;
-            this.tb_mtl_amount_paid.Name = "tb_mtl_amount_paid";
-            this.tb_mtl_amount_paid.Size = new System.Drawing.Size(270, 33);
-            this.tb_mtl_amount_paid.TabIndex = 28;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(432, 423);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 45);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "LOG REPORT";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Member_Transaction_Log
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1196, 633);

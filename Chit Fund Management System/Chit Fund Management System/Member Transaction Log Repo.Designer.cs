@@ -40,17 +40,20 @@ namespace Chit_Fund_Management_System
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
             this.crystalReportViewer1.ReportSource = this.Member_Transaction_Log_Report1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1055, 629);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1451, 786);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 225;
             // 
             // Member_Transaction_Log_Repo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1055, 629);
+            this.ClientSize = new System.Drawing.Size(1451, 786);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Member_Transaction_Log_Repo";
             this.Text = "Member Transaction Log Report";
             this.ResumeLayout(false);
