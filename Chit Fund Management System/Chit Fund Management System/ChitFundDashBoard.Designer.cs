@@ -42,6 +42,8 @@ namespace Chit_Fund_Management_System
             this.memberPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auctionRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.biddingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.biddingLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentCommissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,8 +56,6 @@ namespace Chit_Fund_Management_System
             this.employeePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
-            this.biddingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.biddingLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,6 +175,22 @@ namespace Chit_Fund_Management_System
             this.auctionRoomToolStripMenuItem.Size = new System.Drawing.Size(134, 28);
             this.auctionRoomToolStripMenuItem.Text = "Auction Room";
             // 
+            // biddingToolStripMenuItem
+            // 
+            this.biddingToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
+            this.biddingToolStripMenuItem.Name = "biddingToolStripMenuItem";
+            this.biddingToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
+            this.biddingToolStripMenuItem.Text = "Bidding";
+            this.biddingToolStripMenuItem.Click += new System.EventHandler(this.biddingToolStripMenuItem_Click);
+            // 
+            // biddingLogToolStripMenuItem
+            // 
+            this.biddingLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
+            this.biddingLogToolStripMenuItem.Name = "biddingLogToolStripMenuItem";
+            this.biddingLogToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
+            this.biddingLogToolStripMenuItem.Text = "Bidding Log";
+            this.biddingLogToolStripMenuItem.Click += new System.EventHandler(this.biddingLogToolStripMenuItem_Click);
+            // 
             // agentToolStripMenuItem
             // 
             this.agentToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
@@ -202,6 +218,7 @@ namespace Chit_Fund_Management_System
             this.agentCommissionToolStripMenuItem.Name = "agentCommissionToolStripMenuItem";
             this.agentCommissionToolStripMenuItem.Size = new System.Drawing.Size(246, 28);
             this.agentCommissionToolStripMenuItem.Text = "Agent Commission";
+            this.agentCommissionToolStripMenuItem.Click += new System.EventHandler(this.agentCommissionToolStripMenuItem_Click);
             // 
             // agentPaymentToolStripMenuItem
             // 
@@ -279,22 +296,6 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.Text = "Back To Login Page";
             this.lkb_back_to_login.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lkb_back_to_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkb_back_to_login_LinkClicked);
-            // 
-            // biddingToolStripMenuItem
-            // 
-            this.biddingToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.biddingToolStripMenuItem.Name = "biddingToolStripMenuItem";
-            this.biddingToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.biddingToolStripMenuItem.Text = "Bidding";
-            this.biddingToolStripMenuItem.Click += new System.EventHandler(this.biddingToolStripMenuItem_Click);
-            // 
-            // biddingLogToolStripMenuItem
-            // 
-            this.biddingLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.biddingLogToolStripMenuItem.Name = "biddingLogToolStripMenuItem";
-            this.biddingLogToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.biddingLogToolStripMenuItem.Text = "Bidding Log";
-            this.biddingLogToolStripMenuItem.Click += new System.EventHandler(this.biddingLogToolStripMenuItem_Click);
             // 
             // f_chit_fund_dash_board
             // 
