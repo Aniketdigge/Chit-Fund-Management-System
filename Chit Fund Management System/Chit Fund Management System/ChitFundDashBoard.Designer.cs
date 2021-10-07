@@ -233,6 +233,7 @@ namespace Chit_Fund_Management_System
             this.agentPaymentLogToolStripMenuItem.Name = "agentPaymentLogToolStripMenuItem";
             this.agentPaymentLogToolStripMenuItem.Size = new System.Drawing.Size(246, 28);
             this.agentPaymentLogToolStripMenuItem.Text = "Agent Payment Log";
+            this.agentPaymentLogToolStripMenuItem.Click += new System.EventHandler(this.agentPaymentLogToolStripMenuItem_Click);
             // 
             // employeeToolStripMenuItem
             // 

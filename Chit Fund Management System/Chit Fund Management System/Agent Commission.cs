@@ -8,11 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace Chit_Fund_Management_System
 {
     public partial class Agent_Commission : Form
     {
+        public static string agent_id = " ";
+        public static string agent_name = " ";
+        public static string agent_mob_no = " ";
+        public static string group_id = " ";
+        public static string chit_amt = " ";
+        public static string commission_amt = " ";
+        public static string paid_date = " ";
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\Chit-Fund-Management-System\ChitFundDB.accdb");
         OleDbCommand cmd;
         public Agent_Commission()
@@ -114,6 +123,27 @@ namespace Chit_Fund_Management_System
             f_chit_fund_dash_board f_Chit_Fund_Dash_Board = new f_chit_fund_dash_board();
             f_Chit_Fund_Dash_Board.Show();
             this.Hide();
+        }
+
+        private void bt_commission_receipt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                agent_id = tb_agent_id.Text;
+                agent_name = tb_commission_agent_name.Text;
+                agent_mob_no = tb_commission_agent_mob.Text;
+                group_id = tb_commission_group_id.Text;
+                chit_amt = tb_commission_chit_amount.Text;
+                commission_amt = tb_commission_amount.Text;
+                paid_date = dtp_commission_received_date.Value.ToString("d-M-yyyy");
+
+                Commission_Receipt_Viewer commission_Receipt_Viewer = new Commission_Receipt_Viewer();
+                commission_Receipt_Viewer.Show();
+            }
+            catch(Exception ex2)
+            {
+                MessageBox.Show(ex2.ToString());
+            }
         }
     }
 }

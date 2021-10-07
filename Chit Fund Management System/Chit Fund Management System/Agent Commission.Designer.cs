@@ -119,6 +119,7 @@ namespace Chit_Fund_Management_System
             this.bt_commission_receipt.TabIndex = 29;
             this.bt_commission_receipt.Text = "RECEIPT";
             this.bt_commission_receipt.UseVisualStyleBackColor = false;
+            this.bt_commission_receipt.Click += new System.EventHandler(this.bt_commission_receipt_Click);
             // 
             // tb_commission_amount
             // 

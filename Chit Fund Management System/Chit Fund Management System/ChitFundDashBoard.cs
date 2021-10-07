@@ -85,5 +85,12 @@ namespace Chit_Fund_Management_System
             agent_Commission.Show();
             this.Hide();
         }
+
+        private void agentPaymentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Agent_Commission_Log agent_Commission_Log = new Agent_Commission_Log();
+            agent_Commission_Log.Show();
+            this.Hide();
+        }
     }
 }
