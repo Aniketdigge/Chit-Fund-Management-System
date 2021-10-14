@@ -33,9 +33,16 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dtp_employee_date_of_joining = new System.Windows.Forms.DateTimePicker();
+            this.Empclose = new System.Windows.Forms.Button();
+            this.EmpClear = new System.Windows.Forms.Button();
             this.BranchID = new System.Windows.Forms.Label();
+            this.EmpSearch = new System.Windows.Forms.Button();
             this.EMPBRANCH = new System.Windows.Forms.TextBox();
+            this.EmpDelete = new System.Windows.Forms.Button();
             this.DateofJoining = new System.Windows.Forms.Label();
+            this.EmpUpdate = new System.Windows.Forms.Button();
+            this.ADDEMP = new System.Windows.Forms.Button();
             this.Emp_Email = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Emp_Designation = new System.Windows.Forms.TextBox();
@@ -48,13 +55,6 @@ namespace Chit_Fund_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.Emp_ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Empclose = new System.Windows.Forms.Button();
-            this.EmpClear = new System.Windows.Forms.Button();
-            this.EmpSearch = new System.Windows.Forms.Button();
-            this.EmpDelete = new System.Windows.Forms.Button();
-            this.ADDEMP = new System.Windows.Forms.Button();
-            this.EmpUpdate = new System.Windows.Forms.Button();
-            this.dtp_employee_date_of_joining = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -112,6 +112,40 @@ namespace Chit_Fund_Management_System
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
+            // dtp_employee_date_of_joining
+            // 
+            this.dtp_employee_date_of_joining.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_employee_date_of_joining.Location = new System.Drawing.Point(891, 209);
+            this.dtp_employee_date_of_joining.Name = "dtp_employee_date_of_joining";
+            this.dtp_employee_date_of_joining.Size = new System.Drawing.Size(308, 30);
+            this.dtp_employee_date_of_joining.TabIndex = 29;
+            // 
+            // Empclose
+            // 
+            this.Empclose.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Empclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Empclose.Location = new System.Drawing.Point(539, 364);
+            this.Empclose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Empclose.Name = "Empclose";
+            this.Empclose.Size = new System.Drawing.Size(144, 45);
+            this.Empclose.TabIndex = 28;
+            this.Empclose.Text = "CLOSE";
+            this.Empclose.UseVisualStyleBackColor = false;
+            this.Empclose.Click += new System.EventHandler(this.Empclose_Click);
+            // 
+            // EmpClear
+            // 
+            this.EmpClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EmpClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpClear.Location = new System.Drawing.Point(891, 293);
+            this.EmpClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmpClear.Name = "EmpClear";
+            this.EmpClear.Size = new System.Drawing.Size(144, 45);
+            this.EmpClear.TabIndex = 27;
+            this.EmpClear.Text = "CLEAR";
+            this.EmpClear.UseVisualStyleBackColor = false;
+            this.EmpClear.Click += new System.EventHandler(this.EmpClear_Click);
+            // 
             // BranchID
             // 
             this.BranchID.AutoSize = true;
@@ -121,6 +155,19 @@ namespace Chit_Fund_Management_System
             this.BranchID.Size = new System.Drawing.Size(132, 31);
             this.BranchID.TabIndex = 17;
             this.BranchID.Text = "Branch ID :";
+            // 
+            // EmpSearch
+            // 
+            this.EmpSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EmpSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpSearch.Location = new System.Drawing.Point(718, 293);
+            this.EmpSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmpSearch.Name = "EmpSearch";
+            this.EmpSearch.Size = new System.Drawing.Size(144, 45);
+            this.EmpSearch.TabIndex = 26;
+            this.EmpSearch.Text = "SEARCH";
+            this.EmpSearch.UseVisualStyleBackColor = false;
+            this.EmpSearch.Click += new System.EventHandler(this.EmpSearch_Click);
             // 
             // EMPBRANCH
             // 
@@ -134,6 +181,19 @@ namespace Chit_Fund_Management_System
             this.EMPBRANCH.Size = new System.Drawing.Size(308, 30);
             this.EMPBRANCH.TabIndex = 16;
             // 
+            // EmpDelete
+            // 
+            this.EmpDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EmpDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpDelete.Location = new System.Drawing.Point(539, 293);
+            this.EmpDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmpDelete.Name = "EmpDelete";
+            this.EmpDelete.Size = new System.Drawing.Size(144, 45);
+            this.EmpDelete.TabIndex = 25;
+            this.EmpDelete.Text = "DELETE";
+            this.EmpDelete.UseVisualStyleBackColor = false;
+            this.EmpDelete.Click += new System.EventHandler(this.EmpDelete_Click);
+            // 
             // DateofJoining
             // 
             this.DateofJoining.AutoSize = true;
@@ -143,6 +203,32 @@ namespace Chit_Fund_Management_System
             this.DateofJoining.Size = new System.Drawing.Size(187, 31);
             this.DateofJoining.TabIndex = 15;
             this.DateofJoining.Text = "Date of Joining :";
+            // 
+            // EmpUpdate
+            // 
+            this.EmpUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EmpUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpUpdate.Location = new System.Drawing.Point(360, 293);
+            this.EmpUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.EmpUpdate.Name = "EmpUpdate";
+            this.EmpUpdate.Size = new System.Drawing.Size(144, 45);
+            this.EmpUpdate.TabIndex = 24;
+            this.EmpUpdate.Text = "UPDATE";
+            this.EmpUpdate.UseVisualStyleBackColor = false;
+            this.EmpUpdate.Click += new System.EventHandler(this.EmpUpdate_Click);
+            // 
+            // ADDEMP
+            // 
+            this.ADDEMP.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ADDEMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADDEMP.Location = new System.Drawing.Point(178, 293);
+            this.ADDEMP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ADDEMP.Name = "ADDEMP";
+            this.ADDEMP.Size = new System.Drawing.Size(144, 45);
+            this.ADDEMP.TabIndex = 23;
+            this.ADDEMP.Text = "ADD";
+            this.ADDEMP.UseVisualStyleBackColor = false;
+            this.ADDEMP.Click += new System.EventHandler(this.ADDEMP_Click);
             // 
             // Emp_Email
             // 
@@ -276,99 +362,13 @@ namespace Chit_Fund_Management_System
             this.label2.TabIndex = 0;
             this.label2.Text = "Employee ID :";
             // 
-            // Empclose
-            // 
-            this.Empclose.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Empclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Empclose.Location = new System.Drawing.Point(539, 364);
-            this.Empclose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Empclose.Name = "Empclose";
-            this.Empclose.Size = new System.Drawing.Size(144, 45);
-            this.Empclose.TabIndex = 28;
-            this.Empclose.Text = "CLOSE";
-            this.Empclose.UseVisualStyleBackColor = false;
-            this.Empclose.Click += new System.EventHandler(this.Empclose_Click);
-            // 
-            // EmpClear
-            // 
-            this.EmpClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.EmpClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpClear.Location = new System.Drawing.Point(891, 293);
-            this.EmpClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmpClear.Name = "EmpClear";
-            this.EmpClear.Size = new System.Drawing.Size(144, 45);
-            this.EmpClear.TabIndex = 27;
-            this.EmpClear.Text = "CLEAR";
-            this.EmpClear.UseVisualStyleBackColor = false;
-            this.EmpClear.Click += new System.EventHandler(this.EmpClear_Click);
-            // 
-            // EmpSearch
-            // 
-            this.EmpSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.EmpSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpSearch.Location = new System.Drawing.Point(718, 293);
-            this.EmpSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmpSearch.Name = "EmpSearch";
-            this.EmpSearch.Size = new System.Drawing.Size(144, 45);
-            this.EmpSearch.TabIndex = 26;
-            this.EmpSearch.Text = "SEARCH";
-            this.EmpSearch.UseVisualStyleBackColor = false;
-            this.EmpSearch.Click += new System.EventHandler(this.EmpSearch_Click);
-            // 
-            // EmpDelete
-            // 
-            this.EmpDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.EmpDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpDelete.Location = new System.Drawing.Point(539, 293);
-            this.EmpDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmpDelete.Name = "EmpDelete";
-            this.EmpDelete.Size = new System.Drawing.Size(144, 45);
-            this.EmpDelete.TabIndex = 25;
-            this.EmpDelete.Text = "DELETE";
-            this.EmpDelete.UseVisualStyleBackColor = false;
-            this.EmpDelete.Click += new System.EventHandler(this.EmpDelete_Click);
-            // 
-            // ADDEMP
-            // 
-            this.ADDEMP.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ADDEMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ADDEMP.Location = new System.Drawing.Point(178, 293);
-            this.ADDEMP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ADDEMP.Name = "ADDEMP";
-            this.ADDEMP.Size = new System.Drawing.Size(144, 45);
-            this.ADDEMP.TabIndex = 23;
-            this.ADDEMP.Text = "ADD";
-            this.ADDEMP.UseVisualStyleBackColor = false;
-            this.ADDEMP.Click += new System.EventHandler(this.ADDEMP_Click);
-            // 
-            // EmpUpdate
-            // 
-            this.EmpUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.EmpUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpUpdate.Location = new System.Drawing.Point(360, 293);
-            this.EmpUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.EmpUpdate.Name = "EmpUpdate";
-            this.EmpUpdate.Size = new System.Drawing.Size(144, 45);
-            this.EmpUpdate.TabIndex = 24;
-            this.EmpUpdate.Text = "UPDATE";
-            this.EmpUpdate.UseVisualStyleBackColor = false;
-            this.EmpUpdate.Click += new System.EventHandler(this.EmpUpdate_Click);
-            // 
-            // dtp_employee_date_of_joining
-            // 
-            this.dtp_employee_date_of_joining.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_employee_date_of_joining.Location = new System.Drawing.Point(891, 209);
-            this.dtp_employee_date_of_joining.Name = "dtp_employee_date_of_joining";
-            this.dtp_employee_date_of_joining.Size = new System.Drawing.Size(308, 30);
-            this.dtp_employee_date_of_joining.TabIndex = 29;
-            // 
             // f_employee_profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1249, 580);
+            this.ClientSize = new System.Drawing.Size(1249, 556);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;

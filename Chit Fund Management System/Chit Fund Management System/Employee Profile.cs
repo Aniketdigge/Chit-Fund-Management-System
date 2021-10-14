@@ -95,7 +95,7 @@ namespace Chit_Fund_Management_System
                 DataTable dt = new DataTable();
                 con.Open();
                 cmd = new OleDbCommand("select [Employee_Name], [Employee_Address], [Employee_Mobile], [Employee_Designation], [Employee_Email], [Branch_ID], [Date_of_Joining] " +
-                    "from EmployeeTB where [Employee_id]=@EMPid", con);
+                    "from EmployeeTB where [Employee_ID]=@EMPid", con);
                 cmd.Parameters.AddWithValue("@EMPid", Emp_ID.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())

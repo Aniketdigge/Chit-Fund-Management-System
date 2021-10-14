@@ -41,9 +41,9 @@ namespace Chit_Fund_Management_System
 
         private void bt_commission_calculate_Click(object sender, EventArgs e)
         {
-            int commission_amount;
-            int chit_amount = int.Parse(tb_commission_chit_amount.Text);
-            commission_amount = (2 / 100) * chit_amount;
+            double commission_amount, chit_amount;
+            chit_amount = double.Parse(tb_commission_chit_amount.Text);
+            commission_amount = 0.02 * chit_amount;
             tb_commission_amount.Text = commission_amount.ToString();
         }
 

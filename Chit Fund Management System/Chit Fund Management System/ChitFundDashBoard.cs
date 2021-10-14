@@ -92,5 +92,26 @@ namespace Chit_Fund_Management_System
             agent_Commission_Log.Show();
             this.Hide();
         }
+
+        private void employeeAttendanceToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Employee_Attendence employee_Attendence = new Employee_Attendence();
+            employee_Attendence.Show();
+            this.Hide();
+        }
+
+        private void employeeSalarySlipToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Employee_Salary_Slip employee_Salary_Slip = new Employee_Salary_Slip();
+            employee_Salary_Slip.Show();
+            this.Hide();
+        }
+
+        private void employeePaymentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Salary_Report salary_Report = new Salary_Report();
+            salary_Report.Show();
+            this.Hide();
+        }
     }
 }

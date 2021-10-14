@@ -70,3 +70,8 @@ F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Commission_Receipt_Viewer.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Agent_Commission_Log_Repo.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Agent_Commission_Log.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Attendence.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Salary_Slip_Print.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Salary_Slip.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Salary_Payment_Repo.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Salary_Report.resources

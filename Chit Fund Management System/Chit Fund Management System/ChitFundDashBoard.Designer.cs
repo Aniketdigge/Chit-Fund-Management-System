@@ -263,6 +263,7 @@ namespace Chit_Fund_Management_System
             this.employeeAttendanceToolStripMenuItem.Name = "employeeAttendanceToolStripMenuItem";
             this.employeeAttendanceToolStripMenuItem.Size = new System.Drawing.Size(277, 28);
             this.employeeAttendanceToolStripMenuItem.Text = "Employee Attendance";
+            this.employeeAttendanceToolStripMenuItem.Click += new System.EventHandler(this.employeeAttendanceToolStripMenuItem_Click);
             // 
             // employeeSalarySlipToolStripMenuItem
             // 
@@ -270,6 +271,7 @@ namespace Chit_Fund_Management_System
             this.employeeSalarySlipToolStripMenuItem.Name = "employeeSalarySlipToolStripMenuItem";
             this.employeeSalarySlipToolStripMenuItem.Size = new System.Drawing.Size(277, 28);
             this.employeeSalarySlipToolStripMenuItem.Text = "Employee Salary Slip";
+            this.employeeSalarySlipToolStripMenuItem.Click += new System.EventHandler(this.employeeSalarySlipToolStripMenuItem_Click);
             // 
             // employeePaymentToolStripMenuItem
             // 
@@ -284,6 +286,7 @@ namespace Chit_Fund_Management_System
             this.employeePaymentLogToolStripMenuItem.Name = "employeePaymentLogToolStripMenuItem";
             this.employeePaymentLogToolStripMenuItem.Size = new System.Drawing.Size(277, 28);
             this.employeePaymentLogToolStripMenuItem.Text = "Employee Payment Log";
+            this.employeePaymentLogToolStripMenuItem.Click += new System.EventHandler(this.employeePaymentLogToolStripMenuItem_Click);
             // 
             // lkb_back_to_login
             // 

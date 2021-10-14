@@ -25,7 +25,7 @@ namespace Chit_Fund_Management_System
             {
                 ReportDocument cryst = new ReportDocument();
                 cryst.Load(@"F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\Commission Receipt.rpt");
-                TextObject paid_date = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["paid_date"];
+                TextObject paid_date = (TextObject)cryst.ReportDefinition.Sections["Section2"].ReportObjects["paid_date"];
                 paid_date.Text = Agent_Commission.paid_date;
                 TextObject agent_id = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["agent_id"];
                 agent_id.Text = Agent_Commission.agent_id;
