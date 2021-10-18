@@ -113,5 +113,17 @@ namespace Chit_Fund_Management_System
             salary_Report.Show();
             this.Hide();
         }
+
+        private void employeeToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void loanToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Loan_Payment loan_Payment = new Loan_Payment();
+            loan_Payment.Show();
+            this.Hide();
+        }
     }
 }

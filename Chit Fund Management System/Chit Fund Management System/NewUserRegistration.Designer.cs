@@ -35,8 +35,6 @@ namespace Chit_Fund_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_userid = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.bt_close = new System.Windows.Forms.Button();
             this.bt_clear_new_user = new System.Windows.Forms.Button();
             this.creatBT = new System.Windows.Forms.Button();
@@ -63,7 +61,7 @@ namespace Chit_Fund_Management_System
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(292, 11);
+            this.label2.Location = new System.Drawing.Point(129, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(685, 56);
             this.label2.TabIndex = 1;
@@ -92,8 +90,6 @@ namespace Chit_Fund_Management_System
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.Controls.Add(this.tb_userid);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.bt_close);
             this.groupBox1.Controls.Add(this.bt_clear_new_user);
             this.groupBox1.Controls.Add(this.creatBT);
@@ -104,38 +100,18 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(238, 136);
+            this.groupBox1.Location = new System.Drawing.Point(97, 134);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(779, 446);
+            this.groupBox1.Size = new System.Drawing.Size(779, 391);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "New User";
-            // 
-            // tb_userid
-            // 
-            this.tb_userid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_userid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_userid.Location = new System.Drawing.Point(446, 258);
-            this.tb_userid.Multiline = true;
-            this.tb_userid.Name = "tb_userid";
-            this.tb_userid.Size = new System.Drawing.Size(222, 33);
-            this.tb_userid.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(90, 258);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 33);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "User ID :";
             // 
             // bt_close
             // 
             this.bt_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_close.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_close.Location = new System.Drawing.Point(542, 331);
+            this.bt_close.Location = new System.Drawing.Point(542, 287);
             this.bt_close.Name = "bt_close";
             this.bt_close.Size = new System.Drawing.Size(126, 42);
             this.bt_close.TabIndex = 11;
@@ -147,7 +123,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_clear_new_user.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_clear_new_user.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_clear_new_user.Location = new System.Drawing.Point(311, 331);
+            this.bt_clear_new_user.Location = new System.Drawing.Point(305, 287);
             this.bt_clear_new_user.Name = "bt_clear_new_user";
             this.bt_clear_new_user.Size = new System.Drawing.Size(149, 42);
             this.bt_clear_new_user.TabIndex = 10;
@@ -159,7 +135,7 @@ namespace Chit_Fund_Management_System
             // 
             this.creatBT.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.creatBT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creatBT.Location = new System.Drawing.Point(96, 331);
+            this.creatBT.Location = new System.Drawing.Point(96, 287);
             this.creatBT.Name = "creatBT";
             this.creatBT.Size = new System.Drawing.Size(139, 42);
             this.creatBT.TabIndex = 9;
@@ -174,7 +150,6 @@ namespace Chit_Fund_Management_System
             this.tb_passwordnew.Location = new System.Drawing.Point(446, 121);
             this.tb_passwordnew.Multiline = true;
             this.tb_passwordnew.Name = "tb_passwordnew";
-            this.tb_passwordnew.PasswordChar = '#';
             this.tb_passwordnew.Size = new System.Drawing.Size(222, 33);
             this.tb_passwordnew.TabIndex = 6;
             // 
@@ -214,7 +189,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1277, 660);
+            this.ClientSize = new System.Drawing.Size(989, 589);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
@@ -243,7 +218,5 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Button bt_close;
         private System.Windows.Forms.Button bt_clear_new_user;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tb_userid;
     }
 }

@@ -75,3 +75,4 @@ F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Salary_Slip.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Salary_Payment_Repo.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Salary_Report.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Loan_Payment.resources
