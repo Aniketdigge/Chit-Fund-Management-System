@@ -185,6 +185,18 @@
     <Compile Include="Loan Payment.Designer.cs">
       <DependentUpon>Loan Payment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loan Receipt Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan Receipt Viewer.Designer.cs">
+      <DependentUpon>Loan Receipt Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan Receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loan Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Member Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -317,6 +329,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loan Payment.resx">
       <DependentUpon>Loan Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Receipt Viewer.resx">
+      <DependentUpon>Loan Receipt Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loan Receipt.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Member Profile.resx">
       <DependentUpon>Member Profile.cs</DependentUpon>

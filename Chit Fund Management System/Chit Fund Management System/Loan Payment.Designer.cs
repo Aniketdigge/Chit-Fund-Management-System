@@ -32,6 +32,12 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bt_update = new System.Windows.Forms.Button();
+            this.tb_loan_intrest = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_loan_gross_amount = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bt_calculate = new System.Windows.Forms.Button();
             this.bt_loan_receipt = new System.Windows.Forms.Button();
             this.tb_loan_total_amount = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,12 +59,6 @@ namespace Chit_Fund_Management_System
             this.tb_loan_member_name = new System.Windows.Forms.TextBox();
             this.tb_loan_member_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bt_calculate = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tb_loan_gross_amount = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb_loan_intrest = new System.Windows.Forms.TextBox();
-            this.bt_update = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -122,6 +122,74 @@ namespace Chit_Fund_Management_System
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
+            // bt_update
+            // 
+            this.bt_update.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_update.Location = new System.Drawing.Point(470, 410);
+            this.bt_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_update.Name = "bt_update";
+            this.bt_update.Size = new System.Drawing.Size(126, 45);
+            this.bt_update.TabIndex = 35;
+            this.bt_update.Text = "UPDATE";
+            this.bt_update.UseVisualStyleBackColor = false;
+            this.bt_update.Click += new System.EventHandler(this.bt_update_Click);
+            // 
+            // tb_loan_intrest
+            // 
+            this.tb_loan_intrest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_loan_intrest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_loan_intrest.Location = new System.Drawing.Point(738, 158);
+            this.tb_loan_intrest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_loan_intrest.Multiline = true;
+            this.tb_loan_intrest.Name = "tb_loan_intrest";
+            this.tb_loan_intrest.Size = new System.Drawing.Size(270, 33);
+            this.tb_loan_intrest.TabIndex = 34;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(536, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(139, 33);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Intrest 5% :";
+            // 
+            // tb_loan_gross_amount
+            // 
+            this.tb_loan_gross_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_loan_gross_amount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tb_loan_gross_amount.Location = new System.Drawing.Point(738, 102);
+            this.tb_loan_gross_amount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_loan_gross_amount.Multiline = true;
+            this.tb_loan_gross_amount.Name = "tb_loan_gross_amount";
+            this.tb_loan_gross_amount.Size = new System.Drawing.Size(270, 33);
+            this.tb_loan_gross_amount.TabIndex = 32;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(530, 98);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(189, 33);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Gross Amount :";
+            // 
+            // bt_calculate
+            // 
+            this.bt_calculate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_calculate.Location = new System.Drawing.Point(389, 340);
+            this.bt_calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_calculate.Name = "bt_calculate";
+            this.bt_calculate.Size = new System.Drawing.Size(286, 45);
+            this.bt_calculate.TabIndex = 30;
+            this.bt_calculate.Text = "CALCULATE";
+            this.bt_calculate.UseVisualStyleBackColor = false;
+            this.bt_calculate.Click += new System.EventHandler(this.bt_calculate_Click);
+            // 
             // bt_loan_receipt
             // 
             this.bt_loan_receipt.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -133,6 +201,7 @@ namespace Chit_Fund_Management_System
             this.bt_loan_receipt.TabIndex = 29;
             this.bt_loan_receipt.Text = "LOAN RECEIPT";
             this.bt_loan_receipt.UseVisualStyleBackColor = false;
+            this.bt_loan_receipt.Click += new System.EventHandler(this.bt_loan_receipt_Click);
             // 
             // tb_loan_total_amount
             // 
@@ -349,74 +418,6 @@ namespace Chit_Fund_Management_System
             this.label2.Size = new System.Drawing.Size(146, 33);
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
-            // 
-            // bt_calculate
-            // 
-            this.bt_calculate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_calculate.Location = new System.Drawing.Point(389, 340);
-            this.bt_calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_calculate.Name = "bt_calculate";
-            this.bt_calculate.Size = new System.Drawing.Size(286, 45);
-            this.bt_calculate.TabIndex = 30;
-            this.bt_calculate.Text = "CALCULATE";
-            this.bt_calculate.UseVisualStyleBackColor = false;
-            this.bt_calculate.Click += new System.EventHandler(this.bt_calculate_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(530, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 33);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Gross Amount :";
-            // 
-            // tb_loan_gross_amount
-            // 
-            this.tb_loan_gross_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_loan_gross_amount.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_loan_gross_amount.Location = new System.Drawing.Point(738, 102);
-            this.tb_loan_gross_amount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_loan_gross_amount.Multiline = true;
-            this.tb_loan_gross_amount.Name = "tb_loan_gross_amount";
-            this.tb_loan_gross_amount.Size = new System.Drawing.Size(270, 33);
-            this.tb_loan_gross_amount.TabIndex = 32;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(536, 154);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 33);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Intrest 5% :";
-            // 
-            // tb_loan_intrest
-            // 
-            this.tb_loan_intrest.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tb_loan_intrest.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_loan_intrest.Location = new System.Drawing.Point(738, 158);
-            this.tb_loan_intrest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tb_loan_intrest.Multiline = true;
-            this.tb_loan_intrest.Name = "tb_loan_intrest";
-            this.tb_loan_intrest.Size = new System.Drawing.Size(270, 33);
-            this.tb_loan_intrest.TabIndex = 34;
-            // 
-            // bt_update
-            // 
-            this.bt_update.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_update.Location = new System.Drawing.Point(470, 410);
-            this.bt_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_update.Name = "bt_update";
-            this.bt_update.Size = new System.Drawing.Size(126, 45);
-            this.bt_update.TabIndex = 35;
-            this.bt_update.Text = "UPDATE";
-            this.bt_update.UseVisualStyleBackColor = false;
-            this.bt_update.Click += new System.EventHandler(this.bt_update_Click);
             // 
             // Loan_Payment
             // 
