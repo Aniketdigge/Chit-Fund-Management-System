@@ -40,14 +40,14 @@ namespace Chit_Fund_Management_System
             this.crv_loan_receipt_viewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_loan_receipt_viewer.Location = new System.Drawing.Point(0, 0);
             this.crv_loan_receipt_viewer.Name = "crv_loan_receipt_viewer";
-            this.crv_loan_receipt_viewer.Size = new System.Drawing.Size(1072, 619);
+            this.crv_loan_receipt_viewer.Size = new System.Drawing.Size(1497, 686);
             this.crv_loan_receipt_viewer.TabIndex = 0;
             // 
             // Loan_Receipt_Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1072, 619);
+            this.ClientSize = new System.Drawing.Size(1497, 686);
             this.Controls.Add(this.crv_loan_receipt_viewer);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Loan_Receipt_Viewer";

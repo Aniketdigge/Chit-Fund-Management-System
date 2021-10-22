@@ -57,12 +57,11 @@ namespace Chit_Fund_Management_System
             this.logingb.Controls.Add(this.label4);
             this.logingb.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logingb.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.logingb.Location = new System.Drawing.Point(208, 128);
+            this.logingb.Location = new System.Drawing.Point(498, 202);
             this.logingb.Name = "logingb";
             this.logingb.Size = new System.Drawing.Size(517, 349);
             this.logingb.TabIndex = 0;
             this.logingb.TabStop = false;
-            this.logingb.Text = "LOGIN";
             // 
             // tb_passwordlogin
             // 
@@ -87,7 +86,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_clearlogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_clearlogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_clearlogin.Location = new System.Drawing.Point(325, 246);
+            this.bt_clearlogin.Location = new System.Drawing.Point(294, 237);
             this.bt_clearlogin.Name = "bt_clearlogin";
             this.bt_clearlogin.Size = new System.Drawing.Size(139, 49);
             this.bt_clearlogin.TabIndex = 14;
@@ -98,7 +97,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_login.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_login.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_login.Location = new System.Drawing.Point(53, 246);
+            this.bt_login.Location = new System.Drawing.Point(89, 237);
             this.bt_login.Name = "bt_login";
             this.bt_login.Size = new System.Drawing.Size(139, 49);
             this.bt_login.TabIndex = 13;
@@ -110,7 +109,7 @@ namespace Chit_Fund_Management_System
             // 
             this.linklb_newuser.AutoSize = true;
             this.linklb_newuser.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklb_newuser.Location = new System.Drawing.Point(213, 276);
+            this.linklb_newuser.Location = new System.Drawing.Point(222, 310);
             this.linklb_newuser.Name = "linklb_newuser";
             this.linklb_newuser.Size = new System.Drawing.Size(85, 19);
             this.linklb_newuser.TabIndex = 12;
@@ -144,7 +143,7 @@ namespace Chit_Fund_Management_System
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 7);
+            this.label1.Location = new System.Drawing.Point(402, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(726, 55);
             this.label1.TabIndex = 1;
@@ -154,9 +153,9 @@ namespace Chit_Fund_Management_System
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-1, 2);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1453, 84);
+            this.panel1.Size = new System.Drawing.Size(1474, 84);
             this.panel1.TabIndex = 2;
             // 
             // f_login
@@ -166,7 +165,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(944, 603);
+            this.ClientSize = new System.Drawing.Size(1498, 689);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logingb);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;

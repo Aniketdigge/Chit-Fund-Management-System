@@ -125,5 +125,12 @@ namespace Chit_Fund_Management_System
             loan_Payment.Show();
             this.Hide();
         }
+
+        private void loanInstallmentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Loan_Installment_Log loan_Installment_Log = new Loan_Installment_Log();
+            loan_Installment_Log.Show();
+            this.Hide();
+        }
     }
 }

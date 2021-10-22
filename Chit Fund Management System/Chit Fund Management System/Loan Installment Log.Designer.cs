@@ -1,7 +1,7 @@
 ﻿
 namespace Chit_Fund_Management_System
 {
-    partial class Bidding_Log
+    partial class Loan_Installment_Log
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bt_bidding_close = new System.Windows.Forms.Button();
-            this.bt_bidding_add = new System.Windows.Forms.Button();
+            this.bt_close = new System.Windows.Forms.Button();
+            this.bt_view_report = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -45,70 +45,69 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(12, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1443, 70);
-            this.panel1.TabIndex = 6;
+            this.panel1.Size = new System.Drawing.Size(1474, 70);
+            this.panel1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(558, 0);
+            this.label1.Location = new System.Drawing.Point(483, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 56);
+            this.label1.Size = new System.Drawing.Size(504, 56);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bidding Log";
+            this.label1.Text = "Loan Installment Log";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.Controls.Add(this.bt_bidding_close);
-            this.groupBox1.Controls.Add(this.bt_bidding_add);
+            this.groupBox1.Controls.Add(this.bt_close);
+            this.groupBox1.Controls.Add(this.bt_view_report);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(495, 186);
+            this.groupBox1.Location = new System.Drawing.Point(446, 192);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(436, 266);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.Size = new System.Drawing.Size(606, 323);
+            this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
-            // bt_bidding_close
+            // bt_close
             // 
-            this.bt_bidding_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_bidding_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_bidding_close.Location = new System.Drawing.Point(152, 158);
-            this.bt_bidding_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_bidding_close.Name = "bt_bidding_close";
-            this.bt_bidding_close.Size = new System.Drawing.Size(126, 45);
-            this.bt_bidding_close.TabIndex = 22;
-            this.bt_bidding_close.Text = "CLOSE";
-            this.bt_bidding_close.UseVisualStyleBackColor = false;
-            this.bt_bidding_close.Click += new System.EventHandler(this.bt_bidding_close_Click);
+            this.bt_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_close.Location = new System.Drawing.Point(230, 165);
+            this.bt_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(157, 45);
+            this.bt_close.TabIndex = 31;
+            this.bt_close.Text = "CLOSE";
+            this.bt_close.UseVisualStyleBackColor = false;
+            this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
-            // bt_bidding_add
+            // bt_view_report
             // 
-            this.bt_bidding_add.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_bidding_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_bidding_add.Location = new System.Drawing.Point(123, 86);
-            this.bt_bidding_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_bidding_add.Name = "bt_bidding_add";
-            this.bt_bidding_add.Size = new System.Drawing.Size(191, 45);
-            this.bt_bidding_add.TabIndex = 17;
-            this.bt_bidding_add.Text = "BIDDING LOG";
-            this.bt_bidding_add.UseVisualStyleBackColor = false;
-            this.bt_bidding_add.Click += new System.EventHandler(this.bt_bidding_add_Click);
+            this.bt_view_report.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_view_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_view_report.Location = new System.Drawing.Point(202, 85);
+            this.bt_view_report.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_view_report.Name = "bt_view_report";
+            this.bt_view_report.Size = new System.Drawing.Size(207, 45);
+            this.bt_view_report.TabIndex = 30;
+            this.bt_view_report.Text = "VIEW REPORT";
+            this.bt_view_report.UseVisualStyleBackColor = false;
+            this.bt_view_report.Click += new System.EventHandler(this.bt_view_report_Click);
             // 
-            // Bidding_Log
+            // Loan_Installment_Log
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1467, 689);
+            this.ClientSize = new System.Drawing.Size(1498, 686);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Bidding_Log";
-            this.Text = "Bidding Log";
+            this.Name = "Loan_Installment_Log";
+            this.Text = "Loan Installment Log";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -121,7 +120,7 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button bt_bidding_add;
-        private System.Windows.Forms.Button bt_bidding_close;
+        private System.Windows.Forms.Button bt_view_report;
+        private System.Windows.Forms.Button bt_close;
     }
 }

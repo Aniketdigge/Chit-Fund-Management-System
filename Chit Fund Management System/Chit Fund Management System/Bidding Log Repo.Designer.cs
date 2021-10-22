@@ -40,14 +40,14 @@ namespace Chit_Fund_Management_System
             this.crv_bidding_log_repo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_bidding_log_repo.Location = new System.Drawing.Point(0, 0);
             this.crv_bidding_log_repo.Name = "crv_bidding_log_repo";
-            this.crv_bidding_log_repo.Size = new System.Drawing.Size(1098, 640);
+            this.crv_bidding_log_repo.Size = new System.Drawing.Size(1467, 689);
             this.crv_bidding_log_repo.TabIndex = 0;
             // 
             // Bidding_Log_Repo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 640);
+            this.ClientSize = new System.Drawing.Size(1467, 689);
             this.Controls.Add(this.crv_bidding_log_repo);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Bidding_Log_Repo";

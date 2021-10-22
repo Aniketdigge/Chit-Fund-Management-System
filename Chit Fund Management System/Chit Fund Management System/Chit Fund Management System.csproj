@@ -179,6 +179,24 @@
     <Compile Include="Employee Salary Slip.Designer.cs">
       <DependentUpon>Employee Salary Slip.cs</DependentUpon>
     </Compile>
+    <Compile Include="Loan Installment Log Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Loan Installment Log Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Loan Installment Log Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan Installment Log Viewer.Designer.cs">
+      <DependentUpon>Loan Installment Log Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan Installment Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loan Installment Log.Designer.cs">
+      <DependentUpon>Loan Installment Log.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loan Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +233,12 @@
     <Compile Include="CompanyProfile.Designer.cs">
       <DependentUpon>CompanyProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Member Receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member Receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Member Transaction Log Repo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +256,12 @@
     </Compile>
     <Compile Include="Member Transaction Log.Designer.cs">
       <DependentUpon>Member Transaction Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member Transaction Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Transaction Receipt.Designer.cs">
+      <DependentUpon>Member Transaction Receipt.cs</DependentUpon>
     </Compile>
     <Compile Include="NewUserRegistration.cs">
       <SubType>Form</SubType>
@@ -327,6 +357,16 @@
     <EmbeddedResource Include="Employee Salary Slip.resx">
       <DependentUpon>Employee Salary Slip.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Loan Installment Log Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Loan Installment Log Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Installment Log Viewer.resx">
+      <DependentUpon>Loan Installment Log Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan Installment Log.resx">
+      <DependentUpon>Loan Installment Log.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loan Payment.resx">
       <DependentUpon>Loan Payment.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +386,10 @@
     <EmbeddedResource Include="CompanyProfile.resx">
       <DependentUpon>CompanyProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Member Receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Member Receipt.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Member Transaction Log Repo.resx">
       <DependentUpon>Member Transaction Log Repo.cs</DependentUpon>
     </EmbeddedResource>
@@ -355,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Member Transaction Log.resx">
       <DependentUpon>Member Transaction Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Transaction Receipt.resx">
+      <DependentUpon>Member Transaction Receipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewUserRegistration.resx">
       <DependentUpon>NewUserRegistration.cs</DependentUpon>

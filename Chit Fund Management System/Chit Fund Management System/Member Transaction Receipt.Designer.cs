@@ -1,7 +1,7 @@
 ﻿
 namespace Chit_Fund_Management_System
 {
-    partial class Salary_Payment_Repo
+    partial class Member_Transaction_Receipt
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,36 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.crv_salary_report = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.crv_member_receipt = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crv_salary_report
+            // crv_member_receipt
             // 
-            this.crv_salary_report.ActiveViewIndex = -1;
-            this.crv_salary_report.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crv_salary_report.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crv_salary_report.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crv_salary_report.Location = new System.Drawing.Point(0, 0);
-            this.crv_salary_report.Name = "crv_salary_report";
-            this.crv_salary_report.Size = new System.Drawing.Size(1497, 689);
-            this.crv_salary_report.TabIndex = 0;
+            this.crv_member_receipt.ActiveViewIndex = -1;
+            this.crv_member_receipt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crv_member_receipt.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crv_member_receipt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crv_member_receipt.Location = new System.Drawing.Point(0, 0);
+            this.crv_member_receipt.Name = "crv_member_receipt";
+            this.crv_member_receipt.Size = new System.Drawing.Size(1499, 689);
+            this.crv_member_receipt.TabIndex = 0;
             // 
-            // Salary_Payment_Repo
+            // Member_Transaction_Receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1497, 689);
-            this.Controls.Add(this.crv_salary_report);
+            this.ClientSize = new System.Drawing.Size(1499, 689);
+            this.Controls.Add(this.crv_member_receipt);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Salary_Payment_Repo";
-            this.Text = "Salary Payment Report";
-            this.Load += new System.EventHandler(this.Salary_Payment_Repo_Load);
+            this.Name = "Member_Transaction_Receipt";
+            this.Text = "Member Transaction Receipt";
+            this.Load += new System.EventHandler(this.Member_Transaction_Receipt_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv_salary_report;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv_member_receipt;
     }
 }

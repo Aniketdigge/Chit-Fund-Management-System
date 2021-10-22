@@ -40,7 +40,7 @@ namespace Chit_Fund_Management_System
             this.crv_commission_reeipt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_commission_reeipt.Location = new System.Drawing.Point(0, 0);
             this.crv_commission_reeipt.Name = "crv_commission_reeipt";
-            this.crv_commission_reeipt.Size = new System.Drawing.Size(1034, 606);
+            this.crv_commission_reeipt.Size = new System.Drawing.Size(1468, 689);
             this.crv_commission_reeipt.TabIndex = 0;
             this.crv_commission_reeipt.ToolPanelWidth = 175;
             // 
@@ -48,7 +48,7 @@ namespace Chit_Fund_Management_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 606);
+            this.ClientSize = new System.Drawing.Size(1468, 689);
             this.Controls.Add(this.crv_commission_reeipt);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Commission_Receipt_Viewer";

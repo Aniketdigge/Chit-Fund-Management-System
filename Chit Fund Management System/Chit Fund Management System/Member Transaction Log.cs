@@ -8,11 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace Chit_Fund_Management_System
 {
     public partial class Member_Transaction_Log : Form
     {
+        public static string member_id = " ";
+        public static string member_name = " ";
+        public static string group_id = " ";
+        public static string agent_id = " ";
+        public static string chit_amt = " ";
+        public static string loan_amt = " ";
+        public static string paid_amt = " ";
+        public static string payment_date = " ";
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\Chit-Fund-Management-System\ChitFundDB.accdb");
         OleDbCommand cmd;
         public Member_Transaction_Log()
@@ -98,6 +108,28 @@ namespace Chit_Fund_Management_System
         {
             Member_Transaction_Log_Repo member_Transaction_Log_Repo = new Member_Transaction_Log_Repo();
             member_Transaction_Log_Repo.Show();
+        }
+
+        private void bt_member_transaction_receipt_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                member_id = tb_mtl_member_id.Text;
+                member_name = tb_mtl_member_name.Text;
+                group_id = tb_mtl_member_group_id.Text;
+                agent_id = tb_mtl_agent_id.Text;
+                chit_amt = tb_mtl_chit_amount.Text;
+                loan_amt = tb_mtl_loan_amount.Text;
+                paid_amt = tb_mtl_amount_paid.Text;
+                payment_date = dtp_mtl_transaction_date.Value.ToString("d-M-yyyy");
+
+                Member_Transaction_Receipt member_Transaction_Receipt = new Member_Transaction_Receipt();
+                member_Transaction_Receipt.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

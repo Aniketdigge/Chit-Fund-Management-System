@@ -40,7 +40,7 @@ namespace Chit_Fund_Management_System
             this.crv_branch_report_view.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_branch_report_view.Location = new System.Drawing.Point(0, 0);
             this.crv_branch_report_view.Name = "crv_branch_report_view";
-            this.crv_branch_report_view.Size = new System.Drawing.Size(1176, 624);
+            this.crv_branch_report_view.Size = new System.Drawing.Size(1465, 689);
             this.crv_branch_report_view.TabIndex = 0;
             this.crv_branch_report_view.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
@@ -48,7 +48,7 @@ namespace Chit_Fund_Management_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1176, 624);
+            this.ClientSize = new System.Drawing.Size(1465, 689);
             this.Controls.Add(this.crv_branch_report_view);
             this.Name = "Branch_Report_View";
             this.Text = "Branch Report View";

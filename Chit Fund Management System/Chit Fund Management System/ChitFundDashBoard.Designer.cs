@@ -41,6 +41,7 @@ namespace Chit_Fund_Management_System
             this.memberTransactionLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loanInstallmentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auctionRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biddingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biddingLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,6 @@ namespace Chit_Fund_Management_System
             this.employeePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
-            this.loanInstallmentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +73,7 @@ namespace Chit_Fund_Management_System
             this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1200, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(1468, 32);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "DashBoard";
             // 
@@ -166,6 +166,14 @@ namespace Chit_Fund_Management_System
             this.loanToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
             this.loanToolStripMenuItem.Text = "Loan";
             this.loanToolStripMenuItem.Click += new System.EventHandler(this.loanToolStripMenuItem_Click);
+            // 
+            // loanInstallmentLogToolStripMenuItem
+            // 
+            this.loanInstallmentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
+            this.loanInstallmentLogToolStripMenuItem.Name = "loanInstallmentLogToolStripMenuItem";
+            this.loanInstallmentLogToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
+            this.loanInstallmentLogToolStripMenuItem.Text = "Loan Installment Log";
+            this.loanInstallmentLogToolStripMenuItem.Click += new System.EventHandler(this.loanInstallmentLogToolStripMenuItem_Click);
             // 
             // auctionRoomToolStripMenuItem
             // 
@@ -296,7 +304,7 @@ namespace Chit_Fund_Management_System
             // 
             this.lkb_back_to_login.AutoSize = true;
             this.lkb_back_to_login.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lkb_back_to_login.Location = new System.Drawing.Point(1040, 45);
+            this.lkb_back_to_login.Location = new System.Drawing.Point(1308, 46);
             this.lkb_back_to_login.Name = "lkb_back_to_login";
             this.lkb_back_to_login.Size = new System.Drawing.Size(148, 22);
             this.lkb_back_to_login.TabIndex = 2;
@@ -305,13 +313,6 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lkb_back_to_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkb_back_to_login_LinkClicked);
             // 
-            // loanInstallmentLogToolStripMenuItem
-            // 
-            this.loanInstallmentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.loanInstallmentLogToolStripMenuItem.Name = "loanInstallmentLogToolStripMenuItem";
-            this.loanInstallmentLogToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
-            this.loanInstallmentLogToolStripMenuItem.Text = "Loan Installment Log";
-            // 
             // f_chit_fund_dash_board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -319,7 +320,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1200, 546);
+            this.ClientSize = new System.Drawing.Size(1468, 611);
             this.Controls.Add(this.lkb_back_to_login);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;

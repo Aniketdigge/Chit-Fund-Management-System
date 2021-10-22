@@ -32,6 +32,7 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bt_member_transaction_receipt = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tb_mtl_amount_paid = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,14 +65,14 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(12, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 70);
+            this.panel1.Size = new System.Drawing.Size(1475, 70);
             this.panel1.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(276, 0);
+            this.label1.Location = new System.Drawing.Point(431, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(593, 56);
             this.label1.TabIndex = 0;
@@ -80,6 +81,7 @@ namespace Chit_Fund_Management_System
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.bt_member_transaction_receipt);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.tb_mtl_amount_paid);
             this.groupBox1.Controls.Add(this.label3);
@@ -102,23 +104,35 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.tb_mtl_member_id);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 96);
+            this.groupBox1.Location = new System.Drawing.Point(203, 132);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1177, 495);
+            this.groupBox1.Size = new System.Drawing.Size(1103, 495);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Member";
+            // 
+            // bt_member_transaction_receipt
+            // 
+            this.bt_member_transaction_receipt.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_member_transaction_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_member_transaction_receipt.Location = new System.Drawing.Point(405, 289);
+            this.bt_member_transaction_receipt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_member_transaction_receipt.Name = "bt_member_transaction_receipt";
+            this.bt_member_transaction_receipt.Size = new System.Drawing.Size(289, 45);
+            this.bt_member_transaction_receipt.TabIndex = 30;
+            this.bt_member_transaction_receipt.Text = "RECEIPT";
+            this.bt_member_transaction_receipt.UseVisualStyleBackColor = false;
+            this.bt_member_transaction_receipt.Click += new System.EventHandler(this.bt_member_transaction_receipt_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(432, 423);
+            this.button1.Location = new System.Drawing.Point(405, 425);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(299, 45);
+            this.button1.Size = new System.Drawing.Size(289, 45);
             this.button1.TabIndex = 29;
             this.button1.Text = "LOG REPORT";
             this.button1.UseVisualStyleBackColor = false;
@@ -187,7 +201,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_mtl_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_mtl_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_mtl_close.Location = new System.Drawing.Point(763, 337);
+            this.bt_mtl_close.Location = new System.Drawing.Point(729, 358);
             this.bt_mtl_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_mtl_close.Name = "bt_mtl_close";
             this.bt_mtl_close.Size = new System.Drawing.Size(126, 45);
@@ -211,7 +225,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_mtl_clear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_mtl_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_mtl_clear.Location = new System.Drawing.Point(605, 337);
+            this.bt_mtl_clear.Location = new System.Drawing.Point(568, 358);
             this.bt_mtl_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_mtl_clear.Name = "bt_mtl_clear";
             this.bt_mtl_clear.Size = new System.Drawing.Size(126, 45);
@@ -234,7 +248,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_mtl_add.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_mtl_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_mtl_add.Location = new System.Drawing.Point(272, 337);
+            this.bt_mtl_add.Location = new System.Drawing.Point(236, 358);
             this.bt_mtl_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_mtl_add.Name = "bt_mtl_add";
             this.bt_mtl_add.Size = new System.Drawing.Size(130, 45);
@@ -247,7 +261,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_mtl_search.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_mtl_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_mtl_search.Location = new System.Drawing.Point(445, 337);
+            this.bt_mtl_search.Location = new System.Drawing.Point(405, 358);
             this.bt_mtl_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_mtl_search.Name = "bt_mtl_search";
             this.bt_mtl_search.Size = new System.Drawing.Size(126, 45);
@@ -346,7 +360,7 @@ namespace Chit_Fund_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1196, 633);
+            this.ClientSize = new System.Drawing.Size(1499, 688);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -386,5 +400,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_mtl_amount_paid;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_member_transaction_receipt;
     }
 }

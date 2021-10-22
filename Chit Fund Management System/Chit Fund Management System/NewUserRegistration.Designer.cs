@@ -61,7 +61,7 @@ namespace Chit_Fund_Management_System
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(129, 11);
+            this.label2.Location = new System.Drawing.Point(406, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(685, 56);
             this.label2.TabIndex = 1;
@@ -100,12 +100,11 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(97, 134);
+            this.groupBox1.Location = new System.Drawing.Point(359, 187);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(779, 391);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "New User";
             // 
             // bt_close
             // 
@@ -177,9 +176,9 @@ namespace Chit_Fund_Management_System
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(-4, -2);
+            this.panel1.Location = new System.Drawing.Point(6, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1408, 103);
+            this.panel1.Size = new System.Drawing.Size(1479, 92);
             this.panel1.TabIndex = 5;
             // 
             // f_newuser
@@ -189,7 +188,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(989, 589);
+            this.ClientSize = new System.Drawing.Size(1497, 685);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;

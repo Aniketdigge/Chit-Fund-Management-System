@@ -62,14 +62,14 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(8, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1056, 68);
+            this.panel1.Size = new System.Drawing.Size(1448, 68);
             this.panel1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(351, 0);
+            this.label1.Location = new System.Drawing.Point(536, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(405, 56);
             this.label1.TabIndex = 0;
@@ -97,14 +97,13 @@ namespace Chit_Fund_Management_System
             this.Company.Controls.Add(this.tb_cinno_company);
             this.Company.Controls.Add(this.label2);
             this.Company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Company.Location = new System.Drawing.Point(76, 100);
+            this.Company.Location = new System.Drawing.Point(281, 110);
             this.Company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Company.Name = "Company";
             this.Company.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Company.Size = new System.Drawing.Size(925, 543);
             this.Company.TabIndex = 2;
             this.Company.TabStop = false;
-            this.Company.Text = "Company";
             // 
             // bt_close_company
             // 
@@ -319,7 +318,7 @@ namespace Chit_Fund_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1070, 668);
+            this.ClientSize = new System.Drawing.Size(1468, 688);
             this.Controls.Add(this.Company);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;

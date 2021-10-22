@@ -1,7 +1,7 @@
 ﻿
 namespace Chit_Fund_Management_System
 {
-    partial class Salary_Payment_Repo
+    partial class Loan_Installment_Log_Viewer
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,36 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.crv_salary_report = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.crv_loan_installment_log_viewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crv_salary_report
+            // crv_loan_installment_log_viewer
             // 
-            this.crv_salary_report.ActiveViewIndex = -1;
-            this.crv_salary_report.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crv_salary_report.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crv_salary_report.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crv_salary_report.Location = new System.Drawing.Point(0, 0);
-            this.crv_salary_report.Name = "crv_salary_report";
-            this.crv_salary_report.Size = new System.Drawing.Size(1497, 689);
-            this.crv_salary_report.TabIndex = 0;
+            this.crv_loan_installment_log_viewer.ActiveViewIndex = -1;
+            this.crv_loan_installment_log_viewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crv_loan_installment_log_viewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crv_loan_installment_log_viewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crv_loan_installment_log_viewer.Location = new System.Drawing.Point(0, 0);
+            this.crv_loan_installment_log_viewer.Name = "crv_loan_installment_log_viewer";
+            this.crv_loan_installment_log_viewer.Size = new System.Drawing.Size(1497, 690);
+            this.crv_loan_installment_log_viewer.TabIndex = 0;
             // 
-            // Salary_Payment_Repo
+            // Loan_Installment_Log_Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1497, 689);
-            this.Controls.Add(this.crv_salary_report);
+            this.ClientSize = new System.Drawing.Size(1497, 690);
+            this.Controls.Add(this.crv_loan_installment_log_viewer);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Salary_Payment_Repo";
-            this.Text = "Salary Payment Report";
-            this.Load += new System.EventHandler(this.Salary_Payment_Repo_Load);
+            this.Name = "Loan_Installment_Log_Viewer";
+            this.Text = "Loan Installment Log Viewer";
+            this.Load += new System.EventHandler(this.Loan_Installment_Log_Viewer_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv_salary_report;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crv_loan_installment_log_viewer;
     }
 }

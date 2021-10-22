@@ -62,7 +62,7 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1172, 77);
+            this.groupBox1.Size = new System.Drawing.Size(1443, 77);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -70,7 +70,7 @@ namespace Chit_Fund_Management_System
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(418, 9);
+            this.label1.Location = new System.Drawing.Point(566, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(320, 56);
             this.label1.TabIndex = 1;
@@ -100,12 +100,11 @@ namespace Chit_Fund_Management_System
             this.groupBox2.Controls.Add(this.tb_agent_id);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(29, 115);
+            this.groupBox2.Location = new System.Drawing.Point(183, 132);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1133, 485);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Agent";
             // 
             // dtp_agent_joining_date
             // 
@@ -334,7 +333,7 @@ namespace Chit_Fund_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1190, 654);
+            this.ClientSize = new System.Drawing.Size(1467, 686);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Agent_Profile";
