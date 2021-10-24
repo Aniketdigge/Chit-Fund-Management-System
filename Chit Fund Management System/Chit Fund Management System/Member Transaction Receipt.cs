@@ -35,6 +35,8 @@ namespace Chit_Fund_Management_System
                 group_id.Text = Member_Transaction_Log.group_id;
                 TextObject agent_id = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["agent_id"];
                 agent_id.Text = Member_Transaction_Log.agent_id;
+                TextObject tr_method = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["tr_method"];
+                tr_method.Text = Member_Transaction_Log.transaction_mehtod;
                 TextObject chit_amt = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["chit_amt"];
                 chit_amt.Text = Member_Transaction_Log.chit_amt;
                 TextObject loan_amt = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["loan_amt"];

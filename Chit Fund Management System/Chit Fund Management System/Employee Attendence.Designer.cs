@@ -46,6 +46,7 @@ namespace Chit_Fund_Management_System
             this.tb_attendence_emp_name = new System.Windows.Forms.TextBox();
             this.tb_attendence_emp_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.bt_attendence_log = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +74,7 @@ namespace Chit_Fund_Management_System
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.bt_attendence_log);
             this.groupBox1.Controls.Add(this.cb_attendence_a_p);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dtp_attendence_date);
@@ -129,7 +131,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_attendence_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_attendence_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_attendence_close.Location = new System.Drawing.Point(441, 329);
+            this.bt_attendence_close.Location = new System.Drawing.Point(539, 327);
             this.bt_attendence_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_attendence_close.Name = "bt_attendence_close";
             this.bt_attendence_close.Size = new System.Drawing.Size(144, 45);
@@ -253,6 +255,19 @@ namespace Chit_Fund_Management_System
             this.label2.TabIndex = 0;
             this.label2.Text = "Employee ID :";
             // 
+            // bt_attendence_log
+            // 
+            this.bt_attendence_log.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_attendence_log.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_attendence_log.Location = new System.Drawing.Point(345, 327);
+            this.bt_attendence_log.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_attendence_log.Name = "bt_attendence_log";
+            this.bt_attendence_log.Size = new System.Drawing.Size(144, 45);
+            this.bt_attendence_log.TabIndex = 32;
+            this.bt_attendence_log.Text = "LOG";
+            this.bt_attendence_log.UseVisualStyleBackColor = false;
+            this.bt_attendence_log.Click += new System.EventHandler(this.bt_attendence_log_Click);
+            // 
             // Employee_Attendence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -291,5 +306,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_attendence_a_p;
+        private System.Windows.Forms.Button bt_attendence_log;
     }
 }

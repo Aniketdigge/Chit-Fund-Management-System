@@ -21,6 +21,7 @@ namespace Chit_Fund_Management_System
         public static string agent_id = " ";
         public static string chit_amt = " ";
         public static string loan_amt = " ";
+        public static string transaction_mehtod = " ";
         public static string paid_amt = " ";
         public static string payment_date = " ";
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\Chit-Fund-Management-System\ChitFundDB.accdb");
@@ -40,13 +41,14 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("insert into Member_Transaction_LogTB(Member_id, Member_name, Group_id, Amount_paid, Agent_id, Transaction_date) values" +
-                    "(@memberid, @membername, @groupid, @amountpaid, @agentid, @transactiondate)", con);
+                cmd = new OleDbCommand("insert into Member_Transaction_LogTB(Member_id, Member_name, Group_id, Amount_paid, Agent_id, Transaction_method, Transaction_date) values" +
+                    "(@memberid, @membername, @groupid, @amountpaid, @agentid, @transactionmethod, @transactiondate)", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_mtl_member_id.Text);
                 cmd.Parameters.AddWithValue("@membername", tb_mtl_member_name.Text);
                 cmd.Parameters.AddWithValue("@groupid", tb_mtl_member_group_id.Text);
                 cmd.Parameters.AddWithValue("@amountpaid", tb_mtl_amount_paid.Text);
                 cmd.Parameters.AddWithValue("@agentid", tb_mtl_agent_id.Text);
+                cmd.Parameters.AddWithValue("@transactionmethod", cb_mt_payment_method.Text);
                 cmd.Parameters.AddWithValue("@transactiondate", dtp_mtl_transaction_date.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -120,11 +122,35 @@ namespace Chit_Fund_Management_System
                 agent_id = tb_mtl_agent_id.Text;
                 chit_amt = tb_mtl_chit_amount.Text;
                 loan_amt = tb_mtl_loan_amount.Text;
+                transaction_mehtod = cb_mt_payment_method.Text;
                 paid_amt = tb_mtl_amount_paid.Text;
                 payment_date = dtp_mtl_transaction_date.Value.ToString("d-M-yyyy");
 
                 Member_Transaction_Receipt member_Transaction_Receipt = new Member_Transaction_Receipt();
                 member_Transaction_Receipt.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void bt_mtl_pay_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                member_id = tb_mtl_member_id.Text;
+                member_name = tb_mtl_member_name.Text;
+                group_id = tb_mtl_member_group_id.Text;
+                agent_id = tb_mtl_agent_id.Text;
+                chit_amt = tb_mtl_chit_amount.Text;
+                loan_amt = tb_mtl_loan_amount.Text;
+                paid_amt = tb_mtl_amount_paid.Text;
+                payment_date = dtp_mtl_transaction_date.Value.ToString("d-M-yyyy");
+
+                Member_Payment member_Payment = new Member_Payment();
+                member_Payment.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {

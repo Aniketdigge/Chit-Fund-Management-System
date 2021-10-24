@@ -9,6 +9,7 @@ namespace Chit_Fund_Management_System
         OleDbConnection con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=F:\Chit-Fund-Management-System\ChitFundDB.accdb");
         OleDbCommand cmd;
         OleDbDataReader dr;
+        public static string admin;
         public f_login()
         {
             InitializeComponent();
@@ -41,14 +42,19 @@ namespace Chit_Fund_Management_System
                 dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
+                    lb_user_type.Text = (dr["User_type"].ToString());
+                    admin = lb_user_type.Text;
                     f_chit_fund_dash_board fund_Dash_Board = new f_chit_fund_dash_board();
                     fund_Dash_Board.Show();
                     this.Hide();
+                    
                 }
                 else
                 {
                     MessageBox.Show("Username or password is incorrect");
                 }
+
+
             }
             catch (Exception ex)
             {

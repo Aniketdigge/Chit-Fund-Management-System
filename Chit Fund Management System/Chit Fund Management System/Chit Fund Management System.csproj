@@ -77,6 +77,12 @@
     <Compile Include="Agent Commission.Designer.cs">
       <DependentUpon>Agent Commission.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agent Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent Payment.Designer.cs">
+      <DependentUpon>Agent Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agent Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,11 +155,29 @@
       <DependentUpon>Commission Receipt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Employee Attendence Log Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Attendence Log Viewer.Designer.cs">
+      <DependentUpon>Employee Attendence Log Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Attendence Log.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee Attendence Log.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Employee Attendence.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee Attendence.Designer.cs">
       <DependentUpon>Employee Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Payment.Designer.cs">
+      <DependentUpon>Employee Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Profile.cs">
       <SubType>Form</SubType>
@@ -191,12 +215,6 @@
     <Compile Include="Loan Installment Log Viewer.Designer.cs">
       <DependentUpon>Loan Installment Log Viewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Loan Installment Log.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Loan Installment Log.Designer.cs">
-      <DependentUpon>Loan Installment Log.cs</DependentUpon>
-    </Compile>
     <Compile Include="Loan Payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +232,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Loan Receipt.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Member Invoice Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Invoice Viewer.Designer.cs">
+      <DependentUpon>Member Invoice Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member Invoice1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member Invoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Member Payment Log Report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Member Payment Log Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Member Payment Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Payment Log.Designer.cs">
+      <DependentUpon>Member Payment Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Payment.Designer.cs">
+      <DependentUpon>Member Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="Member Profile.cs">
       <SubType>Form</SubType>
@@ -302,6 +350,9 @@
     <EmbeddedResource Include="Agent Commission.resx">
       <DependentUpon>Agent Commission.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Agent Payment.resx">
+      <DependentUpon>Agent Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agent Profile.resx">
       <DependentUpon>Agent Profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,8 +392,18 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Commission Receipt1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee Attendence Log Viewer.resx">
+      <DependentUpon>Employee Attendence Log Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Attendence Log.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Employee Attendence Log.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee Attendence.resx">
       <DependentUpon>Employee Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Payment.resx">
+      <DependentUpon>Employee Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Profile.resx">
       <DependentUpon>Employee Profile.cs</DependentUpon>
@@ -364,9 +425,6 @@
     <EmbeddedResource Include="Loan Installment Log Viewer.resx">
       <DependentUpon>Loan Installment Log Viewer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Loan Installment Log.resx">
-      <DependentUpon>Loan Installment Log.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Loan Payment.resx">
       <DependentUpon>Loan Payment.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +434,23 @@
     <EmbeddedResource Include="Loan Receipt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Loan Receipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Invoice Viewer.resx">
+      <DependentUpon>Member Invoice Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Invoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Member Invoice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Payment Log Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Member Payment Log Report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Payment Log.resx">
+      <DependentUpon>Member Payment Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Payment.resx">
+      <DependentUpon>Member Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Member Profile.resx">
       <DependentUpon>Member Profile.cs</DependentUpon>

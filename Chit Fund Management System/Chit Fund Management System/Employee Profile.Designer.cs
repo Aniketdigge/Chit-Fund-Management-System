@@ -368,7 +368,7 @@ namespace Chit_Fund_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1467, 690);
+            this.ClientSize = new System.Drawing.Size(1491, 690);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;

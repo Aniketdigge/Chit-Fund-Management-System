@@ -17,6 +17,7 @@ namespace Chit_Fund_Management_System
     {
         public static string member_id = " ";
         public static string member_name = " ";
+        public static string payment_method = " ";
         public static string group_id = " ";
         public static string agent_id = " ";
         public static string chit_amt = " ";
@@ -57,10 +58,11 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("insert into Loan_ActivityTB(Member_id, Member_name, Loan_amount, Gross_amount, Intrest, Total_amount, Installment_date) values" +
-                    "(@memberid, @membername, @loanamount, @grossamount, @intrest, @totalamount, @installmentdate)", con);
+                cmd = new OleDbCommand("insert into Loan_ActivityTB(Member_id, Member_name, Payment_method, Loan_amount, Gross_amount, Intrest, Total_amount, Installment_date) values" +
+                    "(@memberid, @membername, @paymentmethod, @loanamount, @grossamount, @intrest, @totalamount, @installmentdate)", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_loan_member_id.Text);
                 cmd.Parameters.AddWithValue("@membername", tb_loan_member_name.Text);
+                cmd.Parameters.AddWithValue("@paymentmethod", cb_la_payment_method.Text);
                 cmd.Parameters.AddWithValue("@loanamount", tb_loan_loan_amount.Text);
                 cmd.Parameters.AddWithValue("@grossamount", tb_loan_gross_amount.Text);
                 cmd.Parameters.AddWithValue("@intrest", tb_loan_intrest.Text);
@@ -148,6 +150,7 @@ namespace Chit_Fund_Management_System
             {
                 member_id = tb_loan_member_id.Text;
                 member_name = tb_loan_member_name.Text;
+                payment_method = cb_la_payment_method.Text;
                 group_id = tb_loan_member_group_id.Text;
                 agent_id = tb_loan_agent_id.Text;
                 chit_amt = tb_loan_chit_amount.Text;
@@ -164,6 +167,12 @@ namespace Chit_Fund_Management_System
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void bt_loan_log_Click(object sender, EventArgs e)
+        {
+            Loan_Installment_Log_Viewer loan_Installment_Log_Viewer = new Loan_Installment_Log_Viewer();
+            loan_Installment_Log_Viewer.Show();
         }
     }
 }

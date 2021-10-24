@@ -32,6 +32,8 @@ namespace Chit_Fund_Management_System
                 member_id.Text = Loan_Payment.member_id;
                 TextObject member_name = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["member_name"];
                 member_name.Text = Loan_Payment.member_name;
+                TextObject pyament_method = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["pyament_method"];
+                pyament_method.Text = Loan_Payment.payment_method;
                 TextObject group_id = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["group_id"];
                 group_id.Text = Loan_Payment.group_id;
                 TextObject agent_id = (TextObject)cryst.ReportDefinition.Sections["Section3"].ReportObjects["agent_id"];

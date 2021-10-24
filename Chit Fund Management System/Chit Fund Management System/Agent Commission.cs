@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Shared;
+
 
 namespace Chit_Fund_Management_System
 {
@@ -49,25 +48,7 @@ namespace Chit_Fund_Management_System
 
         private void bt_commission_save_Click(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-                cmd = new OleDbCommand("insert into Agent_Commision_LogTB(Agent_id, Agent_name, Group_id, Chit_amount, Commission_amount, Date_of_received) values" +
-                    "(@agentid, @agentname, @groupid, @chitamount, @commissionamount, @dateofreceived)", con);
-                cmd.Parameters.AddWithValue("@agentid", tb_agent_id.Text);
-                cmd.Parameters.AddWithValue("@agentname", tb_commission_agent_name.Text);
-                cmd.Parameters.AddWithValue("@groupid", tb_commission_group_id.Text);
-                cmd.Parameters.AddWithValue("@chitamount", tb_commission_chit_amount.Text);
-                cmd.Parameters.AddWithValue("@commissionamount", tb_commission_amount.Text);
-                cmd.Parameters.AddWithValue("@dateofreceived", dtp_commission_received_date.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Saved Successfully....");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            
         }
 
         private void bt_commission_search_Click(object sender, EventArgs e)
@@ -127,6 +108,11 @@ namespace Chit_Fund_Management_System
 
         private void bt_commission_receipt_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void bt_commission_pay_Click(object sender, EventArgs e)
+        {
             try
             {
                 agent_id = tb_agent_id.Text;
@@ -137,10 +123,11 @@ namespace Chit_Fund_Management_System
                 commission_amt = tb_commission_amount.Text;
                 paid_date = dtp_commission_received_date.Value.ToString("d-M-yyyy");
 
-                Commission_Receipt_Viewer commission_Receipt_Viewer = new Commission_Receipt_Viewer();
-                commission_Receipt_Viewer.Show();
+                Agent_Payment agent_Payment = new Agent_Payment();
+                agent_Payment.Show();
+                this.Hide();
             }
-            catch(Exception ex2)
+            catch (Exception ex2)
             {
                 MessageBox.Show(ex2.ToString());
             }

@@ -41,7 +41,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@agentjoiningdate", dtp_agent_joining_date.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Branch Saved Successfully....");
+                MessageBox.Show("Saved Successfully....");
             }
             catch (Exception ex)
             {

@@ -59,6 +59,9 @@ namespace Chit_Fund_Management_System
             this.tb_loan_member_name = new System.Windows.Forms.TextBox();
             this.tb_loan_member_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.bt_loan_log = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cb_la_payment_method = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +89,9 @@ namespace Chit_Fund_Management_System
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.cb_la_payment_method);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.bt_loan_log);
             this.groupBox1.Controls.Add(this.bt_update);
             this.groupBox1.Controls.Add(this.tb_loan_intrest);
             this.groupBox1.Controls.Add(this.label6);
@@ -114,11 +120,11 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.tb_loan_member_id);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(226, 114);
+            this.groupBox1.Location = new System.Drawing.Point(226, 98);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1050, 533);
+            this.groupBox1.Size = new System.Drawing.Size(1050, 581);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
@@ -126,7 +132,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_update.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_update.Location = new System.Drawing.Point(470, 410);
+            this.bt_update.Location = new System.Drawing.Point(476, 458);
             this.bt_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_update.Name = "bt_update";
             this.bt_update.Size = new System.Drawing.Size(126, 45);
@@ -181,7 +187,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_calculate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_calculate.Location = new System.Drawing.Point(389, 340);
+            this.bt_calculate.Location = new System.Drawing.Point(401, 398);
             this.bt_calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_calculate.Name = "bt_calculate";
             this.bt_calculate.Size = new System.Drawing.Size(286, 45);
@@ -194,7 +200,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_loan_receipt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_loan_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_loan_receipt.Location = new System.Drawing.Point(389, 474);
+            this.bt_loan_receipt.Location = new System.Drawing.Point(222, 521);
             this.bt_loan_receipt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_loan_receipt.Name = "bt_loan_receipt";
             this.bt_loan_receipt.Size = new System.Drawing.Size(286, 45);
@@ -266,7 +272,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_loan_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_loan_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_loan_close.Location = new System.Drawing.Point(763, 410);
+            this.bt_loan_close.Location = new System.Drawing.Point(759, 458);
             this.bt_loan_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_loan_close.Name = "bt_loan_close";
             this.bt_loan_close.Size = new System.Drawing.Size(126, 45);
@@ -290,7 +296,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_loan_clear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_loan_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_loan_clear.Location = new System.Drawing.Point(617, 410);
+            this.bt_loan_clear.Location = new System.Drawing.Point(617, 458);
             this.bt_loan_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_loan_clear.Name = "bt_loan_clear";
             this.bt_loan_clear.Size = new System.Drawing.Size(126, 45);
@@ -313,7 +319,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_loan_add.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_loan_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_loan_add.Location = new System.Drawing.Point(174, 410);
+            this.bt_loan_add.Location = new System.Drawing.Point(174, 458);
             this.bt_loan_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_loan_add.Name = "bt_loan_add";
             this.bt_loan_add.Size = new System.Drawing.Size(130, 45);
@@ -326,7 +332,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_loan_search.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_loan_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_loan_search.Location = new System.Drawing.Point(326, 410);
+            this.bt_loan_search.Location = new System.Drawing.Point(327, 458);
             this.bt_loan_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_loan_search.Name = "bt_loan_search";
             this.bt_loan_search.Size = new System.Drawing.Size(126, 45);
@@ -419,6 +425,41 @@ namespace Chit_Fund_Management_System
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
             // 
+            // bt_loan_log
+            // 
+            this.bt_loan_log.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_loan_log.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_loan_log.Location = new System.Drawing.Point(564, 521);
+            this.bt_loan_log.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_loan_log.Name = "bt_loan_log";
+            this.bt_loan_log.Size = new System.Drawing.Size(286, 45);
+            this.bt_loan_log.TabIndex = 36;
+            this.bt_loan_log.Text = "LOAN LOG";
+            this.bt_loan_log.UseVisualStyleBackColor = false;
+            this.bt_loan_log.Click += new System.EventHandler(this.bt_loan_log_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(12, 320);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(213, 33);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Payment Method :";
+            // 
+            // cb_la_payment_method
+            // 
+            this.cb_la_payment_method.FormattingEnabled = true;
+            this.cb_la_payment_method.Items.AddRange(new object[] {
+            "Cheque",
+            "Cash",
+            "Card"});
+            this.cb_la_payment_method.Location = new System.Drawing.Point(243, 320);
+            this.cb_la_payment_method.Name = "cb_la_payment_method";
+            this.cb_la_payment_method.Size = new System.Drawing.Size(249, 32);
+            this.cb_la_payment_method.TabIndex = 46;
+            // 
             // Loan_Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -470,5 +511,8 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.TextBox tb_loan_gross_amount;
         private System.Windows.Forms.TextBox tb_loan_intrest;
         private System.Windows.Forms.Button bt_update;
+        private System.Windows.Forms.Button bt_loan_log;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cb_la_payment_method;
     }
 }

@@ -128,9 +128,28 @@ namespace Chit_Fund_Management_System
 
         private void loanInstallmentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            Loan_Installment_Log loan_Installment_Log = new Loan_Installment_Log();
-            loan_Installment_Log.Show();
-            this.Hide();
+            
+        }
+
+        private void agentPaymentToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+
+        }
+
+        private void f_chit_fund_dash_board_Load(object sender, System.EventArgs e)
+        {
+            if(f_login.admin == "Admin")
+            {
+                companyToolStripMenuItem.Enabled = true;
+                branchToolStripMenuItem.Enabled = true;
+                employeeToolStripMenuItem.Enabled = true;
+            }
+            else
+            {
+                companyToolStripMenuItem.Enabled = false;
+                branchToolStripMenuItem.Enabled = false;
+                employeeToolStripMenuItem.Enabled = false;
+            }
         }
     }
 }

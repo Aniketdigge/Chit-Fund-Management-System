@@ -32,7 +32,6 @@ namespace Chit_Fund_Management_System
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bt_commission_receipt = new System.Windows.Forms.Button();
             this.tb_commission_amount = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_commission_chit_amount = new System.Windows.Forms.TextBox();
@@ -41,7 +40,6 @@ namespace Chit_Fund_Management_System
             this.bt_commission_close = new System.Windows.Forms.Button();
             this.bt_commission_clear = new System.Windows.Forms.Button();
             this.bt_commission_search = new System.Windows.Forms.Button();
-            this.bt_commission_save = new System.Windows.Forms.Button();
             this.bt_commission_calculate = new System.Windows.Forms.Button();
             this.tb_commission_agent_mob = new System.Windows.Forms.TextBox();
             this.tb_commission_agent_name = new System.Windows.Forms.TextBox();
@@ -52,6 +50,7 @@ namespace Chit_Fund_Management_System
             this.label4 = new System.Windows.Forms.Label();
             this.tb_agent_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.bt_commission_pay = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -60,9 +59,9 @@ namespace Chit_Fund_Management_System
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(7, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1455, 77);
+            this.groupBox1.Size = new System.Drawing.Size(1471, 77);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -79,7 +78,7 @@ namespace Chit_Fund_Management_System
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox2.Controls.Add(this.bt_commission_receipt);
+            this.groupBox2.Controls.Add(this.bt_commission_pay);
             this.groupBox2.Controls.Add(this.tb_commission_amount);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.tb_commission_chit_amount);
@@ -88,7 +87,6 @@ namespace Chit_Fund_Management_System
             this.groupBox2.Controls.Add(this.bt_commission_close);
             this.groupBox2.Controls.Add(this.bt_commission_clear);
             this.groupBox2.Controls.Add(this.bt_commission_search);
-            this.groupBox2.Controls.Add(this.bt_commission_save);
             this.groupBox2.Controls.Add(this.bt_commission_calculate);
             this.groupBox2.Controls.Add(this.tb_commission_agent_mob);
             this.groupBox2.Controls.Add(this.tb_commission_agent_name);
@@ -100,25 +98,12 @@ namespace Chit_Fund_Management_System
             this.groupBox2.Controls.Add(this.tb_agent_id);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(193, 133);
+            this.groupBox2.Location = new System.Drawing.Point(210, 138);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1054, 485);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // bt_commission_receipt
-            // 
-            this.bt_commission_receipt.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_commission_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_commission_receipt.Location = new System.Drawing.Point(491, 425);
-            this.bt_commission_receipt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_commission_receipt.Name = "bt_commission_receipt";
-            this.bt_commission_receipt.Size = new System.Drawing.Size(152, 45);
-            this.bt_commission_receipt.TabIndex = 29;
-            this.bt_commission_receipt.Text = "RECEIPT";
-            this.bt_commission_receipt.UseVisualStyleBackColor = false;
-            this.bt_commission_receipt.Click += new System.EventHandler(this.bt_commission_receipt_Click);
             // 
             // tb_commission_amount
             // 
@@ -173,7 +158,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_commission_close.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_commission_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_commission_close.Location = new System.Drawing.Point(744, 361);
+            this.bt_commission_close.Location = new System.Drawing.Point(703, 346);
             this.bt_commission_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_commission_close.Name = "bt_commission_close";
             this.bt_commission_close.Size = new System.Drawing.Size(126, 45);
@@ -186,7 +171,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_commission_clear.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_commission_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_commission_clear.Location = new System.Drawing.Point(581, 361);
+            this.bt_commission_clear.Location = new System.Drawing.Point(544, 346);
             this.bt_commission_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_commission_clear.Name = "bt_commission_clear";
             this.bt_commission_clear.Size = new System.Drawing.Size(126, 45);
@@ -199,7 +184,7 @@ namespace Chit_Fund_Management_System
             // 
             this.bt_commission_search.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_commission_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_commission_search.Location = new System.Drawing.Point(423, 361);
+            this.bt_commission_search.Location = new System.Drawing.Point(209, 346);
             this.bt_commission_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_commission_search.Name = "bt_commission_search";
             this.bt_commission_search.Size = new System.Drawing.Size(126, 45);
@@ -208,24 +193,11 @@ namespace Chit_Fund_Management_System
             this.bt_commission_search.UseVisualStyleBackColor = false;
             this.bt_commission_search.Click += new System.EventHandler(this.bt_commission_search_Click);
             // 
-            // bt_commission_save
-            // 
-            this.bt_commission_save.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.bt_commission_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_commission_save.Location = new System.Drawing.Point(260, 361);
-            this.bt_commission_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bt_commission_save.Name = "bt_commission_save";
-            this.bt_commission_save.Size = new System.Drawing.Size(126, 45);
-            this.bt_commission_save.TabIndex = 19;
-            this.bt_commission_save.Text = "SAVE";
-            this.bt_commission_save.UseVisualStyleBackColor = false;
-            this.bt_commission_save.Click += new System.EventHandler(this.bt_commission_save_Click);
-            // 
             // bt_commission_calculate
             // 
             this.bt_commission_calculate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bt_commission_calculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_commission_calculate.Location = new System.Drawing.Point(491, 289);
+            this.bt_commission_calculate.Location = new System.Drawing.Point(452, 414);
             this.bt_commission_calculate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_commission_calculate.Name = "bt_commission_calculate";
             this.bt_commission_calculate.Size = new System.Drawing.Size(152, 45);
@@ -273,9 +245,9 @@ namespace Chit_Fund_Management_System
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(527, 161);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(202, 33);
+            this.label8.Size = new System.Drawing.Size(214, 33);
             this.label8.TabIndex = 9;
-            this.label8.Text = "Date Of Receipt :";
+            this.label8.Text = "Date Of Payment :";
             // 
             // label7
             // 
@@ -329,12 +301,25 @@ namespace Chit_Fund_Management_System
             this.label2.TabIndex = 1;
             this.label2.Text = "Agent ID :";
             // 
+            // bt_commission_pay
+            // 
+            this.bt_commission_pay.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_commission_pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_commission_pay.Location = new System.Drawing.Point(374, 346);
+            this.bt_commission_pay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bt_commission_pay.Name = "bt_commission_pay";
+            this.bt_commission_pay.Size = new System.Drawing.Size(126, 45);
+            this.bt_commission_pay.TabIndex = 29;
+            this.bt_commission_pay.Text = "PAY";
+            this.bt_commission_pay.UseVisualStyleBackColor = false;
+            this.bt_commission_pay.Click += new System.EventHandler(this.bt_commission_pay_Click);
+            // 
             // Agent_Commission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1467, 686);
+            this.ClientSize = new System.Drawing.Size(1495, 686);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -357,7 +342,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Button bt_commission_close;
         private System.Windows.Forms.Button bt_commission_clear;
         private System.Windows.Forms.Button bt_commission_search;
-        private System.Windows.Forms.Button bt_commission_save;
         private System.Windows.Forms.Button bt_commission_calculate;
         private System.Windows.Forms.TextBox tb_commission_agent_mob;
         private System.Windows.Forms.TextBox tb_commission_agent_name;
@@ -372,6 +356,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_commission_amount;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button bt_commission_receipt;
+        private System.Windows.Forms.Button bt_commission_pay;
     }
 }

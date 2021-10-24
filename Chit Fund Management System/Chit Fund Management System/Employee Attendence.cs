@@ -80,5 +80,11 @@ namespace Chit_Fund_Management_System
             f_Chit_Fund_Dash_Board.Show();
             this.Hide();
         }
+
+        private void bt_attendence_log_Click(object sender, EventArgs e)
+        {
+            Employee_Attendence_Log_Viewer employee_Attendence_Log_Viewer = new Employee_Attendence_Log_Viewer();
+            employee_Attendence_Log_Viewer.Show();
+        }
     }
 }

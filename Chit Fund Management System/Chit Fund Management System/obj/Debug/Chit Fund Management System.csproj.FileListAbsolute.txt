@@ -78,5 +78,10 @@ F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Loan_Payment.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Loan_Receipt_Viewer.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Loan_Installment_Log_Viewer.resources
-F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Loan_Installment_Log.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Member_Transaction_Receipt.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Agent_Payment.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Payment.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Member_Invoice_Viewer.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Member_Payment_Log.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Member_Payment.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Attendence_Log_Viewer.resources

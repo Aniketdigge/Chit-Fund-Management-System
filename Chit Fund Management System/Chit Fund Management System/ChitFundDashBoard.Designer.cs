@@ -41,20 +41,17 @@ namespace Chit_Fund_Management_System
             this.memberTransactionLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loanInstallmentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auctionRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biddingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biddingLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentCommissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agentPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentPaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeSalarySlipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.employeePaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
             this.menuStrip1.SuspendLayout();
@@ -110,7 +107,7 @@ namespace Chit_Fund_Management_System
             // 
             this.branchProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
-            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
+            this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
             this.branchProfileToolStripMenuItem.Click += new System.EventHandler(this.branchProfileToolStripMenuItem_Click);
             // 
@@ -118,7 +115,7 @@ namespace Chit_Fund_Management_System
             // 
             this.branchReportToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.branchReportToolStripMenuItem.Name = "branchReportToolStripMenuItem";
-            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
+            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.branchReportToolStripMenuItem.Text = "Branch Report";
             this.branchReportToolStripMenuItem.Click += new System.EventHandler(this.branchReportToolStripMenuItem_Click);
             // 
@@ -129,8 +126,7 @@ namespace Chit_Fund_Management_System
             this.memberProfileToolStripMenuItem,
             this.memberTransactionLogToolStripMenuItem,
             this.memberPaymentToolStripMenuItem,
-            this.loanToolStripMenuItem,
-            this.loanInstallmentLogToolStripMenuItem});
+            this.loanToolStripMenuItem});
             this.memebrToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memebrToolStripMenuItem.Name = "memebrToolStripMenuItem";
             this.memebrToolStripMenuItem.Size = new System.Drawing.Size(86, 28);
@@ -167,14 +163,6 @@ namespace Chit_Fund_Management_System
             this.loanToolStripMenuItem.Text = "Loan";
             this.loanToolStripMenuItem.Click += new System.EventHandler(this.loanToolStripMenuItem_Click);
             // 
-            // loanInstallmentLogToolStripMenuItem
-            // 
-            this.loanInstallmentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.loanInstallmentLogToolStripMenuItem.Name = "loanInstallmentLogToolStripMenuItem";
-            this.loanInstallmentLogToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
-            this.loanInstallmentLogToolStripMenuItem.Text = "Loan Installment Log";
-            this.loanInstallmentLogToolStripMenuItem.Click += new System.EventHandler(this.loanInstallmentLogToolStripMenuItem_Click);
-            // 
             // auctionRoomToolStripMenuItem
             // 
             this.auctionRoomToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
@@ -190,7 +178,7 @@ namespace Chit_Fund_Management_System
             // 
             this.biddingToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.biddingToolStripMenuItem.Name = "biddingToolStripMenuItem";
-            this.biddingToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
+            this.biddingToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.biddingToolStripMenuItem.Text = "Bidding";
             this.biddingToolStripMenuItem.Click += new System.EventHandler(this.biddingToolStripMenuItem_Click);
             // 
@@ -198,7 +186,7 @@ namespace Chit_Fund_Management_System
             // 
             this.biddingLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.biddingLogToolStripMenuItem.Name = "biddingLogToolStripMenuItem";
-            this.biddingLogToolStripMenuItem.Size = new System.Drawing.Size(189, 28);
+            this.biddingLogToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.biddingLogToolStripMenuItem.Text = "Bidding Log";
             this.biddingLogToolStripMenuItem.Click += new System.EventHandler(this.biddingLogToolStripMenuItem_Click);
             // 
@@ -208,7 +196,6 @@ namespace Chit_Fund_Management_System
             this.agentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agentProfileToolStripMenuItem,
             this.agentCommissionToolStripMenuItem,
-            this.agentPaymentToolStripMenuItem,
             this.agentPaymentLogToolStripMenuItem});
             this.agentToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agentToolStripMenuItem.Name = "agentToolStripMenuItem";
@@ -231,13 +218,6 @@ namespace Chit_Fund_Management_System
             this.agentCommissionToolStripMenuItem.Text = "Agent Commission";
             this.agentCommissionToolStripMenuItem.Click += new System.EventHandler(this.agentCommissionToolStripMenuItem_Click);
             // 
-            // agentPaymentToolStripMenuItem
-            // 
-            this.agentPaymentToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.agentPaymentToolStripMenuItem.Name = "agentPaymentToolStripMenuItem";
-            this.agentPaymentToolStripMenuItem.Size = new System.Drawing.Size(246, 28);
-            this.agentPaymentToolStripMenuItem.Text = "Agent Payment";
-            // 
             // agentPaymentLogToolStripMenuItem
             // 
             this.agentPaymentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
@@ -253,7 +233,6 @@ namespace Chit_Fund_Management_System
             this.employeeProfileToolStripMenuItem,
             this.employeeAttendanceToolStripMenuItem,
             this.employeeSalarySlipToolStripMenuItem,
-            this.employeePaymentToolStripMenuItem,
             this.employeePaymentLogToolStripMenuItem});
             this.employeeToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
@@ -285,13 +264,6 @@ namespace Chit_Fund_Management_System
             this.employeeSalarySlipToolStripMenuItem.Text = "Employee Salary Slip";
             this.employeeSalarySlipToolStripMenuItem.Click += new System.EventHandler(this.employeeSalarySlipToolStripMenuItem_Click);
             // 
-            // employeePaymentToolStripMenuItem
-            // 
-            this.employeePaymentToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
-            this.employeePaymentToolStripMenuItem.Name = "employeePaymentToolStripMenuItem";
-            this.employeePaymentToolStripMenuItem.Size = new System.Drawing.Size(277, 28);
-            this.employeePaymentToolStripMenuItem.Text = "Employee Payment";
-            // 
             // employeePaymentLogToolStripMenuItem
             // 
             this.employeePaymentLogToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
@@ -320,7 +292,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1468, 611);
+            this.ClientSize = new System.Drawing.Size(1468, 615);
             this.Controls.Add(this.lkb_back_to_login);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -328,6 +300,7 @@ namespace Chit_Fund_Management_System
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "f_chit_fund_dash_board";
             this.Text = "ChitFundDashBoard";
+            this.Load += new System.EventHandler(this.f_chit_fund_dash_board_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -351,17 +324,14 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.ToolStripMenuItem agentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agentProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agentCommissionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agentPaymentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agentPaymentLogToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeAttendanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeSalarySlipToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem employeePaymentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeePaymentLogToolStripMenuItem;
         private System.Windows.Forms.LinkLabel lkb_back_to_login;
         private System.Windows.Forms.ToolStripMenuItem biddingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem biddingLogToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loanInstallmentLogToolStripMenuItem;
     }
 }
