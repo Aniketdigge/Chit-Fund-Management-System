@@ -9,12 +9,7 @@ namespace Chit_Fund_Management_System
             InitializeComponent();
         }
 
-        private void ms_companyprofile_Click(object sender, System.EventArgs e)
-        {
-            CompanyProfile companyProfile = new CompanyProfile();
-            companyProfile.Show();
-            this.Hide();
-        }
+        
 
         private void branchProfileToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
@@ -150,6 +145,13 @@ namespace Chit_Fund_Management_System
                 branchToolStripMenuItem.Enabled = false;
                 employeeToolStripMenuItem.Enabled = false;
             }
+        }
+
+        private void addCompanyToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Add_Company add_Company = new Add_Company();
+            add_Company.Show();
+            this.Hide();
         }
     }
 }

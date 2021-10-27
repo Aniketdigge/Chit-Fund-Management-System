@@ -84,3 +84,6 @@ F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Member_Payment.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Employee_Attendence_Log_Viewer.resources
 F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.AssemblyReference.cache
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Add_Company.resources
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+F:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb

@@ -33,6 +33,9 @@ namespace Chit_Fund_Management_System
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.companyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ms_companyprofile = new System.Windows.Forms.ToolStripMenuItem();
+            this.addCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,10 +89,32 @@ namespace Chit_Fund_Management_System
             // ms_companyprofile
             // 
             this.ms_companyprofile.BackColor = System.Drawing.Color.DarkGray;
+            this.ms_companyprofile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addCompanyToolStripMenuItem,
+            this.editCompanyToolStripMenuItem,
+            this.deleteCompanyToolStripMenuItem});
             this.ms_companyprofile.Name = "ms_companyprofile";
-            this.ms_companyprofile.Size = new System.Drawing.Size(222, 28);
+            this.ms_companyprofile.Size = new System.Drawing.Size(224, 28);
             this.ms_companyprofile.Text = "Company Profile";
-            this.ms_companyprofile.Click += new System.EventHandler(this.ms_companyprofile_Click);
+            // 
+            // addCompanyToolStripMenuItem
+            // 
+            this.addCompanyToolStripMenuItem.Name = "addCompanyToolStripMenuItem";
+            this.addCompanyToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addCompanyToolStripMenuItem.Text = "Add Company";
+            this.addCompanyToolStripMenuItem.Click += new System.EventHandler(this.addCompanyToolStripMenuItem_Click);
+            // 
+            // editCompanyToolStripMenuItem
+            // 
+            this.editCompanyToolStripMenuItem.Name = "editCompanyToolStripMenuItem";
+            this.editCompanyToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editCompanyToolStripMenuItem.Text = "Edit Company";
+            // 
+            // deleteCompanyToolStripMenuItem
+            // 
+            this.deleteCompanyToolStripMenuItem.Name = "deleteCompanyToolStripMenuItem";
+            this.deleteCompanyToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.deleteCompanyToolStripMenuItem.Text = "Delete Company";
             // 
             // branchToolStripMenuItem
             // 
@@ -323,5 +348,8 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.LinkLabel lkb_back_to_login;
         private System.Windows.Forms.ToolStripMenuItem biddingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem biddingLogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addCompanyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editCompanyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteCompanyToolStripMenuItem;
     }
 }
