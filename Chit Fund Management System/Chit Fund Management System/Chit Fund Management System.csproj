@@ -165,6 +165,12 @@
       <DependentUpon>Commission Receipt.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Edit Company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Company.Designer.cs">
+      <DependentUpon>Edit Company.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee Attendence Log Viewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -404,6 +410,9 @@
     <EmbeddedResource Include="Commission Receipt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Commission Receipt1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Company.resx">
+      <DependentUpon>Edit Company.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Attendence Log Viewer.resx">
       <DependentUpon>Employee Attendence Log Viewer.cs</DependentUpon>

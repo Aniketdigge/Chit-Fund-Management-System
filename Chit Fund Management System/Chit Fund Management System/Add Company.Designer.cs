@@ -29,9 +29,12 @@ namespace Chit_Fund_Management_System
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Company));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.Company = new System.Windows.Forms.GroupBox();
+            this.dtp_date_of_registration_add_company = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
             this.bt_close_add_company = new System.Windows.Forms.Button();
             this.tb_noofbranches_add_company = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,7 +63,7 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1762, 68);
+            this.panel1.Size = new System.Drawing.Size(1530, 68);
             this.panel1.TabIndex = 2;
             // 
             // label1
@@ -69,17 +72,19 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(665, 0);
+            this.label1.Location = new System.Drawing.Point(457, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 65);
+            this.label1.Size = new System.Drawing.Size(605, 55);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Company";
+            this.label1.Text = "SAVE COMPANY DETAILS";
             // 
             // Company
             // 
             this.Company.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_32_06_PM;
             this.Company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Company.Controls.Add(this.dtp_date_of_registration_add_company);
+            this.Company.Controls.Add(this.label8);
             this.Company.Controls.Add(this.bt_close_add_company);
             this.Company.Controls.Add(this.tb_noofbranches_add_company);
             this.Company.Controls.Add(this.label7);
@@ -97,25 +102,45 @@ namespace Chit_Fund_Management_System
             this.Company.Controls.Add(this.tb_cinno_add_company);
             this.Company.Controls.Add(this.label2);
             this.Company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Company.Location = new System.Drawing.Point(26, 131);
+            this.Company.Location = new System.Drawing.Point(28, 100);
             this.Company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Company.Name = "Company";
             this.Company.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Company.Size = new System.Drawing.Size(1724, 596);
+            this.Company.Size = new System.Drawing.Size(1477, 517);
             this.Company.TabIndex = 3;
             this.Company.TabStop = false;
             // 
+            // dtp_date_of_registration_add_company
+            // 
+            this.dtp_date_of_registration_add_company.Location = new System.Drawing.Point(1067, 249);
+            this.dtp_date_of_registration_add_company.Name = "dtp_date_of_registration_add_company";
+            this.dtp_date_of_registration_add_company.Size = new System.Drawing.Size(353, 30);
+            this.dtp_date_of_registration_add_company.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(770, 246);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(253, 33);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "Date Of Registration :";
+            // 
             // bt_close_add_company
             // 
-            this.bt_close_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt_close_add_company.BackColor = System.Drawing.Color.White;
+            this.bt_close_add_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_close_add_company.BackgroundImage")));
+            this.bt_close_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_close_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_close_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_close_add_company.Location = new System.Drawing.Point(1582, 535);
+            this.bt_close_add_company.Location = new System.Drawing.Point(0, 11);
             this.bt_close_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_close_add_company.Name = "bt_close_add_company";
-            this.bt_close_add_company.Size = new System.Drawing.Size(126, 45);
+            this.bt_close_add_company.Size = new System.Drawing.Size(72, 45);
             this.bt_close_add_company.TabIndex = 18;
-            this.bt_close_add_company.Text = "BACK";
             this.bt_close_add_company.UseVisualStyleBackColor = false;
             this.bt_close_add_company.Click += new System.EventHandler(this.bt_close_add_company_Click);
             // 
@@ -123,11 +148,11 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_noofbranches_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_noofbranches_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_noofbranches_add_company.Location = new System.Drawing.Point(1232, 122);
+            this.tb_noofbranches_add_company.Location = new System.Drawing.Point(1067, 145);
             this.tb_noofbranches_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_noofbranches_add_company.Multiline = true;
             this.tb_noofbranches_add_company.Name = "tb_noofbranches_add_company";
-            this.tb_noofbranches_add_company.Size = new System.Drawing.Size(353, 36);
+            this.tb_noofbranches_add_company.Size = new System.Drawing.Size(353, 33);
             this.tb_noofbranches_add_company.TabIndex = 17;
             this.tb_noofbranches_add_company.TextChanged += new System.EventHandler(this.tb_noofbranches_add_company_TextChanged);
             // 
@@ -137,49 +162,54 @@ namespace Chit_Fund_Management_System
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(966, 118);
+            this.label7.Location = new System.Drawing.Point(770, 145);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(242, 40);
+            this.label7.Size = new System.Drawing.Size(204, 33);
             this.label7.TabIndex = 16;
             this.label7.Text = "No Of Branches :";
             // 
             // bt_clear_add_company
             // 
-            this.bt_clear_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt_clear_add_company.BackColor = System.Drawing.Color.White;
+            this.bt_clear_add_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_clear_add_company.BackgroundImage")));
+            this.bt_clear_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clear_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_clear_add_company.Location = new System.Drawing.Point(1432, 535);
+            this.bt_clear_add_company.Location = new System.Drawing.Point(1354, 416);
             this.bt_clear_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_clear_add_company.Name = "bt_clear_add_company";
-            this.bt_clear_add_company.Size = new System.Drawing.Size(126, 45);
+            this.bt_clear_add_company.Size = new System.Drawing.Size(66, 45);
             this.bt_clear_add_company.TabIndex = 15;
-            this.bt_clear_add_company.Text = "CLEAR";
             this.bt_clear_add_company.UseVisualStyleBackColor = false;
+            this.bt_clear_add_company.Click += new System.EventHandler(this.bt_clear_add_company_Click);
             // 
             // bt_search_add_company
             // 
-            this.bt_search_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt_search_add_company.BackColor = System.Drawing.Color.White;
+            this.bt_search_add_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_search_add_company.BackgroundImage")));
+            this.bt_search_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_search_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_search_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_search_add_company.Location = new System.Drawing.Point(1282, 535);
+            this.bt_search_add_company.Location = new System.Drawing.Point(1230, 416);
             this.bt_search_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_search_add_company.Name = "bt_search_add_company";
-            this.bt_search_add_company.Size = new System.Drawing.Size(126, 45);
+            this.bt_search_add_company.Size = new System.Drawing.Size(70, 45);
             this.bt_search_add_company.TabIndex = 14;
-            this.bt_search_add_company.Text = "SEARCH";
             this.bt_search_add_company.UseVisualStyleBackColor = false;
+            this.bt_search_add_company.Click += new System.EventHandler(this.bt_search_add_company_Click);
             // 
             // bt_add_add_company
             // 
-            this.bt_add_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt_add_add_company.BackColor = System.Drawing.Color.White;
+            this.bt_add_add_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_add_add_company.BackgroundImage")));
+            this.bt_add_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_add_add_company.Location = new System.Drawing.Point(1125, 535);
+            this.bt_add_add_company.Location = new System.Drawing.Point(1067, 416);
             this.bt_add_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_add_add_company.Name = "bt_add_add_company";
-            this.bt_add_add_company.Size = new System.Drawing.Size(126, 45);
+            this.bt_add_add_company.Size = new System.Drawing.Size(71, 45);
             this.bt_add_add_company.TabIndex = 11;
-            this.bt_add_add_company.Text = "SAVE";
             this.bt_add_add_company.UseVisualStyleBackColor = false;
             this.bt_add_add_company.Click += new System.EventHandler(this.bt_add_add_company_Click);
             // 
@@ -187,7 +217,7 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_owner_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_owner_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_owner_add_company.Location = new System.Drawing.Point(441, 209);
+            this.tb_owner_add_company.Location = new System.Drawing.Point(300, 246);
             this.tb_owner_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_owner_add_company.Multiline = true;
             this.tb_owner_add_company.Name = "tb_owner_add_company";
@@ -201,9 +231,9 @@ namespace Chit_Fund_Management_System
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(115, 209);
+            this.label6.Location = new System.Drawing.Point(78, 246);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 40);
+            this.label6.Size = new System.Drawing.Size(101, 33);
             this.label6.TabIndex = 9;
             this.label6.Text = "Owner :";
             // 
@@ -211,12 +241,13 @@ namespace Chit_Fund_Management_System
             // 
             this.tb_city_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_city_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_city_add_company.Location = new System.Drawing.Point(1232, 45);
+            this.tb_city_add_company.Location = new System.Drawing.Point(1067, 54);
             this.tb_city_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_city_add_company.Multiline = true;
             this.tb_city_add_company.Name = "tb_city_add_company";
             this.tb_city_add_company.Size = new System.Drawing.Size(353, 33);
             this.tb_city_add_company.TabIndex = 8;
+            this.tb_city_add_company.TextChanged += new System.EventHandler(this.tb_city_add_company_TextChanged);
             // 
             // label5
             // 
@@ -224,9 +255,9 @@ namespace Chit_Fund_Management_System
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1122, 40);
+            this.label5.Location = new System.Drawing.Point(770, 54);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 40);
+            this.label5.Size = new System.Drawing.Size(73, 33);
             this.label5.TabIndex = 7;
             this.label5.Text = "City :";
             // 
@@ -235,11 +266,11 @@ namespace Chit_Fund_Management_System
             this.tb_address_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_address_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_address_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_address_add_company.Location = new System.Drawing.Point(441, 299);
+            this.tb_address_add_company.Location = new System.Drawing.Point(300, 350);
             this.tb_address_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_address_add_company.Multiline = true;
             this.tb_address_add_company.Name = "tb_address_add_company";
-            this.tb_address_add_company.Size = new System.Drawing.Size(386, 80);
+            this.tb_address_add_company.Size = new System.Drawing.Size(386, 111);
             this.tb_address_add_company.TabIndex = 6;
             // 
             // label4
@@ -248,9 +279,9 @@ namespace Chit_Fund_Management_System
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(116, 299);
+            this.label4.Location = new System.Drawing.Point(78, 350);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 40);
+            this.label4.Size = new System.Drawing.Size(122, 33);
             this.label4.TabIndex = 5;
             this.label4.Text = "Address :";
             // 
@@ -259,7 +290,7 @@ namespace Chit_Fund_Management_System
             this.tb_companyname_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_companyname_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_companyname_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_companyname_add_company.Location = new System.Drawing.Point(441, 122);
+            this.tb_companyname_add_company.Location = new System.Drawing.Point(300, 149);
             this.tb_companyname_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_companyname_add_company.Multiline = true;
             this.tb_companyname_add_company.Name = "tb_companyname_add_company";
@@ -272,9 +303,9 @@ namespace Chit_Fund_Management_System
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(116, 25);
+            this.label3.Location = new System.Drawing.Point(78, 54);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 40);
+            this.label3.Size = new System.Drawing.Size(106, 33);
             this.label3.TabIndex = 3;
             this.label3.Text = "CIN No :";
             // 
@@ -283,7 +314,7 @@ namespace Chit_Fund_Management_System
             this.tb_cinno_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_cinno_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_cinno_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_cinno_add_company.Location = new System.Drawing.Point(441, 25);
+            this.tb_cinno_add_company.Location = new System.Drawing.Point(300, 54);
             this.tb_cinno_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_cinno_add_company.Multiline = true;
             this.tb_cinno_add_company.Name = "tb_cinno_add_company";
@@ -297,18 +328,18 @@ namespace Chit_Fund_Management_System
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(116, 118);
+            this.label2.Location = new System.Drawing.Point(78, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(241, 40);
+            this.label2.Size = new System.Drawing.Size(203, 33);
             this.label2.TabIndex = 0;
             this.label2.Text = "Company Name :";
             // 
             // Add_Company
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
-            this.ClientSize = new System.Drawing.Size(1762, 757);
+            this.ClientSize = new System.Drawing.Size(1530, 661);
             this.Controls.Add(this.Company);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -344,5 +375,7 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_cinno_add_company;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dtp_date_of_registration_add_company;
     }
 }

@@ -61,5 +61,36 @@ namespace Chit_Fund_Management_System
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void bt_show_password_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string pass = tb_passwordlogin.Text;
+                tb_passwordlogin.PasswordChar = '\0';
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void bt_hide_password_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                tb_passwordlogin.PasswordChar = '*';
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void bt_clearlogin_Click(object sender, EventArgs e)
+        {
+            tb_usernamelogin.Clear();
+            tb_passwordlogin.Clear();
+        }
     }
 }
