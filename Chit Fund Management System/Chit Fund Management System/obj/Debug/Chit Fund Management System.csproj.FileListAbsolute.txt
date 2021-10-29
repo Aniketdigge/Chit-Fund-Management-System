@@ -152,3 +152,4 @@ D:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management 
 D:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.csproj.CopyComplete
 D:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.exe
 D:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit Fund Management System.pdb
+D:\Chit-Fund-Management-System\Chit Fund Management System\Chit Fund Management System\obj\Debug\Chit_Fund_Management_System.Edit_Company.resources

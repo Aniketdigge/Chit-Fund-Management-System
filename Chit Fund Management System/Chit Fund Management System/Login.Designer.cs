@@ -80,6 +80,7 @@ namespace Chit_Fund_Management_System
             // 
             // bt_hide_password
             // 
+            this.bt_hide_password.BackColor = System.Drawing.Color.Black;
             this.bt_hide_password.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_hide_password.BackgroundImage")));
             this.bt_hide_password.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_hide_password.ForeColor = System.Drawing.Color.Transparent;
@@ -87,11 +88,12 @@ namespace Chit_Fund_Management_System
             this.bt_hide_password.Name = "bt_hide_password";
             this.bt_hide_password.Size = new System.Drawing.Size(43, 42);
             this.bt_hide_password.TabIndex = 21;
-            this.bt_hide_password.UseVisualStyleBackColor = true;
+            this.bt_hide_password.UseVisualStyleBackColor = false;
             this.bt_hide_password.Click += new System.EventHandler(this.bt_hide_password_Click);
             // 
             // bt_show_password
             // 
+            this.bt_show_password.BackColor = System.Drawing.Color.Black;
             this.bt_show_password.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_show_password.BackgroundImage")));
             this.bt_show_password.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_show_password.ForeColor = System.Drawing.Color.Transparent;
@@ -99,7 +101,7 @@ namespace Chit_Fund_Management_System
             this.bt_show_password.Name = "bt_show_password";
             this.bt_show_password.Size = new System.Drawing.Size(49, 42);
             this.bt_show_password.TabIndex = 20;
-            this.bt_show_password.UseVisualStyleBackColor = true;
+            this.bt_show_password.UseVisualStyleBackColor = false;
             this.bt_show_password.Click += new System.EventHandler(this.bt_show_password_Click);
             // 
             // pictureBox2
@@ -130,16 +132,17 @@ namespace Chit_Fund_Management_System
             this.lb_user_type.BackColor = System.Drawing.Color.Transparent;
             this.lb_user_type.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_user_type.ForeColor = System.Drawing.Color.White;
-            this.lb_user_type.Location = new System.Drawing.Point(237, 18);
+            this.lb_user_type.Location = new System.Drawing.Point(249, 19);
             this.lb_user_type.Name = "lb_user_type";
-            this.lb_user_type.Size = new System.Drawing.Size(118, 29);
+            this.lb_user_type.Size = new System.Drawing.Size(140, 33);
             this.lb_user_type.TabIndex = 17;
             this.lb_user_type.Text = "Welcome";
             // 
             // tb_passwordlogin
             // 
-            this.tb_passwordlogin.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tb_passwordlogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_passwordlogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_passwordlogin.ForeColor = System.Drawing.Color.White;
             this.tb_passwordlogin.Location = new System.Drawing.Point(286, 159);
             this.tb_passwordlogin.Multiline = true;
             this.tb_passwordlogin.Name = "tb_passwordlogin";
@@ -149,9 +152,9 @@ namespace Chit_Fund_Management_System
             // 
             // tb_usernamelogin
             // 
-            this.tb_usernamelogin.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.tb_usernamelogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tb_usernamelogin.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_usernamelogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tb_usernamelogin.ForeColor = System.Drawing.Color.White;
             this.tb_usernamelogin.Location = new System.Drawing.Point(286, 75);
             this.tb_usernamelogin.Multiline = true;
             this.tb_usernamelogin.Name = "tb_usernamelogin";
@@ -160,14 +163,14 @@ namespace Chit_Fund_Management_System
             // 
             // bt_clearlogin
             // 
-            this.bt_clearlogin.BackColor = System.Drawing.Color.White;
+            this.bt_clearlogin.BackColor = System.Drawing.Color.Black;
             this.bt_clearlogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_clearlogin.BackgroundImage")));
             this.bt_clearlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clearlogin.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clearlogin.ForeColor = System.Drawing.Color.White;
-            this.bt_clearlogin.Location = new System.Drawing.Point(496, 228);
+            this.bt_clearlogin.Location = new System.Drawing.Point(527, 228);
             this.bt_clearlogin.Name = "bt_clearlogin";
-            this.bt_clearlogin.Size = new System.Drawing.Size(88, 49);
+            this.bt_clearlogin.Size = new System.Drawing.Size(57, 49);
             this.bt_clearlogin.TabIndex = 14;
             this.bt_clearlogin.UseVisualStyleBackColor = false;
             this.bt_clearlogin.Click += new System.EventHandler(this.bt_clearlogin_Click);
@@ -193,7 +196,7 @@ namespace Chit_Fund_Management_System
             this.linklb_newuser.LinkColor = System.Drawing.Color.Cyan;
             this.linklb_newuser.Location = new System.Drawing.Point(250, 375);
             this.linklb_newuser.Name = "linklb_newuser";
-            this.linklb_newuser.Size = new System.Drawing.Size(100, 24);
+            this.linklb_newuser.Size = new System.Drawing.Size(121, 29);
             this.linklb_newuser.TabIndex = 12;
             this.linklb_newuser.TabStop = true;
             this.linklb_newuser.Text = "New User";
@@ -208,7 +211,7 @@ namespace Chit_Fund_Management_System
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(106, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 35);
+            this.label2.Size = new System.Drawing.Size(174, 42);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password :";
             // 
@@ -220,7 +223,7 @@ namespace Chit_Fund_Management_System
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(106, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 35);
+            this.label4.Size = new System.Drawing.Size(187, 42);
             this.label4.TabIndex = 0;
             this.label4.Text = "User Name :";
             // 
@@ -251,18 +254,18 @@ namespace Chit_Fund_Management_System
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(266, 9);
+            this.label3.Location = new System.Drawing.Point(305, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(302, 52);
+            this.label3.Size = new System.Drawing.Size(355, 59);
             this.label3.TabIndex = 5;
             this.label3.Text = "LOGIN PAGE";
             // 
             // f_login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_29_07_PM;
+            this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(836, 569);
             this.Controls.Add(this.panel1);
