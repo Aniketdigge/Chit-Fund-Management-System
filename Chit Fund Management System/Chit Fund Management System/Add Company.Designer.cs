@@ -52,6 +52,11 @@ namespace Chit_Fund_Management_System
             this.label3 = new System.Windows.Forms.Label();
             this.tb_cinno_add_company = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Company.SuspendLayout();
@@ -66,7 +71,7 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1503, 68);
+            this.panel1.Size = new System.Drawing.Size(1565, 68);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox3
@@ -88,7 +93,7 @@ namespace Chit_Fund_Management_System
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(432, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(616, 56);
+            this.label1.Size = new System.Drawing.Size(732, 66);
             this.label1.TabIndex = 0;
             this.label1.Text = "SAVE COMPANY DETAILS";
             // 
@@ -97,6 +102,11 @@ namespace Chit_Fund_Management_System
             this.Company.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_32_06_PM;
             this.Company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Company.Controls.Add(this.label16);
+            this.Company.Controls.Add(this.label15);
+            this.Company.Controls.Add(this.label14);
+            this.Company.Controls.Add(this.textBox5);
+            this.Company.Controls.Add(this.label11);
             this.Company.Controls.Add(this.dtp_date_of_registration_add_company);
             this.Company.Controls.Add(this.label8);
             this.Company.Controls.Add(this.bt_close_add_company);
@@ -120,7 +130,7 @@ namespace Chit_Fund_Management_System
             this.Company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Company.Name = "Company";
             this.Company.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Company.Size = new System.Drawing.Size(1433, 435);
+            this.Company.Size = new System.Drawing.Size(1481, 544);
             this.Company.TabIndex = 3;
             this.Company.TabStop = false;
             // 
@@ -131,9 +141,9 @@ namespace Chit_Fund_Management_System
             this.dtp_date_of_registration_add_company.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtp_date_of_registration_add_company.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dtp_date_of_registration_add_company.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.dtp_date_of_registration_add_company.Location = new System.Drawing.Point(1009, 187);
+            this.dtp_date_of_registration_add_company.Location = new System.Drawing.Point(1026, 243);
             this.dtp_date_of_registration_add_company.Name = "dtp_date_of_registration_add_company";
-            this.dtp_date_of_registration_add_company.Size = new System.Drawing.Size(353, 30);
+            this.dtp_date_of_registration_add_company.Size = new System.Drawing.Size(353, 35);
             this.dtp_date_of_registration_add_company.TabIndex = 25;
             // 
             // label8
@@ -142,9 +152,9 @@ namespace Chit_Fund_Management_System
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(737, 180);
+            this.label8.Location = new System.Drawing.Point(720, 238);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(253, 33);
+            this.label8.Size = new System.Drawing.Size(300, 40);
             this.label8.TabIndex = 19;
             this.label8.Text = "Date Of Registration :";
             // 
@@ -169,7 +179,7 @@ namespace Chit_Fund_Management_System
             this.tb_noofbranches_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_noofbranches_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_noofbranches_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_noofbranches_add_company.Location = new System.Drawing.Point(1009, 126);
+            this.tb_noofbranches_add_company.Location = new System.Drawing.Point(1026, 180);
             this.tb_noofbranches_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_noofbranches_add_company.Multiline = true;
             this.tb_noofbranches_add_company.Name = "tb_noofbranches_add_company";
@@ -183,9 +193,9 @@ namespace Chit_Fund_Management_System
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(737, 126);
+            this.label7.Location = new System.Drawing.Point(720, 175);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(204, 33);
+            this.label7.Size = new System.Drawing.Size(242, 40);
             this.label7.TabIndex = 16;
             this.label7.Text = "No Of Branches :";
             // 
@@ -196,7 +206,7 @@ namespace Chit_Fund_Management_System
             this.bt_clear_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clear_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_clear_add_company.Location = new System.Drawing.Point(1296, 312);
+            this.bt_clear_add_company.Location = new System.Drawing.Point(1313, 459);
             this.bt_clear_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_clear_add_company.Name = "bt_clear_add_company";
             this.bt_clear_add_company.Size = new System.Drawing.Size(66, 45);
@@ -211,7 +221,7 @@ namespace Chit_Fund_Management_System
             this.bt_search_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_search_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_search_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_search_add_company.Location = new System.Drawing.Point(1144, 322);
+            this.bt_search_add_company.Location = new System.Drawing.Point(1171, 459);
             this.bt_search_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_search_add_company.Name = "bt_search_add_company";
             this.bt_search_add_company.Size = new System.Drawing.Size(70, 45);
@@ -226,7 +236,7 @@ namespace Chit_Fund_Management_System
             this.bt_add_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_add_company.ForeColor = System.Drawing.Color.White;
-            this.bt_add_add_company.Location = new System.Drawing.Point(1009, 322);
+            this.bt_add_add_company.Location = new System.Drawing.Point(1026, 459);
             this.bt_add_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_add_add_company.Name = "bt_add_add_company";
             this.bt_add_add_company.Size = new System.Drawing.Size(71, 45);
@@ -240,7 +250,7 @@ namespace Chit_Fund_Management_System
             this.tb_owner_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_owner_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_owner_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_owner_add_company.Location = new System.Drawing.Point(300, 184);
+            this.tb_owner_add_company.Location = new System.Drawing.Point(257, 238);
             this.tb_owner_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_owner_add_company.Multiline = true;
             this.tb_owner_add_company.Name = "tb_owner_add_company";
@@ -254,9 +264,9 @@ namespace Chit_Fund_Management_System
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(78, 184);
+            this.label6.Location = new System.Drawing.Point(35, 238);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 33);
+            this.label6.Size = new System.Drawing.Size(119, 40);
             this.label6.TabIndex = 9;
             this.label6.Text = "Owner :";
             // 
@@ -266,7 +276,7 @@ namespace Chit_Fund_Management_System
             this.tb_city_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_city_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_city_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_city_add_company.Location = new System.Drawing.Point(1009, 54);
+            this.tb_city_add_company.Location = new System.Drawing.Point(1026, 108);
             this.tb_city_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_city_add_company.Multiline = true;
             this.tb_city_add_company.Name = "tb_city_add_company";
@@ -280,9 +290,9 @@ namespace Chit_Fund_Management_System
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(737, 54);
+            this.label5.Location = new System.Drawing.Point(720, 108);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 33);
+            this.label5.Size = new System.Drawing.Size(86, 40);
             this.label5.TabIndex = 7;
             this.label5.Text = "City :";
             // 
@@ -293,7 +303,7 @@ namespace Chit_Fund_Management_System
             this.tb_address_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_address_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_address_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_address_add_company.Location = new System.Drawing.Point(300, 246);
+            this.tb_address_add_company.Location = new System.Drawing.Point(257, 300);
             this.tb_address_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_address_add_company.Multiline = true;
             this.tb_address_add_company.Name = "tb_address_add_company";
@@ -306,9 +316,9 @@ namespace Chit_Fund_Management_System
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(78, 249);
+            this.label4.Location = new System.Drawing.Point(35, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 33);
+            this.label4.Size = new System.Drawing.Size(144, 40);
             this.label4.TabIndex = 5;
             this.label4.Text = "Address :";
             // 
@@ -319,7 +329,7 @@ namespace Chit_Fund_Management_System
             this.tb_companyname_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_companyname_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_companyname_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_companyname_add_company.Location = new System.Drawing.Point(300, 126);
+            this.tb_companyname_add_company.Location = new System.Drawing.Point(257, 180);
             this.tb_companyname_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_companyname_add_company.Multiline = true;
             this.tb_companyname_add_company.Name = "tb_companyname_add_company";
@@ -332,9 +342,9 @@ namespace Chit_Fund_Management_System
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(78, 54);
+            this.label3.Location = new System.Drawing.Point(35, 108);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 33);
+            this.label3.Size = new System.Drawing.Size(127, 40);
             this.label3.TabIndex = 3;
             this.label3.Text = "CIN No :";
             // 
@@ -345,7 +355,7 @@ namespace Chit_Fund_Management_System
             this.tb_cinno_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_cinno_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_cinno_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_cinno_add_company.Location = new System.Drawing.Point(300, 54);
+            this.tb_cinno_add_company.Location = new System.Drawing.Point(257, 108);
             this.tb_cinno_add_company.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_cinno_add_company.Multiline = true;
             this.tb_cinno_add_company.Name = "tb_cinno_add_company";
@@ -359,18 +369,77 @@ namespace Chit_Fund_Management_System
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 126);
+            this.label2.Location = new System.Drawing.Point(35, 180);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 33);
+            this.label2.Size = new System.Drawing.Size(241, 40);
             this.label2.TabIndex = 0;
             this.label2.Text = "Company Name :";
             // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.White;
+            this.textBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox5.Location = new System.Drawing.Point(257, 436);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(386, 33);
+            this.textBox5.TabIndex = 27;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(38, 431);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(141, 40);
+            this.label11.TabIndex = 26;
+            this.label11.Text = "Pincode :";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(1316, 506);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 29);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Clear";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(1166, 506);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(79, 29);
+            this.label15.TabIndex = 35;
+            this.label15.Text = "Search";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(1036, 506);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 29);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "ADD";
+            // 
             // Add_Company
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
-            this.ClientSize = new System.Drawing.Size(1503, 580);
+            this.ClientSize = new System.Drawing.Size(1565, 691);
             this.Controls.Add(this.Company);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -410,5 +479,10 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtp_date_of_registration_add_company;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
     }
 }
