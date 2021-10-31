@@ -153,5 +153,26 @@ namespace Chit_Fund_Management_System
             add_Company.Show();
             this.Hide();
         }
+
+        private void editCompanyToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Edit_Company edit_Company = new Edit_Company();
+            edit_Company.Show();
+            this.Hide();
+        }
+
+        private void deleteCompanyToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Delete_Company delete_Company = new Delete_Company();
+            delete_Company.Show();
+            this.Hide();
+        }
+
+        private void addBranchToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Add_Branch add_Branch = new Add_Branch();
+            add_Branch.Show();
+            this.Hide();
+        }
     }
 }

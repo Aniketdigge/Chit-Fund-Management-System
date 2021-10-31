@@ -59,7 +59,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_owner_add_company.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_owner_add_company.Text, "[^A-Za-z ]"))
                 {
                     MessageBox.Show("Please enter valid name.");
                     tb_owner_add_company.Text = tb_owner_add_company.Text.Remove(tb_owner_add_company.Text.Length - 1);
