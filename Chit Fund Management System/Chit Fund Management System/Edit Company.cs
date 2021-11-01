@@ -135,5 +135,22 @@ namespace Chit_Fund_Management_System
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void bt_del_edit_company_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                cmd = new OleDbCommand("delete from CompanyTB where CIN_no=@cinno", con);
+                cmd.Parameters.AddWithValue("@cinno", tb_cinno_edit_company.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Delete successfully....");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

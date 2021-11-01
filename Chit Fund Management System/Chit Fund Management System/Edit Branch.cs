@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Chit_Fund_Management_System
 {
-    public partial class Delete_Company : Form
+    public partial class Edit_Branch : Form
     {
-        public Delete_Company()
+        public Edit_Branch()
         {
             InitializeComponent();
         }
