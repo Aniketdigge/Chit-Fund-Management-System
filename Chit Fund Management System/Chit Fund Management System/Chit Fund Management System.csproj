@@ -569,5 +569,8 @@
   <ItemGroup>
     <None Include="Resources\Chitfundlogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deleteopt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

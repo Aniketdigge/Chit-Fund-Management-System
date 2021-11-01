@@ -73,6 +73,16 @@ namespace Chit_Fund_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Deleteopt {
+            get {
+                object obj = ResourceManager.GetObject("Deleteopt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2021_10_27_at_4_29_07_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2021-10-27 at 4.29.07 PM", resourceCulture);
