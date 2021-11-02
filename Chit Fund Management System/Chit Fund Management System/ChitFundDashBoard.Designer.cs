@@ -34,9 +34,10 @@ namespace Chit_Fund_Management_System
             this.ms_companyprofile = new System.Windows.Forms.ToolStripMenuItem();
             this.addCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteCompanyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.branchReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memebrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,9 +56,7 @@ namespace Chit_Fund_Management_System
             this.employeeSalarySlipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
-            this.addBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteBranchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,11 +96,10 @@ namespace Chit_Fund_Management_System
             this.ms_companyprofile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ms_companyprofile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addCompanyToolStripMenuItem,
-            this.editCompanyToolStripMenuItem,
-            this.deleteCompanyToolStripMenuItem});
+            this.editCompanyToolStripMenuItem});
             this.ms_companyprofile.ForeColor = System.Drawing.Color.White;
             this.ms_companyprofile.Name = "ms_companyprofile";
-            this.ms_companyprofile.Size = new System.Drawing.Size(224, 28);
+            this.ms_companyprofile.Size = new System.Drawing.Size(222, 28);
             this.ms_companyprofile.Text = "Company Profile";
             // 
             // addCompanyToolStripMenuItem
@@ -109,7 +107,7 @@ namespace Chit_Fund_Management_System
             this.addCompanyToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.addCompanyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addCompanyToolStripMenuItem.Name = "addCompanyToolStripMenuItem";
-            this.addCompanyToolStripMenuItem.Size = new System.Drawing.Size(221, 28);
+            this.addCompanyToolStripMenuItem.Size = new System.Drawing.Size(204, 28);
             this.addCompanyToolStripMenuItem.Text = "Add Company";
             this.addCompanyToolStripMenuItem.Click += new System.EventHandler(this.addCompanyToolStripMenuItem_Click);
             // 
@@ -119,19 +117,9 @@ namespace Chit_Fund_Management_System
             this.editCompanyToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.editCompanyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editCompanyToolStripMenuItem.Name = "editCompanyToolStripMenuItem";
-            this.editCompanyToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editCompanyToolStripMenuItem.Size = new System.Drawing.Size(204, 28);
             this.editCompanyToolStripMenuItem.Text = "Edit Company";
             this.editCompanyToolStripMenuItem.Click += new System.EventHandler(this.editCompanyToolStripMenuItem_Click);
-            // 
-            // deleteCompanyToolStripMenuItem
-            // 
-            this.deleteCompanyToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
-            this.deleteCompanyToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.deleteCompanyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.deleteCompanyToolStripMenuItem.Name = "deleteCompanyToolStripMenuItem";
-            this.deleteCompanyToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.deleteCompanyToolStripMenuItem.Text = "Delete Company";
-            this.deleteCompanyToolStripMenuItem.Click += new System.EventHandler(this.deleteCompanyToolStripMenuItem_Click);
             // 
             // branchToolStripMenuItem
             // 
@@ -151,13 +139,26 @@ namespace Chit_Fund_Management_System
             this.branchProfileToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
             this.branchProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBranchToolStripMenuItem,
-            this.editBranchToolStripMenuItem,
-            this.deleteBranchToolStripMenuItem});
+            this.editBranchToolStripMenuItem});
             this.branchProfileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
             this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
             this.branchProfileToolStripMenuItem.Click += new System.EventHandler(this.branchProfileToolStripMenuItem_Click);
+            // 
+            // addBranchToolStripMenuItem
+            // 
+            this.addBranchToolStripMenuItem.Name = "addBranchToolStripMenuItem";
+            this.addBranchToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addBranchToolStripMenuItem.Text = "Add Branch";
+            this.addBranchToolStripMenuItem.Click += new System.EventHandler(this.addBranchToolStripMenuItem_Click);
+            // 
+            // editBranchToolStripMenuItem
+            // 
+            this.editBranchToolStripMenuItem.Name = "editBranchToolStripMenuItem";
+            this.editBranchToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editBranchToolStripMenuItem.Text = "Edit Branch";
+            this.editBranchToolStripMenuItem.Click += new System.EventHandler(this.editBranchToolStripMenuItem_Click);
             // 
             // branchReportToolStripMenuItem
             // 
@@ -166,7 +167,7 @@ namespace Chit_Fund_Management_System
             this.branchReportToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.branchReportToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.branchReportToolStripMenuItem.Name = "branchReportToolStripMenuItem";
-            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
+            this.branchReportToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.branchReportToolStripMenuItem.Text = "Branch Report";
             this.branchReportToolStripMenuItem.Click += new System.EventHandler(this.branchReportToolStripMenuItem_Click);
             // 
@@ -188,6 +189,8 @@ namespace Chit_Fund_Management_System
             this.memberProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.memberProfileToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
             this.memberProfileToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.memberProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addMemberToolStripMenuItem});
             this.memberProfileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.memberProfileToolStripMenuItem.Name = "memberProfileToolStripMenuItem";
             this.memberProfileToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
@@ -368,24 +371,11 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lkb_back_to_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkb_back_to_login_LinkClicked);
             // 
-            // addBranchToolStripMenuItem
+            // addMemberToolStripMenuItem
             // 
-            this.addBranchToolStripMenuItem.Name = "addBranchToolStripMenuItem";
-            this.addBranchToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.addBranchToolStripMenuItem.Text = "Add Branch";
-            this.addBranchToolStripMenuItem.Click += new System.EventHandler(this.addBranchToolStripMenuItem_Click);
-            // 
-            // editBranchToolStripMenuItem
-            // 
-            this.editBranchToolStripMenuItem.Name = "editBranchToolStripMenuItem";
-            this.editBranchToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.editBranchToolStripMenuItem.Text = "Edit Branch";
-            // 
-            // deleteBranchToolStripMenuItem
-            // 
-            this.deleteBranchToolStripMenuItem.Name = "deleteBranchToolStripMenuItem";
-            this.deleteBranchToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.deleteBranchToolStripMenuItem.Text = "Delete Branch";
+            this.addMemberToolStripMenuItem.Name = "addMemberToolStripMenuItem";
+            this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addMemberToolStripMenuItem.Text = "Add Member";
             // 
             // f_chit_fund_dash_board
             // 
@@ -437,9 +427,8 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.ToolStripMenuItem biddingLogToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addCompanyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editCompanyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteCompanyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addBranchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editBranchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteBranchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addMemberToolStripMenuItem;
     }
 }
