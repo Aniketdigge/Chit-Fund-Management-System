@@ -46,6 +46,7 @@ namespace Chit_Fund_Management_System
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.BTNWINCLOSE = new System.Windows.Forms.Button();
             this.logingb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,6 +71,7 @@ namespace Chit_Fund_Management_System
             this.logingb.Controls.Add(this.linklb_newuser);
             this.logingb.Controls.Add(this.label2);
             this.logingb.Controls.Add(this.label4);
+            this.logingb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.logingb.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logingb.ForeColor = System.Drawing.SystemColors.InfoText;
             this.logingb.Location = new System.Drawing.Point(115, 105);
@@ -241,6 +243,7 @@ namespace Chit_Fund_Management_System
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.BTNWINCLOSE);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -260,6 +263,20 @@ namespace Chit_Fund_Management_System
             this.label3.TabIndex = 5;
             this.label3.Text = "LOGIN PAGE";
             // 
+            // BTNWINCLOSE
+            // 
+            this.BTNWINCLOSE.BackColor = System.Drawing.Color.Black;
+            this.BTNWINCLOSE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BTNWINCLOSE.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNWINCLOSE.ForeColor = System.Drawing.Color.White;
+            this.BTNWINCLOSE.Location = new System.Drawing.Point(775, 3);
+            this.BTNWINCLOSE.Name = "BTNWINCLOSE";
+            this.BTNWINCLOSE.Size = new System.Drawing.Size(58, 51);
+            this.BTNWINCLOSE.TabIndex = 5;
+            this.BTNWINCLOSE.Text = "X";
+            this.BTNWINCLOSE.UseVisualStyleBackColor = false;
+            this.BTNWINCLOSE.Click += new System.EventHandler(this.BTNWINCLOSE_Click);
+            // 
             // f_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -273,7 +290,7 @@ namespace Chit_Fund_Management_System
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "f_login";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -308,6 +325,7 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button BTNWINCLOSE;
     }
 }
 

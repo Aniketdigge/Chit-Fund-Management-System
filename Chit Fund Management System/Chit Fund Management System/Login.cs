@@ -92,5 +92,10 @@ namespace Chit_Fund_Management_System
             tb_usernamelogin.Clear();
             tb_passwordlogin.Clear();
         }
+
+        private void BTNWINCLOSE_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
