@@ -69,6 +69,12 @@
     <Compile Include="Add Company.Designer.cs">
       <DependentUpon>Add Company.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Member.Designer.cs">
+      <DependentUpon>Add Member.cs</DependentUpon>
+    </Compile>
     <Compile Include="Agent Commission Log Repo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,12 @@
     </Compile>
     <Compile Include="Edit Company.Designer.cs">
       <DependentUpon>Edit Company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Member.Designer.cs">
+      <DependentUpon>Edit Member.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Attendence Log Viewer.cs">
       <SubType>Form</SubType>

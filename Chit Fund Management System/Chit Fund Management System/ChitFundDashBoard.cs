@@ -170,7 +170,9 @@ namespace Chit_Fund_Management_System
 
         private void editBranchToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-
+            Edit_Branch edit_Branch = new Edit_Branch();
+            edit_Branch.Show();
+            this.Hide();
         }
     }
 }
