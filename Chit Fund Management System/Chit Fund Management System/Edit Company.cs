@@ -146,6 +146,13 @@ namespace Chit_Fund_Management_System
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Delete successfully....");
+
+                tb_cinno_edit_company.Clear();
+                tb_companyname_edit_company.Clear();
+                tb_address_edit_company.Clear();
+                tb_city_edit_company.Clear();
+                tb_owner_edit_company.Clear();
+                tb_noofbranches_edit_company.Clear();
             }
             catch (Exception ex)
             {
