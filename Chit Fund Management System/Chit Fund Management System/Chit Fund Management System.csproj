@@ -383,6 +383,9 @@
     <EmbeddedResource Include="Add Company.resx">
       <DependentUpon>Add Company.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add Member.resx">
+      <DependentUpon>Add Member.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agent Commission Log Repo.resx">
       <DependentUpon>Agent Commission Log Repo.cs</DependentUpon>
     </EmbeddedResource>
@@ -443,6 +446,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit Company.resx">
       <DependentUpon>Edit Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Member.resx">
+      <DependentUpon>Edit Member.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Attendence Log Viewer.resx">
       <DependentUpon>Employee Attendence Log Viewer.cs</DependentUpon>
