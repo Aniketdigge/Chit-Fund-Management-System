@@ -42,6 +42,7 @@ namespace Chit_Fund_Management_System
             this.memebrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memberTransactionLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auctionRoomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +58,6 @@ namespace Chit_Fund_Management_System
             this.employeeSalarySlipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
-            this.editMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -204,6 +204,14 @@ namespace Chit_Fund_Management_System
             this.addMemberToolStripMenuItem.Name = "addMemberToolStripMenuItem";
             this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.addMemberToolStripMenuItem.Text = "Add Member";
+            this.addMemberToolStripMenuItem.Click += new System.EventHandler(this.addMemberToolStripMenuItem_Click);
+            // 
+            // editMemberToolStripMenuItem
+            // 
+            this.editMemberToolStripMenuItem.Name = "editMemberToolStripMenuItem";
+            this.editMemberToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editMemberToolStripMenuItem.Text = "Edit Member";
+            this.editMemberToolStripMenuItem.Click += new System.EventHandler(this.editMemberToolStripMenuItem_Click);
             // 
             // memberTransactionLogToolStripMenuItem
             // 
@@ -378,12 +386,6 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.Text = "Back To Login Page";
             this.lkb_back_to_login.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lkb_back_to_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkb_back_to_login_LinkClicked);
-            // 
-            // editMemberToolStripMenuItem
-            // 
-            this.editMemberToolStripMenuItem.Name = "editMemberToolStripMenuItem";
-            this.editMemberToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.editMemberToolStripMenuItem.Text = "Edit Member";
             // 
             // f_chit_fund_dash_board
             // 

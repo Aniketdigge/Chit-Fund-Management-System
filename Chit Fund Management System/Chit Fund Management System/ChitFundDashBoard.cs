@@ -174,5 +174,19 @@ namespace Chit_Fund_Management_System
             edit_Branch.Show();
             this.Hide();
         }
+
+        private void addMemberToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Add_Member add_Member = new Add_Member();
+            add_Member.Show();
+            this.Hide();
+        }
+
+        private void editMemberToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Edit_Member edit_Member = new Edit_Member();
+            edit_Member.Show();
+            this.Hide();
+        }
     }
 }
