@@ -33,18 +33,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@Fname", tb_add_m_fname.Text);
                 cmd.Parameters.AddWithValue("@Sname", tb_add_m_sname.Text);
                 cmd.Parameters.AddWithValue("@Mage", tb_add_m_age.Text);
-                if (rb_add_m_male.Checked)
-                {
-                    cmd.Parameters.AddWithValue("@Mgender", "Male");
-                }
-                else if (rb_add_m_female.Checked)
-                {
-                    cmd.Parameters.AddWithValue("@Mgender", "Female");
-                }
-                else if(rb_add_m_other.Checked)
-                {
-                    cmd.Parameters.AddWithValue("@Mgender", "Other");
-                }
+                cmd.Parameters.AddWithValue("@Mgender", cb_add_m_gender.Text);
                 cmd.Parameters.AddWithValue("@Mladdr", tb_add_m_laddr.Text);
                 cmd.Parameters.AddWithValue("@Memail", tb_add_m_memail.Text);
                 cmd.Parameters.AddWithValue("@Mmob", tb_add_m_mmob.Text);

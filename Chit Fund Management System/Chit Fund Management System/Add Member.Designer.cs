@@ -53,15 +53,12 @@ namespace Chit_Fund_Management_System
             this.label24 = new System.Windows.Forms.Label();
             this.tb_add_m_madhaar = new System.Windows.Forms.TextBox();
             this.tb_add_m_age = new System.Windows.Forms.TextBox();
-            this.rb_add_m_other = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.rb_add_m_male = new System.Windows.Forms.RadioButton();
             this.tb_add_m_name = new System.Windows.Forms.TextBox();
             this.tb_add_m_memail = new System.Windows.Forms.TextBox();
             this.dtp_add_m_dob = new System.Windows.Forms.DateTimePicker();
-            this.rb_add_m_female = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -102,6 +99,7 @@ namespace Chit_Fund_Management_System
             this.label26 = new System.Windows.Forms.Label();
             this.bt_add_m_clear = new System.Windows.Forms.Button();
             this.bt_add_m_save = new System.Windows.Forms.Button();
+            this.cb_add_m_gender = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -120,7 +118,7 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 79);
+            this.panel1.Size = new System.Drawing.Size(1710, 63);
             this.panel1.TabIndex = 8;
             // 
             // pictureBox3
@@ -130,7 +128,7 @@ namespace Chit_Fund_Management_System
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(166, 75);
+            this.pictureBox3.Size = new System.Drawing.Size(148, 60);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -141,9 +139,9 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(662, 0);
+            this.label1.Location = new System.Drawing.Point(588, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(675, 66);
+            this.label1.Size = new System.Drawing.Size(569, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADD MEMBER DETAILS";
             // 
@@ -163,11 +161,11 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.bt_add_m_clear);
             this.groupBox1.Controls.Add(this.bt_add_m_save);
-            this.groupBox1.Location = new System.Drawing.Point(33, 99);
+            this.groupBox1.Location = new System.Drawing.Point(29, 79);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1896, 941);
+            this.groupBox1.Size = new System.Drawing.Size(1685, 753);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             // 
@@ -187,11 +185,9 @@ namespace Chit_Fund_Management_System
             this.groupBox5.Controls.Add(this.tb_add_m_camt);
             this.groupBox5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            this.groupBox5.Location = new System.Drawing.Point(1403, 68);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox5.Location = new System.Drawing.Point(1247, 54);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox5.Size = new System.Drawing.Size(466, 349);
+            this.groupBox5.Size = new System.Drawing.Size(414, 279);
             this.groupBox5.TabIndex = 85;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Genral Details";
@@ -202,9 +198,9 @@ namespace Chit_Fund_Management_System
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(24, 176);
+            this.label30.Location = new System.Drawing.Point(21, 141);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(138, 33);
+            this.label30.Size = new System.Drawing.Size(117, 29);
             this.label30.TabIndex = 83;
             this.label30.Text = "Branch ID :";
             // 
@@ -214,9 +210,9 @@ namespace Chit_Fund_Management_System
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(24, 60);
+            this.label31.Location = new System.Drawing.Point(21, 48);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(127, 33);
+            this.label31.Size = new System.Drawing.Size(108, 29);
             this.label31.TabIndex = 64;
             this.label31.Text = "Group ID :";
             // 
@@ -226,11 +222,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_gid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_gid.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_gid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_gid.Location = new System.Drawing.Point(216, 61);
+            this.tb_add_m_gid.Location = new System.Drawing.Point(192, 49);
             this.tb_add_m_gid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_gid.Multiline = true;
             this.tb_add_m_gid.Name = "tb_add_m_gid";
-            this.tb_add_m_gid.Size = new System.Drawing.Size(216, 34);
+            this.tb_add_m_gid.Size = new System.Drawing.Size(192, 28);
             this.tb_add_m_gid.TabIndex = 67;
             this.tb_add_m_gid.TextChanged += new System.EventHandler(this.tb_add_m_gid_TextChanged);
             // 
@@ -240,11 +236,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_bid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_bid.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_bid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_bid.Location = new System.Drawing.Point(216, 178);
+            this.tb_add_m_bid.Location = new System.Drawing.Point(192, 142);
             this.tb_add_m_bid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_bid.Multiline = true;
             this.tb_add_m_bid.Name = "tb_add_m_bid";
-            this.tb_add_m_bid.Size = new System.Drawing.Size(216, 34);
+            this.tb_add_m_bid.Size = new System.Drawing.Size(192, 28);
             this.tb_add_m_bid.TabIndex = 84;
             this.tb_add_m_bid.TextChanged += new System.EventHandler(this.tb_add_m_bid_TextChanged);
             // 
@@ -254,11 +250,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_lamt.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_lamt.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_lamt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_lamt.Location = new System.Drawing.Point(216, 279);
+            this.tb_add_m_lamt.Location = new System.Drawing.Point(192, 223);
             this.tb_add_m_lamt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_lamt.Multiline = true;
             this.tb_add_m_lamt.Name = "tb_add_m_lamt";
-            this.tb_add_m_lamt.Size = new System.Drawing.Size(216, 35);
+            this.tb_add_m_lamt.Size = new System.Drawing.Size(192, 29);
             this.tb_add_m_lamt.TabIndex = 82;
             this.tb_add_m_lamt.TextChanged += new System.EventHandler(this.tb_add_m_lamt_TextChanged);
             // 
@@ -268,9 +264,9 @@ namespace Chit_Fund_Management_System
             this.label33.BackColor = System.Drawing.Color.Transparent;
             this.label33.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.White;
-            this.label33.Location = new System.Drawing.Point(24, 279);
+            this.label33.Location = new System.Drawing.Point(21, 223);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(177, 33);
+            this.label33.Size = new System.Drawing.Size(152, 29);
             this.label33.TabIndex = 81;
             this.label33.Text = "Loan Amount :";
             // 
@@ -280,9 +276,9 @@ namespace Chit_Fund_Management_System
             this.label34.BackColor = System.Drawing.Color.Transparent;
             this.label34.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(24, 122);
+            this.label34.Location = new System.Drawing.Point(21, 98);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(124, 33);
+            this.label34.Size = new System.Drawing.Size(105, 29);
             this.label34.TabIndex = 65;
             this.label34.Text = "Agent ID :";
             // 
@@ -292,11 +288,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_aid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_aid.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_aid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_aid.Location = new System.Drawing.Point(216, 122);
+            this.tb_add_m_aid.Location = new System.Drawing.Point(192, 98);
             this.tb_add_m_aid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_aid.Multiline = true;
             this.tb_add_m_aid.Name = "tb_add_m_aid";
-            this.tb_add_m_aid.Size = new System.Drawing.Size(216, 35);
+            this.tb_add_m_aid.Size = new System.Drawing.Size(192, 29);
             this.tb_add_m_aid.TabIndex = 68;
             this.tb_add_m_aid.TextChanged += new System.EventHandler(this.tb_add_m_aid_TextChanged);
             // 
@@ -306,9 +302,9 @@ namespace Chit_Fund_Management_System
             this.label35.BackColor = System.Drawing.Color.Transparent;
             this.label35.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(24, 225);
+            this.label35.Location = new System.Drawing.Point(21, 180);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(167, 33);
+            this.label35.Size = new System.Drawing.Size(143, 29);
             this.label35.TabIndex = 66;
             this.label35.Text = "Chit Amount :";
             // 
@@ -318,11 +314,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_camt.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_camt.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_camt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_camt.Location = new System.Drawing.Point(216, 225);
+            this.tb_add_m_camt.Location = new System.Drawing.Point(192, 180);
             this.tb_add_m_camt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_camt.Multiline = true;
             this.tb_add_m_camt.Name = "tb_add_m_camt";
-            this.tb_add_m_camt.Size = new System.Drawing.Size(216, 35);
+            this.tb_add_m_camt.Size = new System.Drawing.Size(192, 29);
             this.tb_add_m_camt.TabIndex = 69;
             this.tb_add_m_camt.TextChanged += new System.EventHandler(this.tb_add_m_camt_TextChanged);
             // 
@@ -334,10 +330,10 @@ namespace Chit_Fund_Management_System
             this.dtp_add_m_dor.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dtp_add_m_dor.CalendarTrailingForeColor = System.Drawing.Color.Gray;
             this.dtp_add_m_dor.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_add_m_dor.Location = new System.Drawing.Point(1403, 475);
+            this.dtp_add_m_dor.Location = new System.Drawing.Point(1324, 380);
             this.dtp_add_m_dor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_add_m_dor.Name = "dtp_add_m_dor";
-            this.dtp_add_m_dor.Size = new System.Drawing.Size(455, 39);
+            this.dtp_add_m_dor.Size = new System.Drawing.Size(271, 34);
             this.dtp_add_m_dor.TabIndex = 54;
             // 
             // label22
@@ -346,9 +342,9 @@ namespace Chit_Fund_Management_System
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(1494, 440);
+            this.label22.Location = new System.Drawing.Point(1349, 349);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(243, 33);
+            this.label22.Size = new System.Drawing.Size(207, 29);
             this.label22.TabIndex = 55;
             this.label22.Text = "Date of Registration:";
             // 
@@ -358,9 +354,9 @@ namespace Chit_Fund_Management_System
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(1770, 12);
+            this.label23.Location = new System.Drawing.Point(1573, 10);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(71, 29);
+            this.label23.Size = new System.Drawing.Size(60, 24);
             this.label23.TabIndex = 81;
             this.label23.Text = "HOME";
             // 
@@ -371,10 +367,10 @@ namespace Chit_Fund_Management_System
             this.bt_add_m_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_m_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_m_close.ForeColor = System.Drawing.Color.White;
-            this.bt_add_m_close.Location = new System.Drawing.Point(1844, 12);
+            this.bt_add_m_close.Location = new System.Drawing.Point(1639, 10);
             this.bt_add_m_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_add_m_close.Name = "bt_add_m_close";
-            this.bt_add_m_close.Size = new System.Drawing.Size(52, 49);
+            this.bt_add_m_close.Size = new System.Drawing.Size(46, 39);
             this.bt_add_m_close.TabIndex = 79;
             this.bt_add_m_close.UseVisualStyleBackColor = false;
             this.bt_add_m_close.Click += new System.EventHandler(this.bt_add_m_close_Click);
@@ -383,18 +379,16 @@ namespace Chit_Fund_Management_System
             // 
             this.groupBox4.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_29_07_PM;
             this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox4.Controls.Add(this.cb_add_m_gender);
             this.groupBox4.Controls.Add(this.label24);
             this.groupBox4.Controls.Add(this.tb_add_m_madhaar);
             this.groupBox4.Controls.Add(this.tb_add_m_age);
-            this.groupBox4.Controls.Add(this.rb_add_m_other);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.rb_add_m_male);
             this.groupBox4.Controls.Add(this.tb_add_m_name);
             this.groupBox4.Controls.Add(this.tb_add_m_memail);
             this.groupBox4.Controls.Add(this.dtp_add_m_dob);
-            this.groupBox4.Controls.Add(this.rb_add_m_female);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label4);
@@ -409,11 +403,9 @@ namespace Chit_Fund_Management_System
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(28, 59);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Location = new System.Drawing.Point(25, 47);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox4.Size = new System.Drawing.Size(605, 842);
+            this.groupBox4.Size = new System.Drawing.Size(538, 674);
             this.groupBox4.TabIndex = 63;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Personal Details";
@@ -424,9 +416,9 @@ namespace Chit_Fund_Management_System
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(28, 774);
+            this.label24.Location = new System.Drawing.Point(25, 619);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(146, 33);
+            this.label24.Size = new System.Drawing.Size(124, 29);
             this.label24.TabIndex = 54;
             this.label24.Text = "Adhaar No :";
             // 
@@ -436,11 +428,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_madhaar.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_madhaar.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_madhaar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_madhaar.Location = new System.Drawing.Point(227, 774);
+            this.tb_add_m_madhaar.Location = new System.Drawing.Point(202, 619);
             this.tb_add_m_madhaar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_madhaar.Multiline = true;
             this.tb_add_m_madhaar.Name = "tb_add_m_madhaar";
-            this.tb_add_m_madhaar.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_madhaar.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_madhaar.TabIndex = 55;
             this.tb_add_m_madhaar.TextChanged += new System.EventHandler(this.tb_add_m_madhaar_TextChanged);
             // 
@@ -450,28 +442,13 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_age.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_age.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_age.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_age.Location = new System.Drawing.Point(227, 396);
+            this.tb_add_m_age.Location = new System.Drawing.Point(202, 317);
             this.tb_add_m_age.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_age.Multiline = true;
             this.tb_add_m_age.Name = "tb_add_m_age";
-            this.tb_add_m_age.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_age.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_age.TabIndex = 49;
             this.tb_add_m_age.TextChanged += new System.EventHandler(this.tb_add_m_age_TextChanged);
-            // 
-            // rb_add_m_other
-            // 
-            this.rb_add_m_other.AutoSize = true;
-            this.rb_add_m_other.BackColor = System.Drawing.Color.Transparent;
-            this.rb_add_m_other.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_add_m_other.ForeColor = System.Drawing.Color.White;
-            this.rb_add_m_other.Location = new System.Drawing.Point(472, 458);
-            this.rb_add_m_other.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rb_add_m_other.Name = "rb_add_m_other";
-            this.rb_add_m_other.Size = new System.Drawing.Size(102, 37);
-            this.rb_add_m_other.TabIndex = 51;
-            this.rb_add_m_other.TabStop = true;
-            this.rb_add_m_other.Text = "Other";
-            this.rb_add_m_other.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
@@ -479,9 +456,9 @@ namespace Chit_Fund_Management_System
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(28, 461);
+            this.label11.Location = new System.Drawing.Point(25, 369);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 33);
+            this.label11.Size = new System.Drawing.Size(94, 29);
             this.label11.TabIndex = 50;
             this.label11.Text = "Gender :";
             // 
@@ -491,9 +468,9 @@ namespace Chit_Fund_Management_System
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(28, 396);
+            this.label10.Location = new System.Drawing.Point(25, 317);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(173, 33);
+            this.label10.Size = new System.Drawing.Size(148, 29);
             this.label10.TabIndex = 48;
             this.label10.Text = "Member Age  :";
             // 
@@ -503,26 +480,11 @@ namespace Chit_Fund_Management_System
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(28, 59);
+            this.label2.Location = new System.Drawing.Point(25, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 33);
+            this.label2.Size = new System.Drawing.Size(118, 29);
             this.label2.TabIndex = 36;
             this.label2.Text = "Full Name :";
-            // 
-            // rb_add_m_male
-            // 
-            this.rb_add_m_male.AutoSize = true;
-            this.rb_add_m_male.BackColor = System.Drawing.Color.Transparent;
-            this.rb_add_m_male.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_add_m_male.ForeColor = System.Drawing.Color.White;
-            this.rb_add_m_male.Location = new System.Drawing.Point(227, 456);
-            this.rb_add_m_male.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rb_add_m_male.Name = "rb_add_m_male";
-            this.rb_add_m_male.Size = new System.Drawing.Size(91, 37);
-            this.rb_add_m_male.TabIndex = 51;
-            this.rb_add_m_male.TabStop = true;
-            this.rb_add_m_male.Text = "Male";
-            this.rb_add_m_male.UseVisualStyleBackColor = false;
             // 
             // tb_add_m_name
             // 
@@ -530,11 +492,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_name.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_name.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_name.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_name.Location = new System.Drawing.Point(227, 59);
+            this.tb_add_m_name.Location = new System.Drawing.Point(202, 47);
             this.tb_add_m_name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_name.Multiline = true;
             this.tb_add_m_name.Name = "tb_add_m_name";
-            this.tb_add_m_name.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_name.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_name.TabIndex = 37;
             this.tb_add_m_name.TextChanged += new System.EventHandler(this.tb_add_m_name_TextChanged);
             // 
@@ -544,11 +506,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_memail.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_memail.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_memail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_memail.Location = new System.Drawing.Point(227, 648);
+            this.tb_add_m_memail.Location = new System.Drawing.Point(202, 518);
             this.tb_add_m_memail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_memail.Multiline = true;
             this.tb_add_m_memail.Name = "tb_add_m_memail";
-            this.tb_add_m_memail.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_memail.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_memail.TabIndex = 47;
             // 
             // dtp_add_m_dob
@@ -559,26 +521,11 @@ namespace Chit_Fund_Management_System
             this.dtp_add_m_dob.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dtp_add_m_dob.CalendarTrailingForeColor = System.Drawing.Color.Gray;
             this.dtp_add_m_dob.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_add_m_dob.Location = new System.Drawing.Point(34, 155);
+            this.dtp_add_m_dob.Location = new System.Drawing.Point(202, 105);
             this.dtp_add_m_dob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_add_m_dob.Name = "dtp_add_m_dob";
-            this.dtp_add_m_dob.Size = new System.Drawing.Size(536, 39);
+            this.dtp_add_m_dob.Size = new System.Drawing.Size(305, 34);
             this.dtp_add_m_dob.TabIndex = 38;
-            // 
-            // rb_add_m_female
-            // 
-            this.rb_add_m_female.AutoSize = true;
-            this.rb_add_m_female.BackColor = System.Drawing.Color.Transparent;
-            this.rb_add_m_female.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rb_add_m_female.ForeColor = System.Drawing.Color.White;
-            this.rb_add_m_female.Location = new System.Drawing.Point(334, 456);
-            this.rb_add_m_female.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rb_add_m_female.Name = "rb_add_m_female";
-            this.rb_add_m_female.Size = new System.Drawing.Size(119, 37);
-            this.rb_add_m_female.TabIndex = 51;
-            this.rb_add_m_female.TabStop = true;
-            this.rb_add_m_female.Text = "Female";
-            this.rb_add_m_female.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -586,9 +533,9 @@ namespace Chit_Fund_Management_System
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(28, 110);
+            this.label3.Location = new System.Drawing.Point(25, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 33);
+            this.label3.Size = new System.Drawing.Size(143, 29);
             this.label3.TabIndex = 39;
             this.label3.Text = "Date of Birth :";
             // 
@@ -598,9 +545,9 @@ namespace Chit_Fund_Management_System
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(28, 648);
+            this.label9.Location = new System.Drawing.Point(25, 518);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(196, 33);
+            this.label9.Size = new System.Drawing.Size(168, 29);
             this.label9.TabIndex = 46;
             this.label9.Text = "E-mail Address :";
             // 
@@ -610,9 +557,9 @@ namespace Chit_Fund_Management_System
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(28, 212);
+            this.label4.Location = new System.Drawing.Point(25, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 33);
+            this.label4.Size = new System.Drawing.Size(161, 29);
             this.label4.TabIndex = 40;
             this.label4.Text = "Father\'s Name :";
             // 
@@ -622,11 +569,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_laddr.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_laddr.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_laddr.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_laddr.Location = new System.Drawing.Point(227, 526);
+            this.tb_add_m_laddr.Location = new System.Drawing.Point(202, 421);
             this.tb_add_m_laddr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_laddr.Multiline = true;
             this.tb_add_m_laddr.Name = "tb_add_m_laddr";
-            this.tb_add_m_laddr.Size = new System.Drawing.Size(343, 92);
+            this.tb_add_m_laddr.Size = new System.Drawing.Size(305, 74);
             this.tb_add_m_laddr.TabIndex = 45;
             // 
             // tb_add_m_fname
@@ -635,11 +582,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_fname.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_fname.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_fname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_fname.Location = new System.Drawing.Point(227, 212);
+            this.tb_add_m_fname.Location = new System.Drawing.Point(202, 170);
             this.tb_add_m_fname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_fname.Multiline = true;
             this.tb_add_m_fname.Name = "tb_add_m_fname";
-            this.tb_add_m_fname.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_fname.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_fname.TabIndex = 41;
             this.tb_add_m_fname.TextChanged += new System.EventHandler(this.tb_add_m_fname_TextChanged);
             // 
@@ -649,9 +596,9 @@ namespace Chit_Fund_Management_System
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(28, 716);
+            this.label12.Location = new System.Drawing.Point(25, 573);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(138, 33);
+            this.label12.Size = new System.Drawing.Size(117, 29);
             this.label12.TabIndex = 52;
             this.label12.Text = "Mobile No :";
             // 
@@ -661,9 +608,9 @@ namespace Chit_Fund_Management_System
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 291);
+            this.label5.Location = new System.Drawing.Point(25, 233);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 33);
+            this.label5.Size = new System.Drawing.Size(179, 29);
             this.label5.TabIndex = 42;
             this.label5.Text = "Name of Spouse :";
             // 
@@ -673,9 +620,9 @@ namespace Chit_Fund_Management_System
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(28, 564);
+            this.label8.Location = new System.Drawing.Point(25, 451);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 33);
+            this.label8.Size = new System.Drawing.Size(104, 29);
             this.label8.TabIndex = 44;
             this.label8.Text = "Address :";
             // 
@@ -685,9 +632,9 @@ namespace Chit_Fund_Management_System
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(223, 332);
+            this.label6.Location = new System.Drawing.Point(198, 266);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 29);
+            this.label6.Size = new System.Drawing.Size(92, 24);
             this.label6.TabIndex = 42;
             this.label6.Text = "(if Married)";
             // 
@@ -697,11 +644,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_mmob.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_mmob.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_mmob.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_mmob.Location = new System.Drawing.Point(227, 716);
+            this.tb_add_m_mmob.Location = new System.Drawing.Point(202, 573);
             this.tb_add_m_mmob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_mmob.Multiline = true;
             this.tb_add_m_mmob.Name = "tb_add_m_mmob";
-            this.tb_add_m_mmob.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_mmob.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_mmob.TabIndex = 53;
             this.tb_add_m_mmob.TextChanged += new System.EventHandler(this.tb_add_m_mmob_TextChanged);
             // 
@@ -711,11 +658,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_sname.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_sname.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_sname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_sname.Location = new System.Drawing.Point(227, 291);
+            this.tb_add_m_sname.Location = new System.Drawing.Point(202, 233);
             this.tb_add_m_sname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_sname.Multiline = true;
             this.tb_add_m_sname.Name = "tb_add_m_sname";
-            this.tb_add_m_sname.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_sname.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_sname.TabIndex = 43;
             this.tb_add_m_sname.TextChanged += new System.EventHandler(this.tb_add_m_sname_TextChanged);
             // 
@@ -725,9 +672,9 @@ namespace Chit_Fund_Management_System
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(28, 526);
+            this.label7.Location = new System.Drawing.Point(25, 421);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(210, 33);
+            this.label7.Size = new System.Drawing.Size(178, 29);
             this.label7.TabIndex = 44;
             this.label7.Text = "Local Residential ";
             // 
@@ -749,11 +696,9 @@ namespace Chit_Fund_Management_System
             this.groupBox3.Controls.Add(this.tb_add_m_nage);
             this.groupBox3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(640, 494);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Location = new System.Drawing.Point(569, 395);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Size = new System.Drawing.Size(740, 408);
+            this.groupBox3.Size = new System.Drawing.Size(658, 326);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Nominee Details";
@@ -764,9 +709,9 @@ namespace Chit_Fund_Management_System
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(24, 344);
+            this.label28.Location = new System.Drawing.Point(21, 275);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(146, 33);
+            this.label28.Size = new System.Drawing.Size(124, 29);
             this.label28.TabIndex = 56;
             this.label28.Text = "Adhaar No :";
             // 
@@ -776,11 +721,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_nmob.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_nmob.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_nmob.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_nmob.Location = new System.Drawing.Point(379, 285);
+            this.tb_add_m_nmob.Location = new System.Drawing.Point(337, 228);
             this.tb_add_m_nmob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_nmob.Multiline = true;
             this.tb_add_m_nmob.Name = "tb_add_m_nmob";
-            this.tb_add_m_nmob.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_nmob.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_nmob.TabIndex = 84;
             this.tb_add_m_nmob.TextChanged += new System.EventHandler(this.tb_add_m_nmob_TextChanged);
             // 
@@ -790,11 +735,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_nadhaar.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_nadhaar.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_nadhaar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_nadhaar.Location = new System.Drawing.Point(379, 339);
+            this.tb_add_m_nadhaar.Location = new System.Drawing.Point(337, 271);
             this.tb_add_m_nadhaar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_nadhaar.Multiline = true;
             this.tb_add_m_nadhaar.Name = "tb_add_m_nadhaar";
-            this.tb_add_m_nadhaar.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_nadhaar.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_nadhaar.TabIndex = 57;
             this.tb_add_m_nadhaar.TextChanged += new System.EventHandler(this.tb_add_m_nadhaar_TextChanged);
             // 
@@ -804,9 +749,9 @@ namespace Chit_Fund_Management_System
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(24, 60);
+            this.label19.Location = new System.Drawing.Point(21, 48);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(92, 33);
+            this.label19.Size = new System.Drawing.Size(79, 29);
             this.label19.TabIndex = 64;
             this.label19.Text = "Name :";
             // 
@@ -816,9 +761,9 @@ namespace Chit_Fund_Management_System
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(24, 286);
+            this.label18.Location = new System.Drawing.Point(21, 229);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(138, 33);
+            this.label18.Size = new System.Drawing.Size(117, 29);
             this.label18.TabIndex = 83;
             this.label18.Text = "Mobile No :";
             // 
@@ -828,11 +773,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_nname.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_nname.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_nname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_nname.Location = new System.Drawing.Point(379, 60);
+            this.tb_add_m_nname.Location = new System.Drawing.Point(337, 48);
             this.tb_add_m_nname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_nname.Multiline = true;
             this.tb_add_m_nname.Name = "tb_add_m_nname";
-            this.tb_add_m_nname.Size = new System.Drawing.Size(343, 34);
+            this.tb_add_m_nname.Size = new System.Drawing.Size(305, 28);
             this.tb_add_m_nname.TabIndex = 67;
             this.tb_add_m_nname.TextChanged += new System.EventHandler(this.tb_add_m_nname_TextChanged);
             // 
@@ -842,11 +787,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_nemail.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_nemail.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_nemail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_nemail.Location = new System.Drawing.Point(379, 228);
+            this.tb_add_m_nemail.Location = new System.Drawing.Point(337, 182);
             this.tb_add_m_nemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_nemail.Multiline = true;
             this.tb_add_m_nemail.Name = "tb_add_m_nemail";
-            this.tb_add_m_nemail.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_nemail.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_nemail.TabIndex = 82;
             // 
             // label27
@@ -855,9 +800,9 @@ namespace Chit_Fund_Management_System
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(24, 229);
+            this.label27.Location = new System.Drawing.Point(21, 183);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(196, 33);
+            this.label27.Size = new System.Drawing.Size(168, 29);
             this.label27.TabIndex = 81;
             this.label27.Text = "E-mail Address :";
             // 
@@ -867,9 +812,9 @@ namespace Chit_Fund_Management_System
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(24, 122);
+            this.label20.Location = new System.Drawing.Point(21, 98);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(167, 33);
+            this.label20.Size = new System.Drawing.Size(142, 29);
             this.label20.TabIndex = 65;
             this.label20.Text = "Relationship :";
             // 
@@ -879,11 +824,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_nrelation.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_nrelation.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_nrelation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_nrelation.Location = new System.Drawing.Point(379, 121);
+            this.tb_add_m_nrelation.Location = new System.Drawing.Point(337, 97);
             this.tb_add_m_nrelation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_nrelation.Multiline = true;
             this.tb_add_m_nrelation.Name = "tb_add_m_nrelation";
-            this.tb_add_m_nrelation.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_nrelation.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_nrelation.TabIndex = 68;
             this.tb_add_m_nrelation.TextChanged += new System.EventHandler(this.tb_add_m_nrelation_TextChanged);
             // 
@@ -893,9 +838,9 @@ namespace Chit_Fund_Management_System
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(24, 175);
+            this.label21.Location = new System.Drawing.Point(21, 140);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(73, 33);
+            this.label21.Size = new System.Drawing.Size(62, 29);
             this.label21.TabIndex = 66;
             this.label21.Text = "Age :";
             // 
@@ -905,11 +850,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_nage.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_nage.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_nage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_nage.Location = new System.Drawing.Point(379, 174);
+            this.tb_add_m_nage.Location = new System.Drawing.Point(337, 139);
             this.tb_add_m_nage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_nage.Multiline = true;
             this.tb_add_m_nage.Name = "tb_add_m_nage";
-            this.tb_add_m_nage.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_nage.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_nage.TabIndex = 69;
             this.tb_add_m_nage.TextChanged += new System.EventHandler(this.tb_add_m_nage_TextChanged);
             // 
@@ -929,11 +874,9 @@ namespace Chit_Fund_Management_System
             this.groupBox2.Controls.Add(this.tb_add_m_mpan);
             this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(640, 59);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Location = new System.Drawing.Point(569, 47);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(740, 416);
+            this.groupBox2.Size = new System.Drawing.Size(658, 333);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Professional Details";
@@ -944,9 +887,9 @@ namespace Chit_Fund_Management_System
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(377, 284);
+            this.label29.Location = new System.Drawing.Point(335, 227);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(296, 29);
+            this.label29.Size = new System.Drawing.Size(241, 24);
             this.label29.TabIndex = 63;
             this.label29.Text = "(If bussiness monthly income)";
             // 
@@ -956,11 +899,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_oaddr.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_oaddr.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_oaddr.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_oaddr.Location = new System.Drawing.Point(379, 55);
+            this.tb_add_m_oaddr.Location = new System.Drawing.Point(337, 44);
             this.tb_add_m_oaddr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_oaddr.Multiline = true;
             this.tb_add_m_oaddr.Name = "tb_add_m_oaddr";
-            this.tb_add_m_oaddr.Size = new System.Drawing.Size(343, 108);
+            this.tb_add_m_oaddr.Size = new System.Drawing.Size(305, 87);
             this.tb_add_m_oaddr.TabIndex = 55;
             // 
             // label13
@@ -969,9 +912,9 @@ namespace Chit_Fund_Management_System
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(24, 55);
+            this.label13.Location = new System.Drawing.Point(21, 44);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(332, 99);
+            this.label13.Size = new System.Drawing.Size(282, 87);
             this.label13.TabIndex = 54;
             this.label13.Text = "Name of Office\r\nin which employed / own\r\nBussiness with full address :\r\n";
             // 
@@ -981,9 +924,9 @@ namespace Chit_Fund_Management_System
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(24, 185);
+            this.label14.Location = new System.Drawing.Point(21, 148);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(161, 33);
+            this.label14.Size = new System.Drawing.Size(137, 29);
             this.label14.TabIndex = 56;
             this.label14.Text = "Designation :";
             // 
@@ -993,9 +936,9 @@ namespace Chit_Fund_Management_System
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(377, 360);
+            this.label17.Location = new System.Drawing.Point(335, 288);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(99, 29);
+            this.label17.Size = new System.Drawing.Size(81, 24);
             this.label17.TabIndex = 62;
             this.label17.Text = "(PAN No)";
             // 
@@ -1005,11 +948,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_mdesig.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_mdesig.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_mdesig.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_mdesig.Location = new System.Drawing.Point(379, 185);
+            this.tb_add_m_mdesig.Location = new System.Drawing.Point(337, 148);
             this.tb_add_m_mdesig.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_mdesig.Multiline = true;
             this.tb_add_m_mdesig.Name = "tb_add_m_mdesig";
-            this.tb_add_m_mdesig.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_mdesig.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_mdesig.TabIndex = 57;
             this.tb_add_m_mdesig.TextChanged += new System.EventHandler(this.tb_add_m_mdesig_TextChanged);
             // 
@@ -1019,9 +962,9 @@ namespace Chit_Fund_Management_System
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(24, 246);
+            this.label15.Location = new System.Drawing.Point(21, 197);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 33);
+            this.label15.Size = new System.Drawing.Size(84, 29);
             this.label15.TabIndex = 58;
             this.label15.Text = "Salary :";
             // 
@@ -1031,11 +974,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_msalary.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_msalary.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_msalary.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_msalary.Location = new System.Drawing.Point(379, 245);
+            this.tb_add_m_msalary.Location = new System.Drawing.Point(337, 196);
             this.tb_add_m_msalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_msalary.Multiline = true;
             this.tb_add_m_msalary.Name = "tb_add_m_msalary";
-            this.tb_add_m_msalary.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_msalary.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_msalary.TabIndex = 59;
             this.tb_add_m_msalary.TextChanged += new System.EventHandler(this.tb_add_m_msalary_TextChanged);
             // 
@@ -1045,9 +988,9 @@ namespace Chit_Fund_Management_System
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(22, 321);
+            this.label16.Location = new System.Drawing.Point(20, 257);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(367, 33);
+            this.label16.Size = new System.Drawing.Size(316, 29);
             this.label16.TabIndex = 60;
             this.label16.Text = "Permanent Income Tax Number:";
             // 
@@ -1057,11 +1000,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_m_mpan.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_m_mpan.ForeColor = System.Drawing.Color.White;
             this.tb_add_m_mpan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_m_mpan.Location = new System.Drawing.Point(379, 321);
+            this.tb_add_m_mpan.Location = new System.Drawing.Point(337, 257);
             this.tb_add_m_mpan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_m_mpan.Multiline = true;
             this.tb_add_m_mpan.Name = "tb_add_m_mpan";
-            this.tb_add_m_mpan.Size = new System.Drawing.Size(343, 35);
+            this.tb_add_m_mpan.Size = new System.Drawing.Size(305, 29);
             this.tb_add_m_mpan.TabIndex = 61;
             // 
             // label25
@@ -1070,9 +1013,9 @@ namespace Chit_Fund_Management_System
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(1761, 878);
+            this.label25.Location = new System.Drawing.Point(1565, 702);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(80, 29);
+            this.label25.Size = new System.Drawing.Size(66, 24);
             this.label25.TabIndex = 78;
             this.label25.Text = "CLEAR";
             // 
@@ -1082,9 +1025,9 @@ namespace Chit_Fund_Management_System
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(1631, 871);
+            this.label26.Location = new System.Drawing.Point(1450, 697);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(66, 29);
+            this.label26.Size = new System.Drawing.Size(54, 24);
             this.label26.TabIndex = 77;
             this.label26.Text = "SAVE";
             // 
@@ -1095,10 +1038,10 @@ namespace Chit_Fund_Management_System
             this.bt_add_m_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_m_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_m_clear.ForeColor = System.Drawing.Color.White;
-            this.bt_add_m_clear.Location = new System.Drawing.Point(1762, 821);
+            this.bt_add_m_clear.Location = new System.Drawing.Point(1566, 657);
             this.bt_add_m_clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_add_m_clear.Name = "bt_add_m_clear";
-            this.bt_add_m_clear.Size = new System.Drawing.Size(73, 48);
+            this.bt_add_m_clear.Size = new System.Drawing.Size(65, 38);
             this.bt_add_m_clear.TabIndex = 76;
             this.bt_add_m_clear.UseVisualStyleBackColor = false;
             this.bt_add_m_clear.Click += new System.EventHandler(this.bt_add_m_clear_Click);
@@ -1110,21 +1053,35 @@ namespace Chit_Fund_Management_System
             this.bt_add_m_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_m_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_m_save.ForeColor = System.Drawing.Color.White;
-            this.bt_add_m_save.Location = new System.Drawing.Point(1619, 821);
+            this.bt_add_m_save.Location = new System.Drawing.Point(1439, 657);
             this.bt_add_m_save.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_add_m_save.Name = "bt_add_m_save";
-            this.bt_add_m_save.Size = new System.Drawing.Size(83, 48);
+            this.bt_add_m_save.Size = new System.Drawing.Size(74, 38);
             this.bt_add_m_save.TabIndex = 75;
             this.bt_add_m_save.UseVisualStyleBackColor = false;
             this.bt_add_m_save.Click += new System.EventHandler(this.bt_add_m_save_Click);
             // 
+            // cb_add_m_gender
+            // 
+            this.cb_add_m_gender.BackColor = System.Drawing.Color.Black;
+            this.cb_add_m_gender.ForeColor = System.Drawing.Color.White;
+            this.cb_add_m_gender.FormattingEnabled = true;
+            this.cb_add_m_gender.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.cb_add_m_gender.Location = new System.Drawing.Point(202, 372);
+            this.cb_add_m_gender.Name = "cb_add_m_gender";
+            this.cb_add_m_gender.Size = new System.Drawing.Size(305, 32);
+            this.cb_add_m_gender.TabIndex = 56;
+            // 
             // Add_Member
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1924, 1050);
+            this.ClientSize = new System.Drawing.Size(1710, 840);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1175,9 +1132,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tb_add_m_mmob;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton rb_add_m_other;
-        private System.Windows.Forms.RadioButton rb_add_m_female;
-        private System.Windows.Forms.RadioButton rb_add_m_male;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox tb_add_m_age;
         private System.Windows.Forms.Label label10;
@@ -1222,5 +1176,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.TextBox tb_add_m_camt;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox tb_add_m_bid;
+        private System.Windows.Forms.ComboBox cb_add_m_gender;
     }
 }
