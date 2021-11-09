@@ -188,5 +188,12 @@ namespace Chit_Fund_Management_System
             edit_Member.Show();
             this.Hide();
         }
+
+        private void addAgentToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Add_Agent add_Agent = new Add_Agent();
+            add_Agent.Show();
+            this.Hide();
+        }
     }
 }
