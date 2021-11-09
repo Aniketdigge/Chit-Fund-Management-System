@@ -57,6 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Agent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Agent.Designer.cs">
+      <DependentUpon>Add Agent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add Branch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +383,9 @@
     <Compile Include="Salary Report.Designer.cs">
       <DependentUpon>Salary Report.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Agent.resx">
+      <DependentUpon>Add Agent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add Branch.resx">
       <DependentUpon>Add Branch.cs</DependentUpon>
     </EmbeddedResource>

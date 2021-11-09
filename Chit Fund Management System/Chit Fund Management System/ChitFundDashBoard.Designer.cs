@@ -58,6 +58,8 @@ namespace Chit_Fund_Management_System
             this.employeeSalarySlipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
+            this.addAgentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editAgentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -202,14 +204,14 @@ namespace Chit_Fund_Management_System
             // addMemberToolStripMenuItem
             // 
             this.addMemberToolStripMenuItem.Name = "addMemberToolStripMenuItem";
-            this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.addMemberToolStripMenuItem.Text = "Add Member";
             this.addMemberToolStripMenuItem.Click += new System.EventHandler(this.addMemberToolStripMenuItem_Click);
             // 
             // editMemberToolStripMenuItem
             // 
             this.editMemberToolStripMenuItem.Name = "editMemberToolStripMenuItem";
-            this.editMemberToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editMemberToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.editMemberToolStripMenuItem.Text = "Edit Member";
             this.editMemberToolStripMenuItem.Click += new System.EventHandler(this.editMemberToolStripMenuItem_Click);
             // 
@@ -287,6 +289,9 @@ namespace Chit_Fund_Management_System
             this.agentProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.agentProfileToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
             this.agentProfileToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.agentProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addAgentToolStripMenuItem,
+            this.editAgentToolStripMenuItem});
             this.agentProfileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.agentProfileToolStripMenuItem.Name = "agentProfileToolStripMenuItem";
             this.agentProfileToolStripMenuItem.Size = new System.Drawing.Size(246, 28);
@@ -387,6 +392,19 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lkb_back_to_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkb_back_to_login_LinkClicked);
             // 
+            // addAgentToolStripMenuItem
+            // 
+            this.addAgentToolStripMenuItem.Name = "addAgentToolStripMenuItem";
+            this.addAgentToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addAgentToolStripMenuItem.Text = "Add Agent";
+            this.addAgentToolStripMenuItem.Click += new System.EventHandler(this.addAgentToolStripMenuItem_Click);
+            // 
+            // editAgentToolStripMenuItem
+            // 
+            this.editAgentToolStripMenuItem.Name = "editAgentToolStripMenuItem";
+            this.editAgentToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editAgentToolStripMenuItem.Text = "Edit Agent";
+            // 
             // f_chit_fund_dash_board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -441,5 +459,7 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.ToolStripMenuItem editBranchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editMemberToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addAgentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editAgentToolStripMenuItem;
     }
 }
