@@ -75,6 +75,12 @@
     <Compile Include="Add Company.Designer.cs">
       <DependentUpon>Add Company.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Employee.Designer.cs">
+      <DependentUpon>Add Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add Member.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -391,6 +397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add Company.resx">
       <DependentUpon>Add Company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Employee.resx">
+      <DependentUpon>Add Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add Member.resx">
       <DependentUpon>Add Member.cs</DependentUpon>
