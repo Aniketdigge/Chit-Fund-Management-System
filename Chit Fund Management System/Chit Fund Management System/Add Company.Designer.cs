@@ -364,6 +364,7 @@ namespace Chit_Fund_Management_System
             this.tb_companyname_add_company.Name = "tb_companyname_add_company";
             this.tb_companyname_add_company.Size = new System.Drawing.Size(386, 33);
             this.tb_companyname_add_company.TabIndex = 4;
+            //this.tb_companyname_add_company.TextChanged += new System.EventHandler(this.tb_companyname_add_company_TextChanged);
             // 
             // label3
             // 

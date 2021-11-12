@@ -83,7 +83,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_branch_city_add_branch.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_branch_city_add_branch.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid city.");
                     tb_branch_city_add_branch.Text = tb_branch_city_add_branch.Text.Remove(tb_branch_city_add_branch.Text.Length - 1);

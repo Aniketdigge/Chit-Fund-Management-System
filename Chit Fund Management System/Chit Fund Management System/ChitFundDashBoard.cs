@@ -195,5 +195,26 @@ namespace Chit_Fund_Management_System
             add_Agent.Show();
             this.Hide();
         }
+
+        private void editAgentToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Edit_Agent edit_Agent = new Edit_Agent();
+            edit_Agent.Show();
+            this.Hide();
+        }
+
+        private void addEmployeeToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Add_Employee add_Employee = new Add_Employee();
+            add_Employee.Show();
+            this.Hide();
+        }
+
+        private void editEmployeeToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Edit_Employee edit_Employee = new Edit_Employee();
+            edit_Employee.Show();
+            this.Hide();
+        }
     }
 }
