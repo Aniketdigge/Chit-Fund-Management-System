@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bt_add_a_close.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bt_add_e_close.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAEQ5JREFUeF7t
         nFuMJkUZhvcwx91ZYHdZBAILC7jAgigHAYkHQEQCGOOFid6YaKKJN6jcaPSG4A3xTjFE4p3hRrgEosRg
@@ -196,7 +196,7 @@
         /abLT1Xtxka/6fJTVbux0W+6/FTVbmz0my4/VbUbG/2mwW/Tpv8DWKXg8YnwB6gAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bt_add_a_clear.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bt_add_e_clear.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA64AAAhUCAYAAACxCCT3AAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         vQn8VPV63997k3tv0oRsTWjSmo2mpqGJ/9TWxNTaWlNCjbXGWC21GI0UgxSMYF0jKm64i4r7viIo4oLi
@@ -2312,7 +2312,7 @@
         Tftn5l1cAAAQGb/wC/8/n/qKyhxctOcAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bt_add_a_save.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bt_add_e_save.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAR8AAAEsCAYAAAD6ubdOAAAABGdBTUEAALGPC/xhBQAAFx1JREFUeF7t
         ne113DgSRSeECUERaDoERzDTISgEheAQHIAtOwSHsCFMCBvCZLCLAiFPq1XqLpCF7/vOuX9skQ2AwGOh

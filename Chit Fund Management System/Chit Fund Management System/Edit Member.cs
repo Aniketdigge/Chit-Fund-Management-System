@@ -75,7 +75,7 @@ namespace Chit_Fund_Management_System
                 con.Open();
                 cmd = new OleDbCommand("update MemberTB set Mname=@Mname, Mdob=@Mdob, Fname=@Fname, Sname=@Sname, Mage=@Mage, Mgender=@Mgender, Mladdr=@Mladdr, " +
                     "Memail=@Memail, Mmob=@Mmob, Madhaar=@Madhaar, Moaddr=@Moaddr, Mdesign=@Mdesign, Salary=@Salary, Mpan=@Mpan, Nname=@Nname, Nrelation=@Nrelation, " +
-                    "Nage=@Nage, Nemail=@Nemail, Nmob=@Nmob, Nadhaar=@Nadhaar, Gid=@Gid, Aid=@Aid, Bid=@Bid, Camt=@Camt, Lamt=@Lamt, Dor=@Dor, where Member_id=@memberid", con);
+                    "Nage=@Nage, Nemail=@Nemail, Nmob=@Nmob, Nadhaar=@Nadhaar, Gid=@Gid, Aid=@Aid, Bid=@Bid, Camt=@Camt, Lamt=@Lamt, Dor=@Dor where Member_id=@memberid", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_edit_m_memberid.Text);
                 cmd.Parameters.AddWithValue("@Mname", tb_edit_m_name.Text);
                 cmd.Parameters.AddWithValue("@Mdob", dtp_edit_m_dob.Text);
@@ -212,7 +212,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_name.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_name.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid name.");
                     tb_edit_m_name.Text = tb_edit_m_name.Text.Remove(tb_edit_m_name.Text.Length - 1);
@@ -228,7 +228,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_fname.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_fname.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid name.");
                     tb_edit_m_fname.Text = tb_edit_m_fname.Text.Remove(tb_edit_m_fname.Text.Length - 1);
@@ -244,7 +244,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_sname.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_sname.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid name.");
                     tb_edit_m_sname.Text = tb_edit_m_sname.Text.Remove(tb_edit_m_sname.Text.Length - 1);
@@ -308,7 +308,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_mdesig.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_mdesig.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid designation.");
                     tb_edit_m_mdesig.Text = tb_edit_m_mdesig.Text.Remove(tb_edit_m_mdesig.Text.Length - 1);
@@ -340,7 +340,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_nname.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_nname.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid name.");
                     tb_edit_m_nname.Text = tb_edit_m_nname.Text.Remove(tb_edit_m_nname.Text.Length - 1);
@@ -356,7 +356,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_nrelation.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_nrelation.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid relation.");
                     tb_edit_m_nrelation.Text = tb_edit_m_nrelation.Text.Remove(tb_edit_m_nrelation.Text.Length - 1);

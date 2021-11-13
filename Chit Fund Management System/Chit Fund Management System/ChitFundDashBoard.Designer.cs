@@ -50,16 +50,18 @@ namespace Chit_Fund_Management_System
             this.biddingLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addAgentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editAgentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentCommissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agentPaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeAttendanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeSalarySlipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeePaymentLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lkb_back_to_login = new System.Windows.Forms.LinkLabel();
-            this.addAgentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editAgentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -298,6 +300,20 @@ namespace Chit_Fund_Management_System
             this.agentProfileToolStripMenuItem.Text = "Agent Profile";
             this.agentProfileToolStripMenuItem.Click += new System.EventHandler(this.agentProfileToolStripMenuItem_Click);
             // 
+            // addAgentToolStripMenuItem
+            // 
+            this.addAgentToolStripMenuItem.Name = "addAgentToolStripMenuItem";
+            this.addAgentToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
+            this.addAgentToolStripMenuItem.Text = "Add Agent";
+            this.addAgentToolStripMenuItem.Click += new System.EventHandler(this.addAgentToolStripMenuItem_Click);
+            // 
+            // editAgentToolStripMenuItem
+            // 
+            this.editAgentToolStripMenuItem.Name = "editAgentToolStripMenuItem";
+            this.editAgentToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
+            this.editAgentToolStripMenuItem.Text = "Edit Agent";
+            this.editAgentToolStripMenuItem.Click += new System.EventHandler(this.editAgentToolStripMenuItem_Click);
+            // 
             // agentCommissionToolStripMenuItem
             // 
             this.agentCommissionToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
@@ -340,11 +356,28 @@ namespace Chit_Fund_Management_System
             this.employeeProfileToolStripMenuItem.BackColor = System.Drawing.Color.DarkGray;
             this.employeeProfileToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
             this.employeeProfileToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.employeeProfileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addEmployeeToolStripMenuItem,
+            this.editEmployeeToolStripMenuItem});
             this.employeeProfileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.employeeProfileToolStripMenuItem.Name = "employeeProfileToolStripMenuItem";
             this.employeeProfileToolStripMenuItem.Size = new System.Drawing.Size(277, 28);
             this.employeeProfileToolStripMenuItem.Text = "Employee Profile";
             this.employeeProfileToolStripMenuItem.Click += new System.EventHandler(this.employeeProfileToolStripMenuItem_Click);
+            // 
+            // addEmployeeToolStripMenuItem
+            // 
+            this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
+            this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addEmployeeToolStripMenuItem.Text = "Add Employee";
+            this.addEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addEmployeeToolStripMenuItem_Click);
+            // 
+            // editEmployeeToolStripMenuItem
+            // 
+            this.editEmployeeToolStripMenuItem.Name = "editEmployeeToolStripMenuItem";
+            this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editEmployeeToolStripMenuItem.Text = "Edit Employee";
+            this.editEmployeeToolStripMenuItem.Click += new System.EventHandler(this.editEmployeeToolStripMenuItem_Click);
             // 
             // employeeAttendanceToolStripMenuItem
             // 
@@ -392,19 +425,6 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lkb_back_to_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkb_back_to_login_LinkClicked);
             // 
-            // addAgentToolStripMenuItem
-            // 
-            this.addAgentToolStripMenuItem.Name = "addAgentToolStripMenuItem";
-            this.addAgentToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.addAgentToolStripMenuItem.Text = "Add Agent";
-            this.addAgentToolStripMenuItem.Click += new System.EventHandler(this.addAgentToolStripMenuItem_Click);
-            // 
-            // editAgentToolStripMenuItem
-            // 
-            this.editAgentToolStripMenuItem.Name = "editAgentToolStripMenuItem";
-            this.editAgentToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.editAgentToolStripMenuItem.Text = "Edit Agent";
-            // 
             // f_chit_fund_dash_board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,7 +440,7 @@ namespace Chit_Fund_Management_System
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "f_chit_fund_dash_board";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ChitFundDashBoard";
+            this.Text = "Dash Board";
             this.Load += new System.EventHandler(this.f_chit_fund_dash_board_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -461,5 +481,7 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.ToolStripMenuItem editMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addAgentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editAgentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editEmployeeToolStripMenuItem;
     }
 }

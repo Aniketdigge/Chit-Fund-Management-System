@@ -91,7 +91,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_city_add_company.Text, "[^a-zA-Z]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_city_add_company.Text, "[^a-zA-Z ]"))
                 {
                     MessageBox.Show("Please enter valid city.");
                     tb_city_add_company.Text = tb_city_add_company.Text.Remove(tb_city_add_company.Text.Length - 1);
