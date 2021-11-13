@@ -149,7 +149,7 @@ namespace Chit_Fund_Management_System
             this.branchProfileToolStripMenuItem.Name = "branchProfileToolStripMenuItem";
             this.branchProfileToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
             this.branchProfileToolStripMenuItem.Text = "Branch Profile";
-            this.branchProfileToolStripMenuItem.Click += new System.EventHandler(this.branchProfileToolStripMenuItem_Click);
+            //this.branchProfileToolStripMenuItem.Click += new System.EventHandler(this.branchProfileToolStripMenuItem_Click);
             // 
             // addBranchToolStripMenuItem
             // 
@@ -201,7 +201,7 @@ namespace Chit_Fund_Management_System
             this.memberProfileToolStripMenuItem.Name = "memberProfileToolStripMenuItem";
             this.memberProfileToolStripMenuItem.Size = new System.Drawing.Size(287, 28);
             this.memberProfileToolStripMenuItem.Text = "Member Profile";
-            this.memberProfileToolStripMenuItem.Click += new System.EventHandler(this.memberProfileToolStripMenuItem_Click);
+            //this.memberProfileToolStripMenuItem.Click += new System.EventHandler(this.memberProfileToolStripMenuItem_Click);
             // 
             // addMemberToolStripMenuItem
             // 
@@ -298,7 +298,7 @@ namespace Chit_Fund_Management_System
             this.agentProfileToolStripMenuItem.Name = "agentProfileToolStripMenuItem";
             this.agentProfileToolStripMenuItem.Size = new System.Drawing.Size(246, 28);
             this.agentProfileToolStripMenuItem.Text = "Agent Profile";
-            this.agentProfileToolStripMenuItem.Click += new System.EventHandler(this.agentProfileToolStripMenuItem_Click);
+            //this.agentProfileToolStripMenuItem.Click += new System.EventHandler(this.agentProfileToolStripMenuItem_Click);
             // 
             // addAgentToolStripMenuItem
             // 

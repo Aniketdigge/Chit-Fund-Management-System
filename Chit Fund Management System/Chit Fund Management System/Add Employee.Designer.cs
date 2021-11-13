@@ -129,7 +129,7 @@ namespace Chit_Fund_Management_System
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1425, 52);
+            this.panel1.Size = new System.Drawing.Size(1467, 52);
             this.panel1.TabIndex = 10;
             // 
             // pictureBox3
@@ -173,11 +173,11 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.label26);
             this.groupBox1.Controls.Add(this.bt_add_e_clear);
             this.groupBox1.Controls.Add(this.bt_add_e_save);
-            this.groupBox1.Location = new System.Drawing.Point(12, 64);
+            this.groupBox1.Location = new System.Drawing.Point(35, 69);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(1398, 599);
+            this.groupBox1.Size = new System.Drawing.Size(1398, 591);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
@@ -207,7 +207,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_actype
             // 
             this.tb_add_e_actype.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_actype.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_actype.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_actype.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_actype.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_actype.Location = new System.Drawing.Point(116, 168);
@@ -233,7 +233,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_ifsc
             // 
             this.tb_add_e_ifsc.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_ifsc.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_ifsc.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_ifsc.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_ifsc.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_ifsc.Location = new System.Drawing.Point(116, 135);
@@ -339,11 +339,11 @@ namespace Chit_Fund_Management_System
             this.dtp_add_e_doh.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtp_add_e_doh.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dtp_add_e_doh.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.dtp_add_e_doh.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_add_e_doh.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_add_e_doh.Location = new System.Drawing.Point(1144, 459);
             this.dtp_add_e_doh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_add_e_doh.Name = "dtp_add_e_doh";
-            this.dtp_add_e_doh.Size = new System.Drawing.Size(224, 34);
+            this.dtp_add_e_doh.Size = new System.Drawing.Size(224, 30);
             this.dtp_add_e_doh.TabIndex = 89;
             // 
             // groupBox5
@@ -380,7 +380,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_department
             // 
             this.tb_add_e_department.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_department.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_department.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_department.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_department.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_department.Location = new System.Drawing.Point(142, 34);
@@ -418,7 +418,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_bid
             // 
             this.tb_add_e_bid.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_bid.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_bid.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_bid.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_bid.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_bid.Location = new System.Drawing.Point(142, 105);
@@ -432,7 +432,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_designation
             // 
             this.tb_add_e_designation.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_designation.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_designation.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_designation.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_designation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_designation.Location = new System.Drawing.Point(142, 71);
@@ -481,7 +481,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_emaddr
             // 
             this.tb_add_e_emaddr.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_emaddr.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_emaddr.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_emaddr.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_emaddr.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_emaddr.Location = new System.Drawing.Point(129, 60);
@@ -494,7 +494,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_relation
             // 
             this.tb_add_e_relation.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_relation.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_relation.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_relation.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_relation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_relation.Location = new System.Drawing.Point(129, 212);
@@ -520,7 +520,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_emmob
             // 
             this.tb_add_e_emmob.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_emmob.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_emmob.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_emmob.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_emmob.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_emmob.Location = new System.Drawing.Point(129, 179);
@@ -707,7 +707,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_Disability
             // 
             this.tb_add_e_Disability.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_Disability.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_Disability.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_Disability.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_Disability.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_Disability.Location = new System.Drawing.Point(161, 331);
@@ -732,7 +732,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_nationality
             // 
             this.tb_add_e_nationality.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_nationality.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_nationality.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_nationality.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_nationality.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_nationality.Location = new System.Drawing.Point(194, 297);
@@ -811,7 +811,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_eadhaar
             // 
             this.tb_add_e_eadhaar.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_eadhaar.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_eadhaar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_eadhaar.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_eadhaar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_eadhaar.Location = new System.Drawing.Point(194, 437);
@@ -825,7 +825,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_age
             // 
             this.tb_add_e_age.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_age.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_age.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_age.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_age.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_age.Location = new System.Drawing.Point(80, 142);
@@ -875,7 +875,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_name
             // 
             this.tb_add_e_name.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_name.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_name.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_name.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_name.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_name.Location = new System.Drawing.Point(194, 35);
@@ -889,7 +889,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_eemail
             // 
             this.tb_add_e_eemail.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_eemail.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_eemail.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_eemail.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_eemail.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_eemail.Location = new System.Drawing.Point(194, 370);
@@ -906,11 +906,11 @@ namespace Chit_Fund_Management_System
             this.dtp_add_e_dob.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtp_add_e_dob.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dtp_add_e_dob.CalendarTrailingForeColor = System.Drawing.Color.Gray;
-            this.dtp_add_e_dob.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_add_e_dob.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_add_e_dob.Location = new System.Drawing.Point(194, 68);
             this.dtp_add_e_dob.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_add_e_dob.Name = "dtp_add_e_dob";
-            this.dtp_add_e_dob.Size = new System.Drawing.Size(305, 34);
+            this.dtp_add_e_dob.Size = new System.Drawing.Size(305, 30);
             this.dtp_add_e_dob.TabIndex = 38;
             // 
             // label3
@@ -952,7 +952,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_paddr
             // 
             this.tb_add_e_paddr.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_paddr.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_paddr.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_paddr.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_paddr.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_paddr.Location = new System.Drawing.Point(194, 177);
@@ -965,7 +965,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_gname
             // 
             this.tb_add_e_gname.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_gname.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_gname.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_gname.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_gname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_gname.Location = new System.Drawing.Point(194, 106);
@@ -1003,7 +1003,7 @@ namespace Chit_Fund_Management_System
             // tb_add_e_emob
             // 
             this.tb_add_e_emob.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_add_e_emob.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_add_e_emob.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_emob.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_emob.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_add_e_emob.Location = new System.Drawing.Point(194, 403);
@@ -1237,7 +1237,7 @@ namespace Chit_Fund_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
-            this.ClientSize = new System.Drawing.Size(1425, 679);
+            this.ClientSize = new System.Drawing.Size(1467, 691);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Add_Employee";

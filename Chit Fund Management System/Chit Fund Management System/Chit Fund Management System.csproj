@@ -117,12 +117,6 @@
     <Compile Include="Agent Payment.Designer.cs">
       <DependentUpon>Agent Payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Agent Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Agent Profile.Designer.cs">
-      <DependentUpon>Agent Profile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bidding Log Repo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,12 +164,6 @@
     </Compile>
     <Compile Include="ChitFundDashBoard.Designer.cs">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Branch Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Branch Profile.Designer.cs">
-      <DependentUpon>Branch Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Commission Receipt Viewer.cs">
       <SubType>Form</SubType>
@@ -242,12 +230,6 @@
     </Compile>
     <Compile Include="Employee Payment.Designer.cs">
       <DependentUpon>Employee Payment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Employee Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Employee Profile.Designer.cs">
-      <DependentUpon>Employee Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Salary Slip Print.cs">
       <SubType>Form</SubType>
@@ -326,12 +308,6 @@
     </Compile>
     <Compile Include="Member Payment.Designer.cs">
       <DependentUpon>Member Payment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Member Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Member Profile.Designer.cs">
-      <DependentUpon>Member Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -432,9 +408,6 @@
     <EmbeddedResource Include="Agent Payment.resx">
       <DependentUpon>Agent Payment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agent Profile.resx">
-      <DependentUpon>Agent Profile.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Bidding Log Repo.resx">
       <DependentUpon>Bidding Log Repo.cs</DependentUpon>
     </EmbeddedResource>
@@ -460,9 +433,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChitFundDashBoard.resx">
       <DependentUpon>ChitFundDashBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Branch Profile.resx">
-      <DependentUpon>Branch Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Commission Receipt Viewer.resx">
       <DependentUpon>Commission Receipt Viewer.cs</DependentUpon>
@@ -498,9 +468,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Payment.resx">
       <DependentUpon>Employee Payment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Employee Profile.resx">
-      <DependentUpon>Employee Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Salary Slip Print.resx">
       <DependentUpon>Employee Salary Slip Print.cs</DependentUpon>
@@ -545,9 +512,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Member Payment.resx">
       <DependentUpon>Member Payment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Member Profile.resx">
-      <DependentUpon>Member Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -634,6 +598,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngaaa.com-3994764.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

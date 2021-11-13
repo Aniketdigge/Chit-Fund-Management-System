@@ -31,6 +31,11 @@ namespace Chit_Fund_Management_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_Company));
             this.Company = new System.Windows.Forms.GroupBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.bt_del_edit_company = new System.Windows.Forms.Button();
             this.dtp_date_of_registration_edit_company = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,11 +58,6 @@ namespace Chit_Fund_Management_System
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.Company.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -100,6 +100,61 @@ namespace Chit_Fund_Management_System
             this.Company.Size = new System.Drawing.Size(1344, 432);
             this.Company.TabIndex = 4;
             this.Company.TabStop = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(1199, 371);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(66, 24);
+            this.label16.TabIndex = 43;
+            this.label16.Text = "CLEAR";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(1075, 371);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 24);
+            this.label9.TabIndex = 42;
+            this.label9.Text = "SEARCH";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(944, 371);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(77, 24);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "UPDATE";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(1222, 12);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(60, 24);
+            this.label15.TabIndex = 40;
+            this.label15.Text = "HOME";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(69, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 24);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "DELETE";
             // 
             // bt_del_edit_company
             // 
@@ -387,66 +442,11 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(339, 0);
+            this.label1.Location = new System.Drawing.Point(373, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(684, 56);
+            this.label1.Size = new System.Drawing.Size(636, 56);
             this.label1.TabIndex = 0;
-            this.label1.Text = "UPDATE COMPANY DETAILS";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(69, 12);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 24);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "DELETE";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(1222, 12);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(60, 24);
-            this.label15.TabIndex = 40;
-            this.label15.Text = "HOME";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(944, 371);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 24);
-            this.label14.TabIndex = 41;
-            this.label14.Text = "UPDATE";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(1075, 371);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 24);
-            this.label9.TabIndex = 42;
-            this.label9.Text = "SEARCH";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(1199, 371);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(66, 24);
-            this.label16.TabIndex = 43;
-            this.label16.Text = "CLEAR";
+            this.label1.Text = "COMPANY REGISTRATION";
             // 
             // Edit_Company
             // 
