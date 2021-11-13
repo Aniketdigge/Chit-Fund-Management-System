@@ -50,7 +50,7 @@ namespace Chit_Fund_Management_System
                 OleDbDataReader dr;
                 DataTable dt = new DataTable();
                 con.Open();
-                cmd = new OleDbCommand("select [Company_name], [Address], [City], [Owner], [No_of_branches], [Date_of_registration] from CompanyTB where [CIN_no]=@cinno", con);
+                cmd = new OleDbCommand("select * from CompanyTB where [CIN_no]=@cinno", con);
                 cmd.Parameters.AddWithValue("@cinno", tb_cinno_edit_company.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())

@@ -19,113 +19,6 @@ namespace Chit_Fund_Management_System
         {
             InitializeComponent();
         }
-        private void bt_Edit_a_update_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                con.Open();
-                cmd = new OleDbCommand("update AgentTB set Aname=@Aname, Adob=@Adob, Gname=@Gname, Aage=@Aage, Agender=@Agender, Aqualification=@Aqualification, " +
-                    "Apaddr=@Apaddr, Aemail=@Aemail, Amob=@Amob, Aadhaarno=@Aadhaarno, Bid=@Bid, Dor=@Dor, Agname1=@Agname1, Agaddr1=@Agaddr1, Agname2=@Agname2, " +
-                    "Agaddr2=@Agaddr2, Apan=@Apan, Abname=@Abname, Aacno=@Aacno, Aifsc=@Aifsc, Aactype=@Aactype where Aid=@Aid", con);
-                cmd.Parameters.AddWithValue("@Aid", tb_Edit_a_aid.Text);
-                cmd.Parameters.AddWithValue("@Aname", tb_Edit_a_name.Text);
-                cmd.Parameters.AddWithValue("@Adob", dtp_Edit_a_dob.Text);
-                cmd.Parameters.AddWithValue("@Gname", tb_Edit_a_gname.Text);
-                cmd.Parameters.AddWithValue("@Aage", tb_Edit_a_age.Text);
-                cmd.Parameters.AddWithValue("@Agender", cb_Edit_a_gender.Text);
-                cmd.Parameters.AddWithValue("@Aqualification", tb_Edit_a_qualification.Text);
-                cmd.Parameters.AddWithValue("@Apaddr", tb_Edit_a_paddr.Text);
-                cmd.Parameters.AddWithValue("@Aemail", tb_Edit_a_aemail.Text);
-                cmd.Parameters.AddWithValue("@Amob", tb_Edit_a_amob.Text);
-                cmd.Parameters.AddWithValue("@Aadhaarno", tb_Edit_a_aadhaar.Text);
-                cmd.Parameters.AddWithValue("@Bid", tb_Edit_A_bid.Text);
-                cmd.Parameters.AddWithValue("@Dor", dtp_Edit_a_dor.Text);
-                cmd.Parameters.AddWithValue("@Agname1", tb_Edit_a_1gname.Text);
-                cmd.Parameters.AddWithValue("@Agaddr1", tb_Edit_a_1gaddr.Text);
-                cmd.Parameters.AddWithValue("@Agname2", tb_Edit_a_2gname.Text);
-                cmd.Parameters.AddWithValue("@Agaddr2", tb_Edit_a_2gaddr.Text);
-                cmd.Parameters.AddWithValue("@Apan", tb_Edit_a_apan.Text);
-                cmd.Parameters.AddWithValue("@Abname", tb_Edit_a_bankname.Text);
-                cmd.Parameters.AddWithValue("@Aacno", tb_Edit_a_acno.Text);
-                cmd.Parameters.AddWithValue("@Aifsc", tb_Edit_a_ifsc.Text);
-                cmd.Parameters.AddWithValue("@Aactype", tb_Edit_a_actype.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Saved successfully....");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-        private void bt_Edit_a_clear_Click(object sender, EventArgs e)
-        {
-            tb_Edit_a_aid.Clear();
-            tb_Edit_a_name.Clear();
-            tb_Edit_a_gname.Clear();
-            tb_Edit_a_age.Clear();
-            cb_Edit_a_gender.Items.Clear();
-            tb_Edit_a_qualification.Clear();
-            tb_Edit_a_paddr.Clear();
-            tb_Edit_a_aemail.Clear();
-            tb_Edit_a_amob.Clear();
-            tb_Edit_a_aadhaar.Clear();
-            tb_Edit_A_bid.Clear();
-            tb_Edit_a_1gname.Clear();
-            tb_Edit_a_1gaddr.Clear();
-            tb_Edit_a_2gname.Clear();
-            tb_Edit_a_2gaddr.Clear();
-            tb_Edit_a_apan.Clear();
-            tb_Edit_a_bankname.Clear();
-            tb_Edit_a_acno.Clear();
-            tb_Edit_a_ifsc.Clear();
-            tb_Edit_a_actype.Clear();
-        }
-
-        private void bt_Edit_a_close_Click(object sender, EventArgs e)
-        {
-            f_chit_fund_dash_board f_Chit_Fund_Dash_Board = new f_chit_fund_dash_board();
-            f_Chit_Fund_Dash_Board.Show();
-            this.Hide();
-        }
-
-        private void bt_Edit_a_del_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                con.Open();
-                cmd = new OleDbCommand("delete from AgentTB where Aid=@Aid", con);
-                cmd.Parameters.AddWithValue("@Aid", tb_Edit_a_aid.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Deleted Successfully....");
-
-                tb_Edit_a_aid.Clear();
-                tb_Edit_a_name.Clear();
-                tb_Edit_a_gname.Clear();
-                tb_Edit_a_age.Clear();
-                cb_Edit_a_gender.Items.Clear();
-                tb_Edit_a_qualification.Clear();
-                tb_Edit_a_paddr.Clear();
-                tb_Edit_a_aemail.Clear();
-                tb_Edit_a_amob.Clear();
-                tb_Edit_a_aadhaar.Clear();
-                tb_Edit_A_bid.Clear();
-                tb_Edit_a_1gname.Clear();
-                tb_Edit_a_1gaddr.Clear();
-                tb_Edit_a_2gname.Clear();
-                tb_Edit_a_2gaddr.Clear();
-                tb_Edit_a_apan.Clear();
-                tb_Edit_a_bankname.Clear();
-                tb_Edit_a_acno.Clear();
-                tb_Edit_a_ifsc.Clear();
-                tb_Edit_a_actype.Clear();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
         private void tb_Edit_a_name_TextChanged(object sender, EventArgs e)
         {
             try
@@ -355,6 +248,115 @@ namespace Chit_Fund_Management_System
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void bt_Edit_a_clear_Click_1(object sender, EventArgs e)
+        {
+            tb_Edit_a_aid.Clear();
+            tb_Edit_a_name.Clear();
+            tb_Edit_a_gname.Clear();
+            tb_Edit_a_age.Clear();
+            cb_Edit_a_gender.Items.Clear();
+            tb_Edit_a_qualification.Clear();
+            tb_Edit_a_paddr.Clear();
+            tb_Edit_a_aemail.Clear();
+            tb_Edit_a_amob.Clear();
+            tb_Edit_a_aadhaar.Clear();
+            tb_Edit_A_bid.Clear();
+            tb_Edit_a_1gname.Clear();
+            tb_Edit_a_1gaddr.Clear();
+            tb_Edit_a_2gname.Clear();
+            tb_Edit_a_2gaddr.Clear();
+            tb_Edit_a_apan.Clear();
+            tb_Edit_a_bankname.Clear();
+            tb_Edit_a_acno.Clear();
+            tb_Edit_a_ifsc.Clear();
+            tb_Edit_a_actype.Clear();
+        }
+
+        private void bt_Edit_a_update_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                cmd = new OleDbCommand("update AgentTB set Aname=@Aname, Adob=@Adob, Gname=@Gname, Aage=@Aage, Agender=@Agender, Aqualification=@Aqualification, " +
+                    "Apaddr=@Apaddr, Aemail=@Aemail, Amob=@Amob, Aadhaarno=@Aadhaarno, Bid=@Bid, Dor=@Dor, Agname1=@Agname1, Agaddr1=@Agaddr1, Agname2=@Agname2, " +
+                    "Agaddr2=@Agaddr2, Apan=@Apan, Abname=@Abname, Aacno=@Aacno, Aifsc=@Aifsc, Aactype=@Aactype where Aid=@Aid", con);
+                cmd.Parameters.AddWithValue("@Aid", tb_Edit_a_aid.Text);
+                cmd.Parameters.AddWithValue("@Aname", tb_Edit_a_name.Text);
+                cmd.Parameters.AddWithValue("@Adob", dtp_Edit_a_dob.Text);
+                cmd.Parameters.AddWithValue("@Gname", tb_Edit_a_gname.Text);
+                cmd.Parameters.AddWithValue("@Aage", tb_Edit_a_age.Text);
+                cmd.Parameters.AddWithValue("@Agender", cb_Edit_a_gender.Text);
+                cmd.Parameters.AddWithValue("@Aqualification", tb_Edit_a_qualification.Text);
+                cmd.Parameters.AddWithValue("@Apaddr", tb_Edit_a_paddr.Text);
+                cmd.Parameters.AddWithValue("@Aemail", tb_Edit_a_aemail.Text);
+                cmd.Parameters.AddWithValue("@Amob", tb_Edit_a_amob.Text);
+                cmd.Parameters.AddWithValue("@Aadhaarno", tb_Edit_a_aadhaar.Text);
+                cmd.Parameters.AddWithValue("@Bid", tb_Edit_A_bid.Text);
+                cmd.Parameters.AddWithValue("@Dor", dtp_Edit_a_dor.Text);
+                cmd.Parameters.AddWithValue("@Agname1", tb_Edit_a_1gname.Text);
+                cmd.Parameters.AddWithValue("@Agaddr1", tb_Edit_a_1gaddr.Text);
+                cmd.Parameters.AddWithValue("@Agname2", tb_Edit_a_2gname.Text);
+                cmd.Parameters.AddWithValue("@Agaddr2", tb_Edit_a_2gaddr.Text);
+                cmd.Parameters.AddWithValue("@Apan", tb_Edit_a_apan.Text);
+                cmd.Parameters.AddWithValue("@Abname", tb_Edit_a_bankname.Text);
+                cmd.Parameters.AddWithValue("@Aacno", tb_Edit_a_acno.Text);
+                cmd.Parameters.AddWithValue("@Aifsc", tb_Edit_a_ifsc.Text);
+                cmd.Parameters.AddWithValue("@Aactype", tb_Edit_a_actype.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Update successfully....");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void bt_Edit_a_del_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                cmd = new OleDbCommand("delete from AgentTB where Aid=@Aid", con);
+                cmd.Parameters.AddWithValue("@Aid", tb_Edit_a_aid.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Deleted Successfully....");
+
+                tb_Edit_a_aid.Clear();
+                tb_Edit_a_name.Clear();
+                tb_Edit_a_gname.Clear();
+                tb_Edit_a_age.Clear();
+                cb_Edit_a_gender.Items.Clear();
+                tb_Edit_a_qualification.Clear();
+                tb_Edit_a_paddr.Clear();
+                tb_Edit_a_aemail.Clear();
+                tb_Edit_a_amob.Clear();
+                tb_Edit_a_aadhaar.Clear();
+                tb_Edit_A_bid.Clear();
+                tb_Edit_a_1gname.Clear();
+                tb_Edit_a_1gaddr.Clear();
+                tb_Edit_a_2gname.Clear();
+                tb_Edit_a_2gaddr.Clear();
+                tb_Edit_a_apan.Clear();
+                tb_Edit_a_bankname.Clear();
+                tb_Edit_a_acno.Clear();
+                tb_Edit_a_ifsc.Clear();
+                tb_Edit_a_actype.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void bt_add_a_close_Click(object sender, EventArgs e)
+        {
+            f_chit_fund_dash_board f_Chit_Fund_Dash_Board = new f_chit_fund_dash_board();
+            f_Chit_Fund_Dash_Board.Show();
+            this.Hide();
         }
     }
 }
