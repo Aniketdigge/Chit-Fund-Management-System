@@ -158,8 +158,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_del_edit_company
             // 
-            this.bt_del_edit_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_del_edit_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Deleteopt;
+            this.bt_del_edit_company.BackColor = System.Drawing.Color.White;
+            this.bt_del_edit_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.delete;
             this.bt_del_edit_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_del_edit_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_del_edit_company.ForeColor = System.Drawing.Color.White;
@@ -239,8 +239,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_clear_edit_company
             // 
-            this.bt_clear_edit_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_clear_edit_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_clear_edit_company.BackgroundImage")));
+            this.bt_clear_edit_company.BackColor = System.Drawing.Color.White;
+            this.bt_clear_edit_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_clear_edit_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clear_edit_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_edit_company.ForeColor = System.Drawing.Color.White;
@@ -254,8 +254,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_search_edit_company
             // 
-            this.bt_search_edit_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_search_edit_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_search_edit_company.BackgroundImage")));
+            this.bt_search_edit_company.BackColor = System.Drawing.Color.White;
+            this.bt_search_edit_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Search_icone;
             this.bt_search_edit_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_search_edit_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_search_edit_company.ForeColor = System.Drawing.Color.White;
@@ -269,8 +269,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_edit_edit_company
             // 
-            this.bt_edit_edit_company.BackColor = System.Drawing.Color.Black;
-            this.bt_edit_edit_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_edit_edit_company.BackgroundImage")));
+            this.bt_edit_edit_company.BackColor = System.Drawing.Color.White;
+            this.bt_edit_edit_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.update;
             this.bt_edit_edit_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_edit_edit_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit_edit_company.ForeColor = System.Drawing.Color.White;
@@ -442,11 +442,11 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(373, 0);
+            this.label1.Location = new System.Drawing.Point(843, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(636, 56);
+            this.label1.Size = new System.Drawing.Size(601, 56);
             this.label1.TabIndex = 0;
-            this.label1.Text = "COMPANY REGISTRATION";
+            this.label1.Text = "EDIT COMPANY DETAILS";
             // 
             // Edit_Company
             // 

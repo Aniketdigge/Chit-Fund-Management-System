@@ -33,7 +33,18 @@ namespace Chit_Fund_Management_System
 
         private void tb_member_id_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_member_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid ID.");
+                    tb_mtl_member_id.Text = tb_mtl_member_id.Text.Remove(tb_mtl_member_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void bt_mtl_add_Click(object sender, EventArgs e)
@@ -151,6 +162,102 @@ namespace Chit_Fund_Management_System
                 Member_Payment member_Payment = new Member_Payment();
                 member_Payment.Show();
                 this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_mtl_member_name_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_member_name.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid name.");
+                    tb_mtl_member_name.Text = tb_mtl_member_name.Text.Remove(tb_mtl_member_name.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_mtl_member_group_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_member_group_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid ID.");
+                    tb_mtl_member_group_id.Text = tb_mtl_member_group_id.Text.Remove(tb_mtl_member_group_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_mtl_agent_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_agent_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid ID.");
+                    tb_mtl_agent_id.Text = tb_mtl_agent_id.Text.Remove(tb_mtl_agent_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_mtl_chit_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_chit_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_mtl_chit_amount.Text = tb_mtl_chit_amount.Text.Remove(tb_mtl_chit_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_mtl_loan_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_loan_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_mtl_loan_amount.Text = tb_mtl_loan_amount.Text.Remove(tb_mtl_loan_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_mtl_amount_paid_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_amount_paid.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_mtl_amount_paid.Text = tb_mtl_amount_paid.Text.Remove(tb_mtl_amount_paid.Text.Length - 1);
+                }
             }
             catch (Exception ex)
             {

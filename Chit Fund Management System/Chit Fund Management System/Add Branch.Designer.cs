@@ -149,8 +149,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_clear_add_branch
             // 
-            this.bt_clear_add_branch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_clear_add_branch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_clear_add_branch.BackgroundImage")));
+            this.bt_clear_add_branch.BackColor = System.Drawing.Color.White;
+            this.bt_clear_add_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_clear_add_branch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clear_add_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_add_branch.ForeColor = System.Drawing.Color.White;
@@ -164,8 +164,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_add_add_branch
             // 
-            this.bt_add_add_branch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_add_add_branch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_add_add_branch.BackgroundImage")));
+            this.bt_add_add_branch.BackColor = System.Drawing.Color.White;
+            this.bt_add_add_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Save1;
             this.bt_add_add_branch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_add_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_add_branch.ForeColor = System.Drawing.Color.White;
@@ -184,10 +184,11 @@ namespace Chit_Fund_Management_System
             this.dtp_date_of_registration_add_branch.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dtp_date_of_registration_add_branch.CalendarTitleForeColor = System.Drawing.Color.White;
             this.dtp_date_of_registration_add_branch.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.dtp_date_of_registration_add_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_date_of_registration_add_branch.Location = new System.Drawing.Point(927, 318);
             this.dtp_date_of_registration_add_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_date_of_registration_add_branch.Name = "dtp_date_of_registration_add_branch";
-            this.dtp_date_of_registration_add_branch.Size = new System.Drawing.Size(334, 29);
+            this.dtp_date_of_registration_add_branch.Size = new System.Drawing.Size(334, 30);
             this.dtp_date_of_registration_add_branch.TabIndex = 27;
             // 
             // label13
@@ -205,7 +206,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_pincode_add_branch
             // 
             this.tb_branch_pincode_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_pincode_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_pincode_add_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_pincode_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_pincode_add_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -244,7 +244,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_headoffice_address_add_branch
             // 
             this.tb_branch_headoffice_address_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_headoffice_address_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_headoffice_address_add_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_headoffice_address_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_headoffice_address_add_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -282,7 +281,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_email_add_branch
             // 
             this.tb_branch_email_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_email_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_email_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_email_add_branch.Location = new System.Drawing.Point(927, 70);
             this.tb_branch_email_add_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -306,7 +304,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_phone_add_branch
             // 
             this.tb_branch_phone_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_phone_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_phone_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_phone_add_branch.Location = new System.Drawing.Point(927, 141);
             this.tb_branch_phone_add_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -319,7 +316,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_manager_add_branch
             // 
             this.tb_branch_manager_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_manager_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_manager_add_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_manager_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_manager_add_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -346,7 +342,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_city_add_branch
             // 
             this.tb_branch_city_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_city_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_city_add_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_city_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_city_add_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -373,7 +368,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_address_add_branch
             // 
             this.tb_branch_address_add_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_address_add_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_address_add_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_address_add_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_address_add_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -426,11 +420,11 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(384, 0);
+            this.label1.Location = new System.Drawing.Point(788, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(583, 56);
+            this.label1.Size = new System.Drawing.Size(603, 56);
             this.label1.TabIndex = 0;
-            this.label1.Text = "SAVE BRANCH DETAILS";
+            this.label1.Text = "BRANCH REGISTRATION";
             // 
             // Add_Branch
             // 

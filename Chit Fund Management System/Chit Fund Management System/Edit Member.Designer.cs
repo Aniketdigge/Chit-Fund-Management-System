@@ -91,6 +91,7 @@ namespace Chit_Fund_Management_System
             this.label21 = new System.Windows.Forms.Label();
             this.tb_edit_m_nage = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.tb_edit_m_oaddr = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -103,7 +104,6 @@ namespace Chit_Fund_Management_System
             this.label26 = new System.Windows.Forms.Label();
             this.bt_edit_m_clear = new System.Windows.Forms.Button();
             this.bt_edit_m_update = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -143,7 +143,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(514, 0);
+            this.label1.Location = new System.Drawing.Point(1043, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(397, 38);
             this.label1.TabIndex = 0;
@@ -191,8 +191,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_edit_m_del
             // 
-            this.bt_edit_m_del.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_edit_m_del.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Deleteopt;
+            this.bt_edit_m_del.BackColor = System.Drawing.Color.White;
+            this.bt_edit_m_del.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.delete;
             this.bt_edit_m_del.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_edit_m_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit_m_del.ForeColor = System.Drawing.Color.White;
@@ -371,8 +371,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_edit_m_search
             // 
-            this.bt_edit_m_search.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_edit_m_search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_edit_m_search.BackgroundImage")));
+            this.bt_edit_m_search.BackColor = System.Drawing.Color.White;
+            this.bt_edit_m_search.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Search_icone;
             this.bt_edit_m_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_edit_m_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit_m_search.ForeColor = System.Drawing.Color.White;
@@ -971,6 +971,18 @@ namespace Chit_Fund_Management_System
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Professional Details";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(3, 40);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(109, 58);
+            this.label13.TabIndex = 64;
+            this.label13.Text = "Office\r\n Address :\r\n";
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1099,8 +1111,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_edit_m_clear
             // 
-            this.bt_edit_m_clear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_edit_m_clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_edit_m_clear.BackgroundImage")));
+            this.bt_edit_m_clear.BackColor = System.Drawing.Color.White;
+            this.bt_edit_m_clear.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_edit_m_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_edit_m_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit_m_clear.ForeColor = System.Drawing.Color.White;
@@ -1114,8 +1126,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_edit_m_update
             // 
-            this.bt_edit_m_update.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_edit_m_update.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_edit_m_update.BackgroundImage")));
+            this.bt_edit_m_update.BackColor = System.Drawing.Color.White;
+            this.bt_edit_m_update.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.update;
             this.bt_edit_m_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_edit_m_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_edit_m_update.ForeColor = System.Drawing.Color.White;
@@ -1126,18 +1138,6 @@ namespace Chit_Fund_Management_System
             this.bt_edit_m_update.TabIndex = 75;
             this.bt_edit_m_update.UseVisualStyleBackColor = false;
             this.bt_edit_m_update.Click += new System.EventHandler(this.bt_edit_m_update_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(3, 40);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(109, 58);
-            this.label13.TabIndex = 64;
-            this.label13.Text = "Office\r\n Address :\r\n";
             // 
             // Edit_Member
             // 

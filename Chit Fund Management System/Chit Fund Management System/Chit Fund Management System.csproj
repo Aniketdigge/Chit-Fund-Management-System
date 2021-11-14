@@ -614,5 +614,29 @@
   <ItemGroup>
     <None Include="Resources\Log.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search icone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

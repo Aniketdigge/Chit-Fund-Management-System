@@ -88,7 +88,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(432, 0);
+            this.label1.Location = new System.Drawing.Point(788, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(636, 56);
             this.label1.TabIndex = 0;
@@ -203,7 +203,6 @@ namespace Chit_Fund_Management_System
             // tb_noofbranches_add_company
             // 
             this.tb_noofbranches_add_company.BackColor = System.Drawing.Color.Black;
-            this.tb_noofbranches_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_noofbranches_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_noofbranches_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_noofbranches_add_company.Location = new System.Drawing.Point(925, 134);
@@ -228,8 +227,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_clear_add_company
             // 
-            this.bt_clear_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_clear_add_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_clear_add_company.BackgroundImage")));
+            this.bt_clear_add_company.BackColor = System.Drawing.Color.White;
+            this.bt_clear_add_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_clear_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clear_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_add_company.ForeColor = System.Drawing.Color.White;
@@ -243,8 +242,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_add_add_company
             // 
-            this.bt_add_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_add_add_company.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_add_add_company.BackgroundImage")));
+            this.bt_add_add_company.BackColor = System.Drawing.Color.White;
+            this.bt_add_add_company.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Save1;
             this.bt_add_add_company.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_add_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_add_company.ForeColor = System.Drawing.Color.White;
@@ -259,7 +258,6 @@ namespace Chit_Fund_Management_System
             // tb_owner_add_company
             // 
             this.tb_owner_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tb_owner_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_owner_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_owner_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_owner_add_company.Location = new System.Drawing.Point(234, 192);
@@ -285,7 +283,6 @@ namespace Chit_Fund_Management_System
             // tb_city_add_company
             // 
             this.tb_city_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tb_city_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_city_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_city_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tb_city_add_company.Location = new System.Drawing.Point(925, 62);
@@ -311,7 +308,6 @@ namespace Chit_Fund_Management_System
             // tb_address_add_company
             // 
             this.tb_address_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tb_address_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_address_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_address_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_address_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -337,7 +333,6 @@ namespace Chit_Fund_Management_System
             // tb_companyname_add_company
             // 
             this.tb_companyname_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tb_companyname_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_companyname_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_companyname_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_companyname_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -363,7 +358,6 @@ namespace Chit_Fund_Management_System
             // tb_cinno_add_company
             // 
             this.tb_cinno_add_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tb_cinno_add_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_cinno_add_company.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_cinno_add_company.ForeColor = System.Drawing.Color.White;
             this.tb_cinno_add_company.ImeMode = System.Windows.Forms.ImeMode.NoControl;
