@@ -99,12 +99,6 @@
       <DependentUpon>Agent Commission Log Report.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Agent Commission Log.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Agent Commission Log.Designer.cs">
-      <DependentUpon>Agent Commission Log.cs</DependentUpon>
-    </Compile>
     <Compile Include="Agent Commission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,23 +123,11 @@
       <DependentUpon>Bidding Log Report.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Bidding Log.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Bidding Log.Designer.cs">
-      <DependentUpon>Bidding Log.cs</DependentUpon>
-    </Compile>
     <Compile Include="Bidding.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Bidding.Designer.cs">
       <DependentUpon>Bidding.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Branch Repo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Branch Repo.Designer.cs">
-      <DependentUpon>Branch Repo.cs</DependentUpon>
     </Compile>
     <Compile Include="Branch Report.cs">
       <AutoGen>True</AutoGen>
@@ -315,12 +297,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompanyProfile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CompanyProfile.Designer.cs">
-      <DependentUpon>CompanyProfile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Member Receipt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -371,12 +347,6 @@
       <DependentUpon>Salary Payment Report.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Salary Report.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Salary Report.Designer.cs">
-      <DependentUpon>Salary Report.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Add Agent.resx">
       <DependentUpon>Add Agent.cs</DependentUpon>
     </EmbeddedResource>
@@ -399,9 +369,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Agent Commission Log Report.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agent Commission Log.resx">
-      <DependentUpon>Agent Commission Log.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Agent Commission.resx">
       <DependentUpon>Agent Commission.cs</DependentUpon>
     </EmbeddedResource>
@@ -415,14 +382,8 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Bidding Log Report1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bidding Log.resx">
-      <DependentUpon>Bidding Log.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Bidding.resx">
       <DependentUpon>Bidding.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Branch Repo.resx">
-      <DependentUpon>Branch Repo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Branch Report.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -516,9 +477,6 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompanyProfile.resx">
-      <DependentUpon>CompanyProfile.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Member Receipt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Member Receipt.cs</LastGenOutput>
@@ -555,9 +513,6 @@
     <EmbeddedResource Include="Salary Payment Report.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Salary Payment Report.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Salary Report.resx">
-      <DependentUpon>Salary Report.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -613,6 +568,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search icone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slip.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

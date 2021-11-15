@@ -51,6 +51,7 @@ namespace Chit_Fund_Management_System
             this.Controls.Add(this.crv_salary_slip);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Employee_Salary_Slip_Print";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee Salary Slip";
             this.Load += new System.EventHandler(this.Employee_Salary_Slip_Print_Load);
             this.ResumeLayout(false);

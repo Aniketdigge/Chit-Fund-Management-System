@@ -51,6 +51,7 @@ namespace Chit_Fund_Management_System
             this.ClientSize = new System.Drawing.Size(1465, 689);
             this.Controls.Add(this.crv_branch_report_view);
             this.Name = "Branch_Report_View";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Branch Report View";
             this.Load += new System.EventHandler(this.Branch_Report_View_Load);
             this.ResumeLayout(false);

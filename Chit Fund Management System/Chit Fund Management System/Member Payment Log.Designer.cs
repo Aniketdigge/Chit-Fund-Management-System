@@ -40,17 +40,18 @@ namespace Chit_Fund_Management_System
             this.crv_member_payment_log.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_member_payment_log.Location = new System.Drawing.Point(0, 0);
             this.crv_member_payment_log.Name = "crv_member_payment_log";
-            this.crv_member_payment_log.Size = new System.Drawing.Size(1499, 690);
+            this.crv_member_payment_log.Size = new System.Drawing.Size(1462, 690);
             this.crv_member_payment_log.TabIndex = 0;
             // 
             // Member_Payment_Log
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1499, 690);
+            this.ClientSize = new System.Drawing.Size(1462, 690);
             this.Controls.Add(this.crv_member_payment_log);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Member_Payment_Log";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member Payment Log";
             this.Load += new System.EventHandler(this.Member_Payment_Log_Load);
             this.ResumeLayout(false);

@@ -134,7 +134,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(580, 0);
+            this.label1.Location = new System.Drawing.Point(1091, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(362, 38);
             this.label1.TabIndex = 0;
@@ -183,8 +183,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_Edit_a_search
             // 
-            this.bt_Edit_a_search.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_Edit_a_search.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_Edit_a_search.BackgroundImage")));
+            this.bt_Edit_a_search.BackColor = System.Drawing.Color.White;
+            this.bt_Edit_a_search.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Search_icone;
             this.bt_Edit_a_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_Edit_a_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Edit_a_search.ForeColor = System.Drawing.Color.White;
@@ -222,8 +222,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_Edit_a_del
             // 
-            this.bt_Edit_a_del.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_Edit_a_del.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Deleteopt;
+            this.bt_Edit_a_del.BackColor = System.Drawing.Color.White;
+            this.bt_Edit_a_del.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.delete;
             this.bt_Edit_a_del.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_Edit_a_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Edit_a_del.ForeColor = System.Drawing.Color.White;
@@ -974,8 +974,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_Edit_a_clear
             // 
-            this.bt_Edit_a_clear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_Edit_a_clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_Edit_a_clear.BackgroundImage")));
+            this.bt_Edit_a_clear.BackColor = System.Drawing.Color.White;
+            this.bt_Edit_a_clear.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_Edit_a_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_Edit_a_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Edit_a_clear.ForeColor = System.Drawing.Color.White;
@@ -989,8 +989,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_Edit_a_update
             // 
-            this.bt_Edit_a_update.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_Edit_a_update.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.pngaaa_com_3994764;
+            this.bt_Edit_a_update.BackColor = System.Drawing.Color.White;
+            this.bt_Edit_a_update.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.update;
             this.bt_Edit_a_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_Edit_a_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_Edit_a_update.ForeColor = System.Drawing.Color.White;

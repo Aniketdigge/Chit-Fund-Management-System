@@ -34,6 +34,13 @@ namespace Chit_Fund_Management_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.cb_mt_payment_method = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.bt_mtl_pay = new System.Windows.Forms.Button();
@@ -59,13 +66,6 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_member_name = new System.Windows.Forms.TextBox();
             this.tb_mtl_member_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -102,16 +102,16 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.SystemColors.Desktop;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(395, 5);
+            this.label1.Location = new System.Drawing.Point(638, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(506, 56);
+            this.label1.Size = new System.Drawing.Size(614, 56);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Member Transaction ";
+            this.label1.Text = "MEMBER TRANSACTION ";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.groupBox1.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_32_06_PM;
+            this.groupBox1.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_29_07_PM;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
@@ -146,13 +146,93 @@ namespace Chit_Fund_Management_System
             this.groupBox1.Controls.Add(this.tb_mtl_member_id);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(66, 101);
+            this.groupBox1.Location = new System.Drawing.Point(73, 98);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Size = new System.Drawing.Size(1107, 449);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(175, 375);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(42, 24);
+            this.label14.TabIndex = 88;
+            this.label14.Text = "PAY";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(270, 375);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(81, 24);
+            this.label13.TabIndex = 87;
+            this.label13.Text = "RECEIPT";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(49, 375);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(46, 24);
+            this.label12.TabIndex = 86;
+            this.label12.Text = "LOG";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(993, 375);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 24);
+            this.label6.TabIndex = 85;
+            this.label6.Text = "SEARCH";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(77, 12);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(66, 24);
+            this.label25.TabIndex = 84;
+            this.label25.Text = "CLEAR";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(902, 375);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(54, 24);
+            this.label26.TabIndex = 83;
+            this.label26.Text = "SAVE";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(968, 12);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 24);
+            this.label23.TabIndex = 82;
+            this.label23.Text = "HOME";
             // 
             // cb_mt_payment_method
             // 
@@ -196,7 +276,7 @@ namespace Chit_Fund_Management_System
             // 
             // bt_member_transaction_receipt
             // 
-            this.bt_member_transaction_receipt.BackColor = System.Drawing.Color.Black;
+            this.bt_member_transaction_receipt.BackColor = System.Drawing.Color.White;
             this.bt_member_transaction_receipt.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.receipt;
             this.bt_member_transaction_receipt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_member_transaction_receipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,6 +313,7 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_amount_paid.Name = "tb_mtl_amount_paid";
             this.tb_mtl_amount_paid.Size = new System.Drawing.Size(270, 33);
             this.tb_mtl_amount_paid.TabIndex = 28;
+            this.tb_mtl_amount_paid.TextChanged += new System.EventHandler(this.tb_mtl_amount_paid_TextChanged);
             // 
             // label3
             // 
@@ -274,8 +355,9 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_member_group_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_mtl_member_group_id.Multiline = true;
             this.tb_mtl_member_group_id.Name = "tb_mtl_member_group_id";
-            this.tb_mtl_member_group_id.Size = new System.Drawing.Size(270, 33);
+            this.tb_mtl_member_group_id.Size = new System.Drawing.Size(110, 33);
             this.tb_mtl_member_group_id.TabIndex = 24;
+            this.tb_mtl_member_group_id.TextChanged += new System.EventHandler(this.tb_mtl_member_group_id_TextChanged);
             // 
             // label8
             // 
@@ -314,11 +396,12 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_loan_amount.Name = "tb_mtl_loan_amount";
             this.tb_mtl_loan_amount.Size = new System.Drawing.Size(270, 33);
             this.tb_mtl_loan_amount.TabIndex = 20;
+            this.tb_mtl_loan_amount.TextChanged += new System.EventHandler(this.tb_mtl_loan_amount_TextChanged);
             // 
             // bt_mtl_clear
             // 
-            this.bt_mtl_clear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_mtl_clear.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear;
+            this.bt_mtl_clear.BackColor = System.Drawing.Color.White;
+            this.bt_mtl_clear.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_mtl_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_mtl_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mtl_clear.Location = new System.Drawing.Point(0, 12);
@@ -343,8 +426,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_mtl_add
             // 
-            this.bt_mtl_add.BackColor = System.Drawing.Color.Black;
-            this.bt_mtl_add.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Save;
+            this.bt_mtl_add.BackColor = System.Drawing.Color.White;
+            this.bt_mtl_add.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Save1;
             this.bt_mtl_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_mtl_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mtl_add.Location = new System.Drawing.Point(895, 328);
@@ -357,8 +440,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_mtl_search
             // 
-            this.bt_mtl_search.BackColor = System.Drawing.Color.Black;
-            this.bt_mtl_search.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.clipart991691;
+            this.bt_mtl_search.BackColor = System.Drawing.Color.White;
+            this.bt_mtl_search.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Search_icone;
             this.bt_mtl_search.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_mtl_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_mtl_search.Location = new System.Drawing.Point(997, 328);
@@ -380,6 +463,7 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_chit_amount.Name = "tb_mtl_chit_amount";
             this.tb_mtl_chit_amount.Size = new System.Drawing.Size(270, 33);
             this.tb_mtl_chit_amount.TabIndex = 18;
+            this.tb_mtl_chit_amount.TextChanged += new System.EventHandler(this.tb_mtl_chit_amount_TextChanged);
             // 
             // label9
             // 
@@ -404,6 +488,7 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_agent_id.Name = "tb_mtl_agent_id";
             this.tb_mtl_agent_id.Size = new System.Drawing.Size(112, 33);
             this.tb_mtl_agent_id.TabIndex = 14;
+            this.tb_mtl_agent_id.TextChanged += new System.EventHandler(this.tb_mtl_agent_id_TextChanged);
             // 
             // label10
             // 
@@ -440,6 +525,7 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_member_name.Name = "tb_mtl_member_name";
             this.tb_mtl_member_name.Size = new System.Drawing.Size(270, 33);
             this.tb_mtl_member_name.TabIndex = 4;
+            this.tb_mtl_member_name.TextChanged += new System.EventHandler(this.tb_mtl_member_name_TextChanged);
             // 
             // tb_mtl_member_id
             // 
@@ -465,86 +551,6 @@ namespace Chit_Fund_Management_System
             this.label2.Size = new System.Drawing.Size(146, 33);
             this.label2.TabIndex = 0;
             this.label2.Text = "Member ID :";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(968, 12);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(60, 24);
-            this.label23.TabIndex = 82;
-            this.label23.Text = "HOME";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(902, 375);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(54, 24);
-            this.label26.TabIndex = 83;
-            this.label26.Text = "SAVE";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(77, 12);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(66, 24);
-            this.label25.TabIndex = 84;
-            this.label25.Text = "CLEAR";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(993, 375);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 24);
-            this.label6.TabIndex = 85;
-            this.label6.Text = "SEARCH";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(49, 375);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(46, 24);
-            this.label12.TabIndex = 86;
-            this.label12.Text = "LOG";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(270, 375);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(81, 24);
-            this.label13.TabIndex = 87;
-            this.label13.Text = "RECEIPT";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(175, 375);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(42, 24);
-            this.label14.TabIndex = 88;
-            this.label14.Text = "PAY";
             // 
             // Member_Transaction_Log
             // 

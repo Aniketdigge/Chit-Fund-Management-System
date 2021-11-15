@@ -58,16 +58,15 @@ namespace Chit_Fund_Management_System
                 OleDbDataReader dr;
                 DataTable dt = new DataTable();
                 con.Open();
-                cmd = new OleDbCommand("select [Employee_Name], [Employee_Mobile], [Employee_Email], [Employee_Designation]" +
-                    "from EmployeeTB where [Employee_ID]=@employeeid", con);
+                cmd = new OleDbCommand("select * from EmployeeTB where [Eid]=@Eid", con);
                 cmd.Parameters.AddWithValue("@employeeid", tb_salary_employee_id.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    tb_salary_employee_name.Text = (dr["Employee_Name"].ToString());
-                    tb_salary_employee_mob.Text = (dr["Employee_Mobile"].ToString());
-                    tb_salary_employee_email.Text = (dr["Employee_Email"].ToString());
-                    tb_salary_employee_designation.Text = (dr["Employee_Designation"].ToString());
+                    tb_salary_employee_name.Text = (dr["Ename"].ToString());
+                    tb_salary_employee_mob.Text = (dr["Emob"].ToString());
+                    tb_salary_employee_email.Text = (dr["Eemail"].ToString());
+                    tb_salary_employee_designation.Text = (dr["Edesignation"].ToString());
                 }
                 con.Close();
             }
@@ -121,6 +120,124 @@ namespace Chit_Fund_Management_System
             catch (Exception ex2)
             {
                 MessageBox.Show(ex2.ToString());
+            }
+        }
+
+        private void bt_salary_report_Click(object sender, EventArgs e)
+        {
+            Salary_Payment_Repo salary_Payment_Repo = new Salary_Payment_Repo();
+            salary_Payment_Repo.Show();
+        }
+
+        private void tb_salary_employee_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_employee_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_salary_employee_id.Text = tb_salary_employee_id.Text.Remove(tb_salary_employee_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_salary_employee_name_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_employee_name.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid name.");
+                    tb_salary_employee_name.Text = tb_salary_employee_name.Text.Remove(tb_salary_employee_name.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_salary_employee_mob_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_employee_mob.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid mobile number.");
+                    tb_salary_employee_mob.Text = tb_salary_employee_mob.Text.Remove(tb_salary_employee_mob.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_salary_employee_designation_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_employee_designation.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid designation.");
+                    tb_salary_employee_designation.Text = tb_salary_employee_designation.Text.Remove(tb_salary_employee_designation.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_salary_per_day_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_per_day.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_salary_per_day.Text = tb_salary_per_day.Text.Remove(tb_salary_per_day.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_salary_present_days_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_present_days.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid days.");
+                    tb_salary_present_days.Text = tb_salary_present_days.Text.Remove(tb_salary_present_days.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_salary_gross_salary_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_salary_gross_salary.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_salary_gross_salary.Text = tb_salary_gross_salary.Text.Remove(tb_salary_gross_salary.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
     }

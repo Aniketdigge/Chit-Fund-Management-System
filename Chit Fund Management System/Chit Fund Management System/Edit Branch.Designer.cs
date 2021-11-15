@@ -146,8 +146,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_search_edit_branch
             // 
-            this.bt_search_edit_branch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_search_edit_branch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_search_edit_branch.BackgroundImage")));
+            this.bt_search_edit_branch.BackColor = System.Drawing.Color.White;
+            this.bt_search_edit_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Search_icone;
             this.bt_search_edit_branch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_search_edit_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_search_edit_branch.ForeColor = System.Drawing.Color.White;
@@ -161,8 +161,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_del_edit_branch
             // 
-            this.bt_del_edit_branch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_del_edit_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Deleteopt;
+            this.bt_del_edit_branch.BackColor = System.Drawing.Color.White;
+            this.bt_del_edit_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.delete;
             this.bt_del_edit_branch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_del_edit_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_del_edit_branch.ForeColor = System.Drawing.Color.White;
@@ -228,8 +228,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_clear_edit_branch
             // 
-            this.bt_clear_edit_branch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_clear_edit_branch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_clear_edit_branch.BackgroundImage")));
+            this.bt_clear_edit_branch.BackColor = System.Drawing.Color.White;
+            this.bt_clear_edit_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_clear_edit_branch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_clear_edit_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_clear_edit_branch.ForeColor = System.Drawing.Color.White;
@@ -243,8 +243,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_update_edit_branch
             // 
-            this.bt_update_edit_branch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_update_edit_branch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_update_edit_branch.BackgroundImage")));
+            this.bt_update_edit_branch.BackColor = System.Drawing.Color.White;
+            this.bt_update_edit_branch.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.update;
             this.bt_update_edit_branch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_update_edit_branch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_update_edit_branch.ForeColor = System.Drawing.Color.White;
@@ -517,7 +517,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(384, 0);
+            this.label1.Location = new System.Drawing.Point(788, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(568, 56);
             this.label1.TabIndex = 0;

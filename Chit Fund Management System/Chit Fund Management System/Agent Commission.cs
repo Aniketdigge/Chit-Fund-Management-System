@@ -58,25 +58,23 @@ namespace Chit_Fund_Management_System
                 OleDbDataReader dr;
                 DataTable dt = new DataTable();
                 con.Open();
-                cmd = new OleDbCommand("select [Agent_name], [Agent_mobile_no]" +
-                    "from AgentTB where [Agent_id]=@agentid", con);
+                cmd = new OleDbCommand("select * from AgentTB where [Aid]=@Aid", con);
                 cmd.Parameters.AddWithValue("@agentid", tb_agent_id.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    tb_commission_agent_name.Text = (dr["Agent_name"].ToString());
-                    tb_commission_agent_mob.Text = (dr["Agent_mobile_no"].ToString());
+                    tb_commission_agent_name.Text = (dr["Aname"].ToString());
+                    tb_commission_agent_mob.Text = (dr["Amob"].ToString());
                     
                 }
                 con.Close();
                 con.Open();
-                cmd = new OleDbCommand("select [Chit_amount]" +
-                    "from MemberTB where [Group_id]=@groupid", con);
+                cmd = new OleDbCommand("select * from MemberTB where [gid]=@gid", con);
                 cmd.Parameters.AddWithValue("@agentid", tb_commission_group_id.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    tb_commission_chit_amount.Text = (dr["Chit_amount"].ToString());
+                    tb_commission_chit_amount.Text = (dr["camt"].ToString());
 
                 }
                 con.Close();
@@ -130,6 +128,108 @@ namespace Chit_Fund_Management_System
             catch (Exception ex2)
             {
                 MessageBox.Show(ex2.ToString());
+            }
+        }
+
+        private void bt_commission_log_Click(object sender, EventArgs e)
+        {
+            Agent_Commission_Log_Repo agent_Commission_Log_Repo = new Agent_Commission_Log_Repo();
+            agent_Commission_Log_Repo.Show();
+        }
+
+        private void tb_agent_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_agent_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_agent_id.Text = tb_agent_id.Text.Remove(tb_agent_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_commission_agent_name_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_commission_agent_name.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid name.");
+                    tb_commission_agent_name.Text = tb_commission_agent_name.Text.Remove(tb_commission_agent_name.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_commission_agent_mob_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_commission_agent_mob.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid mobile number.");
+                    tb_commission_agent_mob.Text = tb_commission_agent_mob.Text.Remove(tb_commission_agent_mob.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_commission_group_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_commission_group_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_commission_group_id.Text = tb_commission_group_id.Text.Remove(tb_commission_group_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_commission_chit_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_commission_chit_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_commission_chit_amount.Text = tb_commission_chit_amount.Text.Remove(tb_commission_chit_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_commission_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_commission_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_commission_amount.Text = tb_commission_amount.Text.Remove(tb_commission_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
     }

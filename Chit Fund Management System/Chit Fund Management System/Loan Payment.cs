@@ -85,17 +85,16 @@ namespace Chit_Fund_Management_System
                 OleDbDataReader dr;
                 DataTable dt = new DataTable();
                 con.Open();
-                cmd = new OleDbCommand("select [Member_name], [Group_id], [Agent_id], [Chit_amount], [Loan_amount]" +
-                    "from MemberTB where [Member_id]=@memberid", con);
+                cmd = new OleDbCommand("select * from MemberTB where [Member_id]=@memberid", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_loan_member_id.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    tb_loan_member_name.Text = (dr["Member_name"].ToString());
-                    tb_loan_member_group_id.Text = (dr["Group_id"].ToString());
-                    tb_loan_agent_id.Text = (dr["Agent_id"].ToString());
-                    tb_loan_chit_amount.Text = (dr["Chit_amount"].ToString());
-                    tb_loan_loan_amount.Text = (dr["Loan_amount"].ToString());
+                    tb_loan_member_name.Text = (dr["Mname"].ToString());
+                    tb_loan_member_group_id.Text = (dr["gid"].ToString());
+                    tb_loan_agent_id.Text = (dr["aid"].ToString());
+                    tb_loan_chit_amount.Text = (dr["camt"].ToString());
+                    tb_loan_loan_amount.Text = (dr["lamt"].ToString());
                 }
                 con.Close();
 
@@ -111,9 +110,9 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("update MemberTB set Loan_amount=@loanamount where Member_id=@memberid", con);
+                cmd = new OleDbCommand("update MemberTB set lamt=@lamt where Member_id=@memberid", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_loan_member_id.Text);
-                cmd.Parameters.AddWithValue("@loanamount", tb_loan_loan_amount.Text);
+                cmd.Parameters.AddWithValue("@lamt", tb_loan_loan_amount.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Updated Successfully....");
@@ -173,6 +172,150 @@ namespace Chit_Fund_Management_System
         {
             Loan_Installment_Log_Viewer loan_Installment_Log_Viewer = new Loan_Installment_Log_Viewer();
             loan_Installment_Log_Viewer.Show();
+        }
+
+        private void tb_loan_member_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_member_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_loan_member_id.Text = tb_loan_member_id.Text.Remove(tb_loan_member_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_member_name_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_member_name.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid name.");
+                    tb_loan_member_name.Text = tb_loan_member_name.Text.Remove(tb_loan_member_name.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_member_group_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_member_group_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_loan_member_group_id.Text = tb_loan_member_group_id.Text.Remove(tb_loan_member_group_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_agent_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_agent_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_loan_agent_id.Text = tb_loan_agent_id.Text.Remove(tb_loan_agent_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_chit_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_chit_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_loan_chit_amount.Text = tb_loan_chit_amount.Text.Remove(tb_loan_chit_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_loan_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_loan_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_loan_loan_amount.Text = tb_loan_loan_amount.Text.Remove(tb_loan_loan_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_gross_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_gross_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_loan_gross_amount.Text = tb_loan_gross_amount.Text.Remove(tb_loan_gross_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_intrest_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_intrest.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_loan_intrest.Text = tb_loan_intrest.Text.Remove(tb_loan_intrest.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_loan_total_amount_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_loan_total_amount.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid amount.");
+                    tb_loan_total_amount.Text = tb_loan_total_amount.Text.Remove(tb_loan_total_amount.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

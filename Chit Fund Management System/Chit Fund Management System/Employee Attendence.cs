@@ -49,14 +49,13 @@ namespace Chit_Fund_Management_System
                 OleDbDataReader dr;
                 DataTable dt = new DataTable();
                 con.Open();
-                cmd = new OleDbCommand("select [Employee_Name], [Employee_Designation]" +
-                    "from EmployeeTB where [Employee_ID]=@EMPid", con);
+                cmd = new OleDbCommand("select * from EmployeeTB where [Eid]=@Eid", con);
                 cmd.Parameters.AddWithValue("@EMPid", tb_attendence_emp_id.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    tb_attendence_emp_name.Text = (dr["Employee_Name"].ToString());
-                    tb_attendence_emp_designation.Text = (dr["Employee_Designation"].ToString());
+                    tb_attendence_emp_name.Text = (dr["Ename"].ToString());
+                    tb_attendence_emp_designation.Text = (dr["Edesignation"].ToString());
                 }
                 con.Close();
 
@@ -85,6 +84,54 @@ namespace Chit_Fund_Management_System
         {
             Employee_Attendence_Log_Viewer employee_Attendence_Log_Viewer = new Employee_Attendence_Log_Viewer();
             employee_Attendence_Log_Viewer.Show();
+        }
+
+        private void tb_attendence_emp_id_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_attendence_emp_id.Text, "[^0-9]"))
+                {
+                    MessageBox.Show("Please enter valid id.");
+                    tb_attendence_emp_id.Text = tb_attendence_emp_id.Text.Remove(tb_attendence_emp_id.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_attendence_emp_name_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_attendence_emp_name.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid name.");
+                    tb_attendence_emp_name.Text = tb_attendence_emp_name.Text.Remove(tb_attendence_emp_name.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void tb_attendence_emp_designation_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_attendence_emp_designation.Text, "[^a-zA-Z ]"))
+                {
+                    MessageBox.Show("Please enter valid designation.");
+                    tb_attendence_emp_designation.Text = tb_attendence_emp_designation.Text.Remove(tb_attendence_emp_designation.Text.Length - 1);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

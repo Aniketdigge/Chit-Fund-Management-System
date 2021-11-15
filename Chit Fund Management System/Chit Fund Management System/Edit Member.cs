@@ -37,9 +37,9 @@ namespace Chit_Fund_Management_System
                     tb_edit_m_fname.Text = (dr["Fname"].ToString());
                     tb_edit_m_sname.Text = (dr["Sname"].ToString());
                     tb_edit_m_age.Text = (dr["Mage"].ToString());
-                    cb_edit_m_gender.Text = (dr["Mgender"].ToString());
+                    cb_edit_m_gender.Text = (dr["mgender"].ToString());
                     tb_edit_m_laddr.Text = (dr["Mladdr"].ToString());
-                    tb_edit_m_memail.Text = (dr["Memail"].ToString());
+                    tb_edit_m_memail.Text = (dr["memail"].ToString());
                     tb_edit_m_mmob.Text = (dr["Mmob"].ToString());
                     tb_edit_m_madhaar.Text = (dr["Madhaar"].ToString());
                     tb_edit_m_oaddr.Text = (dr["Moaddr"].ToString());
@@ -52,11 +52,11 @@ namespace Chit_Fund_Management_System
                     tb_edit_m_nemail.Text = (dr["Nemail"].ToString());
                     tb_edit_m_nmob.Text = (dr["Nmob"].ToString());
                     tb_edit_m_nadhaar.Text = (dr["Nadhaar"].ToString());
-                    tb_edit_m_gid.Text = (dr["Gid"].ToString());
-                    tb_edit_m_aid.Text = (dr["Aid"].ToString());
+                    tb_edit_m_gid.Text = (dr["gid"].ToString());
+                    tb_edit_m_aid.Text = (dr["aid"].ToString());
                     tb_edit_m_bid.Text = (dr["Bid"].ToString());
-                    tb_edit_m_camt.Text = (dr["Camt"].ToString());
-                    tb_edit_m_lamt.Text = (dr["Lamt"].ToString());
+                    tb_edit_m_camt.Text = (dr["camt"].ToString());
+                    tb_edit_m_lamt.Text = (dr["lamt"].ToString());
                     dtp_edit_m_dor.Text = (dr["Dor"].ToString());
                 }
                 con.Close();

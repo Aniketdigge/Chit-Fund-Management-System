@@ -150,7 +150,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(484, 0);
+            this.label1.Location = new System.Drawing.Point(998, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(457, 38);
             this.label1.TabIndex = 0;
@@ -1204,8 +1204,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_add_e_clear
             // 
-            this.bt_add_e_clear.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_add_e_clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_add_e_clear.BackgroundImage")));
+            this.bt_add_e_clear.BackColor = System.Drawing.Color.White;
+            this.bt_add_e_clear.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Clear_Icon;
             this.bt_add_e_clear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_e_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_e_clear.ForeColor = System.Drawing.Color.White;
@@ -1219,8 +1219,8 @@ namespace Chit_Fund_Management_System
             // 
             // bt_add_e_save
             // 
-            this.bt_add_e_save.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt_add_e_save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_add_e_save.BackgroundImage")));
+            this.bt_add_e_save.BackColor = System.Drawing.Color.White;
+            this.bt_add_e_save.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.Save1;
             this.bt_add_e_save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bt_add_e_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_add_e_save.ForeColor = System.Drawing.Color.White;
