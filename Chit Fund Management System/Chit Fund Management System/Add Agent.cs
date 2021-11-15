@@ -157,7 +157,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_a_aadhaar.Text, "[^0-9]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_a_aadhaar.Text, "[^0-9 ]"))
                 {
                     MessageBox.Show("Please enter valid adhaar number.");
                     tb_add_a_aadhaar.Text = tb_add_a_aadhaar.Text.Remove(tb_add_a_aadhaar.Text.Length - 1);

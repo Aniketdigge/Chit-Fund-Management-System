@@ -40,17 +40,18 @@ namespace Chit_Fund_Management_System
             this.crv_agent_commission_log_report.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_agent_commission_log_report.Location = new System.Drawing.Point(0, 0);
             this.crv_agent_commission_log_report.Name = "crv_agent_commission_log_report";
-            this.crv_agent_commission_log_report.Size = new System.Drawing.Size(1469, 689);
+            this.crv_agent_commission_log_report.Size = new System.Drawing.Size(1458, 663);
             this.crv_agent_commission_log_report.TabIndex = 0;
             // 
             // Agent_Commission_Log_Repo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1469, 689);
+            this.ClientSize = new System.Drawing.Size(1458, 663);
             this.Controls.Add(this.crv_agent_commission_log_report);
             this.Name = "Agent_Commission_Log_Repo";
-            this.Text = "Agent Commission Log Report";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Agent Commission Log";
             this.Load += new System.EventHandler(this.Agent_Commission_Log_Repo_Load);
             this.ResumeLayout(false);
 

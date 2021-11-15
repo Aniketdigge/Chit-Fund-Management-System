@@ -20,14 +20,6 @@ namespace Chit_Fund_Management_System
         {
             Branch_Report_View branch_Report_View = new Branch_Report_View();
             branch_Report_View.Show();
-            this.Hide();
-        }
-
-        private void employeeProfileToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            f_employee_profile f_Employee_Profile = new f_employee_profile();
-            f_Employee_Profile.Show();
-            this.Hide();
         }
 
         private void memberTransactionLogToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -44,24 +36,10 @@ namespace Chit_Fund_Management_System
             this.Hide();
         }
 
-        private void biddingLogToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            Bidding_Log bidding_Log = new Bidding_Log();
-            bidding_Log.Show();
-            this.Hide();
-        }
-
         private void agentCommissionToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             Agent_Commission agent_Commission = new Agent_Commission();
             agent_Commission.Show();
-            this.Hide();
-        }
-
-        private void agentPaymentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            Agent_Commission_Log agent_Commission_Log = new Agent_Commission_Log();
-            agent_Commission_Log.Show();
             this.Hide();
         }
 
@@ -76,13 +54,6 @@ namespace Chit_Fund_Management_System
         {
             Employee_Salary_Slip employee_Salary_Slip = new Employee_Salary_Slip();
             employee_Salary_Slip.Show();
-            this.Hide();
-        }
-
-        private void employeePaymentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            Salary_Report salary_Report = new Salary_Report();
-            salary_Report.Show();
             this.Hide();
         }
 

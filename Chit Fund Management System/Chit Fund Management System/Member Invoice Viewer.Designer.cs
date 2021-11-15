@@ -40,17 +40,18 @@ namespace Chit_Fund_Management_System
             this.crv_member_invoice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crv_member_invoice.Location = new System.Drawing.Point(0, 0);
             this.crv_member_invoice.Name = "crv_member_invoice";
-            this.crv_member_invoice.Size = new System.Drawing.Size(1497, 690);
+            this.crv_member_invoice.Size = new System.Drawing.Size(1437, 690);
             this.crv_member_invoice.TabIndex = 0;
             // 
             // Member_Invoice_Viewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1497, 690);
+            this.ClientSize = new System.Drawing.Size(1437, 690);
             this.Controls.Add(this.crv_member_invoice);
             this.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Member_Invoice_Viewer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member Invoice";
             this.Load += new System.EventHandler(this.Member_Invoice_Viewer_Load);
             this.ResumeLayout(false);

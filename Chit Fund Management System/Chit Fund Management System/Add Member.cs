@@ -25,9 +25,9 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("insert into MemberTB(Mname, Mdob, Fname, Sname, Mage, Mgender, Mladdr, Memail, Mmob, Madhaar, Moaddr, Mdesign, Salary, Mpan, " +
-                    "Nname, Nrelation, Nage, Nemail, Nmob, Nadhaar, Gid, Aid, Bid, Camt, Lamt, Dor) values(@Mname, @Mdob, @Fname, @Sname, @Mage, @Mgender, @Mladdr, " +
-                    "@Memail, @Mmob, @Madhaar, @Moaddr, @Mdesign, @Salary, @Mpan, @Nname, @Nrelation, @Nage, @Nmob, @Nadhaar, @Gid, @Aid, @Bid, @Camt, @Lamt, @Dor)", con);
+                cmd = new OleDbCommand("insert into MemberTB(Mname, Mdob, Fname, Sname, Mage, mgender, Mladdr, Memail, Mmob, Madhaar, Moaddr, Mdesign, Salary, Mpan, " +
+                    "Nname, Nrelation, Nage, Nemail, Nmob, Nadhaar, gid, aid, Bid, camt, lamt, Dor) values(@Mname, @Mdob, @Fname, @Sname, @Mage, @Mgender, @Mladdr, " +
+                    "@Memail, @Mmob, @Madhaar, @Moaddr, @Mdesign, @Salary, @Mpan, @Nname, @Nrelation, @Nage, @Nemail, @Nmob, @Nadhaar, @Gid, @Aid, @Bid, @Camt, @Lamt, @Dor)", con);
                 cmd.Parameters.AddWithValue("@Mname", tb_add_m_name.Text);
                 cmd.Parameters.AddWithValue("@Mdob", dtp_add_m_dob.Text);
                 cmd.Parameters.AddWithValue("@Fname", tb_add_m_fname.Text);
@@ -45,6 +45,7 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@Nname", tb_add_m_nname.Text);
                 cmd.Parameters.AddWithValue("@Nrelation", tb_add_m_nrelation.Text);
                 cmd.Parameters.AddWithValue("@Nage", tb_add_m_nage.Text);
+                cmd.Parameters.AddWithValue("@Nemail", tb_add_m_nemail.Text);
                 cmd.Parameters.AddWithValue("@Nmob", tb_add_m_nmob.Text);
                 cmd.Parameters.AddWithValue("@Nadhaar", tb_add_m_nadhaar.Text);
                 cmd.Parameters.AddWithValue("@Gid", tb_add_m_gid.Text);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.OleDb;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Chit_Fund_Management_System
 {
@@ -44,6 +45,51 @@ namespace Chit_Fund_Management_System
             f_login f_Ligin = new f_login();
             f_Ligin.Show();
             this.Hide();
+        }
+
+        private void bt_search_new_user_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OleDbDataReader dr;
+                DataTable dt = new DataTable();
+                con.Open();
+                cmd = new OleDbCommand("select * from LoginTB where [User_name]=@User_name", con);
+                cmd.Parameters.AddWithValue("@User_name", tb_usernamenew.Text);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    tb_passwordnew.Text = (dr["Password"].ToString());
+                    tb_usertype.Text = (dr["User_type"].ToString());
+                }
+                con.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void bt_del_new_user_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                cmd = new OleDbCommand("delete from LoginTB where User_name=@User_name", con);
+                cmd.Parameters.AddWithValue("@User_name", tb_usernamenew.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Deleted Successfully....");
+
+                tb_usernamenew.Clear();
+                tb_passwordnew.Clear();
+                tb_usertype.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

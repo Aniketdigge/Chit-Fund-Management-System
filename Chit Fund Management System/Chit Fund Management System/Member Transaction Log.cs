@@ -78,17 +78,16 @@ namespace Chit_Fund_Management_System
                 OleDbDataReader dr;
                 DataTable dt = new DataTable();
                 con.Open();
-                cmd = new OleDbCommand("select [Member_name], [Group_id], [Agent_id], [Chit_amount], [Loan_amount]" +
-                    "from MemberTB where [Member_id]=@memberid", con);
+                cmd = new OleDbCommand("select * from MemberTB where [Member_id]=@memberid", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_mtl_member_id.Text);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    tb_mtl_member_name.Text = (dr["Member_name"].ToString());
-                    tb_mtl_member_group_id.Text = (dr["Group_id"].ToString());
-                    tb_mtl_agent_id.Text = (dr["Agent_id"].ToString());
-                    tb_mtl_chit_amount.Text = (dr["Chit_amount"].ToString());
-                    tb_mtl_loan_amount.Text = (dr["Loan_amount"].ToString());
+                    tb_mtl_member_name.Text = (dr["Mname"].ToString());
+                    tb_mtl_member_group_id.Text = (dr["gid"].ToString());
+                    tb_mtl_agent_id.Text = (dr["aid"].ToString());
+                    tb_mtl_chit_amount.Text = (dr["camt"].ToString());
+                    tb_mtl_loan_amount.Text = (dr["lamt"].ToString());
                 }
                 con.Close();
 
