@@ -318,7 +318,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_e_eadhaar.Text, "[^0-9]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_e_eadhaar.Text, "[^0-9 ]"))
                 {
                     MessageBox.Show("Please enter valid adhaar number.");
                     tb_edit_e_eadhaar.Text = tb_edit_e_eadhaar.Text.Remove(tb_edit_e_eadhaar.Text.Length - 1);

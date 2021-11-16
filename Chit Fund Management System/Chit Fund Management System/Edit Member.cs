@@ -35,7 +35,6 @@ namespace Chit_Fund_Management_System
                     tb_edit_m_name.Text = (dr["Mname"].ToString());
                     dtp_edit_m_dob.Text = (dr["Mdob"].ToString());
                     tb_edit_m_fname.Text = (dr["Fname"].ToString());
-                    tb_edit_m_sname.Text = (dr["Sname"].ToString());
                     tb_edit_m_age.Text = (dr["Mage"].ToString());
                     cb_edit_m_gender.Text = (dr["mgender"].ToString());
                     tb_edit_m_laddr.Text = (dr["Mladdr"].ToString());
@@ -73,14 +72,13 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("update MemberTB set Mname=@Mname, Mdob=@Mdob, Fname=@Fname, Sname=@Sname, Mage=@Mage, Mgender=@Mgender, Mladdr=@Mladdr, " +
+                cmd = new OleDbCommand("update MemberTB set Mname=@Mname, Mdob=@Mdob, Fname=@Fname, Mage=@Mage, Mgender=@Mgender, Mladdr=@Mladdr, " +
                     "Memail=@Memail, Mmob=@Mmob, Madhaar=@Madhaar, Moaddr=@Moaddr, Mdesign=@Mdesign, Salary=@Salary, Mpan=@Mpan, Nname=@Nname, Nrelation=@Nrelation, " +
                     "Nage=@Nage, Nemail=@Nemail, Nmob=@Nmob, Nadhaar=@Nadhaar, Gid=@Gid, Aid=@Aid, Bid=@Bid, Camt=@Camt, Lamt=@Lamt, Dor=@Dor where Member_id=@memberid", con);
                 cmd.Parameters.AddWithValue("@memberid", tb_edit_m_memberid.Text);
                 cmd.Parameters.AddWithValue("@Mname", tb_edit_m_name.Text);
                 cmd.Parameters.AddWithValue("@Mdob", dtp_edit_m_dob.Text);
                 cmd.Parameters.AddWithValue("@Fname", tb_edit_m_fname.Text);
-                cmd.Parameters.AddWithValue("@Sname", tb_edit_m_sname.Text);
                 cmd.Parameters.AddWithValue("@Mage", tb_edit_m_age.Text);
                 cmd.Parameters.AddWithValue("@Mgender", cb_edit_m_gender.Text);
                 cmd.Parameters.AddWithValue("@Mladdr", tb_edit_m_laddr.Text);
@@ -119,7 +117,6 @@ namespace Chit_Fund_Management_System
             tb_edit_m_memberid.Clear();
             tb_edit_m_name.Clear();
             tb_edit_m_fname.Clear();
-            tb_edit_m_sname.Clear();
             tb_edit_m_age.Clear();
             cb_edit_m_gender.Items.Clear();
             tb_edit_m_laddr.Clear();
@@ -163,7 +160,6 @@ namespace Chit_Fund_Management_System
                 tb_edit_m_memberid.Clear();
                 tb_edit_m_name.Clear();
                 tb_edit_m_fname.Clear();
-                tb_edit_m_sname.Clear();
                 tb_edit_m_age.Clear();
                 cb_edit_m_gender.Items.Clear();
                 tb_edit_m_laddr.Clear();
@@ -240,22 +236,6 @@ namespace Chit_Fund_Management_System
             }
         }
 
-        private void tb_edit_m_sname_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_sname.Text, "[^a-zA-Z ]"))
-                {
-                    MessageBox.Show("Please enter valid name.");
-                    tb_edit_m_sname.Text = tb_edit_m_sname.Text.Remove(tb_edit_m_sname.Text.Length - 1);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
         private void tb_edit_m_age_TextChanged(object sender, EventArgs e)
         {
             try
@@ -292,7 +272,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_madhaar.Text, "[^0-9]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_madhaar.Text, "[^0-9 ]"))
                 {
                     MessageBox.Show("Please enter valid adhaar number.");
                     tb_edit_m_madhaar.Text = tb_edit_m_madhaar.Text.Remove(tb_edit_m_madhaar.Text.Length - 1);
@@ -404,7 +384,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_nadhaar.Text, "[^0-9]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_nadhaar.Text, "[^0-9 ]"))
                 {
                     MessageBox.Show("Please enter valid adhaar number.");
                     tb_edit_m_nadhaar.Text = tb_edit_m_nadhaar.Text.Remove(tb_edit_m_nadhaar.Text.Length - 1);

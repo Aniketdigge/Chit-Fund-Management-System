@@ -102,7 +102,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.SystemColors.Desktop;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(638, 5);
+            this.label1.Location = new System.Drawing.Point(566, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(614, 56);
             this.label1.TabIndex = 0;

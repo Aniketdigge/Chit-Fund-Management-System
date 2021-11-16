@@ -177,7 +177,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_id_edit_branch
             // 
             this.tb_branch_id_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_id_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_id_edit_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_id_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_id_edit_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -185,7 +184,7 @@ namespace Chit_Fund_Management_System
             this.tb_branch_id_edit_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_branch_id_edit_branch.Multiline = true;
             this.tb_branch_id_edit_branch.Name = "tb_branch_id_edit_branch";
-            this.tb_branch_id_edit_branch.Size = new System.Drawing.Size(334, 33);
+            this.tb_branch_id_edit_branch.Size = new System.Drawing.Size(160, 33);
             this.tb_branch_id_edit_branch.TabIndex = 35;
             this.tb_branch_id_edit_branch.TextChanged += new System.EventHandler(this.tb_branch_id_edit_branch_TextChanged);
             // 
@@ -284,7 +283,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_pincode_edit_branch
             // 
             this.tb_branch_pincode_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_pincode_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_pincode_edit_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_pincode_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_pincode_edit_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -323,7 +321,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_headoffice_address_edit_branch
             // 
             this.tb_branch_headoffice_address_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_headoffice_address_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_headoffice_address_edit_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_headoffice_address_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_headoffice_address_edit_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -361,7 +358,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_email_edit_branch
             // 
             this.tb_branch_email_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_email_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_email_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_email_edit_branch.Location = new System.Drawing.Point(904, 72);
             this.tb_branch_email_edit_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -385,7 +381,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_phone_edit_branch
             // 
             this.tb_branch_phone_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_phone_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_phone_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_phone_edit_branch.Location = new System.Drawing.Point(904, 146);
             this.tb_branch_phone_edit_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -398,7 +393,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_manager_edit_branch
             // 
             this.tb_branch_manager_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_manager_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_manager_edit_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_manager_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_manager_edit_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -437,7 +431,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_city_edit_branch
             // 
             this.tb_branch_city_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_city_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_city_edit_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_city_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_city_edit_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -464,7 +457,6 @@ namespace Chit_Fund_Management_System
             // tb_branch_address_edit_branch
             // 
             this.tb_branch_address_edit_branch.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tb_branch_address_edit_branch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_branch_address_edit_branch.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_branch_address_edit_branch.ForeColor = System.Drawing.Color.White;
             this.tb_branch_address_edit_branch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -517,7 +509,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(788, 0);
+            this.label1.Location = new System.Drawing.Point(765, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(568, 56);
             this.label1.TabIndex = 0;
