@@ -25,13 +25,12 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("insert into MemberTB(Mname, Mdob, Fname, Sname, Mage, mgender, Mladdr, Memail, Mmob, Madhaar, Moaddr, Mdesign, Salary, Mpan, " +
-                    "Nname, Nrelation, Nage, Nemail, Nmob, Nadhaar, gid, aid, Bid, camt, lamt, Dor) values(@Mname, @Mdob, @Fname, @Sname, @Mage, @Mgender, @Mladdr, " +
+                cmd = new OleDbCommand("insert into MemberTB(Mname, Mdob, Fname, Mage, mgender, Mladdr, Memail, Mmob, Madhaar, Moaddr, Mdesign, Salary, Mpan, " +
+                    "Nname, Nrelation, Nage, Nemail, Nmob, Nadhaar, gid, aid, Bid, camt, lamt, Dor) values(@Mname, @Mdob, @Fname, @Mage, @Mgender, @Mladdr, " +
                     "@Memail, @Mmob, @Madhaar, @Moaddr, @Mdesign, @Salary, @Mpan, @Nname, @Nrelation, @Nage, @Nemail, @Nmob, @Nadhaar, @Gid, @Aid, @Bid, @Camt, @Lamt, @Dor)", con);
                 cmd.Parameters.AddWithValue("@Mname", tb_add_m_name.Text);
                 cmd.Parameters.AddWithValue("@Mdob", dtp_add_m_dob.Text);
                 cmd.Parameters.AddWithValue("@Fname", tb_add_m_fname.Text);
-                cmd.Parameters.AddWithValue("@Sname", tb_add_m_sname.Text);
                 cmd.Parameters.AddWithValue("@Mage", tb_add_m_age.Text);
                 cmd.Parameters.AddWithValue("@Mgender", cb_add_m_gender.Text);
                 cmd.Parameters.AddWithValue("@Mladdr", tb_add_m_laddr.Text);
@@ -75,7 +74,6 @@ namespace Chit_Fund_Management_System
         {
             tb_add_m_name.Clear();
             tb_add_m_fname.Clear();
-            tb_add_m_sname.Clear();
             tb_add_m_age.Clear();
             cb_add_m_gender.Items.Clear();
             tb_add_m_laddr.Clear();
@@ -131,22 +129,6 @@ namespace Chit_Fund_Management_System
             }
         }
 
-        private void tb_add_m_sname_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_m_sname.Text, "[^a-zA-Z ]"))
-                {
-                    MessageBox.Show("Please enter valid name.");
-                    tb_add_m_sname.Text = tb_add_m_sname.Text.Remove(tb_add_m_sname.Text.Length - 1);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
         private void tb_add_m_age_TextChanged(object sender, EventArgs e)
         {
             try
@@ -183,7 +165,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_m_madhaar.Text, "[^0-9]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_m_madhaar.Text, "[^0-9 ]"))
                 {
                     MessageBox.Show("Please enter valid adhaar number.");
                     tb_add_m_madhaar.Text = tb_add_m_madhaar.Text.Remove(tb_add_m_madhaar.Text.Length - 1);
@@ -295,7 +277,7 @@ namespace Chit_Fund_Management_System
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_m_nadhaar.Text, "[^0-9]"))
+                if (System.Text.RegularExpressions.Regex.IsMatch(tb_add_m_nadhaar.Text, "[^0-9 ]"))
                 {
                     MessageBox.Show("Please enter valid adhaar number.");
                     tb_add_m_nadhaar.Text = tb_add_m_nadhaar.Text.Remove(tb_add_m_nadhaar.Text.Length - 1);

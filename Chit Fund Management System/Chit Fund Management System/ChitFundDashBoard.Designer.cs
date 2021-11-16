@@ -332,19 +332,18 @@ namespace Chit_Fund_Management_System
             this.employeeProfileToolStripMenuItem.Name = "employeeProfileToolStripMenuItem";
             this.employeeProfileToolStripMenuItem.Size = new System.Drawing.Size(262, 28);
             this.employeeProfileToolStripMenuItem.Text = "Employee Profile";
-            //this.employeeProfileToolStripMenuItem.Click += new System.EventHandler(this.employeeProfileToolStripMenuItem_Click);
             // 
             // addEmployeeToolStripMenuItem
             // 
             this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
-            this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.addEmployeeToolStripMenuItem.Text = "Add Employee";
             this.addEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addEmployeeToolStripMenuItem_Click);
             // 
             // editEmployeeToolStripMenuItem
             // 
             this.editEmployeeToolStripMenuItem.Name = "editEmployeeToolStripMenuItem";
-            this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.editEmployeeToolStripMenuItem.Text = "Edit Employee";
             this.editEmployeeToolStripMenuItem.Click += new System.EventHandler(this.editEmployeeToolStripMenuItem_Click);
             // 

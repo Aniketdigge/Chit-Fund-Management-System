@@ -49,6 +49,15 @@ namespace Chit_Fund_Management_System
                 cmd.Parameters.AddWithValue("@transactiondate", lb_mp_payment_date.Text);
                 cmd.ExecuteNonQuery();
                 con.Close();
+                if (cb_mp_payment_type.Text == "Loan")
+                {
+                    con.Open();
+                    cmd = new OleDbCommand("update MemberTB set Lamt=@Lamt where Member_id=@memberid", con);
+                    cmd.Parameters.AddWithValue("@memberid", lb_mp_member_id.Text);
+                    cmd.Parameters.AddWithValue("@Lamt", lb_mp_amount_paid.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
                 MessageBox.Show("Log Entered Successfully....");
             }
             catch (Exception ex)

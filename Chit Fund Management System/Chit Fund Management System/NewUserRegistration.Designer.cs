@@ -72,7 +72,7 @@ namespace Chit_Fund_Management_System
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(380, 9);
+            this.label2.Location = new System.Drawing.Point(312, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(489, 56);
             this.label2.TabIndex = 1;
