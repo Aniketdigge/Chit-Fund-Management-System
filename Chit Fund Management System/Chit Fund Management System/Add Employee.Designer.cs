@@ -150,7 +150,7 @@ namespace Chit_Fund_Management_System
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(976, 0);
+            this.label1.Location = new System.Drawing.Point(934, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(457, 38);
             this.label1.TabIndex = 0;
@@ -383,11 +383,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_e_department.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_department.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_department.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_e_department.Location = new System.Drawing.Point(142, 34);
+            this.tb_add_e_department.Location = new System.Drawing.Point(159, 34);
             this.tb_add_e_department.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_e_department.Multiline = true;
             this.tb_add_e_department.Name = "tb_add_e_department";
-            this.tb_add_e_department.Size = new System.Drawing.Size(224, 29);
+            this.tb_add_e_department.Size = new System.Drawing.Size(207, 29);
             this.tb_add_e_department.TabIndex = 86;
             this.tb_add_e_department.TextChanged += new System.EventHandler(this.tb_add_e_department_TextChanged);
             // 
@@ -435,11 +435,11 @@ namespace Chit_Fund_Management_System
             this.tb_add_e_designation.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_add_e_designation.ForeColor = System.Drawing.Color.White;
             this.tb_add_e_designation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tb_add_e_designation.Location = new System.Drawing.Point(142, 71);
+            this.tb_add_e_designation.Location = new System.Drawing.Point(159, 71);
             this.tb_add_e_designation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tb_add_e_designation.Multiline = true;
             this.tb_add_e_designation.Name = "tb_add_e_designation";
-            this.tb_add_e_designation.Size = new System.Drawing.Size(224, 29);
+            this.tb_add_e_designation.Size = new System.Drawing.Size(207, 29);
             this.tb_add_e_designation.TabIndex = 88;
             this.tb_add_e_designation.TextChanged += new System.EventHandler(this.tb_add_e_designation_TextChanged);
             // 

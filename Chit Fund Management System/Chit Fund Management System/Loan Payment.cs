@@ -109,10 +109,9 @@ namespace Chit_Fund_Management_System
         {
             try
             {
+                int Mid = int.Parse(tb_loan_member_id.Text);
                 con.Open();
-                cmd = new OleDbCommand("update MemberTB set lamt=@lamt where Member_id=@memberid", con);
-                cmd.Parameters.AddWithValue("@memberid", tb_loan_member_id.Text);
-                cmd.Parameters.AddWithValue("@lamt", tb_loan_loan_amount.Text);
+                cmd = new OleDbCommand("update MemberTB set lamt='"+ tb_loan_loan_amount.Text + "' where Member_id="+ Mid, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Updated Successfully....");

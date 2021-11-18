@@ -24,18 +24,13 @@ namespace Chit_Fund_Management_System
         {
             try
             {
+                int Bid = int.Parse(tb_branch_id_edit_branch.Text);
                 con.Open();
-                cmd = new OleDbCommand("update BranchTB set Branch_address=@branchaddress, Branch_city=@branchcity, Pincode=@pincode, Branch_manager=@branchmanager, Branch_email=@branchemail, Branch_phone_no=@branchphoneno, " +
-                    "Head_office_addr=@headofficeaddr, Date_of_registration=@dateofregistration where Branch_id=@branchid", con);
-                cmd.Parameters.AddWithValue("@branchid", tb_branch_id_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@branchaddress", tb_branch_address_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@branchcity", tb_branch_city_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@pincode", tb_branch_pincode_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@branchmanager", tb_branch_manager_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@branchemail", tb_branch_email_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@branchphoneno", tb_branch_phone_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@headofficeaddr", tb_branch_headoffice_address_edit_branch.Text);
-                cmd.Parameters.AddWithValue("@dateofregistration", dtp_date_of_registration_edit_branch.Text);
+                cmd = new OleDbCommand("update BranchTB set Branch_address='"+ tb_branch_address_edit_branch.Text + "', " +
+                    "Branch_city='"+ tb_branch_city_edit_branch.Text + "', Pincode='"+ tb_branch_pincode_edit_branch.Text + "', " +
+                    "Branch_manager='"+ tb_branch_manager_edit_branch.Text + "', Branch_email='"+ tb_branch_email_edit_branch.Text + "', " +
+                    "Branch_phone_no='"+ tb_branch_phone_edit_branch.Text + "', Head_office_addr='"+ tb_branch_headoffice_address_edit_branch.Text + "', " +
+                    "Date_of_registration='"+ dtp_date_of_registration_edit_branch.Text + "' where Branch_id="+ Bid, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Updated successfully....");

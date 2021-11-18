@@ -40,7 +40,6 @@ namespace Chit_Fund_Management_System
             this.tb_usernamelogin = new System.Windows.Forms.TextBox();
             this.bt_clearlogin = new System.Windows.Forms.Button();
             this.bt_login = new System.Windows.Forms.Button();
-            this.linklb_newuser = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -57,7 +56,7 @@ namespace Chit_Fund_Management_System
             // logingb
             // 
             this.logingb.BackColor = System.Drawing.Color.LightGray;
-            this.logingb.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_32_06_PM;
+            this.logingb.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_29_07_PM;
             this.logingb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.logingb.Controls.Add(this.bt_hide_password);
             this.logingb.Controls.Add(this.bt_show_password);
@@ -68,7 +67,6 @@ namespace Chit_Fund_Management_System
             this.logingb.Controls.Add(this.tb_usernamelogin);
             this.logingb.Controls.Add(this.bt_clearlogin);
             this.logingb.Controls.Add(this.bt_login);
-            this.logingb.Controls.Add(this.linklb_newuser);
             this.logingb.Controls.Add(this.label2);
             this.logingb.Controls.Add(this.label4);
             this.logingb.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -190,21 +188,6 @@ namespace Chit_Fund_Management_System
             this.bt_login.UseVisualStyleBackColor = false;
             this.bt_login.Click += new System.EventHandler(this.bt_login_Click);
             // 
-            // linklb_newuser
-            // 
-            this.linklb_newuser.AutoSize = true;
-            this.linklb_newuser.BackColor = System.Drawing.Color.Transparent;
-            this.linklb_newuser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linklb_newuser.LinkColor = System.Drawing.Color.Cyan;
-            this.linklb_newuser.Location = new System.Drawing.Point(250, 375);
-            this.linklb_newuser.Name = "linklb_newuser";
-            this.linklb_newuser.Size = new System.Drawing.Size(100, 24);
-            this.linklb_newuser.TabIndex = 12;
-            this.linklb_newuser.TabStop = true;
-            this.linklb_newuser.Text = "New User";
-            this.linklb_newuser.VisitedLinkColor = System.Drawing.Color.Fuchsia;
-            this.linklb_newuser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_newuser_LinkClicked);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -312,7 +295,6 @@ namespace Chit_Fund_Management_System
         private System.Windows.Forms.GroupBox logingb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linklb_newuser;
         private System.Windows.Forms.Button bt_login;
         private System.Windows.Forms.Button bt_clearlogin;
         private System.Windows.Forms.TextBox tb_passwordlogin;

@@ -75,7 +75,6 @@ namespace Chit_Fund_Management_System
             tb_add_m_name.Clear();
             tb_add_m_fname.Clear();
             tb_add_m_age.Clear();
-            cb_add_m_gender.Items.Clear();
             tb_add_m_laddr.Clear();
             tb_add_m_memail.Clear();
             tb_add_m_mmob.Clear();

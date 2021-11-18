@@ -57,26 +57,11 @@ namespace Chit_Fund_Management_System
             this.Hide();
         }
 
-        private void employeeToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
         private void loanToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
             Loan_Payment loan_Payment = new Loan_Payment();
             loan_Payment.Show();
             this.Hide();
-        }
-
-        private void loanInstallmentLogToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-            
-        }
-
-        private void agentPaymentToolStripMenuItem_Click(object sender, System.EventArgs e)
-        {
-
         }
 
         private void f_chit_fund_dash_board_Load(object sender, System.EventArgs e)

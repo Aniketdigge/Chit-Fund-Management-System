@@ -25,14 +25,10 @@ namespace Chit_Fund_Management_System
             try
             {
                 con.Open();
-                cmd = new OleDbCommand("update CompanyTB set Company_name=@companyname, Address=@address, City=@city, Owner=@owner, No_of_branches=@noofbranches, Date_of_registration=@dateofregistration where CIN_no=@cinno", con);
-                cmd.Parameters.AddWithValue("@cinno", tb_cinno_edit_company.Text);
-                cmd.Parameters.AddWithValue("@companyname", tb_companyname_edit_company.Text);
-                cmd.Parameters.AddWithValue("@address", tb_address_edit_company.Text);
-                cmd.Parameters.AddWithValue("@city", tb_city_edit_company.Text);
-                cmd.Parameters.AddWithValue("@owner", tb_owner_edit_company.Text);
-                cmd.Parameters.AddWithValue("@noofbranches", tb_noofbranches_edit_company.Text);
-                cmd.Parameters.AddWithValue("@dateofregistration", dtp_date_of_registration_edit_company.Text);
+                cmd = new OleDbCommand("update CompanyTB set Company_name='"+ tb_companyname_edit_company.Text +"', " +
+                    "Address='"+ tb_address_edit_company.Text + "', City='"+ tb_city_edit_company.Text + "', " +
+                    "Owner='"+ tb_owner_edit_company.Text + "', No_of_branches='"+ tb_noofbranches_edit_company.Text + "', " +
+                    "Date_of_registration='"+ dtp_date_of_registration_edit_company.Text + "' where CIN_no='"+ tb_cinno_edit_company.Text + "'", con);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Updated Successfully....");

@@ -76,7 +76,7 @@ namespace Chit_Fund_Management_System
             this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1388, 55);
+            this.menuStrip1.Size = new System.Drawing.Size(1455, 55);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "DashBoard";
             // 
@@ -149,6 +149,9 @@ namespace Chit_Fund_Management_System
             // 
             // addBranchToolStripMenuItem
             // 
+            this.addBranchToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.addBranchToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addBranchToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addBranchToolStripMenuItem.Name = "addBranchToolStripMenuItem";
             this.addBranchToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
             this.addBranchToolStripMenuItem.Text = "Add Branch";
@@ -156,6 +159,9 @@ namespace Chit_Fund_Management_System
             // 
             // editBranchToolStripMenuItem
             // 
+            this.editBranchToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.editBranchToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editBranchToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editBranchToolStripMenuItem.Name = "editBranchToolStripMenuItem";
             this.editBranchToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
             this.editBranchToolStripMenuItem.Text = "Edit Branch";
@@ -200,6 +206,9 @@ namespace Chit_Fund_Management_System
             // 
             // addMemberToolStripMenuItem
             // 
+            this.addMemberToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.addMemberToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addMemberToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addMemberToolStripMenuItem.Name = "addMemberToolStripMenuItem";
             this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.addMemberToolStripMenuItem.Text = "Add Member";
@@ -207,6 +216,9 @@ namespace Chit_Fund_Management_System
             // 
             // editMemberToolStripMenuItem
             // 
+            this.editMemberToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.editMemberToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editMemberToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editMemberToolStripMenuItem.Name = "editMemberToolStripMenuItem";
             this.editMemberToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.editMemberToolStripMenuItem.Text = "Edit Member";
@@ -283,6 +295,9 @@ namespace Chit_Fund_Management_System
             // 
             // addAgentToolStripMenuItem
             // 
+            this.addAgentToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.addAgentToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addAgentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addAgentToolStripMenuItem.Name = "addAgentToolStripMenuItem";
             this.addAgentToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.addAgentToolStripMenuItem.Text = "Add Agent";
@@ -290,6 +305,9 @@ namespace Chit_Fund_Management_System
             // 
             // editAgentToolStripMenuItem
             // 
+            this.editAgentToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.editAgentToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editAgentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editAgentToolStripMenuItem.Name = "editAgentToolStripMenuItem";
             this.editAgentToolStripMenuItem.Size = new System.Drawing.Size(175, 28);
             this.editAgentToolStripMenuItem.Text = "Edit Agent";
@@ -318,7 +336,6 @@ namespace Chit_Fund_Management_System
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
             this.employeeToolStripMenuItem.Size = new System.Drawing.Size(100, 51);
             this.employeeToolStripMenuItem.Text = "Employee";
-            this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
             // employeeProfileToolStripMenuItem
             // 
@@ -335,6 +352,9 @@ namespace Chit_Fund_Management_System
             // 
             // addEmployeeToolStripMenuItem
             // 
+            this.addEmployeeToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.addEmployeeToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.addEmployeeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addEmployeeToolStripMenuItem.Name = "addEmployeeToolStripMenuItem";
             this.addEmployeeToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.addEmployeeToolStripMenuItem.Text = "Add Employee";
@@ -342,6 +362,9 @@ namespace Chit_Fund_Management_System
             // 
             // editEmployeeToolStripMenuItem
             // 
+            this.editEmployeeToolStripMenuItem.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_35_40_PM;
+            this.editEmployeeToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.editEmployeeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editEmployeeToolStripMenuItem.Name = "editEmployeeToolStripMenuItem";
             this.editEmployeeToolStripMenuItem.Size = new System.Drawing.Size(206, 28);
             this.editEmployeeToolStripMenuItem.Text = "Edit Employee";
@@ -373,7 +396,7 @@ namespace Chit_Fund_Management_System
             this.lkb_back_to_login.AutoSize = true;
             this.lkb_back_to_login.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkb_back_to_login.LinkColor = System.Drawing.Color.Cyan;
-            this.lkb_back_to_login.Location = new System.Drawing.Point(1200, 21);
+            this.lkb_back_to_login.Location = new System.Drawing.Point(1276, 18);
             this.lkb_back_to_login.Name = "lkb_back_to_login";
             this.lkb_back_to_login.Size = new System.Drawing.Size(148, 22);
             this.lkb_back_to_login.TabIndex = 2;
@@ -389,7 +412,7 @@ namespace Chit_Fund_Management_System
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::Chit_Fund_Management_System.Properties.Resources.WhatsApp_Image_2021_10_27_at_4_29_07_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1388, 581);
+            this.ClientSize = new System.Drawing.Size(1455, 581);
             this.Controls.Add(this.lkb_back_to_login);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;

@@ -71,36 +71,17 @@ namespace Chit_Fund_Management_System
         {
             try
             {
+                int Mid = int.Parse(tb_edit_m_memberid.Text);
                 con.Open();
-                cmd = new OleDbCommand("update MemberTB set Mname=@Mname, Mdob=@Mdob, Fname=@Fname, Mage=@Mage, Mgender=@Mgender, Mladdr=@Mladdr, " +
-                    "Memail=@Memail, Mmob=@Mmob, Madhaar=@Madhaar, Moaddr=@Moaddr, Mdesign=@Mdesign, Salary=@Salary, Mpan=@Mpan, Nname=@Nname, Nrelation=@Nrelation, " +
-                    "Nage=@Nage, Nemail=@Nemail, Nmob=@Nmob, Nadhaar=@Nadhaar, Gid=@Gid, Aid=@Aid, Bid=@Bid, Camt=@Camt, Lamt=@Lamt, Dor=@Dor where Member_id=@memberid", con);
-                cmd.Parameters.AddWithValue("@memberid", tb_edit_m_memberid.Text);
-                cmd.Parameters.AddWithValue("@Mname", tb_edit_m_name.Text);
-                cmd.Parameters.AddWithValue("@Mdob", dtp_edit_m_dob.Text);
-                cmd.Parameters.AddWithValue("@Fname", tb_edit_m_fname.Text);
-                cmd.Parameters.AddWithValue("@Mage", tb_edit_m_age.Text);
-                cmd.Parameters.AddWithValue("@Mgender", cb_edit_m_gender.Text);
-                cmd.Parameters.AddWithValue("@Mladdr", tb_edit_m_laddr.Text);
-                cmd.Parameters.AddWithValue("@Memail", tb_edit_m_memail.Text);
-                cmd.Parameters.AddWithValue("@Mmob", tb_edit_m_mmob.Text);
-                cmd.Parameters.AddWithValue("@Madhaar", tb_edit_m_madhaar.Text);
-                cmd.Parameters.AddWithValue("@Moaddr", tb_edit_m_oaddr.Text);
-                cmd.Parameters.AddWithValue("@Mdesign", tb_edit_m_mdesig.Text);
-                cmd.Parameters.AddWithValue("@Salary", tb_edit_m_msalary.Text);
-                cmd.Parameters.AddWithValue("@Mpan", tb_edit_m_mpan.Text);
-                cmd.Parameters.AddWithValue("@Nname", tb_edit_m_nname.Text);
-                cmd.Parameters.AddWithValue("@Nrelation", tb_edit_m_nrelation.Text);
-                cmd.Parameters.AddWithValue("@Nage", tb_edit_m_nrelation.Text);
-                cmd.Parameters.AddWithValue("@Nemail", tb_edit_m_nemail.Text);
-                cmd.Parameters.AddWithValue("@Nmob", tb_edit_m_nmob.Text);
-                cmd.Parameters.AddWithValue("@Nadhaar", tb_edit_m_nadhaar.Text);
-                cmd.Parameters.AddWithValue("@Gid", tb_edit_m_gid.Text);
-                cmd.Parameters.AddWithValue("@Aid", tb_edit_m_aid.Text);
-                cmd.Parameters.AddWithValue("@Bid", tb_edit_m_bid.Text);
-                cmd.Parameters.AddWithValue("@Camt", tb_edit_m_camt.Text);
-                cmd.Parameters.AddWithValue("@Lamt", tb_edit_m_lamt.Text);
-                cmd.Parameters.AddWithValue("@Dor", dtp_edit_m_dor.Text);
+                cmd = new OleDbCommand("update MemberTB set Mname='" + tb_edit_m_name.Text + "', Mdob='"+ dtp_edit_m_dob.Text + "', " +
+                    "Fname='"+ tb_edit_m_fname.Text + "', Mage='"+ tb_edit_m_age.Text + "', mgender='"+ cb_edit_m_gender.Text + "', " +
+                    "Mladdr='"+ tb_edit_m_laddr.Text + "', memail='"+ tb_edit_m_memail.Text + "', Mmob='"+ tb_edit_m_mmob.Text + "', " +
+                    "Madhaar='"+ tb_edit_m_madhaar.Text + "', Moaddr='"+ tb_edit_m_oaddr.Text + "', Mdesign='"+ tb_edit_m_mdesig.Text + "', " +
+                    "Salary='"+ tb_edit_m_msalary.Text + "', Mpan='"+ tb_edit_m_mpan.Text + "', Nname='"+ tb_edit_m_nname.Text + "', " +
+                    "Nrelation='"+ tb_edit_m_nrelation.Text + "', Nage='"+ tb_edit_m_nage.Text + "', Nemail='"+ tb_edit_m_nemail.Text + "', " +
+                    "Nmob='"+ tb_edit_m_nmob.Text + "', Nadhaar='"+ tb_edit_m_nadhaar.Text + "', gid='"+ tb_edit_m_gid.Text + "', " +
+                    "aid='"+ tb_edit_m_aid.Text + "', Bid='"+ tb_edit_m_bid.Text + "', camt='"+ tb_edit_m_camt.Text + "', " +
+                    "lamt='"+ tb_edit_m_lamt.Text + "', Dor='"+ dtp_edit_m_dor.Text + "' where Member_id="+ Mid, con);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Updated Successfully....");
@@ -118,7 +99,6 @@ namespace Chit_Fund_Management_System
             tb_edit_m_name.Clear();
             tb_edit_m_fname.Clear();
             tb_edit_m_age.Clear();
-            cb_edit_m_gender.Items.Clear();
             tb_edit_m_laddr.Clear();
             tb_edit_m_memail.Clear();
             tb_edit_m_mmob.Clear();
@@ -452,22 +432,6 @@ namespace Chit_Fund_Management_System
                 {
                     MessageBox.Show("Please enter valid amount.");
                     tb_edit_m_camt.Text = tb_edit_m_camt.Text.Remove(tb_edit_m_camt.Text.Length - 1);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
-        private void tb_edit_m_lamt_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_edit_m_lamt.Text, "[^0-9]"))
-                {
-                    MessageBox.Show("Please enter valid amount.");
-                    tb_edit_m_lamt.Text = tb_edit_m_lamt.Text.Remove(tb_edit_m_lamt.Text.Length - 1);
                 }
             }
             catch (Exception ex)

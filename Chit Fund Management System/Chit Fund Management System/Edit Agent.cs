@@ -256,7 +256,6 @@ namespace Chit_Fund_Management_System
             tb_Edit_a_name.Clear();
             tb_Edit_a_gname.Clear();
             tb_Edit_a_age.Clear();
-            cb_Edit_a_gender.Items.Clear();
             tb_Edit_a_qualification.Clear();
             tb_Edit_a_paddr.Clear();
             tb_Edit_a_aemail.Clear();
@@ -278,32 +277,16 @@ namespace Chit_Fund_Management_System
         {
             try
             {
+                int Aid = int.Parse(tb_Edit_a_aid.Text);
                 con.Open();
-                cmd = new OleDbCommand("update AgentTB set Aname=@Aname, Adob=@Adob, Gname=@Gname, Aage=@Aage, Agender=@Agender, Aqualification=@Aqualification, " +
-                    "Apaddr=@Apaddr, Aemail=@Aemail, Amob=@Amob, Aadhaarno=@Aadhaarno, Bid=@Bid, Dor=@Dor, Agname1=@Agname1, Agaddr1=@Agaddr1, Agname2=@Agname2, " +
-                    "Agaddr2=@Agaddr2, Apan=@Apan, Abname=@Abname, Aacno=@Aacno, Aifsc=@Aifsc, Aactype=@Aactype where Aid=@Aid", con);
-                cmd.Parameters.AddWithValue("@Aid", tb_Edit_a_aid.Text);
-                cmd.Parameters.AddWithValue("@Aname", tb_Edit_a_name.Text);
-                cmd.Parameters.AddWithValue("@Adob", dtp_Edit_a_dob.Text);
-                cmd.Parameters.AddWithValue("@Gname", tb_Edit_a_gname.Text);
-                cmd.Parameters.AddWithValue("@Aage", tb_Edit_a_age.Text);
-                cmd.Parameters.AddWithValue("@Agender", cb_Edit_a_gender.Text);
-                cmd.Parameters.AddWithValue("@Aqualification", tb_Edit_a_qualification.Text);
-                cmd.Parameters.AddWithValue("@Apaddr", tb_Edit_a_paddr.Text);
-                cmd.Parameters.AddWithValue("@Aemail", tb_Edit_a_aemail.Text);
-                cmd.Parameters.AddWithValue("@Amob", tb_Edit_a_amob.Text);
-                cmd.Parameters.AddWithValue("@Aadhaarno", tb_Edit_a_aadhaar.Text);
-                cmd.Parameters.AddWithValue("@Bid", tb_Edit_A_bid.Text);
-                cmd.Parameters.AddWithValue("@Dor", dtp_Edit_a_dor.Text);
-                cmd.Parameters.AddWithValue("@Agname1", tb_Edit_a_1gname.Text);
-                cmd.Parameters.AddWithValue("@Agaddr1", tb_Edit_a_1gaddr.Text);
-                cmd.Parameters.AddWithValue("@Agname2", tb_Edit_a_2gname.Text);
-                cmd.Parameters.AddWithValue("@Agaddr2", tb_Edit_a_2gaddr.Text);
-                cmd.Parameters.AddWithValue("@Apan", tb_Edit_a_apan.Text);
-                cmd.Parameters.AddWithValue("@Abname", tb_Edit_a_bankname.Text);
-                cmd.Parameters.AddWithValue("@Aacno", tb_Edit_a_acno.Text);
-                cmd.Parameters.AddWithValue("@Aifsc", tb_Edit_a_ifsc.Text);
-                cmd.Parameters.AddWithValue("@Aactype", tb_Edit_a_actype.Text);
+                cmd = new OleDbCommand("update AgentTB set Aname='"+tb_Edit_a_name.Text+"', Adob='"+ dtp_Edit_a_dob.Text + "', " +
+                    "Gname='"+ tb_Edit_a_gname.Text + "', Aage='"+ tb_Edit_a_age.Text + "', Agender='"+ cb_Edit_a_gender.Text + "', " +
+                    "Aqualification='"+ tb_Edit_a_qualification.Text + "', Apaddr='"+ tb_Edit_a_paddr.Text + "', " +
+                    "Aemail='"+ tb_Edit_a_aemail.Text + "', Amob='"+ tb_Edit_a_amob.Text + "', Aadhaarno='"+ tb_Edit_a_aadhaar.Text + "', " +
+                    "Bid='"+ tb_Edit_A_bid.Text + "', Dor='"+ dtp_Edit_a_dor.Text + "', Agname1='"+ tb_Edit_a_1gname.Text + "', " +
+                    "Agaddr1='"+ tb_Edit_a_1gaddr.Text + "', Agname2='"+ tb_Edit_a_2gname.Text + "', Agaddr2='"+ tb_Edit_a_2gaddr.Text + "', " +
+                    "Apan='"+ tb_Edit_a_apan.Text + "', Abname='"+ tb_Edit_a_bankname.Text + "', Aacno='"+ tb_Edit_a_acno.Text + "', " +
+                    "Aifsc='"+ tb_Edit_a_ifsc.Text + "', Aactype='"+ tb_Edit_a_actype.Text + "' where Aid="+ Aid , con);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Update successfully....");

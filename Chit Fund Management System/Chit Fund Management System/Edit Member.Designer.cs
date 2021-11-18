@@ -301,7 +301,7 @@ namespace Chit_Fund_Management_System
             this.tb_edit_m_lamt.Name = "tb_edit_m_lamt";
             this.tb_edit_m_lamt.Size = new System.Drawing.Size(192, 29);
             this.tb_edit_m_lamt.TabIndex = 82;
-            this.tb_edit_m_lamt.TextChanged += new System.EventHandler(this.tb_edit_m_lamt_TextChanged);
+            //this.tb_edit_m_lamt.TextChanged += new System.EventHandler(this.tb_edit_m_lamt_TextChanged);
             // 
             // label33
             // 

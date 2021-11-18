@@ -232,22 +232,6 @@ namespace Chit_Fund_Management_System
             }
         }
 
-        private void tb_mtl_loan_amount_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if (System.Text.RegularExpressions.Regex.IsMatch(tb_mtl_loan_amount.Text, "[^0-9]"))
-                {
-                    MessageBox.Show("Please enter valid amount.");
-                    tb_mtl_loan_amount.Text = tb_mtl_loan_amount.Text.Remove(tb_mtl_loan_amount.Text.Length - 1);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
         private void tb_mtl_amount_paid_TextChanged(object sender, EventArgs e)
         {
             try

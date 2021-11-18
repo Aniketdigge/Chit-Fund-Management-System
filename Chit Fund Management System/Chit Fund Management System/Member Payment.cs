@@ -51,10 +51,9 @@ namespace Chit_Fund_Management_System
                 con.Close();
                 if (cb_mp_payment_type.Text == "Loan")
                 {
+                    int Mid = int.Parse(lb_mp_member_id.Text);
                     con.Open();
-                    cmd = new OleDbCommand("update MemberTB set Lamt=@Lamt where Member_id=@memberid", con);
-                    cmd.Parameters.AddWithValue("@memberid", lb_mp_member_id.Text);
-                    cmd.Parameters.AddWithValue("@Lamt", lb_mp_amount_paid.Text);
+                    cmd = new OleDbCommand("update MemberTB set Lamt='"+ lb_mp_amount_paid.Text + "' where Member_id="+ Mid, con);
                     cmd.ExecuteNonQuery();
                     con.Close();
                 }

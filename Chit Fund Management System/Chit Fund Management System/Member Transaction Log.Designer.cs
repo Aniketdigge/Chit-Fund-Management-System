@@ -396,7 +396,7 @@ namespace Chit_Fund_Management_System
             this.tb_mtl_loan_amount.Name = "tb_mtl_loan_amount";
             this.tb_mtl_loan_amount.Size = new System.Drawing.Size(270, 33);
             this.tb_mtl_loan_amount.TabIndex = 20;
-            this.tb_mtl_loan_amount.TextChanged += new System.EventHandler(this.tb_mtl_loan_amount_TextChanged);
+            //this.tb_mtl_loan_amount.TextChanged += new System.EventHandler(this.tb_mtl_loan_amount_TextChanged);
             // 
             // bt_mtl_clear
             // 

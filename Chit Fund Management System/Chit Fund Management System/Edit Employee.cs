@@ -24,48 +24,23 @@ namespace Chit_Fund_Management_System
         {
             try
             {
+                int Eid = int.Parse(tb_edit_e_eid.Text);
                 con.Open();
-                cmd = new OleDbCommand("update EmployeeTB Ename=@Ename, EDob=@EDob, Egname=@Egname, Eage=@Eage, Egender=@Egender, Epaddr=@Epaddr, Emstatus=@Emstatus, " +
-                    "Enationality=@Enationality, Edisability=@Edisability, Ebgroup=@Ebgroup, Eemail=@Eemail, Emob=@Emob, Eadhaar=@Eadhaar, " +
-                    "Equalification=@Equalification, Epassyear=@Epassyear, Epercentage=@Epercentage, Eworkexp=@Eworkexp, Especialization=@Especialization, " +
-                    "EMname=@EMname, EMaddr=@EMaddr, EMemail=@EMemail, EMmob=@EMmob, EMrelation=@EMrelation, Edepartment=@Edepartment, Edesignation=@Edesignation, " +
-                    "Bid=@Bid, Epan=@Epan, Ebank=@Ebank, Eacno=@Eacno, Eifsc=@Eifsc, Eactype=@Eactype, Doh=@Doh where Eid=@Eid", con);
-                cmd.Parameters.AddWithValue("@Eid", tb_edit_e_eid.Text);
-                cmd.Parameters.AddWithValue("@Ename", tb_edit_e_name.Text);
-                cmd.Parameters.AddWithValue("@EDob", dtp_edit_e_dob.Text);
-                cmd.Parameters.AddWithValue("@Egname", tb_edit_e_gname.Text);
-                cmd.Parameters.AddWithValue("@Eage", tb_edit_e_age.Text);
-                cmd.Parameters.AddWithValue("@Egender", cb_edit_e_gender.Text);
-                cmd.Parameters.AddWithValue("@Epaddr", tb_edit_e_paddr.Text);
-                cmd.Parameters.AddWithValue("@Emstatus", cb_edit_e_mstatus.Text);
-                cmd.Parameters.AddWithValue("@Enationality", tb_edit_e_nationality.Text);
-                cmd.Parameters.AddWithValue("@Edisability", tb_edit_e_Disability.Text);
-                cmd.Parameters.AddWithValue("@Ebgroup", cb_edit_e_bgroup.Text);
-                cmd.Parameters.AddWithValue("@Eemail", tb_edit_e_eemail.Text);
-                cmd.Parameters.AddWithValue("@Emob", tb_edit_e_emob.Text);
-                cmd.Parameters.AddWithValue("@Eadhaar", tb_edit_e_eadhaar.Text);
-                cmd.Parameters.AddWithValue("@Equalification", tb_edit_e_qualification.Text);
-                cmd.Parameters.AddWithValue("@Epassyear", tb_edit_e_passyear.Text);
-                cmd.Parameters.AddWithValue("@Epercentage", tb_edit_e_percentage.Text);
-                cmd.Parameters.AddWithValue("@Eworkexp", tb_edit_e_workexp.Text);
-                cmd.Parameters.AddWithValue("@Especialization", tb_edit_e_specialization.Text);
-                cmd.Parameters.AddWithValue("@EMname", tb_edit_e_emname.Text);
-                cmd.Parameters.AddWithValue("@EMaddr", tb_edit_e_emaddr.Text);
-                cmd.Parameters.AddWithValue("@EMemail", tb_edit_e_ememail.Text);
-                cmd.Parameters.AddWithValue("@EMmob", tb_edit_e_emmob.Text);
-                cmd.Parameters.AddWithValue("@EMrelation", tb_edit_e_relation.Text);
-                cmd.Parameters.AddWithValue("@Edepartment", tb_edit_e_department.Text);
-                cmd.Parameters.AddWithValue("@Edesignation", tb_edit_e_designation.Text);
-                cmd.Parameters.AddWithValue("@Bid", tb_edit_e_bid.Text);
-                cmd.Parameters.AddWithValue("@Epan", tb_edit_e_epan.Text);
-                cmd.Parameters.AddWithValue("@Ebank", tb_edit_e_bankname.Text);
-                cmd.Parameters.AddWithValue("@Eacno", tb_edit_e_acno.Text);
-                cmd.Parameters.AddWithValue("@Eifsc", tb_edit_e_ifsc.Text);
-                cmd.Parameters.AddWithValue("@Eactype", tb_edit_e_actype.Text);
-                cmd.Parameters.AddWithValue("@Doh", dtp_edit_e_doh.Text);
+                cmd = new OleDbCommand("update EmployeeTB set Ename='" + tb_edit_e_name.Text + "', EDob='"+ dtp_edit_e_dob.Text + "', " +
+                    "Egname='"+ tb_edit_e_gname.Text + "', Eage='"+ tb_edit_e_age.Text + "', Egender='"+ cb_edit_e_gender.Text + "', " +
+                    "Epaddr='"+ tb_edit_e_paddr.Text + "', Emstatus='"+ cb_edit_e_mstatus.Text + "', Enationality='"+ tb_edit_e_nationality.Text + "', " +
+                    "Edisability='"+ tb_edit_e_Disability.Text + "', Ebgroup='"+ cb_edit_e_bgroup.Text + "', Eemail='"+ tb_edit_e_eemail.Text + "', " +
+                    "Emob='"+ tb_edit_e_emob.Text + "', Eadhaar='"+ tb_edit_e_eadhaar.Text + "', Equalification='"+ tb_edit_e_qualification.Text + "', " +
+                    "Epassyear='"+ tb_edit_e_passyear.Text + "', Epercentage='"+ tb_edit_e_percentage.Text + "', Eworkexp='"+ tb_edit_e_workexp.Text + "', " +
+                    "Especialization='"+ tb_edit_e_specialization.Text + "', EMname='"+ tb_edit_e_emname.Text + "', EMaddr='"+ tb_edit_e_emaddr.Text + "', " +
+                    "EMemail='"+ tb_edit_e_ememail.Text + "', EMmob='"+ tb_edit_e_emmob.Text + "', EMrelation='"+ tb_edit_e_relation.Text + "', " +
+                    "Edepartment='"+ tb_edit_e_department.Text + "', Edesignation='"+ tb_edit_e_designation.Text + "', Bid='"+ tb_edit_e_bid.Text + "', " +
+                    "Epan='"+ tb_edit_e_epan.Text + "', Ebank='"+ tb_edit_e_bankname.Text + "', Eacno='"+ tb_edit_e_acno.Text + "', " +
+                    "Eifsc='"+ tb_edit_e_ifsc.Text + "', Eactype='"+ tb_edit_e_actype.Text + "', Doh='"+ dtp_edit_e_doh.Text + "' where " +
+                    "Eid="+ Eid , con);
                 cmd.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Saved successfully....");
+                MessageBox.Show("Update successfully....");
             }
             catch (Exception ex)
             {
@@ -182,12 +157,9 @@ namespace Chit_Fund_Management_System
             tb_edit_e_name.Clear();
             tb_edit_e_gname.Clear();
             tb_edit_e_age.Clear();
-            cb_edit_e_gender.Items.Clear();
             tb_edit_e_paddr.Clear();
-            cb_edit_e_mstatus.Items.Clear();
             tb_edit_e_nationality.Clear();
             tb_edit_e_Disability.Clear();
-            cb_edit_e_bgroup.Items.Clear();
             tb_edit_e_eemail.Clear();
             tb_edit_e_emob.Clear();
             tb_edit_e_eadhaar.Clear();
